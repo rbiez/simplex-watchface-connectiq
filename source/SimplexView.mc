@@ -6,6 +6,8 @@ import Toybox.WatchUi;
 
 class SimplexView extends WatchUi.WatchFace {
 
+    var drawSecondsHand = true;
+
     function initialize() {
         WatchFace.initialize();
     }
@@ -95,19 +97,22 @@ class SimplexView extends WatchUi.WatchFace {
         drawDate(dc,center_x,center_y, screen_width, screen_height);
 
         // draw the text
-        drawText(dc,center_x,center_y, screen_width, screen_height,true);
+        drawText(dc,center_x,center_y, screen_width, screen_height, true);
 
         // draw the ticks
         drawTicks(dc,center_x,center_y, screen_width, screen_height, length_long, length_short);
 
         // draw the hours hand
-        drawHand(dc, center_x,center_y, hour_hand_length,8,degHour, Graphics.COLOR_LT_GRAY, Graphics.COLOR_WHITE, false);
+        drawHand(dc, center_x,center_y, hour_hand_length,8.0,degHour, Graphics.COLOR_LT_GRAY, Graphics.COLOR_WHITE, false);
 
         // draw the minutes hand
-        drawHand(dc, center_x,center_y, min_hand_length,3, degMin, Graphics.COLOR_LT_GRAY, Graphics.COLOR_WHITE, false);
+        drawHand(dc, center_x,center_y, min_hand_length,4.0, degMin, Graphics.COLOR_LT_GRAY, Graphics.COLOR_WHITE, false);
 
-        // draw the seconds hand
-        drawHand(dc, center_x,center_y ,sec_hand_length,2,degSec, color_sec, color_sec, true);
+        if(drawSecondsHand)
+        {
+            // draw the seconds hand
+            drawHand(dc, center_x,center_y ,sec_hand_length,2,degSec, color_sec, color_sec, true);
+        }
 
         //draw the center
         drawCenter(dc, center_x,center_y, color_sec);
@@ -116,13 +121,23 @@ class SimplexView extends WatchUi.WatchFace {
 
     function drawCenter(dc, center_x, center_y, color_sec) {
 
-        dc.setPenWidth(6);
-        dc.setColor(color_sec, Graphics.COLOR_BLACK);
-        dc.drawCircle(center_x, center_y, 4);
+        var outer_diameter = 3;
 
-        dc.setPenWidth(3);
+        if(drawSecondsHand)
+        {
+            dc.setPenWidth(6);
+            dc.setColor(color_sec, Graphics.COLOR_BLACK);
+            dc.drawCircle(center_x, center_y, 4);
+        }
+
+        else
+        {
+            outer_diameter = 4;
+        }
+
+        dc.setPenWidth(outer_diameter);
         dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_BLACK);
-        dc.drawCircle(center_x, center_y,3);
+        dc.drawCircle(center_x, center_y,outer_diameter);
 
         dc.setPenWidth(3);
         dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_BLACK);
@@ -145,7 +160,6 @@ class SimplexView extends WatchUi.WatchFace {
 
     function drawHand(dc, center_x, center_y, length, width, degree, color_left, color_right, draw_line) {
 
-        dc.setPenWidth(width);
 
         var target_x = length*Math.cos(degree);
         var target_y = length*Math.sin(degree);
@@ -153,6 +167,8 @@ class SimplexView extends WatchUi.WatchFace {
         if(draw_line)
         {
             var tip_deg = 0.2;
+
+            dc.setPenWidth(width);
 
             dc.setColor(color_left, Graphics.COLOR_BLACK);
             dc.drawLine(center_x,center_y, center_x + target_x, center_y + target_y);
@@ -172,9 +188,11 @@ class SimplexView extends WatchUi.WatchFace {
 
         else
         {
+            dc.setPenWidth(1);
+
             var tip_deg = 0.01 * width;
 
-            var tip = length/10.0;
+            var tip = length/8.0;
 
             var left_peak_x = (length - tip)*Math.cos(degree - tip_deg);
             var left_peak_y = (length - tip)*Math.sin(degree - tip_deg);
@@ -182,18 +200,18 @@ class SimplexView extends WatchUi.WatchFace {
             var right_peak_x = (length - tip)*Math.cos(degree + tip_deg);
             var right_peak_y = (length - tip)*Math.sin(degree + tip_deg);
 
-            var left_width_x = (width/3)*Math.cos(degree - Math.PI/2);
-            var left_width_y = (width/3)*Math.sin(degree - Math.PI/2);
+            var left_width_x = (width/3.0)*Math.cos(degree - (Math.PI/2.0));
+            var left_width_y = (width/3.0)*Math.sin(degree - (Math.PI/2.0));
 
-            var right_width_x = (width/3)*Math.cos(degree + Math.PI/2);
-            var right_width_y = (width/3)*Math.sin(degree + Math.PI/2);
-            
+            var right_width_x = (width/3.0)*Math.cos(degree + (Math.PI/2.0));
+            var right_width_y = (width/3.0)*Math.sin(degree + (Math.PI/2.0));
+
             dc.setColor(color_left, Graphics.COLOR_BLACK);
             dc.fillPolygon([[center_x,center_y], [center_x  + left_width_x,center_y + left_width_y] ,[center_x + left_peak_x, center_y + left_peak_y], [center_x + target_x, center_y + target_y]]);
 
             dc.setColor(color_right, Graphics.COLOR_BLACK);
             dc.fillPolygon([[center_x,center_y], [center_x  + right_width_x, center_y + right_width_y], [center_x + right_peak_x, center_y + right_peak_y], [center_x + target_x, center_y + target_y]]);
-        
+    
             var tail_length = length/4;
 
             var tail_left_peak_x = tail_length*Math.cos(Math.PI + degree - tip_deg);
@@ -204,9 +222,6 @@ class SimplexView extends WatchUi.WatchFace {
 
             dc.fillPolygon([[center_x,center_y], [center_x + tail_left_peak_x, center_y + tail_left_peak_y], [center_x + tail_right_peak_x, center_y + tail_right_peak_y]]);
         }
-
-
-        // System.println( "Hello Monkey C!" );
 
     }
 
@@ -335,10 +350,12 @@ class SimplexView extends WatchUi.WatchFace {
 
     // The user has just looked at their watch. Timers and animations may be started here.
     function onExitSleep() as Void {
+        drawSecondsHand = true;
     }
 
     // Terminate any active timers and prepare for slow updates.
     function onEnterSleep() as Void {
+        drawSecondsHand = false;
     }
 
 }
