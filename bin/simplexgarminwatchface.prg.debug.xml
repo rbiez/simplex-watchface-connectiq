@@ -3,379 +3,395 @@
 <manifest filename="/home/max/git/simplex-garmin-watchface/manifest.xml"/>
 <pcToLineNum>
 <entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="1" lineNum="7" parent="globals/SimplexView" pc="268435460" symbol="&lt;init&gt;"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="2" lineNum="122" parent="globals/SimplexView" pc="268435479" symbol="drawCenter"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="2" lineNum="124" parent="globals/SimplexView" pc="268435483" symbol="drawCenter"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="2" lineNum="126" parent="globals/SimplexView" pc="268435490" symbol="drawCenter"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="2" lineNum="128" parent="globals/SimplexView" pc="268435501" symbol="drawCenter"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="2" lineNum="129" parent="globals/SimplexView" pc="268435518" symbol="drawCenter"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="2" lineNum="130" parent="globals/SimplexView" pc="268435537" symbol="drawCenter"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="2" lineNum="135" parent="globals/SimplexView" pc="268435561" symbol="drawCenter"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="2" lineNum="138" parent="globals/SimplexView" pc="268435568" symbol="drawCenter"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="2" lineNum="139" parent="globals/SimplexView" pc="268435582" symbol="drawCenter"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="2" lineNum="140" parent="globals/SimplexView" pc="268435604" symbol="drawCenter"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="2" lineNum="142" parent="globals/SimplexView" pc="268435622" symbol="drawCenter"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="2" lineNum="143" parent="globals/SimplexView" pc="268435639" symbol="drawCenter"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="2" lineNum="144" parent="globals/SimplexView" pc="268435661" symbol="drawCenter"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="3" lineNum="352" parent="globals/SimplexView" pc="268435683" symbol="onExitSleep"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="3" lineNum="353" parent="globals/SimplexView" pc="268435685" symbol="onExitSleep"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="161" parent="globals/SimplexView" pc="268435696" symbol="drawHand"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="164" parent="globals/SimplexView" pc="268435700" symbol="drawHand"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="165" parent="globals/SimplexView" pc="268435724" symbol="drawHand"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="167" parent="globals/SimplexView" pc="268435748" symbol="drawHand"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="169" parent="globals/SimplexView" pc="268435753" symbol="drawHand"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="171" parent="globals/SimplexView" pc="268435760" symbol="drawHand"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="173" parent="globals/SimplexView" pc="268435774" symbol="drawHand"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="174" parent="globals/SimplexView" pc="268435793" symbol="drawHand"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="176" parent="globals/SimplexView" pc="268435819" symbol="drawHand"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="178" parent="globals/SimplexView" pc="268435829" symbol="drawHand"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="179" parent="globals/SimplexView" pc="268435862" symbol="drawHand"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="181" parent="globals/SimplexView" pc="268435895" symbol="drawHand"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="182" parent="globals/SimplexView" pc="268435928" symbol="drawHand"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="184" parent="globals/SimplexView" pc="268435961" symbol="drawHand"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="191" parent="globals/SimplexView" pc="268436096" symbol="drawHand"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="193" parent="globals/SimplexView" pc="268436113" symbol="drawHand"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="195" parent="globals/SimplexView" pc="268436123" symbol="drawHand"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="197" parent="globals/SimplexView" pc="268436133" symbol="drawHand"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="198" parent="globals/SimplexView" pc="268436163" symbol="drawHand"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="200" parent="globals/SimplexView" pc="268436193" symbol="drawHand"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="201" parent="globals/SimplexView" pc="268436223" symbol="drawHand"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="203" parent="globals/SimplexView" pc="268436253" symbol="drawHand"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="204" parent="globals/SimplexView" pc="268436289" symbol="drawHand"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="206" parent="globals/SimplexView" pc="268436325" symbol="drawHand"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="207" parent="globals/SimplexView" pc="268436361" symbol="drawHand"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="209" parent="globals/SimplexView" pc="268436397" symbol="drawHand"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="210" parent="globals/SimplexView" pc="268436416" symbol="drawHand"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="212" parent="globals/SimplexView" pc="268436588" symbol="drawHand"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="213" parent="globals/SimplexView" pc="268436607" symbol="drawHand"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="215" parent="globals/SimplexView" pc="268436779" symbol="drawHand"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="217" parent="globals/SimplexView" pc="268436789" symbol="drawHand"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="218" parent="globals/SimplexView" pc="268436822" symbol="drawHand"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="220" parent="globals/SimplexView" pc="268436855" symbol="drawHand"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="221" parent="globals/SimplexView" pc="268436888" symbol="drawHand"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="223" parent="globals/SimplexView" pc="268436921" symbol="drawHand"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="6" lineNum="16" parent="globals/SimplexView" pc="268437054" symbol="onLayout"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="6" lineNum="17" parent="globals/SimplexView" pc="268437056" symbol="onLayout"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="7" lineNum="302" parent="globals/SimplexView" pc="268437098" symbol="drawText"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="7" lineNum="304" parent="globals/SimplexView" pc="268437102" symbol="drawText"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="7" lineNum="306" parent="globals/SimplexView" pc="268437119" symbol="drawText"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="7" lineNum="308" parent="globals/SimplexView" pc="268437129" symbol="drawText"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="7" lineNum="310" parent="globals/SimplexView" pc="268437136" symbol="drawText"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="7" lineNum="312" parent="globals/SimplexView" pc="268437143" symbol="drawText"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="7" lineNum="314" parent="globals/SimplexView" pc="268437161" symbol="drawText"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="7" lineNum="316" parent="globals/SimplexView" pc="268437165" symbol="drawText"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="7" lineNum="318" parent="globals/SimplexView" pc="268437176" symbol="drawText"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="7" lineNum="321" parent="globals/SimplexView" pc="268437186" symbol="drawText"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="7" lineNum="323" parent="globals/SimplexView" pc="268437208" symbol="drawText"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="7" lineNum="326" parent="globals/SimplexView" pc="268437214" symbol="drawText"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="7" lineNum="328" parent="globals/SimplexView" pc="268437265" symbol="drawText"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="7" lineNum="330" parent="globals/SimplexView" pc="268437316" symbol="drawText"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="7" lineNum="332" parent="globals/SimplexView" pc="268437341" symbol="drawText"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="7" lineNum="334" parent="globals/SimplexView" pc="268437351" symbol="drawText"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="7" lineNum="339" parent="globals/SimplexView" pc="268437391" symbol="drawText"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="8" lineNum="228" parent="globals/SimplexView" pc="268437436" symbol="drawTicks"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="8" lineNum="230" parent="globals/SimplexView" pc="268437440" symbol="drawTicks"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="8" lineNum="232" parent="globals/SimplexView" pc="268437450" symbol="drawTicks"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="8" lineNum="234" parent="globals/SimplexView" pc="268437467" symbol="drawTicks"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="8" lineNum="236" parent="globals/SimplexView" pc="268437483" symbol="drawTicks"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="8" lineNum="238" parent="globals/SimplexView" pc="268437490" symbol="drawTicks"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="8" lineNum="241" parent="globals/SimplexView" pc="268437497" symbol="drawTicks"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="8" lineNum="243" parent="globals/SimplexView" pc="268437508" symbol="drawTicks"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="8" lineNum="246" parent="globals/SimplexView" pc="268437518" symbol="drawTicks"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="8" lineNum="248" parent="globals/SimplexView" pc="268437543" symbol="drawTicks"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="8" lineNum="251" parent="globals/SimplexView" pc="268437553" symbol="drawTicks"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="8" lineNum="253" parent="globals/SimplexView" pc="268437560" symbol="drawTicks"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="8" lineNum="255" parent="globals/SimplexView" pc="268437567" symbol="drawTicks"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="8" lineNum="257" parent="globals/SimplexView" pc="268437571" symbol="drawTicks"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="8" lineNum="259" parent="globals/SimplexView" pc="268437590" symbol="drawTicks"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="8" lineNum="261" parent="globals/SimplexView" pc="268437607" symbol="drawTicks"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="8" lineNum="263" parent="globals/SimplexView" pc="268437625" symbol="drawTicks"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="8" lineNum="264" parent="globals/SimplexView" pc="268437676" symbol="drawTicks"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="8" lineNum="266" parent="globals/SimplexView" pc="268437724" symbol="drawTicks"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="8" lineNum="267" parent="globals/SimplexView" pc="268437775" symbol="drawTicks"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="8" lineNum="269" parent="globals/SimplexView" pc="268437823" symbol="drawTicks"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="8" lineNum="271" parent="globals/SimplexView" pc="268437837" symbol="drawTicks"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="8" lineNum="274" parent="globals/SimplexView" pc="268437859" symbol="drawTicks"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="8" lineNum="277" parent="globals/SimplexView" pc="268437904" symbol="drawTicks"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="8" lineNum="279" parent="globals/SimplexView" pc="268437921" symbol="drawTicks"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="8" lineNum="281" parent="globals/SimplexView" pc="268437940" symbol="drawTicks"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="8" lineNum="283" parent="globals/SimplexView" pc="268437958" symbol="drawTicks"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="8" lineNum="284" parent="globals/SimplexView" pc="268438009" symbol="drawTicks"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="8" lineNum="286" parent="globals/SimplexView" pc="268438057" symbol="drawTicks"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="8" lineNum="287" parent="globals/SimplexView" pc="268438108" symbol="drawTicks"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="8" lineNum="289" parent="globals/SimplexView" pc="268438156" symbol="drawTicks"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="8" lineNum="291" parent="globals/SimplexView" pc="268438170" symbol="drawTicks"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="8" lineNum="294" parent="globals/SimplexView" pc="268438192" symbol="drawTicks"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="9" lineNum="357" parent="globals/SimplexView" pc="268438238" symbol="onEnterSleep"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="9" lineNum="358" parent="globals/SimplexView" pc="268438240" symbol="onEnterSleep"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="10" lineNum="11" parent="globals/SimplexView" pc="268438251" symbol="initialize"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="10" lineNum="12" parent="globals/SimplexView" pc="268438253" symbol="initialize"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="12" lineNum="27" parent="globals/SimplexView" pc="268438272" symbol="onUpdate"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="12" lineNum="54" parent="globals/SimplexView" pc="268438276" symbol="onUpdate"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="12" lineNum="55" parent="globals/SimplexView" pc="268438289" symbol="onUpdate"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="12" lineNum="56" parent="globals/SimplexView" pc="268438302" symbol="onUpdate"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="12" lineNum="57" parent="globals/SimplexView" pc="268438312" symbol="onUpdate"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="12" lineNum="59" parent="globals/SimplexView" pc="268438322" symbol="onUpdate"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="12" lineNum="63" parent="globals/SimplexView" pc="268438339" symbol="onUpdate"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="12" lineNum="64" parent="globals/SimplexView" pc="268438367" symbol="onUpdate"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="12" lineNum="66" parent="globals/SimplexView" pc="268438395" symbol="onUpdate"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="12" lineNum="71" parent="globals/SimplexView" pc="268438438" symbol="onUpdate"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="12" lineNum="72" parent="globals/SimplexView" pc="268438460" symbol="onUpdate"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="12" lineNum="83" parent="globals/SimplexView" pc="268438472" symbol="onUpdate"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="12" lineNum="86" parent="globals/SimplexView" pc="268438494" symbol="onUpdate"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="12" lineNum="87" parent="globals/SimplexView" pc="268438504" symbol="onUpdate"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="12" lineNum="88" parent="globals/SimplexView" pc="268438514" symbol="onUpdate"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="12" lineNum="90" parent="globals/SimplexView" pc="268438524" symbol="onUpdate"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="12" lineNum="92" parent="globals/SimplexView" pc="268438531" symbol="onUpdate"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="12" lineNum="94" parent="globals/SimplexView" pc="268438538" symbol="onUpdate"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="12" lineNum="97" parent="globals/SimplexView" pc="268438545" symbol="onUpdate"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="12" lineNum="100" parent="globals/SimplexView" pc="268438567" symbol="onUpdate"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="12" lineNum="103" parent="globals/SimplexView" pc="268438591" symbol="onUpdate"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="12" lineNum="106" parent="globals/SimplexView" pc="268438617" symbol="onUpdate"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="12" lineNum="109" parent="globals/SimplexView" pc="268438656" symbol="onUpdate"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="12" lineNum="111" parent="globals/SimplexView" pc="268438695" symbol="onUpdate"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="12" lineNum="114" parent="globals/SimplexView" pc="268438706" symbol="onUpdate"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="12" lineNum="118" parent="globals/SimplexView" pc="268438742" symbol="onUpdate"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="13" lineNum="148" parent="globals/SimplexView" pc="268438763" symbol="drawDate"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="13" lineNum="149" parent="globals/SimplexView" pc="268438767" symbol="drawDate"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="13" lineNum="151" parent="globals/SimplexView" pc="268438786" symbol="drawDate"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="13" lineNum="153" parent="globals/SimplexView" pc="268438818" symbol="drawDate"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="13" lineNum="155" parent="globals/SimplexView" pc="268438843" symbol="drawDate"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="13" lineNum="158" parent="globals/SimplexView" pc="268438850" symbol="drawDate"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" id="14" lineNum="31" parent="globals" pc="268438891" symbol="getApp"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" id="14" lineNum="32" parent="globals" pc="268438901" symbol="getApp"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexBackground.mc" id="15" lineNum="6" parent="globals/Background" pc="268438917" symbol="&lt;init&gt;"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexBackground.mc" id="16" lineNum="8" parent="globals/Background" pc="268438936" symbol="initialize"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexBackground.mc" id="16" lineNum="9" parent="globals/Background" pc="268438940" symbol="initialize"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexBackground.mc" id="16" lineNum="13" parent="globals/Background" pc="268438961" symbol="initialize"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexBackground.mc" id="17" lineNum="16" parent="globals/Background" pc="268438982" symbol="draw"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexBackground.mc" id="17" lineNum="18" parent="globals/Background" pc="268438984" symbol="draw"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexBackground.mc" id="17" lineNum="19" parent="globals/Background" pc="268439026" symbol="draw"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" id="18" lineNum="5" parent="globals/SimplexApp" pc="268439039" symbol="&lt;init&gt;"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" id="19" lineNum="12" parent="globals/SimplexApp" pc="268439058" symbol="onStart"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" id="20" lineNum="25" parent="globals/SimplexApp" pc="268439061" symbol="onSettingsChanged"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" id="20" lineNum="26" parent="globals/SimplexApp" pc="268439063" symbol="onSettingsChanged"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" id="21" lineNum="20" parent="globals/SimplexApp" pc="268439080" symbol="getInitialView"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" id="21" lineNum="21" parent="globals/SimplexApp" pc="268439082" symbol="getInitialView"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" id="22" lineNum="7" parent="globals/SimplexApp" pc="268439123" symbol="initialize"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" id="22" lineNum="8" parent="globals/SimplexApp" pc="268439125" symbol="initialize"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" id="23" lineNum="16" parent="globals/SimplexApp" pc="268439144" symbol="onStop"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/bin/gen/006-B3943-00/source/Rez.mcgen" id="24" lineNum="7" parent="globals/Rez" pc="268439147" symbol="&lt;init&gt;"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/bin/gen/006-B3943-00/source/Rez.mcgen" id="25" lineNum="19" parent="globals/Rez/Layouts" pc="268439171" symbol="WatchFace"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/bin/gen/006-B3943-00/source/Rez.mcgen" id="25" lineNum="20" parent="globals/Rez/Layouts" pc="268439183" symbol="WatchFace"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/bin/gen/006-B3943-00/source/Rez.mcgen" id="25" lineNum="22" parent="globals/Rez/Layouts" pc="268439211" symbol="WatchFace"/>
-<entry filename="/home/max/git/simplex-garmin-watchface/bin/gen/006-B3943-00/source/Rez.mcgen" id="25" lineNum="24" parent="globals/Rez/Layouts" pc="268439346" symbol="WatchFace"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="2" lineNum="163" parent="globals/SimplexView" pc="268435479" symbol="drawCenter"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="2" lineNum="165" parent="globals/SimplexView" pc="268435483" symbol="drawCenter"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="2" lineNum="167" parent="globals/SimplexView" pc="268435490" symbol="drawCenter"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="2" lineNum="169" parent="globals/SimplexView" pc="268435501" symbol="drawCenter"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="2" lineNum="170" parent="globals/SimplexView" pc="268435518" symbol="drawCenter"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="2" lineNum="171" parent="globals/SimplexView" pc="268435540" symbol="drawCenter"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="2" lineNum="176" parent="globals/SimplexView" pc="268435564" symbol="drawCenter"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="2" lineNum="179" parent="globals/SimplexView" pc="268435571" symbol="drawCenter"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="2" lineNum="180" parent="globals/SimplexView" pc="268435585" symbol="drawCenter"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="2" lineNum="181" parent="globals/SimplexView" pc="268435610" symbol="drawCenter"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="2" lineNum="183" parent="globals/SimplexView" pc="268435628" symbol="drawCenter"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="2" lineNum="184" parent="globals/SimplexView" pc="268435645" symbol="drawCenter"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="2" lineNum="185" parent="globals/SimplexView" pc="268435670" symbol="drawCenter"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="3" lineNum="408" parent="globals/SimplexView" pc="268435692" symbol="onExitSleep"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="3" lineNum="409" parent="globals/SimplexView" pc="268435694" symbol="onExitSleep"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="202" parent="globals/SimplexView" pc="268435705" symbol="drawHand"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="205" parent="globals/SimplexView" pc="268435709" symbol="drawHand"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="206" parent="globals/SimplexView" pc="268435733" symbol="drawHand"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="208" parent="globals/SimplexView" pc="268435757" symbol="drawHand"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="210" parent="globals/SimplexView" pc="268435762" symbol="drawHand"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="212" parent="globals/SimplexView" pc="268435769" symbol="drawHand"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="214" parent="globals/SimplexView" pc="268435783" symbol="drawHand"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="215" parent="globals/SimplexView" pc="268435805" symbol="drawHand"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="217" parent="globals/SimplexView" pc="268435831" symbol="drawHand"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="219" parent="globals/SimplexView" pc="268435841" symbol="drawHand"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="220" parent="globals/SimplexView" pc="268435874" symbol="drawHand"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="222" parent="globals/SimplexView" pc="268435907" symbol="drawHand"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="223" parent="globals/SimplexView" pc="268435940" symbol="drawHand"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="225" parent="globals/SimplexView" pc="268435973" symbol="drawHand"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="232" parent="globals/SimplexView" pc="268436108" symbol="drawHand"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="234" parent="globals/SimplexView" pc="268436125" symbol="drawHand"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="236" parent="globals/SimplexView" pc="268436135" symbol="drawHand"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="239" parent="globals/SimplexView" pc="268436145" symbol="drawHand"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="241" parent="globals/SimplexView" pc="268436155" symbol="drawHand"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="242" parent="globals/SimplexView" pc="268436185" symbol="drawHand"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="244" parent="globals/SimplexView" pc="268436215" symbol="drawHand"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="245" parent="globals/SimplexView" pc="268436245" symbol="drawHand"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="247" parent="globals/SimplexView" pc="268436275" symbol="drawHand"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="248" parent="globals/SimplexView" pc="268436311" symbol="drawHand"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="250" parent="globals/SimplexView" pc="268436347" symbol="drawHand"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="251" parent="globals/SimplexView" pc="268436383" symbol="drawHand"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="253" parent="globals/SimplexView" pc="268436419" symbol="drawHand"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="255" parent="globals/SimplexView" pc="268436429" symbol="drawHand"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="256" parent="globals/SimplexView" pc="268436462" symbol="drawHand"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="258" parent="globals/SimplexView" pc="268436495" symbol="drawHand"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="259" parent="globals/SimplexView" pc="268436528" symbol="drawHand"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="261" parent="globals/SimplexView" pc="268436561" symbol="drawHand"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="262" parent="globals/SimplexView" pc="268436591" symbol="drawHand"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="264" parent="globals/SimplexView" pc="268436621" symbol="drawHand"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="265" parent="globals/SimplexView" pc="268436643" symbol="drawHand"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="267" parent="globals/SimplexView" pc="268436815" symbol="drawHand"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="270" parent="globals/SimplexView" pc="268436987" symbol="drawHand"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="271" parent="globals/SimplexView" pc="268437009" symbol="drawHand"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="4" lineNum="273" parent="globals/SimplexView" pc="268437181" symbol="drawHand"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="5" lineNum="42" parent="globals/SimplexView" pc="268437354" symbol="onShow"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="5" lineNum="46" parent="globals/SimplexView" pc="268437356" symbol="onShow"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="5" lineNum="48" parent="globals/SimplexView" pc="268437390" symbol="onShow"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="5" lineNum="49" parent="globals/SimplexView" pc="268437403" symbol="onShow"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="5" lineNum="50" parent="globals/SimplexView" pc="268437416" symbol="onShow"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="5" lineNum="51" parent="globals/SimplexView" pc="268437429" symbol="onShow"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="5" lineNum="57" parent="globals/SimplexView" pc="268437445" symbol="onShow"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="5" lineNum="58" parent="globals/SimplexView" pc="268437458" symbol="onShow"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="5" lineNum="59" parent="globals/SimplexView" pc="268437471" symbol="onShow"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="5" lineNum="60" parent="globals/SimplexView" pc="268437484" symbol="onShow"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="5" lineNum="63" parent="globals/SimplexView" pc="268437497" symbol="onShow"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="6" lineNum="34" parent="globals/SimplexView" pc="268437531" symbol="onLayout"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="6" lineNum="36" parent="globals/SimplexView" pc="268437533" symbol="onLayout"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="7" lineNum="355" parent="globals/SimplexView" pc="268437575" symbol="drawText"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="7" lineNum="357" parent="globals/SimplexView" pc="268437579" symbol="drawText"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="7" lineNum="359" parent="globals/SimplexView" pc="268437596" symbol="drawText"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="7" lineNum="362" parent="globals/SimplexView" pc="268437624" symbol="drawText"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="7" lineNum="364" parent="globals/SimplexView" pc="268437634" symbol="drawText"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="7" lineNum="366" parent="globals/SimplexView" pc="268437641" symbol="drawText"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="7" lineNum="368" parent="globals/SimplexView" pc="268437648" symbol="drawText"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="7" lineNum="370" parent="globals/SimplexView" pc="268437666" symbol="drawText"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="7" lineNum="372" parent="globals/SimplexView" pc="268437670" symbol="drawText"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="7" lineNum="374" parent="globals/SimplexView" pc="268437681" symbol="drawText"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="7" lineNum="377" parent="globals/SimplexView" pc="268437691" symbol="drawText"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="7" lineNum="379" parent="globals/SimplexView" pc="268437713" symbol="drawText"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="7" lineNum="382" parent="globals/SimplexView" pc="268437719" symbol="drawText"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="7" lineNum="384" parent="globals/SimplexView" pc="268437770" symbol="drawText"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="7" lineNum="386" parent="globals/SimplexView" pc="268437821" symbol="drawText"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="7" lineNum="388" parent="globals/SimplexView" pc="268437846" symbol="drawText"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="7" lineNum="390" parent="globals/SimplexView" pc="268437856" symbol="drawText"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="7" lineNum="395" parent="globals/SimplexView" pc="268437896" symbol="drawText"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="8" lineNum="281" parent="globals/SimplexView" pc="268437941" symbol="drawTicks"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="8" lineNum="283" parent="globals/SimplexView" pc="268437945" symbol="drawTicks"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="8" lineNum="310" parent="globals/SimplexView" pc="268437955" symbol="drawTicks"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="8" lineNum="312" parent="globals/SimplexView" pc="268437983" symbol="drawTicks"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="8" lineNum="314" parent="globals/SimplexView" pc="268438000" symbol="drawTicks"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="8" lineNum="316" parent="globals/SimplexView" pc="268438018" symbol="drawTicks"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="8" lineNum="317" parent="globals/SimplexView" pc="268438069" symbol="drawTicks"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="8" lineNum="319" parent="globals/SimplexView" pc="268438117" symbol="drawTicks"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="8" lineNum="320" parent="globals/SimplexView" pc="268438168" symbol="drawTicks"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="8" lineNum="327" parent="globals/SimplexView" pc="268438216" symbol="drawTicks"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="8" lineNum="330" parent="globals/SimplexView" pc="268438261" symbol="drawTicks"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="8" lineNum="334" parent="globals/SimplexView" pc="268438278" symbol="drawTicks"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="8" lineNum="336" parent="globals/SimplexView" pc="268438296" symbol="drawTicks"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="8" lineNum="337" parent="globals/SimplexView" pc="268438347" symbol="drawTicks"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="8" lineNum="339" parent="globals/SimplexView" pc="268438395" symbol="drawTicks"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="8" lineNum="340" parent="globals/SimplexView" pc="268438446" symbol="drawTicks"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="8" lineNum="347" parent="globals/SimplexView" pc="268438494" symbol="drawTicks"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="9" lineNum="413" parent="globals/SimplexView" pc="268438540" symbol="onEnterSleep"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="9" lineNum="414" parent="globals/SimplexView" pc="268438542" symbol="onEnterSleep"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="10" lineNum="19" parent="globals/SimplexView" pc="268438553" symbol="initialize"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="10" lineNum="21" parent="globals/SimplexView" pc="268438555" symbol="initialize"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="10" lineNum="23" parent="globals/SimplexView" pc="268438573" symbol="initialize"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="10" lineNum="25" parent="globals/SimplexView" pc="268438583" symbol="initialize"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="10" lineNum="26" parent="globals/SimplexView" pc="268438596" symbol="initialize"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="10" lineNum="27" parent="globals/SimplexView" pc="268438609" symbol="initialize"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="10" lineNum="28" parent="globals/SimplexView" pc="268438622" symbol="initialize"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="10" lineNum="30" parent="globals/SimplexView" pc="268438635" symbol="initialize"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="12" lineNum="67" parent="globals/SimplexView" pc="268438649" symbol="onUpdate"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="12" lineNum="96" parent="globals/SimplexView" pc="268438653" symbol="onUpdate"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="12" lineNum="97" parent="globals/SimplexView" pc="268438666" symbol="onUpdate"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="12" lineNum="98" parent="globals/SimplexView" pc="268438679" symbol="onUpdate"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="12" lineNum="99" parent="globals/SimplexView" pc="268438689" symbol="onUpdate"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="12" lineNum="101" parent="globals/SimplexView" pc="268438699" symbol="onUpdate"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="12" lineNum="105" parent="globals/SimplexView" pc="268438716" symbol="onUpdate"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="12" lineNum="106" parent="globals/SimplexView" pc="268438744" symbol="onUpdate"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="12" lineNum="108" parent="globals/SimplexView" pc="268438772" symbol="onUpdate"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="12" lineNum="114" parent="globals/SimplexView" pc="268438815" symbol="onUpdate"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="12" lineNum="115" parent="globals/SimplexView" pc="268438843" symbol="onUpdate"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="12" lineNum="126" parent="globals/SimplexView" pc="268438855" symbol="onUpdate"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="12" lineNum="129" parent="globals/SimplexView" pc="268438883" symbol="onUpdate"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="12" lineNum="130" parent="globals/SimplexView" pc="268438893" symbol="onUpdate"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="12" lineNum="131" parent="globals/SimplexView" pc="268438903" symbol="onUpdate"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="12" lineNum="133" parent="globals/SimplexView" pc="268438913" symbol="onUpdate"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="12" lineNum="135" parent="globals/SimplexView" pc="268438920" symbol="onUpdate"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="12" lineNum="138" parent="globals/SimplexView" pc="268438927" symbol="onUpdate"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="12" lineNum="141" parent="globals/SimplexView" pc="268438949" symbol="onUpdate"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="12" lineNum="144" parent="globals/SimplexView" pc="268438973" symbol="onUpdate"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="12" lineNum="147" parent="globals/SimplexView" pc="268438999" symbol="onUpdate"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="12" lineNum="150" parent="globals/SimplexView" pc="268439044" symbol="onUpdate"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="12" lineNum="152" parent="globals/SimplexView" pc="268439089" symbol="onUpdate"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="12" lineNum="155" parent="globals/SimplexView" pc="268439100" symbol="onUpdate"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="12" lineNum="159" parent="globals/SimplexView" pc="268439148" symbol="onUpdate"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="13" lineNum="189" parent="globals/SimplexView" pc="268439175" symbol="drawDate"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="13" lineNum="190" parent="globals/SimplexView" pc="268439179" symbol="drawDate"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="13" lineNum="192" parent="globals/SimplexView" pc="268439198" symbol="drawDate"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="13" lineNum="194" parent="globals/SimplexView" pc="268439230" symbol="drawDate"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="13" lineNum="196" parent="globals/SimplexView" pc="268439255" symbol="drawDate"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="13" lineNum="199" parent="globals/SimplexView" pc="268439262" symbol="drawDate"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" id="14" lineNum="31" parent="globals" pc="268439303" symbol="getApp"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" id="14" lineNum="32" parent="globals" pc="268439313" symbol="getApp"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexBackground.mc" id="15" lineNum="6" parent="globals/Background" pc="268439329" symbol="&lt;init&gt;"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexBackground.mc" id="16" lineNum="8" parent="globals/Background" pc="268439348" symbol="initialize"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexBackground.mc" id="16" lineNum="9" parent="globals/Background" pc="268439352" symbol="initialize"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexBackground.mc" id="16" lineNum="13" parent="globals/Background" pc="268439373" symbol="initialize"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexBackground.mc" id="17" lineNum="16" parent="globals/Background" pc="268439394" symbol="draw"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexBackground.mc" id="17" lineNum="18" parent="globals/Background" pc="268439396" symbol="draw"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexBackground.mc" id="17" lineNum="19" parent="globals/Background" pc="268439438" symbol="draw"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" id="18" lineNum="5" parent="globals/SimplexApp" pc="268439451" symbol="&lt;init&gt;"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" id="19" lineNum="12" parent="globals/SimplexApp" pc="268439470" symbol="onStart"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" id="20" lineNum="25" parent="globals/SimplexApp" pc="268439473" symbol="onSettingsChanged"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" id="20" lineNum="26" parent="globals/SimplexApp" pc="268439475" symbol="onSettingsChanged"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" id="21" lineNum="20" parent="globals/SimplexApp" pc="268439492" symbol="getInitialView"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" id="21" lineNum="21" parent="globals/SimplexApp" pc="268439494" symbol="getInitialView"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" id="22" lineNum="7" parent="globals/SimplexApp" pc="268439535" symbol="initialize"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" id="22" lineNum="8" parent="globals/SimplexApp" pc="268439537" symbol="initialize"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" id="23" lineNum="16" parent="globals/SimplexApp" pc="268439556" symbol="onStop"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/bin/gen/006-B4024-00/source/Rez.mcgen" id="24" lineNum="7" parent="globals/Rez" pc="268439559" symbol="&lt;init&gt;"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/bin/gen/006-B4024-00/source/Rez.mcgen" id="25" lineNum="19" parent="globals/Rez/Layouts" pc="268439583" symbol="WatchFace"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/bin/gen/006-B4024-00/source/Rez.mcgen" id="25" lineNum="20" parent="globals/Rez/Layouts" pc="268439595" symbol="WatchFace"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/bin/gen/006-B4024-00/source/Rez.mcgen" id="25" lineNum="22" parent="globals/Rez/Layouts" pc="268439623" symbol="WatchFace"/>
+<entry filename="/home/max/git/simplex-garmin-watchface/bin/gen/006-B4024-00/source/Rez.mcgen" id="25" lineNum="24" parent="globals/Rez/Layouts" pc="268439758" symbol="WatchFace"/>
 </pcToLineNum>
 <symbolTable>
 <entry id="8388639" module="true" symbol="Graphics"/>
 <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
-<entry id="12" method="true" symbol="drawDate"/>
+<entry id="13" method="true" symbol="drawDate"/>
 <entry id="7" module="true" symbol="globals/Rez/Menus"/>
+<entry field="true" id="29" symbol="ColorGreen"/>
 <entry id="8389683" method="true" symbol="onSettingsChanged"/>
-<entry field="true" id="25" symbol="ColorRed"/>
-<entry field="true" id="28" symbol="MilitaryFormatTitle"/>
+<entry field="true" id="33" symbol="ColorRed"/>
+<entry field="true" id="31" symbol="ColorOliveGreen"/>
+<entry field="true" id="37" symbol="MilitaryFormatTitle"/>
 <entry field="true" id="8388611" module="true" symbol="Toybox"/>
-<entry field="true" id="22" symbol="ColorBlue"/>
-<entry field="true" id="19" symbol="AppName"/>
+<entry field="true" id="27" symbol="ColorBlue"/>
+<entry field="true" id="24" symbol="AppName"/>
 <entry id="8" module="true" symbol="globals/Rez/Strings"/>
 <entry id="9" object="true" symbol="SimplexApp"/>
 <entry id="8388772" module="true" object="true" symbol="Fonts"/>
 <entry id="8388648" module="true" symbol="WatchUi"/>
+<entry field="true" id="32" symbol="ColorOrange"/>
 <entry id="2" module="true" symbol="globals/Rez"/>
+<entry field="true" id="18" symbol="left_hand_color"/>
 <entry id="8389124" method="true" symbol="onUpdate"/>
 <entry id="8389375" method="true" object="true" symbol="WatchFace"/>
 <entry field="true" id="8389065" symbol="locY"/>
 <entry field="true" id="8389064" symbol="locX"/>
 <entry id="8388771" module="true" object="true" symbol="Drawables"/>
 <entry id="8389348" symbol="font"/>
-<entry id="17" module="true" symbol="Menus"/>
+<entry id="22" module="true" symbol="Menus"/>
 <entry id="8389275" method="true" symbol="getApp"/>
-<entry field="true" id="23" symbol="ColorDarkGray"/>
+<entry field="true" id="28" symbol="ColorDarkGray"/>
 <entry id="6" module="true" symbol="globals/Rez/Layouts"/>
 <entry id="8389122" method="true" symbol="onLayout"/>
 <entry id="8389376" method="true" symbol="onEnterSleep"/>
 <entry field="true" id="8389063" symbol="identifier"/>
 <entry id="8389349" symbol="justification"/>
-<entry id="11" method="true" symbol="drawCenter"/>
-<entry field="true" id="26" symbol="ColorWhite"/>
+<entry id="12" method="true" symbol="drawCenter"/>
+<entry field="true" id="35" symbol="ColorWhite"/>
 <entry id="5" module="true" symbol="globals/Rez/JsonData"/>
-<entry field="true" id="21" symbol="ColorBlack"/>
+<entry field="true" id="26" symbol="ColorBlack"/>
 <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+<entry field="true" id="17" symbol="foreground_color"/>
 <entry id="8389377" method="true" symbol="onExitSleep"/>
 <entry id="8388644" module="true" symbol="System"/>
 <entry id="8388769" module="true" object="true" symbol="Rez"/>
+<entry field="true" id="19" symbol="right_hand_color"/>
 <entry id="8388640" module="true" symbol="Lang"/>
+<entry field="true" id="34" symbol="ColorTurquoise"/>
 <entry id="8390088" module="true" object="true" symbol="JsonData"/>
-<entry id="13" method="true" symbol="drawHand"/>
+<entry id="14" method="true" symbol="drawHand"/>
 <entry id="8389068" method="true" symbol="draw"/>
-<entry field="true" id="18" symbol="LauncherIcon"/>
+<entry field="true" id="23" symbol="LauncherIcon"/>
 <entry id="8388610" symbol="statics"/>
 <entry id="8389123" method="true" symbol="onShow"/>
-<entry id="15" method="true" symbol="drawTicks"/>
+<entry id="16" method="true" symbol="drawTicks"/>
 <entry id="8389350" module="true" symbol="globals"/>
-<entry field="true" id="20" symbol="BackgroundColorTitle"/>
+<entry field="true" id="25" symbol="BackgroundColorTitle"/>
 <entry id="8388770" module="true" object="true" symbol="Strings"/>
 <entry id="8390146" module="true" object="true" symbol="Background"/>
 <entry id="8388702" method="true" symbol="initialize"/>
 <entry id="8389279" method="true" symbol="onStart"/>
 <entry id="10" object="true" symbol="SimplexView"/>
 <entry id="8389190" method="true" symbol="drawText"/>
-<entry field="true" id="24" symbol="ColorLightGray"/>
+<entry field="true" id="30" symbol="ColorLightGray"/>
+<entry field="true" id="11" symbol="background_color"/>
 <entry id="8389280" method="true" symbol="getInitialView"/>
 <entry id="8389281" method="true" symbol="onStop"/>
+<entry field="true" id="20" symbol="seconds_hand_color"/>
 <entry id="8389347" symbol="color"/>
-<entry field="true" id="27" symbol="ForegroundColorTitle"/>
-<entry id="16" module="true" symbol="Layouts"/>
-<entry field="true" id="14" symbol="drawSecondsHand"/>
+<entry field="true" id="36" symbol="ForegroundColorTitle"/>
+<entry id="21" module="true" symbol="Layouts"/>
+<entry field="true" id="15" symbol="drawSecondsHand"/>
 <entry id="4" module="true" symbol="globals/Rez/Fonts"/>
 <entry id="8389125" method="true" symbol="onHide"/>
 <entry id="8388635" module="true" symbol="Application"/>
 </symbolTable>
 <localVars>
-<entry arg="true" endPc="268435682" name="dc" stackId="1" startPc="268435479"/>
-<entry arg="true" endPc="268435682" name="center_x" stackId="2" startPc="268435479"/>
-<entry arg="true" endPc="268435682" name="center_y" stackId="3" startPc="268435479"/>
-<entry arg="true" endPc="268435682" name="color_sec" stackId="4" startPc="268435479"/>
-<entry endPc="268435681" name="outer_diameter" stackId="5" startPc="268435483"/>
-<entry arg="true" endPc="268437053" name="dc" stackId="1" startPc="268435696"/>
-<entry arg="true" endPc="268437053" name="center_x" stackId="2" startPc="268435696"/>
-<entry arg="true" endPc="268437053" name="center_y" stackId="3" startPc="268435696"/>
-<entry arg="true" endPc="268437053" name="length" stackId="4" startPc="268435696"/>
-<entry arg="true" endPc="268437053" name="width" stackId="5" startPc="268435696"/>
-<entry arg="true" endPc="268437053" name="degree" stackId="6" startPc="268435696"/>
-<entry arg="true" endPc="268437053" name="color_left" stackId="7" startPc="268435696"/>
-<entry arg="true" endPc="268437053" name="color_right" stackId="8" startPc="268435696"/>
-<entry arg="true" endPc="268437053" name="draw_line" stackId="9" startPc="268435696"/>
-<entry endPc="268437052" name="target_x" stackId="10" startPc="268435700"/>
-<entry endPc="268437052" name="target_y" stackId="11" startPc="268435700"/>
-<entry endPc="268436092" name="tip_deg" stackId="12" startPc="268435753"/>
-<entry endPc="268436092" name="tail_length" stackId="13" startPc="268435753"/>
-<entry endPc="268436092" name="left_peak_x" stackId="14" startPc="268435753"/>
-<entry endPc="268436092" name="left_peak_y" stackId="15" startPc="268435753"/>
-<entry endPc="268436092" name="right_peak_x" stackId="16" startPc="268435753"/>
-<entry endPc="268436092" name="right_peak_y" stackId="17" startPc="268435753"/>
-<entry endPc="268437052" name="tip_deg" stackId="18" startPc="268436096"/>
-<entry endPc="268437052" name="tip" stackId="19" startPc="268436096"/>
-<entry endPc="268437052" name="left_peak_x" stackId="20" startPc="268436096"/>
-<entry endPc="268437052" name="left_peak_y" stackId="21" startPc="268436096"/>
-<entry endPc="268437052" name="right_peak_x" stackId="22" startPc="268436096"/>
-<entry endPc="268437052" name="right_peak_y" stackId="23" startPc="268436096"/>
-<entry endPc="268437052" name="left_width_x" stackId="24" startPc="268436096"/>
-<entry endPc="268437052" name="left_width_y" stackId="25" startPc="268436096"/>
-<entry endPc="268437052" name="right_width_x" stackId="26" startPc="268436096"/>
-<entry endPc="268437052" name="right_width_y" stackId="27" startPc="268436096"/>
-<entry endPc="268437052" name="tail_length" stackId="28" startPc="268436096"/>
-<entry endPc="268437052" name="tail_left_peak_x" stackId="29" startPc="268436096"/>
-<entry endPc="268437052" name="tail_left_peak_y" stackId="30" startPc="268436096"/>
-<entry endPc="268437052" name="tail_right_peak_x" stackId="31" startPc="268436096"/>
-<entry endPc="268437052" name="tail_right_peak_y" stackId="32" startPc="268436096"/>
-<entry arg="true" endPc="268437097" name="dc" stackId="1" startPc="268437054"/>
-<entry arg="true" endPc="268437435" name="dc" stackId="1" startPc="268437098"/>
-<entry arg="true" endPc="268437435" name="center_x" stackId="2" startPc="268437098"/>
-<entry arg="true" endPc="268437435" name="center_y" stackId="3" startPc="268437098"/>
-<entry arg="true" endPc="268437435" name="screen_width" stackId="4" startPc="268437098"/>
-<entry arg="true" endPc="268437435" name="screen_height" stackId="5" startPc="268437098"/>
-<entry arg="true" endPc="268437435" name="draw_date" stackId="6" startPc="268437098"/>
-<entry endPc="268437434" name="offset" stackId="7" startPc="268437102"/>
-<entry endPc="268437434" name="length_text" stackId="8" startPc="268437102"/>
-<entry endPc="268437434" name="text_steps" stackId="9" startPc="268437102"/>
-<entry endPc="268437434" name="i" stackId="10" startPc="268437161"/>
-<entry endPc="268437424" name="hourStr" stackId="11" startPc="268437161"/>
-<entry endPc="268437424" name="text_x" stackId="12" startPc="268437161"/>
-<entry endPc="268437424" name="text_y" stackId="13" startPc="268437161"/>
-<entry endPc="268437387" name="off" stackId="14" startPc="268437341"/>
-<entry arg="true" endPc="268438237" name="dc" stackId="1" startPc="268437436"/>
-<entry arg="true" endPc="268438237" name="center_x" stackId="2" startPc="268437436"/>
-<entry arg="true" endPc="268438237" name="center_y" stackId="3" startPc="268437436"/>
-<entry arg="true" endPc="268438237" name="screen_width" stackId="4" startPc="268437436"/>
-<entry arg="true" endPc="268438237" name="screen_height" stackId="5" startPc="268437436"/>
-<entry arg="true" endPc="268438237" name="length_long" stackId="6" startPc="268437436"/>
-<entry arg="true" endPc="268438237" name="length_short" stackId="7" startPc="268437436"/>
-<entry endPc="268438236" name="offset" stackId="8" startPc="268437440"/>
-<entry endPc="268438236" name="stats" stackId="9" startPc="268437440"/>
-<entry endPc="268438236" name="battery_percent" stackId="10" startPc="268437440"/>
-<entry endPc="268438236" name="color_on" stackId="11" startPc="268437440"/>
-<entry endPc="268438236" name="color_off" stackId="12" startPc="268437440"/>
-<entry endPc="268437903" name="i" stackId="13" startPc="268437625"/>
-<entry endPc="268437890" name="start_x" stackId="14" startPc="268437625"/>
-<entry endPc="268437890" name="end_x" stackId="15" startPc="268437625"/>
-<entry endPc="268437890" name="start_y" stackId="16" startPc="268437625"/>
-<entry endPc="268437890" name="end_y" stackId="17" startPc="268437625"/>
-<entry endPc="268438236" name="i" stackId="18" startPc="268437958"/>
-<entry endPc="268438223" name="start_x" stackId="19" startPc="268437958"/>
-<entry endPc="268438223" name="end_x" stackId="20" startPc="268437958"/>
-<entry endPc="268438223" name="start_y" stackId="21" startPc="268437958"/>
-<entry endPc="268438223" name="end_y" stackId="22" startPc="268437958"/>
-<entry arg="true" endPc="268438762" name="dc" stackId="1" startPc="268438272"/>
-<entry endPc="268438761" name="screen_width" stackId="2" startPc="268438276"/>
-<entry endPc="268438761" name="screen_height" stackId="3" startPc="268438276"/>
-<entry endPc="268438761" name="center_x" stackId="4" startPc="268438276"/>
-<entry endPc="268438761" name="center_y" stackId="5" startPc="268438276"/>
-<entry endPc="268438761" name="clockTime" stackId="6" startPc="268438276"/>
-<entry endPc="268438761" name="degSec" stackId="7" startPc="268438276"/>
-<entry endPc="268438761" name="degMin" stackId="8" startPc="268438276"/>
-<entry endPc="268438761" name="degHour" stackId="9" startPc="268438276"/>
-<entry endPc="268438761" name="sec_hand_length" stackId="10" startPc="268438276"/>
-<entry endPc="268438761" name="min_hand_length" stackId="11" startPc="268438276"/>
-<entry endPc="268438761" name="hour_hand_length" stackId="12" startPc="268438276"/>
-<entry endPc="268438761" name="color_sec" stackId="13" startPc="268438276"/>
-<entry endPc="268438761" name="length_long" stackId="14" startPc="268438276"/>
-<entry endPc="268438761" name="length_short" stackId="15" startPc="268438276"/>
-<entry arg="true" endPc="268438890" name="dc" stackId="1" startPc="268438763"/>
-<entry arg="true" endPc="268438890" name="center_x" stackId="2" startPc="268438763"/>
-<entry arg="true" endPc="268438890" name="center_y" stackId="3" startPc="268438763"/>
-<entry arg="true" endPc="268438890" name="screen_width" stackId="4" startPc="268438763"/>
-<entry arg="true" endPc="268438890" name="screen_height" stackId="5" startPc="268438763"/>
-<entry endPc="268438889" name="now" stackId="6" startPc="268438767"/>
-<entry endPc="268438889" name="date" stackId="7" startPc="268438767"/>
-<entry endPc="268438889" name="dateStr" stackId="8" startPc="268438767"/>
-<entry endPc="268438889" name="font" stackId="9" startPc="268438767"/>
-<entry endPc="268438980" name="dictionary" stackId="1" startPc="268438940"/>
-<entry arg="true" endPc="268439038" name="dc" stackId="1" startPc="268438982"/>
-<entry arg="true" endPc="268439372" name="dc" stackId="1" startPc="268439171"/>
-<entry endPc="268439372" name="rez_cmp_local_custom_drawable_69677818318814202591" stackId="2" startPc="268439183"/>
-<entry endPc="268439372" name="rez_cmp_local_text_TimeLabel" stackId="3" startPc="268439183"/>
+<entry arg="true" endPc="268435691" name="dc" stackId="1" startPc="268435479"/>
+<entry arg="true" endPc="268435691" name="center_x" stackId="2" startPc="268435479"/>
+<entry arg="true" endPc="268435691" name="center_y" stackId="3" startPc="268435479"/>
+<entry arg="true" endPc="268435691" name="seconds_hand_color" stackId="4" startPc="268435479"/>
+<entry endPc="268435690" name="outer_diameter" stackId="5" startPc="268435483"/>
+<entry arg="true" endPc="268437353" name="dc" stackId="1" startPc="268435705"/>
+<entry arg="true" endPc="268437353" name="center_x" stackId="2" startPc="268435705"/>
+<entry arg="true" endPc="268437353" name="center_y" stackId="3" startPc="268435705"/>
+<entry arg="true" endPc="268437353" name="length" stackId="4" startPc="268435705"/>
+<entry arg="true" endPc="268437353" name="width" stackId="5" startPc="268435705"/>
+<entry arg="true" endPc="268437353" name="degree" stackId="6" startPc="268435705"/>
+<entry arg="true" endPc="268437353" name="color_left" stackId="7" startPc="268435705"/>
+<entry arg="true" endPc="268437353" name="color_right" stackId="8" startPc="268435705"/>
+<entry arg="true" endPc="268437353" name="draw_line" stackId="9" startPc="268435705"/>
+<entry endPc="268437352" name="target_x" stackId="10" startPc="268435709"/>
+<entry endPc="268437352" name="target_y" stackId="11" startPc="268435709"/>
+<entry endPc="268436104" name="tip_deg" stackId="12" startPc="268435762"/>
+<entry endPc="268436104" name="tail_length" stackId="13" startPc="268435762"/>
+<entry endPc="268436104" name="left_peak_x" stackId="14" startPc="268435762"/>
+<entry endPc="268436104" name="left_peak_y" stackId="15" startPc="268435762"/>
+<entry endPc="268436104" name="right_peak_x" stackId="16" startPc="268435762"/>
+<entry endPc="268436104" name="right_peak_y" stackId="17" startPc="268435762"/>
+<entry endPc="268437352" name="tip_deg" stackId="18" startPc="268436108"/>
+<entry endPc="268437352" name="tail_deg" stackId="19" startPc="268436108"/>
+<entry endPc="268437352" name="tip" stackId="20" startPc="268436108"/>
+<entry endPc="268437352" name="left_peak_x" stackId="21" startPc="268436108"/>
+<entry endPc="268437352" name="left_peak_y" stackId="22" startPc="268436108"/>
+<entry endPc="268437352" name="right_peak_x" stackId="23" startPc="268436108"/>
+<entry endPc="268437352" name="right_peak_y" stackId="24" startPc="268436108"/>
+<entry endPc="268437352" name="left_width_x" stackId="25" startPc="268436108"/>
+<entry endPc="268437352" name="left_width_y" stackId="26" startPc="268436108"/>
+<entry endPc="268437352" name="right_width_x" stackId="27" startPc="268436108"/>
+<entry endPc="268437352" name="right_width_y" stackId="28" startPc="268436108"/>
+<entry endPc="268437352" name="tail_length" stackId="29" startPc="268436108"/>
+<entry endPc="268437352" name="tail_left_peak_x" stackId="30" startPc="268436108"/>
+<entry endPc="268437352" name="tail_left_peak_y" stackId="31" startPc="268436108"/>
+<entry endPc="268437352" name="tail_right_peak_x" stackId="32" startPc="268436108"/>
+<entry endPc="268437352" name="tail_right_peak_y" stackId="33" startPc="268436108"/>
+<entry endPc="268437352" name="tail_end_x" stackId="34" startPc="268436108"/>
+<entry endPc="268437352" name="tail_end_y" stackId="35" startPc="268436108"/>
+<entry arg="true" endPc="268437574" name="dc" stackId="1" startPc="268437531"/>
+<entry arg="true" endPc="268437940" name="dc" stackId="1" startPc="268437575"/>
+<entry arg="true" endPc="268437940" name="center_x" stackId="2" startPc="268437575"/>
+<entry arg="true" endPc="268437940" name="center_y" stackId="3" startPc="268437575"/>
+<entry arg="true" endPc="268437940" name="screen_width" stackId="4" startPc="268437575"/>
+<entry arg="true" endPc="268437940" name="screen_height" stackId="5" startPc="268437575"/>
+<entry arg="true" endPc="268437940" name="draw_date" stackId="6" startPc="268437575"/>
+<entry endPc="268437939" name="offset" stackId="7" startPc="268437579"/>
+<entry endPc="268437939" name="length_text" stackId="8" startPc="268437579"/>
+<entry endPc="268437939" name="text_steps" stackId="9" startPc="268437579"/>
+<entry endPc="268437939" name="i" stackId="10" startPc="268437666"/>
+<entry endPc="268437929" name="hourStr" stackId="11" startPc="268437666"/>
+<entry endPc="268437929" name="text_x" stackId="12" startPc="268437666"/>
+<entry endPc="268437929" name="text_y" stackId="13" startPc="268437666"/>
+<entry endPc="268437892" name="off" stackId="14" startPc="268437846"/>
+<entry arg="true" endPc="268438539" name="dc" stackId="1" startPc="268437941"/>
+<entry arg="true" endPc="268438539" name="center_x" stackId="2" startPc="268437941"/>
+<entry arg="true" endPc="268438539" name="center_y" stackId="3" startPc="268437941"/>
+<entry arg="true" endPc="268438539" name="screen_width" stackId="4" startPc="268437941"/>
+<entry arg="true" endPc="268438539" name="screen_height" stackId="5" startPc="268437941"/>
+<entry arg="true" endPc="268438539" name="length_long" stackId="6" startPc="268437941"/>
+<entry arg="true" endPc="268438539" name="length_short" stackId="7" startPc="268437941"/>
+<entry endPc="268438538" name="offset" stackId="8" startPc="268437945"/>
+<entry endPc="268438260" name="i" stackId="9" startPc="268438018"/>
+<entry endPc="268438247" name="start_x" stackId="10" startPc="268438018"/>
+<entry endPc="268438247" name="end_x" stackId="11" startPc="268438018"/>
+<entry endPc="268438247" name="start_y" stackId="12" startPc="268438018"/>
+<entry endPc="268438247" name="end_y" stackId="13" startPc="268438018"/>
+<entry endPc="268438538" name="i" stackId="14" startPc="268438296"/>
+<entry endPc="268438525" name="start_x" stackId="15" startPc="268438296"/>
+<entry endPc="268438525" name="end_x" stackId="16" startPc="268438296"/>
+<entry endPc="268438525" name="start_y" stackId="17" startPc="268438296"/>
+<entry endPc="268438525" name="end_y" stackId="18" startPc="268438296"/>
+<entry arg="true" endPc="268439174" name="dc" stackId="1" startPc="268438649"/>
+<entry endPc="268439173" name="screen_width" stackId="2" startPc="268438653"/>
+<entry endPc="268439173" name="screen_height" stackId="3" startPc="268438653"/>
+<entry endPc="268439173" name="center_x" stackId="4" startPc="268438653"/>
+<entry endPc="268439173" name="center_y" stackId="5" startPc="268438653"/>
+<entry endPc="268439173" name="clockTime" stackId="6" startPc="268438653"/>
+<entry endPc="268439173" name="degSec" stackId="7" startPc="268438653"/>
+<entry endPc="268439173" name="degMin" stackId="8" startPc="268438653"/>
+<entry endPc="268439173" name="degHour" stackId="9" startPc="268438653"/>
+<entry endPc="268439173" name="sec_hand_length" stackId="10" startPc="268438653"/>
+<entry endPc="268439173" name="min_hand_length" stackId="11" startPc="268438653"/>
+<entry endPc="268439173" name="hour_hand_length" stackId="12" startPc="268438653"/>
+<entry endPc="268439173" name="length_long" stackId="13" startPc="268438653"/>
+<entry endPc="268439173" name="length_short" stackId="14" startPc="268438653"/>
+<entry arg="true" endPc="268439302" name="dc" stackId="1" startPc="268439175"/>
+<entry arg="true" endPc="268439302" name="center_x" stackId="2" startPc="268439175"/>
+<entry arg="true" endPc="268439302" name="center_y" stackId="3" startPc="268439175"/>
+<entry arg="true" endPc="268439302" name="screen_width" stackId="4" startPc="268439175"/>
+<entry arg="true" endPc="268439302" name="screen_height" stackId="5" startPc="268439175"/>
+<entry endPc="268439301" name="now" stackId="6" startPc="268439179"/>
+<entry endPc="268439301" name="date" stackId="7" startPc="268439179"/>
+<entry endPc="268439301" name="dateStr" stackId="8" startPc="268439179"/>
+<entry endPc="268439301" name="font" stackId="9" startPc="268439179"/>
+<entry endPc="268439392" name="dictionary" stackId="1" startPc="268439352"/>
+<entry arg="true" endPc="268439450" name="dc" stackId="1" startPc="268439394"/>
+<entry arg="true" endPc="268439784" name="dc" stackId="1" startPc="268439583"/>
+<entry endPc="268439784" name="rez_cmp_local_custom_drawable_39375828212928134421" stackId="2" startPc="268439595"/>
+<entry endPc="268439784" name="rez_cmp_local_text_TimeLabel" stackId="3" startPc="268439595"/>
 </localVars>
 <annotations>
 <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="MilitaryFormatTitle"/>
 <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
-<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="BackgroundColorTitle"/>
-<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorRed"/>
-<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorDarkGray"/>
 <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorWhite"/>
 <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ForegroundColorTitle"/>
 <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorLightGray"/>
 <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
 <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorBlue"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorGreen"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorTurquoise"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="BackgroundColorTitle"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorOliveGreen"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorRed"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorDarkGray"/>
 <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorBlack"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorOrange"/>
 </annotations>
 <dataEntryOffsetMappings>
 <dataEntry label="globals" offset="87" parentId="" symbolId="globals" type="module"/>
 <dataEntry label="globals/SimplexView" offset="166" parentId="globals" symbolId="SimplexView" type="class"/>
-<dataEntry label="globals/Background" offset="309" parentId="globals" symbolId="Background" type="class"/>
-<dataEntry label="globals/SimplexApp" offset="364" parentId="globals" symbolId="SimplexApp" type="class"/>
-<dataEntry label="globals/Rez" offset="443" parentId="globals" symbolId="Rez" type="module"/>
-<dataEntry label="globals/Rez/Drawables" offset="522" parentId="Rez" symbolId="Drawables" type="module"/>
-<dataEntry label="globals/Rez/Layouts" offset="561" parentId="Rez" symbolId="Layouts" type="module"/>
-<dataEntry label="globals/Rez/Menus" offset="600" parentId="Rez" symbolId="Menus" type="module"/>
-<dataEntry label="globals/Rez/Fonts" offset="631" parentId="Rez" symbolId="Fonts" type="module"/>
-<dataEntry label="globals/Rez/Strings" offset="662" parentId="Rez" symbolId="Strings" type="module"/>
-<dataEntry label="globals/Rez/JsonData" offset="773" parentId="Rez" symbolId="JsonData" type="module"/>
+<dataEntry label="globals/Background" offset="349" parentId="globals" symbolId="Background" type="class"/>
+<dataEntry label="globals/SimplexApp" offset="404" parentId="globals" symbolId="SimplexApp" type="class"/>
+<dataEntry label="globals/Rez" offset="483" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry label="globals/Rez/Drawables" offset="562" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry label="globals/Rez/Layouts" offset="601" parentId="Rez" symbolId="Layouts" type="module"/>
+<dataEntry label="globals/Rez/Menus" offset="640" parentId="Rez" symbolId="Menus" type="module"/>
+<dataEntry label="globals/Rez/Fonts" offset="671" parentId="Rez" symbolId="Fonts" type="module"/>
+<dataEntry label="globals/Rez/Strings" offset="702" parentId="Rez" symbolId="Strings" type="module"/>
+<dataEntry label="globals/Rez/JsonData" offset="845" parentId="Rez" symbolId="JsonData" type="module"/>
 </dataEntryOffsetMappings>
 <functions>
 <functionEntry accessMode="public" endPc="268435478" name="&lt;init&gt;" parent="SimplexView" startPc="268435460">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268435682" name="drawCenter" parent="SimplexView" startPc="268435479">
+<functionEntry accessMode="public" endPc="268435691" name="drawCenter" parent="SimplexView" startPc="268435479">
 <param id="dc"/>
 <param id="center_x"/>
 <param id="center_y"/>
-<param id="color_sec"/>
+<param id="seconds_hand_color"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268435695" name="onExitSleep" parent="SimplexView" startPc="268435683">
+<functionEntry accessMode="public" endPc="268435704" name="onExitSleep" parent="SimplexView" startPc="268435692">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268437053" name="drawHand" parent="SimplexView" startPc="268435696">
+<functionEntry accessMode="public" endPc="268437353" name="drawHand" parent="SimplexView" startPc="268435705">
 <param id="dc"/>
 <param id="center_x"/>
 <param id="center_y"/>
@@ -387,14 +403,14 @@
 <param id="draw_line"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" name="onShow" parent="SimplexView">
+<functionEntry accessMode="public" endPc="268437530" name="onShow" parent="SimplexView" startPc="268437354">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268437097" name="onLayout" parent="SimplexView" startPc="268437054">
+<functionEntry accessMode="public" endPc="268437574" name="onLayout" parent="SimplexView" startPc="268437531">
 <param id="dc"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268437435" name="drawText" parent="SimplexView" startPc="268437098">
+<functionEntry accessMode="public" endPc="268437940" name="drawText" parent="SimplexView" startPc="268437575">
 <param id="dc"/>
 <param id="center_x"/>
 <param id="center_y"/>
@@ -403,7 +419,7 @@
 <param id="draw_date"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268438237" name="drawTicks" parent="SimplexView" startPc="268437436">
+<functionEntry accessMode="public" endPc="268438539" name="drawTicks" parent="SimplexView" startPc="268437941">
 <param id="dc"/>
 <param id="center_x"/>
 <param id="center_y"/>
@@ -413,20 +429,20 @@
 <param id="length_short"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268438250" name="onEnterSleep" parent="SimplexView" startPc="268438238">
+<functionEntry accessMode="public" endPc="268438552" name="onEnterSleep" parent="SimplexView" startPc="268438540">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268438271" name="initialize" parent="SimplexView" startPc="268438251">
+<functionEntry accessMode="public" endPc="268438648" name="initialize" parent="SimplexView" startPc="268438553">
 <documentation/>
 </functionEntry>
 <functionEntry accessMode="public" name="onHide" parent="SimplexView">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268438762" name="onUpdate" parent="SimplexView" startPc="268438272">
+<functionEntry accessMode="public" endPc="268439174" name="onUpdate" parent="SimplexView" startPc="268438649">
 <param id="dc"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268438890" name="drawDate" parent="SimplexView" startPc="268438763">
+<functionEntry accessMode="public" endPc="268439302" name="drawDate" parent="SimplexView" startPc="268439175">
 <param id="dc"/>
 <param id="center_x"/>
 <param id="center_y"/>
@@ -434,40 +450,40 @@
 <param id="screen_height"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268438916" name="getApp" startPc="268438891">
+<functionEntry accessMode="public" endPc="268439328" name="getApp" startPc="268439303">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268438935" name="&lt;init&gt;" parent="Background" startPc="268438917">
+<functionEntry accessMode="public" endPc="268439347" name="&lt;init&gt;" parent="Background" startPc="268439329">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268438981" name="initialize" parent="Background" startPc="268438936">
+<functionEntry accessMode="public" endPc="268439393" name="initialize" parent="Background" startPc="268439348">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268439038" name="draw" parent="Background" startPc="268438982">
+<functionEntry accessMode="public" endPc="268439450" name="draw" parent="Background" startPc="268439394">
 <param id="dc"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268439057" name="&lt;init&gt;" parent="SimplexApp" startPc="268439039">
+<functionEntry accessMode="public" endPc="268439469" name="&lt;init&gt;" parent="SimplexApp" startPc="268439451">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268439060" name="onStart" parent="SimplexApp" startPc="268439058">
+<functionEntry accessMode="public" endPc="268439472" name="onStart" parent="SimplexApp" startPc="268439470">
 <param id="state"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268439079" name="onSettingsChanged" parent="SimplexApp" startPc="268439061">
+<functionEntry accessMode="public" endPc="268439491" name="onSettingsChanged" parent="SimplexApp" startPc="268439473">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268439122" name="getInitialView" parent="SimplexApp" startPc="268439080">
+<functionEntry accessMode="public" endPc="268439534" name="getInitialView" parent="SimplexApp" startPc="268439492">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268439143" name="initialize" parent="SimplexApp" startPc="268439123">
+<functionEntry accessMode="public" endPc="268439555" name="initialize" parent="SimplexApp" startPc="268439535">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268439146" name="onStop" parent="SimplexApp" startPc="268439144">
+<functionEntry accessMode="public" endPc="268439558" name="onStop" parent="SimplexApp" startPc="268439556">
 <param id="state"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268439170" name="&lt;init&gt;" parent="Rez" startPc="268439147">
+<functionEntry accessMode="public" endPc="268439582" name="&lt;init&gt;" parent="Rez" startPc="268439559">
 <documentation/>
 </functionEntry>
 <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
@@ -488,7 +504,7 @@
 <functionEntry accessMode="public" name="&lt;init&gt;" parent="JsonData">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268439372" name="WatchFace" parent="Layouts" startPc="268439171">
+<functionEntry accessMode="public" endPc="268439784" name="WatchFace" parent="Layouts" startPc="268439583">
 <param id="dc"/>
 <documentation/>
 </functionEntry>

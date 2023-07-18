@@ -4,27 +4,69 @@ import Toybox.Lang;
 import Toybox.System;
 import Toybox.WatchUi;
 
-class SimplexView extends WatchUi.WatchFace {
+class SimplexView extends WatchUi.WatchFace 
+{
 
-    var drawSecondsHand = true;
+    var drawSecondsHand;
 
-    function initialize() {
+    var background_color;
+    var foreground_color;
+    var left_hand_color;
+    var right_hand_color;
+
+    var seconds_hand_color;
+
+    function initialize() 
+    {
         WatchFace.initialize();
+
+        drawSecondsHand = true;
+
+        background_color = Graphics.COLOR_BLACK;
+        foreground_color = Graphics.COLOR_WHITE;
+        left_hand_color = Graphics.COLOR_LT_GRAY;
+        right_hand_color = Graphics.COLOR_WHITE;
+
+        seconds_hand_color = Graphics.COLOR_RED;
     }
 
     // Load your resources here
-    function onLayout(dc as Dc) as Void {
+    function onLayout(dc as Dc) as Void 
+    {
         setLayout(Rez.Layouts.WatchFace(dc));
     }
 
     // Called when this View is brought to the foreground. Restore
     // the state of this View and prepare it to be shown. This includes
     // loading resources into memory.
-    function onShow() as Void {
+    function onShow() as Void 
+    {
+
+        //black theme (TODO: chnage to 0)
+        if(getApp().getProperty("Theme") as Number == 1)
+        {
+            background_color = Graphics.COLOR_BLACK;
+            foreground_color = Graphics.COLOR_WHITE;
+            left_hand_color = Graphics.COLOR_LT_GRAY;
+            right_hand_color = Graphics.COLOR_WHITE;
+        }
+
+        //white theme
+        else 
+        {
+            background_color = Graphics.COLOR_WHITE;
+            foreground_color = Graphics.COLOR_BLACK;
+            left_hand_color = Graphics.COLOR_DK_GRAY;
+            right_hand_color = Graphics.COLOR_BLACK;
+        }
+
+        seconds_hand_color = getApp().getProperty("SecondsHandColor") as Number;
     }
 
     // Update the view
-    function onUpdate(dc as Dc) as Void {
+    function onUpdate(dc as Dc) as Void 
+    {
+
         // // Get the current time and format it correctly
         // var timeFormat = "$1$:$2$";
         // var clockTime = System.getClockTime();
@@ -68,7 +110,8 @@ class SimplexView extends WatchUi.WatchFace {
         // System.println(degMin);
         // System.println(degHour);
 
-        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
+        //clear the screen
+        dc.setColor(background_color, background_color);
         dc.clear();
 
         // // Get and show the current time
@@ -80,14 +123,12 @@ class SimplexView extends WatchUi.WatchFace {
         // // Call the parent onUpdate function to redraw the layout
         // View.onUpdate(dc);
 
-        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
+        dc.setColor(foreground_color, background_color);
 
 
         var sec_hand_length = screen_width/2.1;
         var min_hand_length = screen_width/2.3;
         var hour_hand_length = screen_width/3.3;
-
-        var color_sec = Graphics.COLOR_RED;
 
         var length_long = 15;
 
@@ -103,30 +144,30 @@ class SimplexView extends WatchUi.WatchFace {
         drawTicks(dc,center_x,center_y, screen_width, screen_height, length_long, length_short);
 
         // draw the hours hand
-        drawHand(dc, center_x,center_y, hour_hand_length,8.0,degHour, Graphics.COLOR_LT_GRAY, Graphics.COLOR_WHITE, false);
+        drawHand(dc, center_x,center_y, hour_hand_length,8.0,degHour, left_hand_color, right_hand_color, false);
 
         // draw the minutes hand
-        drawHand(dc, center_x,center_y, min_hand_length,4.0, degMin, Graphics.COLOR_LT_GRAY, Graphics.COLOR_WHITE, false);
+        drawHand(dc, center_x,center_y, min_hand_length,4.0, degMin, left_hand_color, right_hand_color, false);
 
         if(drawSecondsHand)
         {
             // draw the seconds hand
-            drawHand(dc, center_x,center_y ,sec_hand_length,2,degSec, color_sec, color_sec, true);
+            drawHand(dc, center_x,center_y ,sec_hand_length,2,degSec, seconds_hand_color, seconds_hand_color, true);
         }
 
         //draw the center
-        drawCenter(dc, center_x,center_y, color_sec);
+        drawCenter(dc, center_x,center_y, seconds_hand_color);
 
     }
 
-    function drawCenter(dc, center_x, center_y, color_sec) {
+    function drawCenter(dc, center_x, center_y, seconds_hand_color) {
 
         var outer_diameter = 3;
 
         if(drawSecondsHand)
         {
             dc.setPenWidth(6);
-            dc.setColor(color_sec, Graphics.COLOR_BLACK);
+            dc.setColor(seconds_hand_color, background_color);
             dc.drawCircle(center_x, center_y, 4);
         }
 
@@ -136,11 +177,11 @@ class SimplexView extends WatchUi.WatchFace {
         }
 
         dc.setPenWidth(outer_diameter);
-        dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_BLACK);
+        dc.setColor(Graphics.COLOR_DK_GRAY, background_color);
         dc.drawCircle(center_x, center_y,outer_diameter);
 
         dc.setPenWidth(3);
-        dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_BLACK);
+        dc.setColor(Graphics.COLOR_LT_GRAY, background_color);
         dc.fillCircle(center_x, center_y,2);
 
     }
@@ -155,7 +196,7 @@ class SimplexView extends WatchUi.WatchFace {
         var font = Graphics.FONT_XTINY;
 
         //draw the date and week day
-        dc.drawText(center_x + screen_width/2 - 18,center_y,font,dateStr,Graphics.TEXT_JUSTIFY_VCENTER);
+        dc.drawText(center_x + screen_width/2 - 25,center_y,font,dateStr,Graphics.TEXT_JUSTIFY_VCENTER);
     }
 
     function drawHand(dc, center_x, center_y, length, width, degree, color_left, color_right, draw_line) {
@@ -170,7 +211,7 @@ class SimplexView extends WatchUi.WatchFace {
 
             dc.setPenWidth(width);
 
-            dc.setColor(color_left, Graphics.COLOR_BLACK);
+            dc.setColor(color_left, background_color);
             dc.drawLine(center_x,center_y, center_x + target_x, center_y + target_y);
 
             var tail_length = length/5.0;
@@ -192,6 +233,9 @@ class SimplexView extends WatchUi.WatchFace {
 
             var tip_deg = 0.01 * width;
 
+            var tail_deg = 0.04 * width;
+
+
             var tip = length/8.0;
 
             var left_peak_x = (length - tip)*Math.cos(degree - tip_deg);
@@ -206,21 +250,30 @@ class SimplexView extends WatchUi.WatchFace {
             var right_width_x = (width/3.0)*Math.cos(degree + (Math.PI/2.0));
             var right_width_y = (width/3.0)*Math.sin(degree + (Math.PI/2.0));
 
-            dc.setColor(color_left, Graphics.COLOR_BLACK);
-            dc.fillPolygon([[center_x,center_y], [center_x  + left_width_x,center_y + left_width_y] ,[center_x + left_peak_x, center_y + left_peak_y], [center_x + target_x, center_y + target_y]]);
-
-            dc.setColor(color_right, Graphics.COLOR_BLACK);
-            dc.fillPolygon([[center_x,center_y], [center_x  + right_width_x, center_y + right_width_y], [center_x + right_peak_x, center_y + right_peak_y], [center_x + target_x, center_y + target_y]]);
-    
             var tail_length = length/4;
 
-            var tail_left_peak_x = tail_length*Math.cos(Math.PI + degree - tip_deg);
-            var tail_left_peak_y = tail_length*Math.sin(Math.PI + degree - tip_deg);
+            var tail_left_peak_x = tail_length*Math.cos(Math.PI + degree + tail_deg);
+            var tail_left_peak_y = tail_length*Math.sin(Math.PI + degree + tail_deg);
 
-            var tail_right_peak_x = tail_length*Math.cos(Math.PI + degree + tip_deg);
-            var tail_right_peak_y = tail_length*Math.sin(Math.PI + degree + tip_deg);
+            var tail_right_peak_x = tail_length*Math.cos(Math.PI + degree - tail_deg);
+            var tail_right_peak_y = tail_length*Math.sin(Math.PI + degree - tail_deg);
 
-            dc.fillPolygon([[center_x,center_y], [center_x + tail_left_peak_x, center_y + tail_left_peak_y], [center_x + tail_right_peak_x, center_y + tail_right_peak_y]]);
+            var tail_end_x = tail_length*Math.cos(Math.PI + degree);
+            var tail_end_y = tail_length*Math.sin(Math.PI + degree);
+
+            dc.setColor(color_left, background_color);
+            dc.fillPolygon([[center_x,center_y], [center_x  + left_width_x,center_y + left_width_y] ,[center_x + left_peak_x, center_y + left_peak_y], [center_x + target_x, center_y + target_y]]);
+
+            dc.fillPolygon([[center_x,center_y], [center_x  + left_width_x,center_y + left_width_y], [center_x + tail_left_peak_x, center_y + tail_left_peak_y], [center_x + tail_end_x, center_y + tail_end_y]]);
+
+
+            dc.setColor(color_right, background_color);
+            dc.fillPolygon([[center_x,center_y], [center_x  + right_width_x, center_y + right_width_y], [center_x + right_peak_x, center_y + right_peak_y], [center_x + target_x, center_y + target_y]]);
+    
+            dc.fillPolygon([[center_x,center_y], [center_x  + right_width_x,center_y + right_width_y], [center_x + tail_right_peak_x, center_y + tail_right_peak_y], [center_x + tail_end_x, center_y + tail_end_y]]);
+
+
+            // dc.fillPolygon([[center_x,center_y], [center_x + tail_left_peak_x, center_y + tail_left_peak_y], [center_x + tail_right_peak_x, center_y + tail_right_peak_y]]);
         }
 
     }
@@ -229,32 +282,32 @@ class SimplexView extends WatchUi.WatchFace {
 
         var offset = screen_width/2.0;
 
-        var stats = System.getSystemStats();
+        // var stats = System.getSystemStats();
 
-        var battery_percent = stats.battery/100.0;
+        // var battery_percent = stats.battery/100.0;
 
-        var color_on = Graphics.COLOR_DK_GREEN;
+        // var color_on = Graphics.COLOR_DK_GREEN;
 
-        color_on = Graphics.COLOR_WHITE;
+        // color_on = Graphics.COLOR_WHITE;
 
 
-        if(battery_percent < 0.2)
-        {
-            color_on = Graphics.COLOR_RED;
-        }
+        // if(battery_percent < 0.2)
+        // {
+        //     color_on = Graphics.COLOR_RED;
+        // }
 
-        if(battery_percent > 0.2 && battery_percent < 0.5)
-        {
-            color_on = Graphics.COLOR_YELLOW;
-        }
+        // if(battery_percent > 0.2 && battery_percent < 0.5)
+        // {
+        //     color_on = Graphics.COLOR_YELLOW;
+        // }
 
-        color_on = Graphics.COLOR_WHITE; //for now
+        // color_on = Graphics.COLOR_WHITE; //for now
 
-        var color_off = Graphics.COLOR_LT_GRAY;
+        // var color_off = Graphics.COLOR_LT_GRAY;
 
-        color_off = color_on; //for now
+        // color_off = color_on; //for now
 
-        dc.setColor(color_on, Graphics.COLOR_BLACK);
+        dc.setColor(foreground_color, background_color);
 
         dc.setPenWidth(5);
 
@@ -266,17 +319,17 @@ class SimplexView extends WatchUi.WatchFace {
             var start_y = (offset-length_long)*Math.sin((i/12.0)*Math.PI*2.0 - Math.PI/2);
             var end_y = offset*Math.sin((i/12.0)*Math.PI*2.0 - Math.PI/2);
 
-            if(i/12.0 > battery_percent)
-            {
-                dc.setColor(color_off, Graphics.COLOR_BLACK);
-            }
+            // if(i/12.0 > battery_percent)
+            // {
+            //     dc.setColor(foreground_color, background_color);
+            // }
 
             dc.drawLine(center_x + start_x ,center_y + start_y, center_x + end_x, center_y + end_y);
         } 
 
         dc.setPenWidth(2);
 
-        dc.setColor(color_on, Graphics.COLOR_BLACK);
+        // dc.setColor(color_on, Graphics.COLOR_BLACK);
 
         for (var i = 0 ; i < 60; i++) 
         {
@@ -286,10 +339,10 @@ class SimplexView extends WatchUi.WatchFace {
             var start_y = (offset-length_short)*Math.sin((i/60.0)*Math.PI*2.0 - Math.PI/2);
             var end_y = offset*Math.sin((i/60.0)*Math.PI*2.0 - Math.PI/2);
 
-            if(i/60.0 > battery_percent)
-            {
-                dc.setColor(color_off, Graphics.COLOR_BLACK);
-            }
+            // if(i/60.0 > battery_percent)
+            // {
+            //     dc.setColor(color_off, Graphics.COLOR_BLACK);
+            // }
 
             dc.drawLine(center_x + start_x ,center_y + start_y, center_x + end_x, center_y + end_y);
 
@@ -303,9 +356,12 @@ class SimplexView extends WatchUi.WatchFace {
 
         dc.setPenWidth(2);
 
+        dc.setColor(foreground_color, background_color);
+
+
         var offset = screen_width/2.0;
 
-        var length_text = 30;
+        var length_text = 35;
 
         var text_steps = 3;
 
