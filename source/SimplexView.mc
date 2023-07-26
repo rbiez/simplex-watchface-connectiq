@@ -8,13 +8,20 @@ class SimplexView extends WatchUi.WatchFace
 {
 
     var drawSecondsHand;
+    var drawTicksBool;
+    var drawTextBool;
 
     var background_color;
     var foreground_color;
+    var foreground_alt_color;
     var left_hand_color;
     var right_hand_color;
 
+
     var seconds_hand_color;
+
+    var batterySaveMode;
+    var timeMinLastUpdate;
 
     function initialize() 
     {
@@ -24,16 +31,23 @@ class SimplexView extends WatchUi.WatchFace
 
         background_color = Graphics.COLOR_BLACK;
         foreground_color = Graphics.COLOR_WHITE;
+        foreground_alt_color = Graphics.COLOR_LT_GRAY;
         left_hand_color = Graphics.COLOR_LT_GRAY;
         right_hand_color = Graphics.COLOR_WHITE;
 
         seconds_hand_color = Graphics.COLOR_RED;
+
+        drawTextBool = true;
+        drawTicksBool= true;
+
+        batterySaveMode = false;
+        timeMinLastUpdate = 61;
     }
 
     // Load your resources here
     function onLayout(dc as Dc) as Void 
     {
-        setLayout(Rez.Layouts.WatchFace(dc));
+        // setLayout(Rez.Layouts.WatchFace(dc));
     }
 
     // Called when this View is brought to the foreground. Restore
@@ -47,6 +61,7 @@ class SimplexView extends WatchUi.WatchFace
         {
             background_color = Graphics.COLOR_BLACK;
             foreground_color = Graphics.COLOR_WHITE;
+            foreground_alt_color = Graphics.COLOR_LT_GRAY;
             left_hand_color = Graphics.COLOR_LT_GRAY;
             right_hand_color = Graphics.COLOR_WHITE;
         }
@@ -56,11 +71,17 @@ class SimplexView extends WatchUi.WatchFace
         {
             background_color = Graphics.COLOR_WHITE;
             foreground_color = Graphics.COLOR_BLACK;
+            foreground_alt_color = Graphics.COLOR_LT_GRAY;
             left_hand_color = Graphics.COLOR_DK_GRAY;
             right_hand_color = Graphics.COLOR_BLACK;
         }
 
         seconds_hand_color = getApp().getProperty("SecondsHandColor") as Number;
+
+        //TODO REMOVE NEXT LINE
+        //FOR TESTING
+        seconds_hand_color = Graphics.COLOR_LT_GRAY;
+
     }
 
     // Update the view
@@ -92,6 +113,7 @@ class SimplexView extends WatchUi.WatchFace
 
         // // Call the parent onUpdate function to redraw the layout
         // View.onUpdate(dc);
+        
 
         var screen_width = dc.getWidth();
         var screen_height = dc.getHeight();
@@ -110,6 +132,11 @@ class SimplexView extends WatchUi.WatchFace
         // System.println(degMin);
         // System.println(degHour);
 
+        //battery save mode redraws only once per minute
+        if(clockTime.min != timeMinLastUpdate || batterySaveMode == false)
+        {
+
+        timeMinLastUpdate = clockTime.min;
         //clear the screen
         dc.setColor(background_color, background_color);
         dc.clear();
@@ -126,11 +153,11 @@ class SimplexView extends WatchUi.WatchFace
         dc.setColor(foreground_color, background_color);
 
 
-        var sec_hand_length = screen_width/2.1;
+        var sec_hand_length = screen_width/2.3;
         var min_hand_length = screen_width/2.3;
         var hour_hand_length = screen_width/3.3;
 
-        var length_long = 15;
+        var length_long = 12;
 
         var length_short = 7;
 
@@ -147,9 +174,9 @@ class SimplexView extends WatchUi.WatchFace
         drawHand(dc, center_x,center_y, hour_hand_length,8.0,degHour, left_hand_color, right_hand_color, false);
 
         // draw the minutes hand
-        drawHand(dc, center_x,center_y, min_hand_length,4.0, degMin, left_hand_color, right_hand_color, false);
+        drawHand(dc, center_x,center_y, min_hand_length,5.0, degMin, left_hand_color, right_hand_color, false);
 
-        if(drawSecondsHand)
+        if(drawSecondsHand && batterySaveMode == false)
         {
             // draw the seconds hand
             drawHand(dc, center_x,center_y ,sec_hand_length,2,degSec, seconds_hand_color, seconds_hand_color, true);
@@ -158,9 +185,14 @@ class SimplexView extends WatchUi.WatchFace
         //draw the center
         drawCenter(dc, center_x,center_y, seconds_hand_color);
 
+        //for debugging
+        // dc.drawText(center_x ,center_y + 20 ,Graphics.FONT_SMALL,""+clockTime.sec,Graphics.TEXT_JUSTIFY_VCENTER);
+        }
+
     }
 
-    function drawCenter(dc, center_x, center_y, seconds_hand_color) {
+    function drawCenter(dc, center_x, center_y, seconds_hand_color) 
+    {
 
         var outer_diameter = 3;
 
@@ -186,20 +218,22 @@ class SimplexView extends WatchUi.WatchFace
 
     }
 
-    function drawDate(dc,center_x,center_y, screen_width, screen_height) {
+    function drawDate(dc,center_x,center_y, screen_width, screen_height) 
+    {
         var now = Time.now();
 
         var date = Time.Gregorian.info(now, Time.FORMAT_MEDIUM);
 
         var dateStr=date.day_of_week+" "+date.day;
 
-        var font = Graphics.FONT_XTINY;
+        var font = Graphics.FONT_TINY;
 
         //draw the date and week day
         dc.drawText(center_x + screen_width/2 - 25,center_y,font,dateStr,Graphics.TEXT_JUSTIFY_VCENTER);
     }
 
-    function drawHand(dc, center_x, center_y, length, width, degree, color_left, color_right, draw_line) {
+    function drawHand(dc, center_x, center_y, length, width, degree, color_left, color_right, draw_line) 
+    {
 
 
         var target_x = length*Math.cos(degree);
@@ -280,79 +314,57 @@ class SimplexView extends WatchUi.WatchFace
 
     function drawTicks(dc, center_x, center_y, screen_width, screen_height, length_long, length_short) {
 
-        var offset = screen_width/2.0;
-
-        // var stats = System.getSystemStats();
-
-        // var battery_percent = stats.battery/100.0;
-
-        // var color_on = Graphics.COLOR_DK_GREEN;
-
-        // color_on = Graphics.COLOR_WHITE;
-
-
-        // if(battery_percent < 0.2)
-        // {
-        //     color_on = Graphics.COLOR_RED;
-        // }
-
-        // if(battery_percent > 0.2 && battery_percent < 0.5)
-        // {
-        //     color_on = Graphics.COLOR_YELLOW;
-        // }
-
-        // color_on = Graphics.COLOR_WHITE; //for now
-
-        // var color_off = Graphics.COLOR_LT_GRAY;
-
-        // color_off = color_on; //for now
+        var offset = screen_width/2.0 - 5;
 
         dc.setColor(foreground_color, background_color);
 
-        dc.setPenWidth(5);
+        dc.setPenWidth(3);
+
+        var start_x = 0;
+        var end_x = 0;
+
+        var start_y = 0;
+        var end_y = 0;
 
         for (var i = 0 ; i < 12; i++) 
-        {
-            var start_x = (offset-length_long)*Math.cos((i/12.0)*Math.PI*2.0 - Math.PI/2);
-            var end_x = offset*Math.cos((i/12.0)*Math.PI*2.0 - Math.PI/2);
+        {   
+            //if text is drawn leave space for numbers, draw the tick for 3 explicitly
+            if(drawTextBool ==  false || (i % 3 != 0) || (i == 3))
+            {
+                start_x = (offset-length_long)*Math.cos((i/12.0)*Math.PI*2.0 - Math.PI/2);
+                end_x = offset*Math.cos((i/12.0)*Math.PI*2.0 - Math.PI/2);
 
-            var start_y = (offset-length_long)*Math.sin((i/12.0)*Math.PI*2.0 - Math.PI/2);
-            var end_y = offset*Math.sin((i/12.0)*Math.PI*2.0 - Math.PI/2);
+                start_y = (offset-length_long)*Math.sin((i/12.0)*Math.PI*2.0 - Math.PI/2);
+                end_y = offset*Math.sin((i/12.0)*Math.PI*2.0 - Math.PI/2);
 
-            // if(i/12.0 > battery_percent)
-            // {
-            //     dc.setColor(foreground_color, background_color);
-            // }
-
-            dc.drawLine(center_x + start_x ,center_y + start_y, center_x + end_x, center_y + end_y);
+                dc.drawLine(center_x + start_x ,center_y + start_y, center_x + end_x, center_y + end_y);
+            }
         } 
 
-        dc.setPenWidth(2);
+        dc.setPenWidth(1);
 
-        // dc.setColor(color_on, Graphics.COLOR_BLACK);
+        dc.setColor(foreground_alt_color, background_color);
 
         for (var i = 0 ; i < 60; i++) 
         {
-            var start_x = (offset-length_short)*Math.cos((i/60.0)*Math.PI*2.0- Math.PI/2 );
-            var end_x = offset*Math.cos((i/60.0)*Math.PI*2.0 - Math.PI/2);
+            if(i % 5 != 0 && (drawTextBool == false || (i != 1 && i != 59)))
+            {
+                start_x = (offset-length_short)*Math.cos((i/60.0)*Math.PI*2.0- Math.PI/2 );
+                end_x = offset*Math.cos((i/60.0)*Math.PI*2.0 - Math.PI/2);
 
-            var start_y = (offset-length_short)*Math.sin((i/60.0)*Math.PI*2.0 - Math.PI/2);
-            var end_y = offset*Math.sin((i/60.0)*Math.PI*2.0 - Math.PI/2);
+                start_y = (offset-length_short)*Math.sin((i/60.0)*Math.PI*2.0 - Math.PI/2);
+                end_y = offset*Math.sin((i/60.0)*Math.PI*2.0 - Math.PI/2);
 
-            // if(i/60.0 > battery_percent)
-            // {
-            //     dc.setColor(color_off, Graphics.COLOR_BLACK);
-            // }
 
-            dc.drawLine(center_x + start_x ,center_y + start_y, center_x + end_x, center_y + end_y);
+                dc.drawLine(center_x + start_x ,center_y + start_y, center_x + end_x, center_y + end_y);
+            }
 
         } 
 
-        //System.println(pwr); 
-    
     }
 
-    function drawText(dc, center_x, center_y, screen_width, screen_height, draw_date) {
+    function drawText(dc, center_x, center_y, screen_width, screen_height, draw_date) 
+    {
 
         dc.setPenWidth(2);
 
@@ -361,7 +373,8 @@ class SimplexView extends WatchUi.WatchFace
 
         var offset = screen_width/2.0;
 
-        var length_text = 35;
+        //35    
+        var length_text = 18;
 
         var text_steps = 3;
 
@@ -401,17 +414,27 @@ class SimplexView extends WatchUi.WatchFace
     // Called when this View is removed from the screen. Save the
     // state of this View here. This includes freeing resources from
     // memory.
-    function onHide() as Void {
+    function onHide() as Void 
+    {
     }
 
     // The user has just looked at their watch. Timers and animations may be started here.
-    function onExitSleep() as Void {
+    function onExitSleep() as Void 
+    {
         drawSecondsHand = true;
     }
 
     // Terminate any active timers and prepare for slow updates.
-    function onEnterSleep() as Void {
+    function onEnterSleep() as Void 
+    {
         drawSecondsHand = false;
     }
 
+    // //uncomment this for watchface diagnostics
+    // function onPartialUpdate( dc ) 
+    // {
+    // 	drawSecondsHand = true;
+    //     onUpdate(dc);
+    // }
 }
+
