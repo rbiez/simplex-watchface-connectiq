@@ -57,7 +57,7 @@ class SimplexView extends WatchUi.WatchFace
     {
 
         //black theme (TODO: chnage to 0)
-        if(getApp().getProperty("Theme") as Number == 1)
+        if(getApp().getProperty("Theme") as Number == 0)
         {
             background_color = Graphics.COLOR_BLACK;
             foreground_color = Graphics.COLOR_WHITE;
@@ -157,9 +157,9 @@ class SimplexView extends WatchUi.WatchFace
         var min_hand_length = screen_width/2.3;
         var hour_hand_length = screen_width/3.3;
 
-        var length_long = 12;
+        var length_long = 15;
 
-        var length_short = 7;
+        var length_short = 8;
 
         // draw the date
         drawDate(dc,center_x,center_y, screen_width, screen_height);
@@ -382,9 +382,12 @@ class SimplexView extends WatchUi.WatchFace
         {
             var hourStr= i;
 
+            var font = Graphics.FONT_MEDIUM;
+
             if(i == 0)
             {
                 hourStr= "12";
+                font = Graphics.FONT_MEDIUM;
             }
 
             if(i == 3 &&  draw_date == true)
@@ -392,20 +395,19 @@ class SimplexView extends WatchUi.WatchFace
                 continue;
             }
 
-            var text_x = (offset-length_text)*Math.cos(((i-3)/12.0)*Math.PI*2.0);
+            var text_x = (offset)*Math.cos(((i-3)/12.0)*Math.PI*2.0);
 
-            var text_y = (offset-length_text)*Math.sin(((i-3)/12.0)*Math.PI*2.0);
+            var text_y = (offset)*Math.sin(((i-3)/12.0)*Math.PI*2.0);
 
             if(i == 0 || i == 6)
             {   
-                var off = 12-i;
 
-                dc.drawText(center_x + text_x + off,center_y + text_y ,Graphics.FONT_SMALL,hourStr,Graphics.TEXT_JUSTIFY_VCENTER);
+                dc.drawText(center_x + text_x, center_y + text_y -i*6 ,font,hourStr,Graphics.TEXT_JUSTIFY_CENTER);
 
             }          
             else 
             {
-                dc.drawText(center_x + text_x ,center_y + text_y ,Graphics.FONT_SMALL,hourStr,Graphics.TEXT_JUSTIFY_VCENTER);
+                dc.drawText(center_x + text_x + 20,center_y + text_y ,font,hourStr,Graphics.TEXT_JUSTIFY_VCENTER);
             }          
         }
     }
