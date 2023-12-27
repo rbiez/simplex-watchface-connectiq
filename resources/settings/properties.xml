@@ -4,12 +4,12 @@
     <property id="DrawSecondsHand" type="number">1</property>
     <property id="Mode" type="number">0</property>
     <property id="Theme" type="number">1</property>
-    <property id="BackgroundColor" type="number">0xFFFFFF</property>
-    <property id="ForegroundColorOne" type="number">0x000000</property>
-    <property id="ForegroundColorTwo" type="number">0x555555</property>
+    <property id="BackgroundColor" type="number">0x000000</property>
+    <property id="ForegroundColorOne" type="number">0xFFFFFF</property>
+    <property id="ForegroundColorTwo" type="number">0xAAAAAA</property>
     <property id="SecondsHandColor" type="number">0xFF0000</property>
-    <property id="MinuteHandColorOne" type="number">0x555555</property>
-    <property id="MinuteHandColorTwo" type="number">0x000000</property>
-    <property id="HourHandColorOne" type="number">0x555555</property>
-    <property id="HourHandColorTwo" type="number">0x000000</property>
+    <property id="MinuteHandColorOne" type="number">0xAAAAAA</property>
+    <property id="MinuteHandColorTwo" type="number">0xFFFFFF</property>
+    <property id="HourHandColorOne" type="number">0xAAAAAA</property>
+    <property id="HourHandColorTwo" type="number">0xFFFFFF</property>
 </properties>

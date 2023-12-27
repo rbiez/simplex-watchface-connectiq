@@ -62,7 +62,7 @@ class SimplexView extends WatchUi.WatchFace
         //theme mode (code 0)
         if(Application.Properties.getValue("Mode") as Number == 0)
         {
-            //black theme (code 0)
+            //black theme (code 1)
             if(Application.Properties.getValue("Theme") as Number == 1)
             {
                 background_color = Graphics.COLOR_BLACK;
@@ -77,7 +77,7 @@ class SimplexView extends WatchUi.WatchFace
 
             }
 
-            //white theme (code 1)
+            //white theme (code 0)
             else 
             {
                 background_color = Graphics.COLOR_WHITE;
@@ -389,7 +389,6 @@ class SimplexView extends WatchUi.WatchFace
         var ratio = screen_width/250.0f;
 
         //these parameters are somewhat hardcoded and depend only on the screen-dimension. Very hacky and needs to be inmproved 
-        var width_text = 20.0f*ratio;
         var i_offset = 6.0f*ratio; 
         var d_offset = 15.0f*ratio;
 

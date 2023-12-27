@@ -1814,323 +1814,316 @@ _home_max_git_simplex_garmin_watchface_source_SimplexView_mc_380_4_start:
         lputv %ratio.2 %tmp.17;
 [ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 392 8 ]
         [ "_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_380_4_start" "_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_380_4_stop" ]
-        %width_text.3 = local;
-        %tmp.18 = 20.0f;
+        %i_offset.3 = local;
+        %tmp.18 = 6.0f;
         %tmp.20 = lgetv %ratio.2;
         %tmp.21 = mul %tmp.18 %tmp.20;
-        lputv %width_text.3 %tmp.21;
+        lputv %i_offset.3 %tmp.21;
 [ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 393 8 ]
         [ "_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_380_4_start" "_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_380_4_stop" ]
-        %i_offset.4 = local;
-        %tmp.22 = 6.0f;
+        %d_offset.4 = local;
+        %tmp.22 = 15.0f;
         %tmp.24 = lgetv %ratio.2;
         %tmp.25 = mul %tmp.22 %tmp.24;
-        lputv %i_offset.4 %tmp.25;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 394 8 ]
+        lputv %d_offset.4 %tmp.25;
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 395 8 ]
         [ "_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_380_4_start" "_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_380_4_stop" ]
-        %d_offset.5 = local;
-        %tmp.26 = 15.0f;
-        %tmp.28 = lgetv %ratio.2;
-        %tmp.29 = mul %tmp.26 %tmp.28;
-        lputv %d_offset.5 %tmp.29;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 396 8 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_380_4_start" "_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_380_4_stop" ]
-        %text_steps.6 = local;
-        %tmp.30 = 3;
-        lputv %text_steps.6 %tmp.30;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 398 8 ]
-        for @_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_398_8_for_test @_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_398_8_for_incr @_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_398_8_for_end;
-_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_398_8_for_init:
-        [ "_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_398_8_for_begin" "_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_398_8_for_end" ]
-        %i.7 = local;
-        %tmp.31 = 0;
-        lputv %i.7 %tmp.31;
-_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_398_8_for_test:
-        %tmp.33 = lgetv %i.7;
-        %tmp.34 = 12;
-        %tmp.35 = lt %tmp.33 %tmp.34;
-        bf %tmp.35 @_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_398_8_for_end;
-_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_398_8_for_begin:
-_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_399_8_start:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 400 12 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_399_8_start" "_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_399_8_stop" ]
-        %hourStr.8 = local;
-        %tmp.37 = lgetv %i.7;
-        lputv %hourStr.8 %tmp.37;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 402 12 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_399_8_start" "_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_399_8_stop" ]
-        %font.9 = local;
-        %tmp.38 = getm $.Toybox.Graphics;
-        %tmp.39 = getv %tmp.38 :FONT_LARGE;
-        lputv %font.9 %tmp.39;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 404 12 ]
-_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_404_12_if_stmt:
-        %tmp.41 = lgetv %i.7;
-        %tmp.42 = 0;
-        %tmp.43 = eq %tmp.41 %tmp.42;
-        bf %tmp.43 @_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_404_12_if_end;
-_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_404_12_if_true:
-_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_405_12_start:
+        %text_steps.5 = local;
+        %tmp.26 = 3;
+        lputv %text_steps.5 %tmp.26;
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 397 8 ]
+        for @_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_397_8_for_test @_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_397_8_for_incr @_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_397_8_for_end;
+_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_397_8_for_init:
+        [ "_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_397_8_for_begin" "_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_397_8_for_end" ]
+        %i.6 = local;
+        %tmp.27 = 0;
+        lputv %i.6 %tmp.27;
+_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_397_8_for_test:
+        %tmp.29 = lgetv %i.6;
+        %tmp.30 = 12;
+        %tmp.31 = lt %tmp.29 %tmp.30;
+        bf %tmp.31 @_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_397_8_for_end;
+_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_397_8_for_begin:
+_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_398_8_start:
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 399 12 ]
+        [ "_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_398_8_start" "_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_398_8_stop" ]
+        %hourStr.7 = local;
+        %tmp.33 = lgetv %i.6;
+        lputv %hourStr.7 %tmp.33;
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 401 12 ]
+        [ "_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_398_8_start" "_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_398_8_stop" ]
+        %font.8 = local;
+        %tmp.34 = getm $.Toybox.Graphics;
+        %tmp.35 = getv %tmp.34 :FONT_LARGE;
+        lputv %font.8 %tmp.35;
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 403 12 ]
+_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_403_12_if_stmt:
+        %tmp.37 = lgetv %i.6;
+        %tmp.38 = 0;
+        %tmp.39 = eq %tmp.37 %tmp.38;
+        bf %tmp.39 @_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_403_12_if_end;
+_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_403_12_if_true:
+_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_404_12_start:
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 405 16 ]
+        %tmp.40 = "12";
+        lputv %hourStr.7 %tmp.40;
 [ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 406 16 ]
-        %tmp.44 = "12";
-        lputv %hourStr.8 %tmp.44;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 407 16 ]
-        %tmp.45 = getm $.Toybox.Graphics;
-        %tmp.46 = getv %tmp.45 :FONT_LARGE;
-        lputv %font.9 %tmp.46;
-_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_405_12_stop:
-        goto @_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_404_12_if_end;
-_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_404_12_if_end:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 410 12 ]
-_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_410_12_if_stmt:
-_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_410_15_begin:
-        %tmp.48 = lgetv %i.7;
-        %tmp.49 = 3;
-        %tmp.50 = eq %tmp.48 %tmp.49;
-        %tmp.51 = dup %tmp.50;
-        bf %tmp.51 @_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_410_26_end;
-_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_410_26_true:
-        %tmp.53 = lgetv %draw_date;
-        %tmp.54 = true;
-        %tmp.55 = eq %tmp.53 %tmp.54;
-        %tmp.56 = and %tmp.50 %tmp.55;
-        push %tmp.56;
-_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_410_26_end:
-        %tmp.57 = phi [%tmp.51 @_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_410_15_begin] [%tmp.56 @_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_410_26_true] [%tmp.57 @_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_410_26_end];
-        bf %tmp.57 @_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_410_12_if_end;
-_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_410_12_if_true:
-_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_411_12_start:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 412 16 ]
-        goto @_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_398_8_for_incr;
-_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_411_12_stop:
-        goto @_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_410_12_if_end;
-_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_410_12_if_end:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 415 12 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_399_8_start" "_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_399_8_stop" ]
-        %text_x.10 = local;
-        %tmp.59 = lgetv %offset.1;
-        %tmp.61 = lgetv %d_offset.5;
-        %tmp.62 = sub %tmp.59 %tmp.61;
-        %tmp.64 = getv ? :Math;
-        %tmp.65 = getv function %tmp.64 :cos;
-        %tmp.67 = lgetv %i.7;
-        %tmp.68 = 3;
-        %tmp.69 = sub %tmp.67 %tmp.68;
-        %tmp.70 = 12.0f;
-        %tmp.71 = div %tmp.69 %tmp.70;
-        %tmp.73 = getv ? :Math;
-        %tmp.74 = getv %tmp.73 :PI;
-        %tmp.75 = mul %tmp.71 %tmp.74;
-        %tmp.76 = 2.0f;
-        %tmp.77 = mul %tmp.75 %tmp.76;
-        %tmp.78 = invoke %tmp.64 %tmp.65(%tmp.77);
-        %tmp.79 = mul %tmp.62 %tmp.78;
-        lputv %text_x.10 %tmp.79;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 417 12 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_399_8_start" "_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_399_8_stop" ]
-        %text_y.11 = local;
-        %tmp.81 = lgetv %offset.1;
-        %tmp.83 = lgetv %d_offset.5;
-        %tmp.84 = sub %tmp.81 %tmp.83;
-        %tmp.86 = getv ? :Math;
-        %tmp.87 = getv function %tmp.86 :sin;
-        %tmp.89 = lgetv %i.7;
-        %tmp.90 = 3;
-        %tmp.91 = sub %tmp.89 %tmp.90;
-        %tmp.92 = 12.0f;
-        %tmp.93 = div %tmp.91 %tmp.92;
-        %tmp.95 = getv ? :Math;
-        %tmp.96 = getv %tmp.95 :PI;
-        %tmp.97 = mul %tmp.93 %tmp.96;
-        %tmp.98 = 2.0f;
-        %tmp.99 = mul %tmp.97 %tmp.98;
-        %tmp.100 = invoke %tmp.86 %tmp.87(%tmp.99);
-        %tmp.101 = mul %tmp.84 %tmp.100;
-        lputv %text_y.11 %tmp.101;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 419 12 ]
-_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_419_12_if_stmt:
-_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_419_15_begin:
-        %tmp.103 = lgetv %i.7;
-        %tmp.104 = 0;
-        %tmp.105 = eq %tmp.103 %tmp.104;
-        %tmp.106 = dup %tmp.105;
-        bt %tmp.106 @_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_419_25_end;
-_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_419_25_false:
-        %tmp.108 = lgetv %i.7;
-        %tmp.109 = 6;
-        %tmp.110 = eq %tmp.108 %tmp.109;
-        %tmp.111 = or %tmp.105 %tmp.110;
-        push %tmp.111;
-_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_419_25_end:
-        %tmp.112 = phi [%tmp.106 @_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_419_15_begin] [%tmp.111 @_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_419_25_false] [%tmp.112 @_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_419_25_end];
-        bf %tmp.112 @_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_419_12_if_false;
-_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_419_12_if_true:
-_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_420_12_start:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 421 13 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_420_12_start" "_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_420_12_stop" ]
-        %i_off.12 = local;
-        %tmp.113 = lgetv %i.7;
-        %tmp.114 = getv function %tmp.113 :toFloat;
-        %tmp.115 = invoke %tmp.113 %tmp.114();
-        %tmp.117 = lgetv %i_offset.4;
-        %tmp.118 = mul %tmp.115 %tmp.117;
-        lputv %i_off.12 %tmp.118;
+        %tmp.41 = getm $.Toybox.Graphics;
+        %tmp.42 = getv %tmp.41 :FONT_LARGE;
+        lputv %font.8 %tmp.42;
+_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_404_12_stop:
+        goto @_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_403_12_if_end;
+_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_403_12_if_end:
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 409 12 ]
+_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_409_12_if_stmt:
+_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_409_15_begin:
+        %tmp.44 = lgetv %i.6;
+        %tmp.45 = 3;
+        %tmp.46 = eq %tmp.44 %tmp.45;
+        %tmp.47 = dup %tmp.46;
+        bf %tmp.47 @_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_409_26_end;
+_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_409_26_true:
+        %tmp.49 = lgetv %draw_date;
+        %tmp.50 = true;
+        %tmp.51 = eq %tmp.49 %tmp.50;
+        %tmp.52 = and %tmp.46 %tmp.51;
+        push %tmp.52;
+_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_409_26_end:
+        %tmp.53 = phi [%tmp.47 @_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_409_15_begin] [%tmp.52 @_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_409_26_true] [%tmp.53 @_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_409_26_end];
+        bf %tmp.53 @_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_409_12_if_end;
+_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_409_12_if_true:
+_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_410_12_start:
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 411 16 ]
+        goto @_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_397_8_for_incr;
+_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_410_12_stop:
+        goto @_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_409_12_if_end;
+_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_409_12_if_end:
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 414 12 ]
+        [ "_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_398_8_start" "_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_398_8_stop" ]
+        %text_x.9 = local;
+        %tmp.55 = lgetv %offset.1;
+        %tmp.57 = lgetv %d_offset.4;
+        %tmp.58 = sub %tmp.55 %tmp.57;
+        %tmp.60 = getv ? :Math;
+        %tmp.61 = getv function %tmp.60 :cos;
+        %tmp.63 = lgetv %i.6;
+        %tmp.64 = 3;
+        %tmp.65 = sub %tmp.63 %tmp.64;
+        %tmp.66 = 12.0f;
+        %tmp.67 = div %tmp.65 %tmp.66;
+        %tmp.69 = getv ? :Math;
+        %tmp.70 = getv %tmp.69 :PI;
+        %tmp.71 = mul %tmp.67 %tmp.70;
+        %tmp.72 = 2.0f;
+        %tmp.73 = mul %tmp.71 %tmp.72;
+        %tmp.74 = invoke %tmp.60 %tmp.61(%tmp.73);
+        %tmp.75 = mul %tmp.58 %tmp.74;
+        lputv %text_x.9 %tmp.75;
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 416 12 ]
+        [ "_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_398_8_start" "_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_398_8_stop" ]
+        %text_y.10 = local;
+        %tmp.77 = lgetv %offset.1;
+        %tmp.79 = lgetv %d_offset.4;
+        %tmp.80 = sub %tmp.77 %tmp.79;
+        %tmp.82 = getv ? :Math;
+        %tmp.83 = getv function %tmp.82 :sin;
+        %tmp.85 = lgetv %i.6;
+        %tmp.86 = 3;
+        %tmp.87 = sub %tmp.85 %tmp.86;
+        %tmp.88 = 12.0f;
+        %tmp.89 = div %tmp.87 %tmp.88;
+        %tmp.91 = getv ? :Math;
+        %tmp.92 = getv %tmp.91 :PI;
+        %tmp.93 = mul %tmp.89 %tmp.92;
+        %tmp.94 = 2.0f;
+        %tmp.95 = mul %tmp.93 %tmp.94;
+        %tmp.96 = invoke %tmp.82 %tmp.83(%tmp.95);
+        %tmp.97 = mul %tmp.80 %tmp.96;
+        lputv %text_y.10 %tmp.97;
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 418 12 ]
+_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_418_12_if_stmt:
+_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_418_15_begin:
+        %tmp.99 = lgetv %i.6;
+        %tmp.100 = 0;
+        %tmp.101 = eq %tmp.99 %tmp.100;
+        %tmp.102 = dup %tmp.101;
+        bt %tmp.102 @_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_418_25_end;
+_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_418_25_false:
+        %tmp.104 = lgetv %i.6;
+        %tmp.105 = 6;
+        %tmp.106 = eq %tmp.104 %tmp.105;
+        %tmp.107 = or %tmp.101 %tmp.106;
+        push %tmp.107;
+_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_418_25_end:
+        %tmp.108 = phi [%tmp.102 @_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_418_15_begin] [%tmp.107 @_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_418_25_false] [%tmp.108 @_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_418_25_end];
+        bf %tmp.108 @_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_418_12_if_false;
+_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_418_12_if_true:
+_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_419_12_start:
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 420 13 ]
+        [ "_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_419_12_start" "_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_419_12_stop" ]
+        %i_off.11 = local;
+        %tmp.109 = lgetv %i.6;
+        %tmp.110 = getv function %tmp.109 :toFloat;
+        %tmp.111 = invoke %tmp.109 %tmp.110();
+        %tmp.113 = lgetv %i_offset.3;
+        %tmp.114 = mul %tmp.111 %tmp.113;
+        lputv %i_off.11 %tmp.114;
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 422 13 ]
+        %tmp.116 = lgetv %offset.1;
+        %tmp.118 = getv ? :Math;
+        %tmp.119 = getv function %tmp.118 :cos;
+        %tmp.121 = lgetv %i.6;
+        %tmp.122 = 3;
+        %tmp.123 = sub %tmp.121 %tmp.122;
+        %tmp.124 = 12.0f;
+        %tmp.125 = div %tmp.123 %tmp.124;
+        %tmp.127 = getv ? :Math;
+        %tmp.128 = getv %tmp.127 :PI;
+        %tmp.129 = mul %tmp.125 %tmp.128;
+        %tmp.130 = 2.0f;
+        %tmp.131 = mul %tmp.129 %tmp.130;
+        %tmp.132 = invoke %tmp.118 %tmp.119(%tmp.131);
+        %tmp.133 = mul %tmp.116 %tmp.132;
+        lputv %text_x.9 %tmp.133;
 [ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 423 13 ]
-        %tmp.120 = lgetv %offset.1;
-        %tmp.122 = getv ? :Math;
-        %tmp.123 = getv function %tmp.122 :cos;
-        %tmp.125 = lgetv %i.7;
-        %tmp.126 = 3;
-        %tmp.127 = sub %tmp.125 %tmp.126;
-        %tmp.128 = 12.0f;
-        %tmp.129 = div %tmp.127 %tmp.128;
-        %tmp.131 = getv ? :Math;
-        %tmp.132 = getv %tmp.131 :PI;
-        %tmp.133 = mul %tmp.129 %tmp.132;
-        %tmp.134 = 2.0f;
-        %tmp.135 = mul %tmp.133 %tmp.134;
-        %tmp.136 = invoke %tmp.122 %tmp.123(%tmp.135);
-        %tmp.137 = mul %tmp.120 %tmp.136;
-        lputv %text_x.10 %tmp.137;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 424 13 ]
-        %tmp.139 = lgetv %offset.1;
-        %tmp.141 = getv ? :Math;
-        %tmp.142 = getv function %tmp.141 :sin;
-        %tmp.144 = lgetv %i.7;
-        %tmp.145 = 3;
-        %tmp.146 = sub %tmp.144 %tmp.145;
-        %tmp.147 = 12.0f;
-        %tmp.148 = div %tmp.146 %tmp.147;
-        %tmp.150 = getv ? :Math;
-        %tmp.151 = getv %tmp.150 :PI;
-        %tmp.152 = mul %tmp.148 %tmp.151;
-        %tmp.153 = 2.0f;
-        %tmp.154 = mul %tmp.152 %tmp.153;
-        %tmp.155 = invoke %tmp.141 %tmp.142(%tmp.154);
-        %tmp.156 = mul %tmp.139 %tmp.155;
-        lputv %text_y.11 %tmp.156;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 426 13 ]
-        %tmp.157 = lgetv %dc;
-        %tmp.158 = getv function %tmp.157 :drawText;
-        %tmp.160 = lgetv %center_x;
-        %tmp.162 = lgetv %text_x.10;
-        %tmp.163 = add %tmp.160 %tmp.162;
-        %tmp.165 = lgetv %center_y;
-        %tmp.167 = lgetv %text_y.11;
-        %tmp.168 = add %tmp.165 %tmp.167;
-        %tmp.170 = lgetv %i_off.12;
-        %tmp.171 = sub %tmp.168 %tmp.170;
-        %tmp.173 = lgetv %font.9;
-        %tmp.175 = lgetv %hourStr.8;
-        %tmp.176 = getm $.Toybox.Graphics;
-        %tmp.177 = getv %tmp.176 :TEXT_JUSTIFY_CENTER;
-        invoke %tmp.157 %tmp.158(%tmp.163, %tmp.171, %tmp.173, %tmp.175, %tmp.177);
-_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_420_12_stop:
-        goto @_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_419_12_if_end;
-_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_419_12_if_false:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 429 17 ]
-_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_429_17_if_stmt:
-        %tmp.179 = lgetv %i.7;
-        %tmp.180 = 6;
-        %tmp.181 = lte %tmp.179 %tmp.180;
-        bf %tmp.181 @_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_429_17_if_false;
-_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_429_17_if_true:
-_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_430_12_start:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 431 16 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_430_12_start" "_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_430_12_stop" ]
-        %i_off.13 = local;
-        %tmp.182 = lgetv %i.7;
-        %tmp.183 = getv function %tmp.182 :toFloat;
-        %tmp.184 = invoke %tmp.182 %tmp.183();
-        %tmp.186 = lgetv %i_offset.4;
-        %tmp.187 = mul %tmp.184 %tmp.186;
-        lputv %i_off.13 %tmp.187;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 433 16 ]
-        %tmp.188 = lgetv %dc;
-        %tmp.189 = getv function %tmp.188 :drawText;
-        %tmp.191 = lgetv %center_x;
-        %tmp.193 = lgetv %text_x.10;
-        %tmp.194 = add %tmp.191 %tmp.193;
-        %tmp.196 = lgetv %center_y;
-        %tmp.198 = lgetv %text_y.11;
-        %tmp.199 = add %tmp.196 %tmp.198;
-        %tmp.201 = lgetv %i_off.13;
-        %tmp.202 = sub %tmp.199 %tmp.201;
-        %tmp.204 = lgetv %font.9;
-        %tmp.206 = lgetv %hourStr.8;
-        %tmp.207 = getm $.Toybox.Graphics;
-        %tmp.208 = getv %tmp.207 :TEXT_JUSTIFY_CENTER;
-        invoke %tmp.188 %tmp.189(%tmp.194, %tmp.202, %tmp.204, %tmp.206, %tmp.208);
-_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_430_12_stop:
-        goto @_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_429_17_if_end;
-_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_429_17_if_false:
-_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_438_12_start:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 439 16 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_438_12_start" "_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_438_12_stop" ]
-        %j.14 = local;
-        %tmp.209 = 6;
-        %tmp.211 = lgetv %i.7;
-        %tmp.212 = 6;
-        %tmp.213 = mod %tmp.211 %tmp.212;
-        %tmp.214 = sub %tmp.209 %tmp.213;
-        lputv %j.14 %tmp.214;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 441 16 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_438_12_start" "_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_438_12_stop" ]
-        %i_off.15 = local;
-        %tmp.215 = lgetv %j.14;
-        %tmp.216 = getv function %tmp.215 :toFloat;
-        %tmp.217 = invoke %tmp.215 %tmp.216();
-        %tmp.219 = lgetv %i_offset.4;
-        %tmp.220 = mul %tmp.217 %tmp.219;
-        lputv %i_off.15 %tmp.220;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 443 16 ]
-        %tmp.221 = lgetv %dc;
-        %tmp.222 = getv function %tmp.221 :drawText;
-        %tmp.224 = lgetv %center_x;
-        %tmp.226 = lgetv %text_x.10;
-        %tmp.227 = add %tmp.224 %tmp.226;
-        %tmp.229 = lgetv %center_y;
-        %tmp.231 = lgetv %text_y.11;
-        %tmp.232 = add %tmp.229 %tmp.231;
-        %tmp.234 = lgetv %i_off.15;
-        %tmp.235 = sub %tmp.232 %tmp.234;
-        %tmp.237 = lgetv %font.9;
-        %tmp.239 = lgetv %hourStr.8;
-        %tmp.240 = getm $.Toybox.Graphics;
-        %tmp.241 = getv %tmp.240 :TEXT_JUSTIFY_CENTER;
-        invoke %tmp.221 %tmp.222(%tmp.227, %tmp.235, %tmp.237, %tmp.239, %tmp.241);
-_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_438_12_stop:
-_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_429_17_if_end:
-_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_419_12_if_end:
-_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_399_8_stop:
-_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_398_8_for_incr:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 398 ]
-        %tmp.243 = lgetv %i.7;
-        %tmp.245 = lgetv %text_steps.6;
-        %tmp.246 = add %tmp.243 %tmp.245;
-        lputv %i.7 %tmp.246;
-        goto @_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_398_8_for_test;
-_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_398_8_for_end:
+        %tmp.135 = lgetv %offset.1;
+        %tmp.137 = getv ? :Math;
+        %tmp.138 = getv function %tmp.137 :sin;
+        %tmp.140 = lgetv %i.6;
+        %tmp.141 = 3;
+        %tmp.142 = sub %tmp.140 %tmp.141;
+        %tmp.143 = 12.0f;
+        %tmp.144 = div %tmp.142 %tmp.143;
+        %tmp.146 = getv ? :Math;
+        %tmp.147 = getv %tmp.146 :PI;
+        %tmp.148 = mul %tmp.144 %tmp.147;
+        %tmp.149 = 2.0f;
+        %tmp.150 = mul %tmp.148 %tmp.149;
+        %tmp.151 = invoke %tmp.137 %tmp.138(%tmp.150);
+        %tmp.152 = mul %tmp.135 %tmp.151;
+        lputv %text_y.10 %tmp.152;
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 425 13 ]
+        %tmp.153 = lgetv %dc;
+        %tmp.154 = getv function %tmp.153 :drawText;
+        %tmp.156 = lgetv %center_x;
+        %tmp.158 = lgetv %text_x.9;
+        %tmp.159 = add %tmp.156 %tmp.158;
+        %tmp.161 = lgetv %center_y;
+        %tmp.163 = lgetv %text_y.10;
+        %tmp.164 = add %tmp.161 %tmp.163;
+        %tmp.166 = lgetv %i_off.11;
+        %tmp.167 = sub %tmp.164 %tmp.166;
+        %tmp.169 = lgetv %font.8;
+        %tmp.171 = lgetv %hourStr.7;
+        %tmp.172 = getm $.Toybox.Graphics;
+        %tmp.173 = getv %tmp.172 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.153 %tmp.154(%tmp.159, %tmp.167, %tmp.169, %tmp.171, %tmp.173);
+_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_419_12_stop:
+        goto @_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_418_12_if_end;
+_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_418_12_if_false:
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 428 17 ]
+_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_428_17_if_stmt:
+        %tmp.175 = lgetv %i.6;
+        %tmp.176 = 6;
+        %tmp.177 = lte %tmp.175 %tmp.176;
+        bf %tmp.177 @_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_428_17_if_false;
+_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_428_17_if_true:
+_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_429_12_start:
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 430 16 ]
+        [ "_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_429_12_start" "_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_429_12_stop" ]
+        %i_off.12 = local;
+        %tmp.178 = lgetv %i.6;
+        %tmp.179 = getv function %tmp.178 :toFloat;
+        %tmp.180 = invoke %tmp.178 %tmp.179();
+        %tmp.182 = lgetv %i_offset.3;
+        %tmp.183 = mul %tmp.180 %tmp.182;
+        lputv %i_off.12 %tmp.183;
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 432 16 ]
+        %tmp.184 = lgetv %dc;
+        %tmp.185 = getv function %tmp.184 :drawText;
+        %tmp.187 = lgetv %center_x;
+        %tmp.189 = lgetv %text_x.9;
+        %tmp.190 = add %tmp.187 %tmp.189;
+        %tmp.192 = lgetv %center_y;
+        %tmp.194 = lgetv %text_y.10;
+        %tmp.195 = add %tmp.192 %tmp.194;
+        %tmp.197 = lgetv %i_off.12;
+        %tmp.198 = sub %tmp.195 %tmp.197;
+        %tmp.200 = lgetv %font.8;
+        %tmp.202 = lgetv %hourStr.7;
+        %tmp.203 = getm $.Toybox.Graphics;
+        %tmp.204 = getv %tmp.203 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.184 %tmp.185(%tmp.190, %tmp.198, %tmp.200, %tmp.202, %tmp.204);
+_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_429_12_stop:
+        goto @_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_428_17_if_end;
+_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_428_17_if_false:
+_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_437_12_start:
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 438 16 ]
+        [ "_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_437_12_start" "_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_437_12_stop" ]
+        %j.13 = local;
+        %tmp.205 = 6;
+        %tmp.207 = lgetv %i.6;
+        %tmp.208 = 6;
+        %tmp.209 = mod %tmp.207 %tmp.208;
+        %tmp.210 = sub %tmp.205 %tmp.209;
+        lputv %j.13 %tmp.210;
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 440 16 ]
+        [ "_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_437_12_start" "_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_437_12_stop" ]
+        %i_off.14 = local;
+        %tmp.211 = lgetv %j.13;
+        %tmp.212 = getv function %tmp.211 :toFloat;
+        %tmp.213 = invoke %tmp.211 %tmp.212();
+        %tmp.215 = lgetv %i_offset.3;
+        %tmp.216 = mul %tmp.213 %tmp.215;
+        lputv %i_off.14 %tmp.216;
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 442 16 ]
+        %tmp.217 = lgetv %dc;
+        %tmp.218 = getv function %tmp.217 :drawText;
+        %tmp.220 = lgetv %center_x;
+        %tmp.222 = lgetv %text_x.9;
+        %tmp.223 = add %tmp.220 %tmp.222;
+        %tmp.225 = lgetv %center_y;
+        %tmp.227 = lgetv %text_y.10;
+        %tmp.228 = add %tmp.225 %tmp.227;
+        %tmp.230 = lgetv %i_off.14;
+        %tmp.231 = sub %tmp.228 %tmp.230;
+        %tmp.233 = lgetv %font.8;
+        %tmp.235 = lgetv %hourStr.7;
+        %tmp.236 = getm $.Toybox.Graphics;
+        %tmp.237 = getv %tmp.236 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.217 %tmp.218(%tmp.223, %tmp.231, %tmp.233, %tmp.235, %tmp.237);
+_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_437_12_stop:
+_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_428_17_if_end:
+_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_418_12_if_end:
+_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_398_8_stop:
+_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_397_8_for_incr:
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 397 ]
+        %tmp.239 = lgetv %i.6;
+        %tmp.241 = lgetv %text_steps.5;
+        %tmp.242 = add %tmp.239 %tmp.241;
+        lputv %i.6 %tmp.242;
+        goto @_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_397_8_for_test;
+_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_397_8_for_end:
 _home_max_git_simplex_garmin_watchface_source_SimplexView_mc_380_4_stop:
     }
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc"; @line = 452; ]
+    [ @file = "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc"; @line = 451; ]
     function onHide() as Void {
     }
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc"; @line = 457; ]
+    [ @file = "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc"; @line = 456; ]
     function onExitSleep() as Void {
-_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_458_4_start:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 459 8 ]
+_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_457_4_start:
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 458 8 ]
         %tmp.1 = true;
         putv self :draw_secondshand_bool %tmp.1;
-_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_458_4_stop:
+_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_457_4_stop:
     }
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc"; @line = 463; ]
+    [ @file = "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc"; @line = 462; ]
     function onEnterSleep() as Void {
-_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_464_4_start:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 465 8 ]
+_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_463_4_start:
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" 464 8 ]
         %tmp.1 = false;
         putv self :draw_secondshand_bool %tmp.1;
-_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_464_4_stop:
+_home_max_git_simplex_garmin_watchface_source_SimplexView_mc_463_4_stop:
     }
 }
 [ @file = "/home/max/git/simplex-garmin-watchface/source/SimplexView.mc"; @line = 1; ]
