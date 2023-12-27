@@ -15,8 +15,10 @@ class SimplexView extends WatchUi.WatchFace
     var background_color;
     var foreground_color;
     var foreground_alt_color;
-    var left_hand_color;
-    var right_hand_color;
+    var left_minute_hand_color;
+    var right_minute_hand_color;
+    var left_hour_hand_color;
+    var right_hour_hand_color;
 
 
     var seconds_hand_color;
@@ -33,8 +35,8 @@ class SimplexView extends WatchUi.WatchFace
         background_color = Graphics.COLOR_BLACK;
         foreground_color = Graphics.COLOR_WHITE;
         foreground_alt_color = Graphics.COLOR_LT_GRAY;
-        left_hand_color = Graphics.COLOR_LT_GRAY;
-        right_hand_color = Graphics.COLOR_WHITE;
+        left_minute_hand_color = Graphics.COLOR_LT_GRAY;
+        right_minute_hand_color = Graphics.COLOR_WHITE;
 
         seconds_hand_color = Graphics.COLOR_RED;
 
@@ -66,8 +68,10 @@ class SimplexView extends WatchUi.WatchFace
                 background_color = Graphics.COLOR_BLACK;
                 foreground_color = Graphics.COLOR_WHITE;
                 foreground_alt_color = Graphics.COLOR_LT_GRAY;
-                left_hand_color = Graphics.COLOR_LT_GRAY;
-                right_hand_color = Graphics.COLOR_WHITE;
+                left_minute_hand_color = Graphics.COLOR_LT_GRAY;
+                right_minute_hand_color = Graphics.COLOR_WHITE;
+                left_hour_hand_color = Graphics.COLOR_LT_GRAY;
+                right_hour_hand_color = Graphics.COLOR_WHITE;
 
                 seconds_hand_color = Graphics.COLOR_RED;
 
@@ -79,8 +83,10 @@ class SimplexView extends WatchUi.WatchFace
                 background_color = Graphics.COLOR_WHITE;
                 foreground_color = Graphics.COLOR_BLACK;
                 foreground_alt_color = Graphics.COLOR_LT_GRAY;
-                left_hand_color = Graphics.COLOR_DK_GRAY;
-                right_hand_color = Graphics.COLOR_BLACK;
+                left_minute_hand_color = Graphics.COLOR_DK_GRAY;
+                right_minute_hand_color = Graphics.COLOR_BLACK;
+                left_hour_hand_color = Graphics.COLOR_DK_GRAY;
+                right_hour_hand_color = Graphics.COLOR_BLACK;
 
                 seconds_hand_color = Graphics.COLOR_RED;
             }
@@ -92,8 +98,10 @@ class SimplexView extends WatchUi.WatchFace
             background_color = Application.Properties.getValue("BackgroundColor") as Number; 
             foreground_color = Application.Properties.getValue("ForegroundColorOne") as Number; 
             foreground_alt_color = Application.Properties.getValue("ForegroundColorTwo") as Number; 
-            left_hand_color = Application.Properties.getValue("MinuteHandColorOne") as Number; 
-            right_hand_color = Application.Properties.getValue("MinuteHandColorTwo") as Number;
+            left_minute_hand_color = Application.Properties.getValue("MinuteHandColorOne") as Number; 
+            right_minute_hand_color = Application.Properties.getValue("MinuteHandColorTwo") as Number;
+            left_hour_hand_color = Application.Properties.getValue("HourHandColorOne") as Number; 
+            right_hour_hand_color = Application.Properties.getValue("HourHandColorTwo") as Number;
 
             seconds_hand_color = Application.Properties.getValue("SecondsHandColor") as Number; 
         }
@@ -150,8 +158,8 @@ class SimplexView extends WatchUi.WatchFace
             var length_short = 8*screen_ratio;
 
             //hands width
-            var hours_hand_width = 8.0f*screen_ratio;
-            var minute_hand_width = 5.0f*screen_ratio;
+            var hours_hand_width = 8.0f;
+            var minute_hand_width = 5.0f;
 
             // draw the date
             if(draw_date_bool)
@@ -172,10 +180,10 @@ class SimplexView extends WatchUi.WatchFace
             }
 
             // draw the hours hand
-            drawHand(dc, center_x,center_y, hour_hand_length,hours_hand_width,degHour, left_hand_color, right_hand_color, false);
+            drawHand(dc, center_x,center_y, hour_hand_length,hours_hand_width,degHour, left_hour_hand_color, right_hour_hand_color, false);
 
             // draw the minutes hand
-            drawHand(dc, center_x,center_y, min_hand_length,minute_hand_width, degMin, left_hand_color, right_hand_color, false);
+            drawHand(dc, center_x,center_y, min_hand_length,minute_hand_width, degMin, left_minute_hand_color, right_minute_hand_color, false);
 
             if(draw_secondshand_bool && batterySaveMode == false)
             {
@@ -457,11 +465,11 @@ class SimplexView extends WatchUi.WatchFace
         draw_secondshand_bool = false;
     }
 
-    // //uncomment this for watchface diagnostics
-    // function onPartialUpdate( dc ) 
-    // {
-    // 	draw_secondshand_bool = true;
-    //     onUpdate(dc);
-    // }
-}
+//     //uncomment this for watchface diagnostics
+//     function onPartialUpdate( dc ) 
+//     {
+//     	draw_secondshand_bool = true;
+//         onUpdate(dc);
+//     }
 
+}
