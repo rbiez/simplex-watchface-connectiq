@@ -73,7 +73,7 @@ class SimplexView extends WatchUi.WatchFace
                 left_hour_hand_color = Graphics.COLOR_LT_GRAY;
                 right_hour_hand_color = Graphics.COLOR_WHITE;
 
-                seconds_hand_color = Graphics.COLOR_RED;
+                //seconds_hand_color = Graphics.COLOR_RED;
 
             }
 
@@ -88,7 +88,7 @@ class SimplexView extends WatchUi.WatchFace
                 left_hour_hand_color = Graphics.COLOR_DK_GRAY;
                 right_hour_hand_color = Graphics.COLOR_BLACK;
 
-                seconds_hand_color = Graphics.COLOR_RED;
+                //seconds_hand_color = Graphics.COLOR_RED;
             }
         }
 
@@ -108,6 +108,9 @@ class SimplexView extends WatchUi.WatchFace
         
         // seconds_hand_color = getApp().getProperty("SecondsHandColor") as Number;
         // seconds_hand_color = Graphics.COLOR_RED;
+
+        //color of seconds hand is independent of theme
+        seconds_hand_color = Application.Properties.getValue("SecondsHandColor") as Number; 
 
         draw_date_bool = Application.Properties.getValue("DrawDate") as Number;
         draw_secondshand_bool = Application.Properties.getValue("DrawSecondsHand") as Number;
