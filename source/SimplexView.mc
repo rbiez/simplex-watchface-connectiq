@@ -8,7 +8,8 @@ class SimplexView extends WatchUi.WatchFace
 {
 
     var draw_secondshand_bool;
-    var draw_ticks_bool;
+    var draw_minuteticks_bool;
+    var draw_hourticks_bool;
     var draw_date_bool;
     var draw_numbers_bool;
 
@@ -19,12 +20,7 @@ class SimplexView extends WatchUi.WatchFace
     var right_minute_hand_color;
     var left_hour_hand_color;
     var right_hour_hand_color;
-
-
     var seconds_hand_color;
-
-    var batterySaveMode;
-    var timeMinLastUpdate;
 
     function loadSettings()
     {
@@ -84,6 +80,9 @@ class SimplexView extends WatchUi.WatchFace
         draw_date_bool = Application.Properties.getValue("DrawDate") as Number;
         draw_secondshand_bool = Application.Properties.getValue("DrawSecondsHand") as Number;
         draw_numbers_bool = Application.Properties.getValue("DrawNumbers") as Number;
+        draw_minuteticks_bool = Application.Properties.getValue("DrawMinuteTicks") as Number;
+        draw_hourticks_bool = Application.Properties.getValue("DrawHourTicks") as Number;
+
 
 
 
@@ -101,13 +100,11 @@ class SimplexView extends WatchUi.WatchFace
         left_minute_hand_color = Graphics.COLOR_LT_GRAY;
         right_minute_hand_color = Graphics.COLOR_WHITE;
 
-        seconds_hand_color = Graphics.COLOR_RED;
+        seconds_hand_color = Graphics.COLOR_DK_RED;
 
         draw_numbers_bool = true;
-        draw_ticks_bool= true;
-
-        batterySaveMode = false;
-        timeMinLastUpdate = 61;
+        draw_minuteticks_bool= true;
+        draw_hourticks_bool= true;
     }
 
     // Load your resources here
@@ -134,77 +131,69 @@ class SimplexView extends WatchUi.WatchFace
 
         var clockTime = System.getClockTime();
 
-        // var timeString = Lang.format("$1$:$2$", [clockTime.hour, clockTime.min.format("%02d")]);
-
         var degSec =  2*Math.PI*(clockTime.sec/60.0) - Math.PI/2.0;
         var degMin =  2*Math.PI*(clockTime.min/60.0) - Math.PI/2.0;
 
         var degHour = 2*Math.PI*((clockTime.hour + clockTime.min/60.0) /12.0) - Math.PI/2;
 
-        // System.println(degMin);
-        // System.println(degHour);
+        //clear the screen
+        dc.setColor(background_color, background_color);
 
-        //battery save mode redraws only once per minute
-        if(clockTime.min != timeMinLastUpdate || batterySaveMode == false)
+        dc.clear();
+
+        dc.setColor(foreground_color, background_color);
+
+        var sec_hand_length = screen_width/2.3f;
+        var min_hand_length = screen_width/2.3f;
+        var hour_hand_length = screen_width/3.3f;
+
+        var screen_ratio = screen_width/260.0f;
+
+        //ticks length
+        var length_long = 15*screen_ratio;
+        var length_short = 8*screen_ratio;
+
+        //hands width
+        var hours_hand_width = 8.0f;
+        var minute_hand_width = 5.0f;
+
+        // draw the date
+        if(draw_date_bool)
         {
-            timeMinLastUpdate = clockTime.min;
-            //clear the screen
-            dc.setColor(background_color, background_color);
-            dc.clear();
-
-            dc.setColor(foreground_color, background_color);
-
-            var sec_hand_length = screen_width/2.3f;
-            var min_hand_length = screen_width/2.3f;
-            var hour_hand_length = screen_width/3.3f;
-
-            var screen_ratio = screen_width/260.0f;
-
-            //ticks length
-            var length_long = 15*screen_ratio;
-            var length_short = 8*screen_ratio;
-
-            //hands width
-            var hours_hand_width = 8.0f;
-            var minute_hand_width = 5.0f;
-
-            // draw the date
-            if(draw_date_bool)
-            {
-                drawDate(dc,center_x,center_y, screen_width, screen_height);
-            }
-
-            // draw the numbers
-            if(draw_numbers_bool)
-            {
-                drawNumbers(dc,center_x,center_y, screen_width, screen_height, draw_date_bool);
-            }
-
-            // draw the ticks
-            if(draw_ticks_bool)
-            {
-                drawTicks(dc,center_x,center_y, screen_width, screen_height, length_long, length_short);
-            }
-
-            // draw the hours hand
-            drawHand(dc, center_x,center_y, hour_hand_length,hours_hand_width,degHour, left_hour_hand_color, right_hour_hand_color, false);
-
-            // draw the minutes hand
-            drawHand(dc, center_x,center_y, min_hand_length,minute_hand_width, degMin, left_minute_hand_color, right_minute_hand_color, false);
-
-            if(draw_secondshand_bool && batterySaveMode == false)
-            {
-                // draw the seconds hand
-                drawHand(dc, center_x,center_y ,sec_hand_length,2,degSec, seconds_hand_color, seconds_hand_color, true);
-            }
-
-            //draw the center
-            drawCenter(dc, center_x,center_y, seconds_hand_color);
-
-            //for debugging
-            // dc.drawText(center_x ,center_y + 20 ,Graphics.FONT_SMALL,""+clockTime.sec,Graphics.TEXT_JUSTIFY_VCENTER);
+            drawDate(dc,center_x,center_y, screen_width, screen_height);
         }
 
+        // draw the numbers
+        if(draw_numbers_bool)
+        {
+            drawNumbers(dc,center_x,center_y, screen_width, screen_height, draw_date_bool);
+        }
+
+        // draw the ticks
+        // if(draw_ticks_bool)
+        // {
+            drawTicks(dc,center_x,center_y, screen_width, screen_height, length_long, length_short);
+        // }
+
+        // draw the hours hand
+        drawHand(dc, center_x,center_y, hour_hand_length,hours_hand_width,degHour, left_hour_hand_color, right_hour_hand_color, false);
+
+        // draw the minutes hand
+        drawHand(dc, center_x,center_y, min_hand_length,minute_hand_width, degMin, left_minute_hand_color, right_minute_hand_color, false);
+
+        if(draw_secondshand_bool)
+        {
+            // draw the seconds hand
+            var width = (2*(screen_width/200.0f)).toNumber();
+
+            drawHand(dc, center_x,center_y ,sec_hand_length,width,degSec, seconds_hand_color, seconds_hand_color, true);
+        }
+
+        //draw the center
+        drawCenter(dc, center_x,center_y, seconds_hand_color);
+
+        //for debugging
+        // dc.drawText(center_x ,center_y + 20 ,Graphics.FONT_SMALL,""+clockTime.sec,Graphics.TEXT_JUSTIFY_VCENTER);
     }
 
     function drawCenter(dc, center_x, center_y, seconds_hand_color) 
@@ -331,13 +320,15 @@ class SimplexView extends WatchUi.WatchFace
 
     }
 
-    function drawTicks(dc, center_x, center_y, screen_width, screen_height, length_long, length_short) {
+    function drawTicks(dc, center_x, center_y, screen_width, screen_height, length_long, length_short) 
+    {
 
-        var offset = screen_width/2.0 - 5;
+        var offset = screen_width/2.0f - 5;
 
-        dc.setColor(foreground_color, background_color);
+        var ratio = screen_width/200.0f;
 
-        dc.setPenWidth(3);
+        var width_hour_ticks = (3*ratio).toNumber();
+        var width_minute_ticks = (1*ratio).toNumber();
 
         var start_x = 0;
         var end_x = 0;
@@ -345,39 +336,54 @@ class SimplexView extends WatchUi.WatchFace
         var start_y = 0;
         var end_y = 0;
 
-        for (var i = 0 ; i < 12; i++) 
-        {   
-            //if text is drawn leave space for numbers, draw the tick for 3 explicitly
-            if(draw_numbers_bool ==  false || (i % 3 != 0) || (draw_date_bool && i == 3))
-            {
-                start_x = (offset-length_long)*Math.cos((i/12.0)*Math.PI*2.0 - Math.PI/2);
-                end_x = offset*Math.cos((i/12.0)*Math.PI*2.0 - Math.PI/2);
+        // var width_hour_ticks = 3;
+        // var width_minute_ticks = 1;
+        // System.println(width_hour_ticks);
+        // System.println(width_minute_ticks);
 
-                start_y = (offset-length_long)*Math.sin((i/12.0)*Math.PI*2.0 - Math.PI/2);
-                end_y = offset*Math.sin((i/12.0)*Math.PI*2.0 - Math.PI/2);
-
-                dc.drawLine(center_x + start_x ,center_y + start_y, center_x + end_x, center_y + end_y);
-            }
-        } 
-
-        dc.setPenWidth(1);
-
-        dc.setColor(foreground_alt_color, background_color);
-
-        for (var i = 0 ; i < 60; i++) 
+        if(draw_hourticks_bool)
         {
-            if(i % 5 != 0 && (draw_numbers_bool == false || (i != 1 && i != 59)))
-            {
-                start_x = (offset-length_short)*Math.cos((i/60.0)*Math.PI*2.0- Math.PI/2 );
-                end_x = offset*Math.cos((i/60.0)*Math.PI*2.0 - Math.PI/2);
+            dc.setColor(foreground_color, background_color);
 
-                start_y = (offset-length_short)*Math.sin((i/60.0)*Math.PI*2.0 - Math.PI/2);
-                end_y = offset*Math.sin((i/60.0)*Math.PI*2.0 - Math.PI/2);
+            dc.setPenWidth(width_hour_ticks);
 
+            for (var i = 0 ; i < 12; i++) 
+            {   
+                //if text is drawn leave space for numbers, draw the tick for 3 explicitly
+                if(draw_numbers_bool ==  false || (i % 3 != 0) || (draw_date_bool && i == 3))
+                {
+                    start_x = (offset-length_long)*Math.cos((i/12.0)*Math.PI*2.0 - Math.PI/2);
+                    end_x = offset*Math.cos((i/12.0)*Math.PI*2.0 - Math.PI/2);
 
-                dc.drawLine(center_x + start_x ,center_y + start_y, center_x + end_x, center_y + end_y);
+                    start_y = (offset-length_long)*Math.sin((i/12.0)*Math.PI*2.0 - Math.PI/2);
+                    end_y = offset*Math.sin((i/12.0)*Math.PI*2.0 - Math.PI/2);
+
+                    dc.drawLine(center_x + start_x ,center_y + start_y, center_x + end_x, center_y + end_y);
+                }
             }
+        }
 
+        if(draw_minuteticks_bool)
+        {
+            dc.setPenWidth(width_minute_ticks);
+
+            dc.setColor(foreground_alt_color, background_color);
+
+            for (var i = 0 ; i < 60; i++) 
+            {
+                if(i % 5 != 0 && (draw_numbers_bool == false || (i != 1 && i != 59)))
+                {
+                    start_x = (offset-length_short)*Math.cos((i/60.0)*Math.PI*2.0- Math.PI/2 );
+                    end_x = offset*Math.cos((i/60.0)*Math.PI*2.0 - Math.PI/2);
+
+                    start_y = (offset-length_short)*Math.sin((i/60.0)*Math.PI*2.0 - Math.PI/2);
+                    end_y = offset*Math.sin((i/60.0)*Math.PI*2.0 - Math.PI/2);
+
+
+                    dc.drawLine(center_x + start_x ,center_y + start_y, center_x + end_x, center_y + end_y);
+                }
+
+            }
         } 
 
     }
@@ -386,7 +392,7 @@ class SimplexView extends WatchUi.WatchFace
     function drawNumbers(dc, center_x, center_y, screen_width, screen_height, draw_date) 
     {
 
-        dc.setPenWidth(2);
+        //dc.setPenWidth(2);
 
         dc.setColor(foreground_color, background_color);
 
@@ -471,11 +477,11 @@ class SimplexView extends WatchUi.WatchFace
         draw_secondshand_bool = false;
     }
 
-//     //uncomment this for watchface diagnostics
-//     function onPartialUpdate( dc ) 
-//     {
-//     	draw_secondshand_bool = true;
-//         onUpdate(dc);
-//     }
+    //uncomment this for watchface diagnostics
+    function onPartialUpdate( dc ) 
+    {
+    	draw_secondshand_bool = true;
+        onUpdate(dc);
+    }
 
 }

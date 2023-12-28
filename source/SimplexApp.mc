@@ -50,8 +50,14 @@ class SimplexApp extends Application.AppBase
         val = Application.Properties.getValue("DrawNumbers") ? true : false;
         menu.addItem(new WatchUi.ToggleMenuItem("Draw Numbers", null, "DrawNumbers", val, null));
 
+        val = Application.Properties.getValue("DrawMinuteTicks") ? true : false;
+        menu.addItem(new WatchUi.ToggleMenuItem("Draw Minute Ticks", null, "DrawMinuteTicks", val, null));
+
+        val = Application.Properties.getValue("DrawHourTicks") ? true : false;
+        menu.addItem(new WatchUi.ToggleMenuItem("Draw Hour Ticks", null, "DrawHourTicks", val, null));
+
         val = Application.Properties.getValue("DrawSecondsHand") ? true : false;
-        menu.addItem(new WatchUi.ToggleMenuItem("Draw Seconds hand", null, "DrawSecondsHand", val, null));
+        menu.addItem(new WatchUi.ToggleMenuItem("Draw Seconds Hand", null, "DrawSecondsHand", val, null));
 
         val = Application.Properties.getValue("Mode") ? true : false;
         menu.addItem(new WatchUi.ToggleMenuItem("Mode", {:enabled=>"Mode: Custom", :disabled=>"Mode: Theme"}, "Mode", val, null));

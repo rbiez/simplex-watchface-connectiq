@@ -20,6 +20,20 @@
         </settingConfig>
     </setting>
 
+    <setting propertyKey="@Properties.DrawMinuteTicks" title="Draw Minute Ticks">
+        <settingConfig type="list">
+            <listEntry value="1">Yes</listEntry>
+            <listEntry value="0">No</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.DrawHourTicks" title="Draw Hour Ticks">
+        <settingConfig type="list">
+            <listEntry value="1">Yes</listEntry>
+            <listEntry value="0">No</listEntry>
+        </settingConfig>
+    </setting>
+
     <setting propertyKey="@Properties.Mode" title="Mode">
         <settingConfig type="list">
             <listEntry value="0">Theme</listEntry>
