@@ -12,7 +12,9 @@ If you wish to apply the customized colors select "Custom" mode in the settings.
 <img src="bright.png" width="120">
 <img src="dark.png" width="120">
 
-## Usage
+## Installation
+
+The watch face is available on the ConnectIQ store: https://apps.garmin.com/en-US/apps/d0bae985-3b11-4f1b-bbb0-d09dd59bb8c0
 
 A precompiled .iq file can be found in the 'builds' folder.
 
