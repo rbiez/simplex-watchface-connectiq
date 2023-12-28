@@ -26,40 +26,9 @@ class SimplexView extends WatchUi.WatchFace
     var batterySaveMode;
     var timeMinLastUpdate;
 
-    function initialize() 
+    function loadSettings()
     {
-        WatchFace.initialize();
-
-        draw_secondshand_bool = true;
-
-        background_color = Graphics.COLOR_BLACK;
-        foreground_color = Graphics.COLOR_WHITE;
-        foreground_alt_color = Graphics.COLOR_LT_GRAY;
-        left_minute_hand_color = Graphics.COLOR_LT_GRAY;
-        right_minute_hand_color = Graphics.COLOR_WHITE;
-
-        seconds_hand_color = Graphics.COLOR_RED;
-
-        draw_numbers_bool = true;
-        draw_ticks_bool= true;
-
-        batterySaveMode = false;
-        timeMinLastUpdate = 61;
-    }
-
-    // Load your resources here
-    function onLayout(dc as Dc) as Void 
-    {
-        // setLayout(Rez.Layouts.WatchFace(dc));
-    }
-
-    // Called when this View is brought to the foreground. Restore
-    // the state of this View and prepare it to be shown. This includes
-    // loading resources into memory.
-    function onShow() as Void 
-    {
-
-        //theme mode (code 0)
+//theme mode (code 0)
         if(Application.Properties.getValue("Mode") as Number == 0)
         {
             //black theme (code 1)
@@ -118,6 +87,41 @@ class SimplexView extends WatchUi.WatchFace
 
 
 
+    }
+
+    function initialize() 
+    {
+        WatchFace.initialize();
+
+        draw_secondshand_bool = true;
+
+        background_color = Graphics.COLOR_BLACK;
+        foreground_color = Graphics.COLOR_WHITE;
+        foreground_alt_color = Graphics.COLOR_LT_GRAY;
+        left_minute_hand_color = Graphics.COLOR_LT_GRAY;
+        right_minute_hand_color = Graphics.COLOR_WHITE;
+
+        seconds_hand_color = Graphics.COLOR_RED;
+
+        draw_numbers_bool = true;
+        draw_ticks_bool= true;
+
+        batterySaveMode = false;
+        timeMinLastUpdate = 61;
+    }
+
+    // Load your resources here
+    function onLayout(dc as Dc) as Void 
+    {
+        // setLayout(Rez.Layouts.WatchFace(dc));
+    }
+
+    // Called when this View is brought to the foreground. Restore
+    // the state of this View and prepare it to be shown. This includes
+    // loading resources into memory.
+    function onShow() as Void 
+    {
+        loadSettings();
     }
 
     // Update the view
