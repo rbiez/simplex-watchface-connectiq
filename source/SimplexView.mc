@@ -93,13 +93,19 @@ class SimplexView extends WatchUi.WatchFace
         draw_minuteticks_bool = Application.Properties.getValue("DrawMinuteTicks") as Number;
         draw_hourticks_bool = Application.Properties.getValue("DrawHourTicks") as Number;
 
-        if(secondshand_mode == 1 && is_in_sleepmode == false)
+        if(is_in_sleepmode == false)
         {
             draw_secondshand_local = draw_secondshand_bool;
         }
 
         //if we are in gesture mode for seconds hand and in sleep mode we do not draw the seconds hand
-        else if (is_in_sleepmode == true)
+        else if (secondshand_mode == 1 && is_in_sleepmode == true)
+        {
+            draw_secondshand_local = draw_secondshand_bool;
+        }
+
+
+        else if (secondshand_mode == 0 && is_in_sleepmode == true) 
         {
             draw_secondshand_local = false;
         }
