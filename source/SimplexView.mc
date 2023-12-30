@@ -7,20 +7,29 @@ import Toybox.WatchUi;
 class SimplexView extends WatchUi.WatchFace 
 {
 
-    var draw_secondshand_bool;
-    var draw_minuteticks_bool;
-    var draw_hourticks_bool;
-    var draw_date_bool;
-    var draw_numbers_bool;
+    private var draw_secondshand_bool;
+    private var draw_minuteticks_bool;
+    private var draw_hourticks_bool;
+    private var draw_date_bool;
+    private var draw_numbers_bool;
 
-    var background_color;
-    var foreground_color;
-    var foreground_alt_color;
-    var left_minute_hand_color;
-    var right_minute_hand_color;
-    var left_hour_hand_color;
-    var right_hour_hand_color;
-    var seconds_hand_color;
+    private var secondshand_mode;
+
+    private var background_color;
+    private var foreground_color;
+    private var foreground_alt_color;
+    private var left_minute_hand_color;
+    private var right_minute_hand_color;
+    private var left_hour_hand_color;
+    private var right_hour_hand_color;
+    private var seconds_hand_color;
+
+    private var draw_secondshand_local;
+
+    private var is_in_sleepmode;
+
+
+    private var offscreen_buffer as BufferedBitmap?;
 
     function loadSettings()
     {
@@ -79,13 +88,36 @@ class SimplexView extends WatchUi.WatchFace
 
         draw_date_bool = Application.Properties.getValue("DrawDate") as Number;
         draw_secondshand_bool = Application.Properties.getValue("DrawSecondsHand") as Number;
+        secondshand_mode = Application.Properties.getValue("SecondsHandMode") as Number;
         draw_numbers_bool = Application.Properties.getValue("DrawNumbers") as Number;
         draw_minuteticks_bool = Application.Properties.getValue("DrawMinuteTicks") as Number;
         draw_hourticks_bool = Application.Properties.getValue("DrawHourTicks") as Number;
 
+        if(secondshand_mode == 1 && is_in_sleepmode == false)
+        {
+            draw_secondshand_local = draw_secondshand_bool;
+        }
+
+        //if we are in gesture mode for seconds hand and in sleep mode we do not draw the seconds hand
+        else if (is_in_sleepmode == true)
+        {
+            draw_secondshand_local = false;
+        }
 
 
+    }
 
+
+    function createOffscreenBuffer(dc as Dc)
+    {
+        var offscreen_buffer_options = {
+                :width=>dc.getWidth(),
+                :height=>dc.getHeight()
+            };
+
+        //offscreen_buffer = new Graphics.BufferedBitmap(offscreen_buffer_options);
+        offscreen_buffer = Graphics.createBufferedBitmap(offscreen_buffer_options).get();
+        
     }
 
     function initialize() 
@@ -105,12 +137,16 @@ class SimplexView extends WatchUi.WatchFace
         draw_numbers_bool = true;
         draw_minuteticks_bool= true;
         draw_hourticks_bool= true;
+
+        secondshand_mode = 0;
+
+        is_in_sleepmode = false;
     }
 
     // Load your resources here
     function onLayout(dc as Dc) as Void 
     {
-        // setLayout(Rez.Layouts.WatchFace(dc));
+        createOffscreenBuffer(dc);
     }
 
     // Called when this View is brought to the foreground. Restore
@@ -121,9 +157,18 @@ class SimplexView extends WatchUi.WatchFace
         loadSettings();
     }
 
-    // Update the view
-    function onUpdate(dc as Dc) as Void 
+    function drawOffscreenBuffer(dc as Dc)
     {
+        dc.drawBitmap(0, 0, offscreen_buffer);
+    }
+
+    // Update the view
+    function onUpdate(targetDc as Dc) as Void 
+    {
+        //we first draw background and minute and hour hand into the buffer
+        var dc = offscreen_buffer.getDc();
+        targetDc.clearClip();
+
         var screen_width = dc.getWidth();
         var screen_height = dc.getHeight();
         var center_x = screen_width/2;
@@ -141,9 +186,6 @@ class SimplexView extends WatchUi.WatchFace
 
         dc.clear();
 
-        dc.setColor(foreground_color, background_color);
-
-        var sec_hand_length = screen_width/2.3f;
         var min_hand_length = screen_width/2.3f;
         var hour_hand_length = screen_width/3.3f;
 
@@ -169,11 +211,9 @@ class SimplexView extends WatchUi.WatchFace
             drawNumbers(dc,center_x,center_y, screen_width, screen_height, draw_date_bool);
         }
 
-        // draw the ticks
-        // if(draw_ticks_bool)
-        // {
-            drawTicks(dc,center_x,center_y, screen_width, screen_height, length_long, length_short);
-        // }
+
+        drawTicks(dc,center_x,center_y, screen_width, screen_height, length_long, length_short);
+
 
         // draw the hours hand
         drawHand(dc, center_x,center_y, hour_hand_length,hours_hand_width,degHour, left_hour_hand_color, right_hour_hand_color, false);
@@ -181,16 +221,26 @@ class SimplexView extends WatchUi.WatchFace
         // draw the minutes hand
         drawHand(dc, center_x,center_y, min_hand_length,minute_hand_width, degMin, left_minute_hand_color, right_minute_hand_color, false);
 
-        if(draw_secondshand_bool)
-        {
-            // draw the seconds hand
-            var width = (2*(screen_width/200.0f)).toNumber();
+        //draw buffer containing the background and hour and minute hand  
+        drawOffscreenBuffer(targetDc);
 
-            drawHand(dc, center_x,center_y ,sec_hand_length,width,degSec, seconds_hand_color, seconds_hand_color, true);
+        // if(draw_secondshand_bool)
+        // {
+        //     // draw the seconds hand
+        //     var width = (2*(screen_width/200.0f)).toNumber();
+
+        //     drawHand(dc, center_x,center_y ,sec_hand_length,width,degSec, seconds_hand_color, seconds_hand_color, true);
+        // }
+        
+        if(draw_secondshand_local)
+        {
+            drawSecondsHand(targetDc);
         }
+        //onPartialUpdate(targetDc);
 
         //draw the center
-        drawCenter(dc, center_x,center_y, seconds_hand_color);
+        drawCenter(targetDc, center_x,center_y, seconds_hand_color);
+
 
         //for debugging
         // dc.drawText(center_x ,center_y + 20 ,Graphics.FONT_SMALL,""+clockTime.sec,Graphics.TEXT_JUSTIFY_VCENTER);
@@ -201,7 +251,7 @@ class SimplexView extends WatchUi.WatchFace
         //all parameters hardcoded, fix
         var outer_diameter = 3;
 
-        if(draw_secondshand_bool)
+        if(draw_secondshand_local)
         {
             dc.setPenWidth(6);
             dc.setColor(seconds_hand_color, background_color);
@@ -468,20 +518,176 @@ class SimplexView extends WatchUi.WatchFace
     // The user has just looked at their watch. Timers and animations may be started here.
     function onExitSleep() as Void 
     {
-        draw_secondshand_bool = true;
+        if(draw_secondshand_bool)
+        {
+            draw_secondshand_local = true;
+        } 
+
+        is_in_sleepmode = false;
     }
 
     // Terminate any active timers and prepare for slow updates.
     function onEnterSleep() as Void 
+    {   
+
+        //continue drawing the seconds hand in partial update if drawing is activated and 'always' mode is selected
+        if((WatchUi.WatchFace has :onPartialUpdate) && draw_secondshand_bool && secondshand_mode == 1)
+        {
+            draw_secondshand_local = true;
+        }
+
+        else
+        {
+            draw_secondshand_local = false; 
+        }
+
+        is_in_sleepmode = true;
+    }
+
+    function drawSecondsHand(dc)
     {
-        draw_secondshand_bool = false;
+            var screen_width = dc.getWidth();
+            var screen_height = dc.getHeight();
+            var clockTime = System.getClockTime();
+
+            var center_x = screen_width/2.0f;
+            var center_y = screen_height/2.0f;
+            var degSec =  2*Math.PI*(clockTime.sec/60.0f) - Math.PI/2.0f;
+            var sec_hand_length = screen_width/2.3f;
+
+            // draw the seconds hand
+            var width = (2*(screen_width/200.0f)).toNumber();
+            drawHand(dc, center_x,center_y ,sec_hand_length,width,degSec, seconds_hand_color, seconds_hand_color, true);
+
     }
 
     //uncomment this for watchface diagnostics
     function onPartialUpdate( dc ) 
     {
-    	draw_secondshand_bool = true;
-        onUpdate(dc);
+    	//draw_secondshand_bool = true;
+        if(draw_secondshand_local)
+        {
+            var screen_width = dc.getWidth();
+            var screen_height = dc.getHeight();
+            var clockTime = System.getClockTime();
+
+            var center_x = screen_width/2.0f;
+            var center_y = screen_height/2.0f;
+            var degSec =  2*Math.PI*(clockTime.sec/60.0f) - Math.PI/2.0f;
+            var sec_hand_length = screen_width/2.3f;
+
+            //dc.clear();
+
+            //compute the clipping region
+            var target_x = center_x + sec_hand_length*Math.cos(degSec);
+            var target_y = center_y + sec_hand_length*Math.sin(degSec);
+
+            var clip_x = 0;
+            var clip_y = 0;
+            var clip_height = 0;
+            var clip_width = 0;
+
+            var ratio = screen_width/260.0f;
+
+            //the offsets for the size of the clipping area
+            var offset_s = 15*ratio;
+            var offset_m = 30*ratio;
+            var offset_l = 45*ratio;
+            
+            //compute the clissping area around the seconds hand
+            if(degSec < 0)
+            {   
+                clip_x = center_x -offset_m;
+                clip_y = target_y - offset_s;
+                clip_height = center_y - target_y + offset_l;
+                clip_width = target_x - center_x + offset_l;
+
+                // System.println("1");
+                
+            }
+
+            else if(degSec >= 0 && degSec < Math.PI/2.0f)
+            {   
+                clip_x = center_x - offset_m;
+                clip_y = center_y - offset_m; 
+                clip_height = target_y - center_y + offset_l;
+                clip_width = target_x - center_x + offset_l;
+
+                // System.println("2");
+                
+            }
+
+            else if(degSec >= Math.PI/2.0f && degSec < Math.PI)
+            {   
+                clip_x = target_x -offset_s;
+                clip_y = center_y -offset_m;
+                clip_height = target_y - center_y + offset_l;
+                clip_width = center_x - target_x + offset_l;
+
+                // System.println("3");
+                
+            }
+
+            else if(degSec >= Math.PI)
+            {   
+                clip_x = target_x - offset_s;
+                clip_y = target_y - offset_s;
+                clip_height = center_y - target_y + offset_l;
+                clip_width = center_x - target_x + offset_l;
+
+                // System.println("4");
+                
+            }
+
+            //set the clipping area around the seconds hand
+            dc.setClip(clip_x, clip_y, clip_width , clip_height);
+
+            //draw the saved buffer
+            drawOffscreenBuffer(dc);
+
+            //draw the seconds hand
+            drawSecondsHand(dc);
+
+            //draw the center
+            drawCenter(dc, center_x,center_y, seconds_hand_color);
+
+        }
+
+        //for debugging to draw a rectangle around the clipping area
+        //dc.setColor(foreground_color, background_color);
+        //dc.drawRectangle(clip_x+2, clip_y+2, clip_width-2, clip_height-2);
+
+        //dc.clearClip();
+
+        //for debugging to check execution time of whole redraw routine
+        //onUpdate(dc);
     }
 
+}
+
+//! Receives watch face events
+class SimplexDelegate extends WatchUi.WatchFaceDelegate 
+{
+    private var _view as SimplexView;
+
+    //! Constructor
+    //! @param view The analog view
+    public function initialize(view as SimplexView) 
+    {
+        WatchFaceDelegate.initialize();
+        _view = view;
+    }
+
+    //! The onPowerBudgetExceeded callback is called by the system if the
+    //! onPartialUpdate method exceeds the allowed power budget. If this occurs,
+    //! the system will stop invoking onPartialUpdate each second, so we notify the
+    //! view here to let the rendering methods know they should not be rendering a
+    //! second hand.
+    //! @param powerInfo Information about the power budget
+    public function onPowerBudgetExceeded(powerInfo as WatchFacePowerInfo) as Void 
+    {
+        System.println("Average execution time: " + powerInfo.executionTimeAverage);
+        System.println("Allowed execution time: " + powerInfo.executionTimeLimit);
+        //_view.turnPartialUpdatesOff();
+    }
 }

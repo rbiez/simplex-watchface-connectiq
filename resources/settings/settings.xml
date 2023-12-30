@@ -20,6 +20,13 @@
         </settingConfig>
     </setting>
 
+    <setting propertyKey="@Properties.SecondsHandMode" title="Seconds Hand Mode">
+        <settingConfig type="list">
+            <listEntry value="1">Draw always</listEntry>
+            <listEntry value="0">Draw after gesture</listEntry>
+        </settingConfig>
+    </setting>
+
     <setting propertyKey="@Properties.DrawMinuteTicks" title="Draw Minute Ticks">
         <settingConfig type="list">
             <listEntry value="1">Yes</listEntry>

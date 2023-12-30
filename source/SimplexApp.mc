@@ -28,7 +28,7 @@ class SimplexApp extends Application.AppBase
     {
         app_view = new SimplexView();
 
-        return [ app_view ] as Array<Views or InputDelegates>;
+        return [ app_view, new $.SimplexDelegate(app_view) ] as Array<Views or InputDelegates>;
     }
 
     // New app settings have been received so trigger a UI update
@@ -57,7 +57,10 @@ class SimplexApp extends Application.AppBase
         menu.addItem(new WatchUi.ToggleMenuItem("Draw Hour Ticks", null, "DrawHourTicks", val, null));
 
         val = Application.Properties.getValue("DrawSecondsHand") ? true : false;
-        menu.addItem(new WatchUi.ToggleMenuItem("Draw Seconds Hand", null, "DrawSecondsHand", val, null));
+        menu.addItem(new WatchUi.ToggleMenuItem("Draw Second Hand", null, "DrawSecondsHand", val, null));
+
+        val = Application.Properties.getValue("SecondsHandMode") ? true : false;
+        menu.addItem(new WatchUi.ToggleMenuItem("Second Hand Mode", {:enabled=>"Draw always", :disabled=>"Draw after gesture"}, "SecondsHandMode", val, null));
 
         val = Application.Properties.getValue("Mode") ? true : false;
         menu.addItem(new WatchUi.ToggleMenuItem("Mode", {:enabled=>"Mode: Custom", :disabled=>"Mode: Theme"}, "Mode", val, null));
