@@ -24,12 +24,15 @@ class SimplexView extends WatchUi.WatchFace
     private var right_hour_hand_color;
     private var seconds_hand_color;
 
-    private var draw_secondshand_local;
-
     private var is_in_sleepmode;
 
 
     private var offscreen_buffer as BufferedBitmap?;
+
+    var clip_x_old;
+    var clip_y_old;
+    var clip_height_old;
+    var clip_width_old;
 
     function loadSettings()
     {
@@ -93,22 +96,22 @@ class SimplexView extends WatchUi.WatchFace
         draw_minuteticks_bool = Application.Properties.getValue("DrawMinuteTicks") as Number;
         draw_hourticks_bool = Application.Properties.getValue("DrawHourTicks") as Number;
 
-        if(is_in_sleepmode == false)
-        {
-            draw_secondshand_local = draw_secondshand_bool;
-        }
+        // if(is_in_sleepmode == false)
+        // {
+        //     draw_secondshand_local = draw_secondshand_bool;
+        // }
 
-        //if we are in gesture mode for seconds hand and in sleep mode we do not draw the seconds hand
-        else if (secondshand_mode == 1 && is_in_sleepmode == true)
-        {
-            draw_secondshand_local = draw_secondshand_bool;
-        }
+        // //if we are in gesture mode for seconds hand and in sleep mode we do not draw the seconds hand
+        // else if (secondshand_mode == 1 && is_in_sleepmode == true)
+        // {
+        //     draw_secondshand_local = draw_secondshand_bool;
+        // }
 
 
-        else if (secondshand_mode == 0 && is_in_sleepmode == true) 
-        {
-            draw_secondshand_local = false;
-        }
+        // else if (secondshand_mode == 0 && is_in_sleepmode == true) 
+        // {
+        //     draw_secondshand_local = false;
+        // }
 
 
     }
@@ -131,6 +134,7 @@ class SimplexView extends WatchUi.WatchFace
         WatchFace.initialize();
 
         draw_secondshand_bool = true;
+        draw_date_bool = true;
 
         background_color = Graphics.COLOR_BLACK;
         foreground_color = Graphics.COLOR_WHITE;
@@ -147,6 +151,13 @@ class SimplexView extends WatchUi.WatchFace
         secondshand_mode = 0;
 
         is_in_sleepmode = false;
+
+        clip_x_old = 0;
+        clip_y_old = 0;
+        clip_height_old = 0;
+        clip_width_old = 0;
+
+        
     }
 
     // Load your resources here
@@ -194,6 +205,7 @@ class SimplexView extends WatchUi.WatchFace
 
         var min_hand_length = screen_width/2.3f;
         var hour_hand_length = screen_width/3.3f;
+        var sec_hand_length = screen_width/2.3f;
 
         var screen_ratio = screen_width/260.0f;
 
@@ -208,7 +220,7 @@ class SimplexView extends WatchUi.WatchFace
         // draw the date
         if(draw_date_bool)
         {
-            drawDate(dc,center_x,center_y, screen_width, screen_height);
+            drawDate(dc, center_x, center_y, screen_width, screen_height);
         }
 
         // draw the numbers
@@ -238,11 +250,30 @@ class SimplexView extends WatchUi.WatchFace
         //     drawHand(dc, center_x,center_y ,sec_hand_length,width,degSec, seconds_hand_color, seconds_hand_color, true);
         // }
         
-        if(draw_secondshand_local)
+        // if(is_in_sleepmode ==  false && draw_secondshand_bool)
+        if(is_in_sleepmode ==  false && draw_secondshand_bool)
         {
             drawSecondsHand(targetDc);
+
+            //draw the ring around seconds hand
+            dc.setPenWidth(6);
+            dc.setColor(seconds_hand_color, background_color);
+            dc.drawCircle(center_x, center_y, 4);
         }
+
+        else if(is_in_sleepmode ==  true && draw_secondshand_bool && secondshand_mode == 1)
+        {
+            drawSecondsHand(targetDc);
+
+            //draw the ring around seconds hand
+            dc.setPenWidth(6);
+            dc.setColor(seconds_hand_color, background_color);
+            dc.drawCircle(center_x, center_y, 4);
+        }
+
         //onPartialUpdate(targetDc);
+
+
 
         //draw the center
         drawCenter(targetDc, center_x,center_y, seconds_hand_color);
@@ -257,17 +288,17 @@ class SimplexView extends WatchUi.WatchFace
         //all parameters hardcoded, fix
         var outer_diameter = 3;
 
-        if(draw_secondshand_local)
-        {
-            dc.setPenWidth(6);
-            dc.setColor(seconds_hand_color, background_color);
-            dc.drawCircle(center_x, center_y, 4);
-        }
+        // if(draw_secondshand_local)
+        // {
+        //     dc.setPenWidth(6);
+        //     dc.setColor(seconds_hand_color, background_color);
+        //     dc.drawCircle(center_x, center_y, 4);
+        // }
 
-        else
-        {
-            outer_diameter = 4;
-        }
+        // else
+        // {
+        //     outer_diameter = 4;
+        // }
 
         //colors for the ring are hardcoded
         dc.setPenWidth(outer_diameter);
@@ -286,14 +317,17 @@ class SimplexView extends WatchUi.WatchFace
 
         var date = Time.Gregorian.info(now, Time.FORMAT_MEDIUM);
 
-        var dateStr=date.day_of_week+" "+date.day;
+        var dateStr = date.day_of_week + " " + date.day;
 
         var font = Graphics.FONT_TINY;
 
         var offset = 25*(screen_width/260.0f);
 
+        dc.setColor(foreground_color, background_color);
+
         //draw the date and week day
-        dc.drawText(center_x + screen_width/2 - offset,center_y,font,dateStr,Graphics.TEXT_JUSTIFY_VCENTER);
+        dc.drawText(center_x + screen_width/2 - offset, center_y, font, dateStr, Graphics.TEXT_JUSTIFY_VCENTER);
+
     }
 
     function drawHand(dc, center_x, center_y, length, width, degree, color_left, color_right, draw_line) 
@@ -524,10 +558,10 @@ class SimplexView extends WatchUi.WatchFace
     // The user has just looked at their watch. Timers and animations may be started here.
     function onExitSleep() as Void 
     {
-        if(draw_secondshand_bool)
-        {
-            draw_secondshand_local = true;
-        } 
+        // if(draw_secondshand_bool)
+        // {
+        //     draw_secondshand_local = true;
+        // } 
 
         is_in_sleepmode = false;
     }
@@ -536,16 +570,16 @@ class SimplexView extends WatchUi.WatchFace
     function onEnterSleep() as Void 
     {   
 
-        //continue drawing the seconds hand in partial update if drawing is activated and 'always' mode is selected
-        if((WatchUi.WatchFace has :onPartialUpdate) && draw_secondshand_bool && secondshand_mode == 1)
-        {
-            draw_secondshand_local = true;
-        }
+        // //continue drawing the seconds hand in partial update if drawing is activated and 'always' mode is selected
+        // if((WatchUi.WatchFace has :onPartialUpdate) && draw_secondshand_bool && secondshand_mode == 1)
+        // {
+        //     draw_secondshand_local = true;
+        // }
 
-        else
-        {
-            draw_secondshand_local = false; 
-        }
+        // else
+        // {
+        //     draw_secondshand_local = false; 
+        // }
 
         is_in_sleepmode = true;
     }
@@ -567,11 +601,10 @@ class SimplexView extends WatchUi.WatchFace
 
     }
 
-    //uncomment this for watchface diagnostics
     function onPartialUpdate( dc ) 
     {
     	//draw_secondshand_bool = true;
-        if(draw_secondshand_local)
+        if(secondshand_mode == 1 && draw_secondshand_bool)
         {
             var screen_width = dc.getWidth();
             var screen_height = dc.getHeight();
@@ -596,9 +629,9 @@ class SimplexView extends WatchUi.WatchFace
             var ratio = screen_width/260.0f;
 
             //the offsets for the size of the clipping area
-            var offset_s = 15*ratio;
-            var offset_m = 30*ratio;
-            var offset_l = 45*ratio;
+            var offset_s = 10*ratio;
+            var offset_m = 22*ratio;
+            var offset_l = 35*ratio;
             
             //compute the clissping area around the seconds hand
             if(degSec < 0)
@@ -645,23 +678,39 @@ class SimplexView extends WatchUi.WatchFace
                 
             }
 
-            //set the clipping area around the seconds hand
-            dc.setClip(clip_x, clip_y, clip_width , clip_height);
+            dc.setClip(clip_x_old, clip_y_old, clip_width_old , clip_height_old);
 
-            //draw the saved buffer
+            //draw the saved buffer in the previous clipping area
             drawOffscreenBuffer(dc);
 
-            //draw the seconds hand
+
+            //set the new clipping area around the new location of the seconds hand
+            dc.setClip(clip_x, clip_y, clip_width , clip_height);
+
+            //for debugging to draw a rectangle around the clipping area
+            // dc.setColor(foreground_color, background_color);
+            // dc.drawRectangle(clip_x+2, clip_y+2, clip_width-2, clip_height-2);
+
+            //draw the seconds hand in the clipping area
             drawSecondsHand(dc);
+
+
+            //draw the ring around seconds hand
+            dc.setPenWidth(6);
+            dc.setColor(seconds_hand_color, background_color);
+            dc.drawCircle(center_x, center_y, 4);
 
             //draw the center
             drawCenter(dc, center_x,center_y, seconds_hand_color);
 
+            clip_x_old = clip_x;
+            clip_y_old = clip_y;
+            clip_height_old = clip_height;
+            clip_width_old = clip_width;
+
         }
 
-        //for debugging to draw a rectangle around the clipping area
-        //dc.setColor(foreground_color, background_color);
-        //dc.drawRectangle(clip_x+2, clip_y+2, clip_width-2, clip_height-2);
+
 
         //dc.clearClip();
 
