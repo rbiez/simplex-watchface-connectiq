@@ -59,8 +59,12 @@ class SimplexApp extends Application.AppBase
         val = Application.Properties.getValue("DrawSecondsHand") ? true : false;
         menu.addItem(new WatchUi.ToggleMenuItem("Draw Second Hand", null, "DrawSecondsHand", val, null));
 
-        val = Application.Properties.getValue("SecondsHandMode") ? true : false;
-        menu.addItem(new WatchUi.ToggleMenuItem("Second Hand Mode", {:enabled=>"Draw always", :disabled=>"Draw after gesture"}, "SecondsHandMode", val, null));
+        //only MIP screens allow to have the seconds to be always drawn
+        if(WatchUi.WatchFace has :onPartialUpdate)
+        {
+            val = Application.Properties.getValue("SecondsHandMode") ? true : false;
+            menu.addItem(new WatchUi.ToggleMenuItem("Second Hand Mode", {:enabled=>"Draw always", :disabled=>"Draw after gesture"}, "SecondsHandMode", val, null));
+        }
 
         val = Application.Properties.getValue("Mode") ? true : false;
         menu.addItem(new WatchUi.ToggleMenuItem("Mode", {:enabled=>"Mode: Custom", :disabled=>"Mode: Theme"}, "Mode", val, null));

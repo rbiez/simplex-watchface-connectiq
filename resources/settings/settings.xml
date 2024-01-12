@@ -20,7 +20,7 @@
         </settingConfig>
     </setting>
 
-    <setting propertyKey="@Properties.SecondsHandMode" title="Seconds Hand Mode">
+    <setting propertyKey="@Properties.SecondsHandMode" title="Seconds Hand Mode (only MIP screens)">
         <settingConfig type="list">
             <listEntry value="1">Draw always (uses more battery)</listEntry>
             <listEntry value="0">Draw after gesture</listEntry>

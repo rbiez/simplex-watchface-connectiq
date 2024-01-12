@@ -113,6 +113,13 @@ class SimplexView extends WatchUi.WatchFace
         //     draw_secondshand_local = false;
         // }
 
+        //if the watch does not support partial updates we force the second hand mode to gesture mode
+        if(! (WatchUi.WatchFace has :onPartialUpdate))
+        {
+            System.println("Has no partial update");
+            secondshand_mode = 0;
+        }
+
 
     }
 
@@ -182,9 +189,11 @@ class SimplexView extends WatchUi.WatchFace
     // Update the view
     function onUpdate(targetDc as Dc) as Void 
     {
+        //we do a full redraw
+        targetDc.clearClip();
+
         //we first draw background and minute and hour hand into the buffer
         var dc = offscreen_buffer.getDc();
-        targetDc.clearClip();
 
         var screen_width = dc.getWidth();
         var screen_height = dc.getHeight();
@@ -200,7 +209,6 @@ class SimplexView extends WatchUi.WatchFace
 
         //clear the screen
         dc.setColor(background_color, background_color);
-
         dc.clear();
 
         var min_hand_length = screen_width/2.3f;
@@ -250,15 +258,20 @@ class SimplexView extends WatchUi.WatchFace
         //     drawHand(dc, center_x,center_y ,sec_hand_length,width,degSec, seconds_hand_color, seconds_hand_color, true);
         // }
         
+        var diam = (4*screen_ratio + 0.5).toNumber();
+        var width = (6*screen_ratio + 0.5).toNumber();
+
         // if(is_in_sleepmode ==  false && draw_secondshand_bool)
         if(is_in_sleepmode ==  false && draw_secondshand_bool)
         {
             drawSecondsHand(targetDc);
 
             //draw the ring around seconds hand
-            dc.setPenWidth(6);
-            dc.setColor(seconds_hand_color, background_color);
-            dc.drawCircle(center_x, center_y, 4);
+            targetDc.setPenWidth(width);
+            targetDc.setColor(seconds_hand_color, background_color);
+            targetDc.drawCircle(center_x, center_y, diam);
+
+            // System.println("case 1");
         }
 
         else if(is_in_sleepmode ==  true && draw_secondshand_bool && secondshand_mode == 1)
@@ -266,9 +279,11 @@ class SimplexView extends WatchUi.WatchFace
             drawSecondsHand(targetDc);
 
             //draw the ring around seconds hand
-            dc.setPenWidth(6);
-            dc.setColor(seconds_hand_color, background_color);
-            dc.drawCircle(center_x, center_y, 4);
+            targetDc.setPenWidth(width);
+            targetDc.setColor(seconds_hand_color, background_color);
+            targetDc.drawCircle(center_x, center_y, diam);
+
+            // System.println("case 2");
         }
 
         //onPartialUpdate(targetDc);
@@ -285,8 +300,13 @@ class SimplexView extends WatchUi.WatchFace
 
     function drawCenter(dc, center_x, center_y, seconds_hand_color) 
     {
+
+        var screen_width = dc.getWidth();
+
+        var ratio =  screen_width/260.0f;
+
         //all parameters hardcoded, fix
-        var outer_diameter = 3;
+        var outer_diameter = (3*ratio + 0.5).toNumber();
 
         // if(draw_secondshand_local)
         // {
@@ -305,7 +325,7 @@ class SimplexView extends WatchUi.WatchFace
         dc.setColor(Graphics.COLOR_DK_GRAY, background_color);
         dc.drawCircle(center_x, center_y,outer_diameter);
 
-        dc.setPenWidth(3);
+        dc.setPenWidth(outer_diameter);
         dc.setColor(Graphics.COLOR_LT_GRAY, background_color);
         dc.fillCircle(center_x, center_y,2);
 
@@ -564,6 +584,7 @@ class SimplexView extends WatchUi.WatchFace
         // } 
 
         is_in_sleepmode = false;
+        WatchUi.requestUpdate();   
     }
 
     // Terminate any active timers and prepare for slow updates.
@@ -582,6 +603,7 @@ class SimplexView extends WatchUi.WatchFace
         // }
 
         is_in_sleepmode = true;
+        WatchUi.requestUpdate();
     }
 
     function drawSecondsHand(dc)
@@ -680,7 +702,7 @@ class SimplexView extends WatchUi.WatchFace
 
             dc.setClip(clip_x_old, clip_y_old, clip_width_old , clip_height_old);
 
-            //draw the saved buffer in the previous clipping area
+            //draw the saved buffer in the previous clipping area to overdraw the old hand
             drawOffscreenBuffer(dc);
 
 
@@ -743,6 +765,9 @@ class SimplexDelegate extends WatchUi.WatchFaceDelegate
     {
         System.println("Average execution time: " + powerInfo.executionTimeAverage);
         System.println("Allowed execution time: " + powerInfo.executionTimeLimit);
-        //_view.turnPartialUpdatesOff();
+        
+        //if we exceed the powerbudget we set the seconds hand mode to draw only after a gesture
+        Application.Properties.setValue("SecondsHandMode", 0);
+        _view.loadSettings();
     }
 }
