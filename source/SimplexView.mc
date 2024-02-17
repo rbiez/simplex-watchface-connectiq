@@ -213,7 +213,7 @@ class SimplexView extends WatchUi.WatchFace
 
         var min_hand_length = screen_width/2.3f;
         var hour_hand_length = screen_width/3.3f;
-        var sec_hand_length = screen_width/2.3f;
+        // var sec_hand_length = screen_width/2.3f;
 
         var screen_ratio = screen_width/260.0f;
 
@@ -626,6 +626,7 @@ class SimplexView extends WatchUi.WatchFace
     function onPartialUpdate( dc ) 
     {
     	//draw_secondshand_bool = true;
+        
         if(secondshand_mode == 1 && draw_secondshand_bool)
         {
             var screen_width = dc.getWidth();
@@ -651,53 +652,99 @@ class SimplexView extends WatchUi.WatchFace
             var ratio = screen_width/260.0f;
 
             //the offsets for the size of the clipping area
-            var offset_s = 10*ratio;
-            var offset_m = 22*ratio;
-            var offset_l = 35*ratio;
+            // var offset_s = 10*ratio;
+            // var offset_m = 22*ratio;
+            // var offset_l = 35*ratio;
+
+            var width = (2*(screen_width/200.0f)).toNumber();
+            var tip_deg = 0.2f;
+
+            var tail_length = sec_hand_length/5.0f;
+
+            var left_peak_x = center_x + tail_length*Math.cos(Math.PI + degSec - tip_deg);
+            var left_peak_y = center_y + tail_length*Math.sin(Math.PI + degSec - tip_deg);
+
+            var right_peak_x = center_x + tail_length*Math.cos(Math.PI + degSec + tip_deg);
+            var right_peak_y = center_y + tail_length*Math.sin(Math.PI + degSec + tip_deg);
+
+            var ring_radius = 7;
             
-            //compute the clissping area around the seconds hand
-            if(degSec < 0)
+            //compute the clipping area around the seconds hand
+            if(clockTime.sec == 0)
+            {
+                clip_x = center_x - ring_radius;
+                clip_y = target_y;
+                clip_width = ring_radius*2 + width;
+                clip_height = left_peak_y - target_y + width;
+            }
+
+            else if(clockTime.sec > 0 && clockTime.sec < 15)
             {   
-                clip_x = center_x -offset_m;
-                clip_y = target_y - offset_s;
-                clip_height = center_y - target_y + offset_l;
-                clip_width = target_x - center_x + offset_l;
+                clip_x = right_peak_x;
+                clip_y = target_y;
+                clip_width = target_x - right_peak_x + width;
+                clip_height = left_peak_y - target_y + width;
 
                 // System.println("1");
                 
             }
 
-            else if(degSec >= 0 && degSec < Math.PI/2.0f)
+            else if(clockTime.sec == 15)
+            {
+                clip_x = right_peak_x;
+                clip_y = center_y - ring_radius;
+                clip_width = target_x -left_peak_x;
+                clip_height = ring_radius*2;
+            }
+
+            else if(clockTime.sec > 15 && clockTime.sec < 30)
             {   
-                clip_x = center_x - offset_m;
-                clip_y = center_y - offset_m; 
-                clip_height = target_y - center_y + offset_l;
-                clip_width = target_x - center_x + offset_l;
+                clip_x = left_peak_x;
+                clip_y = right_peak_y; 
+                clip_width = target_x -left_peak_x + width;
+                clip_height = target_y - right_peak_y + width;
+                // clip_height = max(target_y - right_peak_y, left_peak_y - right_peak_y);
 
                 // System.println("2");
                 
             }
 
-            else if(degSec >= Math.PI/2.0f && degSec < Math.PI)
+            else if(clockTime.sec == 30)
+            {
+                clip_x = center_x - ring_radius;
+                clip_y = left_peak_y;
+                clip_width = ring_radius*2 + width;
+                clip_height = target_y - right_peak_y;
+            }
+
+            else if(clockTime.sec > 30 && clockTime.sec < 45)
             {   
-                clip_x = target_x -offset_s;
-                clip_y = center_y -offset_m;
-                clip_height = target_y - center_y + offset_l;
-                clip_width = center_x - target_x + offset_l;
+                clip_x = target_x;
+                clip_y = left_peak_y;
+                // clip_width = max(right_peak_x - target_x, right_peak_x - left_peak_x);
+                clip_width = right_peak_x - target_x;
+                clip_height = target_y - left_peak_y + width;
 
                 // System.println("3");
                 
             }
 
-            else if(degSec >= Math.PI)
+            else if(clockTime.sec == 45)
+            {
+                clip_x = target_x;
+                clip_y = center_y - ring_radius;
+                clip_width = left_peak_x - target_x;
+                clip_height = ring_radius*2 + width;
+            }
+
+            else if(clockTime.sec > 45 && clockTime.sec < 60)
             {   
-                clip_x = target_x - offset_s;
-                clip_y = target_y - offset_s;
-                clip_height = center_y - target_y + offset_l;
-                clip_width = center_x - target_x + offset_l;
+                clip_x = target_x;
+                clip_y = target_y - width;
+                clip_width = left_peak_x - target_x;
+                clip_height = right_peak_y - target_y + width;
 
                 // System.println("4");
-                
             }
 
             dc.setClip(clip_x_old, clip_y_old, clip_width_old , clip_height_old);
@@ -714,13 +761,21 @@ class SimplexView extends WatchUi.WatchFace
             // dc.drawRectangle(clip_x+2, clip_y+2, clip_width-2, clip_height-2);
 
             //draw the seconds hand in the clipping area
-            drawSecondsHand(dc);
+            // drawSecondsHand(dc);
+
+            dc.setPenWidth(width);
+
+            dc.setColor(seconds_hand_color, background_color);
+            dc.drawLine(center_x,center_y, target_x, target_y);
+
+            dc.fillPolygon([[center_x,center_y], [left_peak_x, left_peak_y], [right_peak_x, right_peak_y]]);
+
 
 
             //draw the ring around seconds hand
-            dc.setPenWidth(6);
+            //dc.setPenWidth(6);
             dc.setColor(seconds_hand_color, background_color);
-            dc.drawCircle(center_x, center_y, 4);
+            dc.fillCircle(center_x, center_y, ring_radius);
 
             //draw the center
             drawCenter(dc, center_x,center_y, seconds_hand_color);
@@ -768,6 +823,12 @@ class SimplexDelegate extends WatchUi.WatchFaceDelegate
         
         //if we exceed the powerbudget we set the seconds hand mode to draw only after a gesture
         Application.Properties.setValue("SecondsHandMode", 0);
+
+
+        //for debugging
+        // Application.Properties.setValue("NeededExTime", powerInfo.executionTimeAverage);
+        // Application.Properties.setValue("AllowedExTime", powerInfo.executionTimeLimit);
+        
         _view.loadSettings();
     }
 }

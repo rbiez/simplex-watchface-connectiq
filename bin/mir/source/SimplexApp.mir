@@ -547,30 +547,72 @@ _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_72_14_end:
         %tmp.384 = null;
         %tmp.370 = newc %tmp.373 (%tmp.374, %tmp.382, %tmp.383, %tmp.384);
         invoke %tmp.368 %tmp.369(%tmp.370);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 101 8 ]
-        %tmp.385 = newa Array<Views or InputDelegates> 2;
-        %tmp.387 = lgetv %menu.1;
-        %tmp.388 = dup %tmp.385;
-        %tmp.389 = aputv %tmp.388 0 %tmp.387;
-        %tmp.393 = getm $;
-        %tmp.394 = getv %tmp.393 :SimplexSettingsMenuDelegate;
-        %tmp.390 = newc %tmp.394 ();
-        %tmp.395 = dup %tmp.389;
-        %tmp.396 = aputv %tmp.395 1 %tmp.390;
-        ret %tmp.396;
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 99 8 ]
+        %tmp.385 = getm $.Toybox.Application;
+        %tmp.386 = getv %tmp.385 :Properties;
+        %tmp.387 = getv function %tmp.386 :getValue;
+        %tmp.388 = "AllowedExTime";
+        %tmp.389 = invoke %tmp.386 %tmp.387(%tmp.388);
+        %tmp.390 = getv function %tmp.389 :format;
+        %tmp.391 = "%3f";
+        %tmp.392 = invoke %tmp.389 %tmp.390(%tmp.391);
+        lputv %val.2 %tmp.392;
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 100 8 ]
+        %tmp.393 = lgetv %menu.1;
+        %tmp.394 = getv function %tmp.393 :addItem;
+        %tmp.397 = getm $.Toybox.WatchUi;
+        %tmp.398 = getv function ? %tmp.397 :MenuItem;
+        %tmp.399 = "Allowed Ex Time";
+        %tmp.401 = lgetv %val.2;
+        %tmp.402 = "null";
+        %tmp.403 = null;
+        %tmp.395 = newc %tmp.398 (%tmp.399, %tmp.401, %tmp.402, %tmp.403);
+        invoke %tmp.393 %tmp.394(%tmp.395);
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 102 8 ]
+        %tmp.404 = getm $.Toybox.Application;
+        %tmp.405 = getv %tmp.404 :Properties;
+        %tmp.406 = getv function %tmp.405 :getValue;
+        %tmp.407 = "NeededExTime";
+        %tmp.408 = invoke %tmp.405 %tmp.406(%tmp.407);
+        %tmp.409 = getv function %tmp.408 :format;
+        %tmp.410 = "%3f";
+        %tmp.411 = invoke %tmp.408 %tmp.409(%tmp.410);
+        lputv %val.2 %tmp.411;
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 103 8 ]
+        %tmp.412 = lgetv %menu.1;
+        %tmp.413 = getv function %tmp.412 :addItem;
+        %tmp.416 = getm $.Toybox.WatchUi;
+        %tmp.417 = getv function ? %tmp.416 :MenuItem;
+        %tmp.418 = "Needed Ex Time";
+        %tmp.420 = lgetv %val.2;
+        %tmp.421 = "null";
+        %tmp.422 = null;
+        %tmp.414 = newc %tmp.417 (%tmp.418, %tmp.420, %tmp.421, %tmp.422);
+        invoke %tmp.412 %tmp.413(%tmp.414);
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 108 8 ]
+        %tmp.423 = newa Array<Views or InputDelegates> 2;
+        %tmp.425 = lgetv %menu.1;
+        %tmp.426 = dup %tmp.423;
+        %tmp.427 = aputv %tmp.426 0 %tmp.425;
+        %tmp.431 = getm $;
+        %tmp.432 = getv %tmp.431 :SimplexSettingsMenuDelegate;
+        %tmp.428 = newc %tmp.432 ();
+        %tmp.433 = dup %tmp.427;
+        %tmp.434 = aputv %tmp.433 1 %tmp.428;
+        ret %tmp.434;
 _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_43_4_stop:
     }
 }
-[ @file = "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc"; @line = 106; ]
+[ @file = "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc"; @line = 113; ]
 function getApp() as SimplexApp {
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_107_0_start:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 108 4 ]
+_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_114_0_start:
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 115 4 ]
     %tmp.1 = getm $.Toybox.Application;
     %tmp.2 = getv function %tmp.1 :getApp;
     %tmp.3 = invoke %tmp.1 %tmp.2();
     %tmp.4 = as %tmp.3 SimplexApp;
     ret %tmp.4;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_107_0_stop:
+_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_114_0_stop:
 }
 [ @file = "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc"; @line = 1; ]
 <init> {

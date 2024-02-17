@@ -37,3 +37,16 @@ function colorIndex(code)
 {
     return colors.indexOf(code);
 }
+
+function max(a,b)
+{
+    if (b > a)
+    {
+        return b;
+    }
+
+    else 
+    {
+        return a;
+    }
+}

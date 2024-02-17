@@ -96,6 +96,13 @@ class SimplexApp extends Application.AppBase
         val = Application.Properties.getValue("HourHandColorTwo") as Number;
         menu.addItem(new WatchUi.MenuItem("Hour Hand Color 2", color_names[colorIndex(val)], "HourHandColorTwo", null));
 
+        val = Application.Properties.getValue("AllowedExTime").format( "%3f" );
+        menu.addItem(new WatchUi.MenuItem("Allowed Ex Time", val ,"null", null));
+
+        val = Application.Properties.getValue("NeededExTime").format( "%3f" );
+        menu.addItem(new WatchUi.MenuItem("Needed Ex Time", val, "null", null));
+
+
         //WatchUi.pushView(menu, new $.SimplexSettingsMenuDelegate(), WatchUi.SLIDE_IMMEDIATE);
 
         return [menu, new $.SimplexSettingsMenuDelegate()] as Array<Views or InputDelegates>;

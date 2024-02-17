@@ -15,4 +15,10 @@
     <property id="MinuteHandColorTwo" type="number">0xFFFFFF</property>
     <property id="HourHandColorOne" type="number">0xAAAAAA</property>
     <property id="HourHandColorTwo" type="number">0xFFFFFF</property>
+    
+    <!-- for debugging -->
+    <!-- <property id="AllowedExTime" type="float">0</property>
+    <property id="NeededExTime" type="number">0</property>
+    <property id="null" type="number">0</property> -->
+
 </properties>
