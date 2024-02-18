@@ -29,10 +29,10 @@ class SimplexView extends WatchUi.WatchFace
 
     private var offscreen_buffer as BufferedBitmap?;
 
-    var clip_x_old;
-    var clip_y_old;
-    var clip_height_old;
-    var clip_width_old;
+    private var clip_x_old;
+    private var clip_y_old;
+    private var clip_height_old;
+    private var clip_width_old;
 
     function loadSettings()
     {
@@ -95,23 +95,6 @@ class SimplexView extends WatchUi.WatchFace
         draw_numbers_bool = Application.Properties.getValue("DrawNumbers") as Number;
         draw_minuteticks_bool = Application.Properties.getValue("DrawMinuteTicks") as Number;
         draw_hourticks_bool = Application.Properties.getValue("DrawHourTicks") as Number;
-
-        // if(is_in_sleepmode == false)
-        // {
-        //     draw_secondshand_local = draw_secondshand_bool;
-        // }
-
-        // //if we are in gesture mode for seconds hand and in sleep mode we do not draw the seconds hand
-        // else if (secondshand_mode == 1 && is_in_sleepmode == true)
-        // {
-        //     draw_secondshand_local = draw_secondshand_bool;
-        // }
-
-
-        // else if (secondshand_mode == 0 && is_in_sleepmode == true) 
-        // {
-        //     draw_secondshand_local = false;
-        // }
 
         //if the watch does not support partial updates we force the second hand mode to gesture mode
         if(! (WatchUi.WatchFace has :onPartialUpdate))
