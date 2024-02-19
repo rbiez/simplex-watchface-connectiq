@@ -6,6 +6,8 @@ All colors are customizable in the settings. Date, second hand, ticks, and numbe
 
 The watch face includes by default a light and a dark theme.
 
+For watches with MIP display, there is an option to always show the second hand, even when inactive.
+
 If you wish to apply the customized colors select "Custom" mode in the settings. The color of the second hand will be always the custom one specified in the settings, even in "Theme" mode.
 
 

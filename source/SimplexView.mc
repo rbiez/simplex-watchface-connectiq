@@ -230,9 +230,6 @@ class SimplexView extends WatchUi.WatchFace
 
         //draw buffer containing the background and hour and minute hand  
         drawOffscreenBuffer(targetDc);
-        
-        var diam = (4*screen_ratio + 0.5).toNumber();
-        var width = (6*screen_ratio + 0.5).toNumber();
 
         if(is_in_sleepmode ==  false && draw_secondshand_bool)
         {
@@ -266,7 +263,7 @@ class SimplexView extends WatchUi.WatchFace
         var ratio =  screen_width/260.0f;
 
         //all parameters hardcoded, fix
-        var outer_diameter = (3*ratio + 0.5).toNumber();
+        var outer_diameter = (3*ratio + 0.5f).toNumber();
 
         //colors for the ring are hardcoded
         dc.setPenWidth(outer_diameter);
@@ -547,7 +544,7 @@ class SimplexView extends WatchUi.WatchFace
         var right_peak_x = center_x + tail_length*Math.cos(Math.PI + degSec + tip_deg);
         var right_peak_y = center_y + tail_length*Math.sin(Math.PI + degSec + tip_deg);
 
-        var ring_radius = 7;
+        var ring_radius = (7*ratio).toNumber();
         
         //compute the clipping area around the seconds hand
         if(clockTime.sec == 0)
