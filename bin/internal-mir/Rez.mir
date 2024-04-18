@@ -1,99 +1,99 @@
-[ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B2187-00/source/Rez.mcgen"; @line = 1; ]
+[ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B3428-00/source/Rez.mcgen"; @line = 1; ]
 import Toybox.Lang;
-[ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B2187-00/source/Rez.mcgen"; @line = 2; ]
+[ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B3428-00/source/Rez.mcgen"; @line = 2; ]
 using Toybox.WatchUi;
-[ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B2187-00/source/Rez.mcgen"; @line = 3; ]
+[ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B3428-00/source/Rez.mcgen"; @line = 3; ]
 using Toybox.WatchUi as :Ui;
-[ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B2187-00/source/Rez.mcgen"; @line = 4; ]
+[ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B3428-00/source/Rez.mcgen"; @line = 4; ]
 using Toybox.Graphics;
-[ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B2187-00/source/Rez.mcgen"; @line = 5; ]
+[ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B3428-00/source/Rez.mcgen"; @line = 5; ]
 using Toybox.Graphics as :Gfx;
-[ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B2187-00/source/Rez.mcgen"; @line = 7; ]
+[ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B3428-00/source/Rez.mcgen"; @line = 7; ]
 module Rez {
-    [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B2187-00/source/Rez.mcgen"; @line = 7; ]
+    [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B3428-00/source/Rez.mcgen"; @line = 7; ]
     <init> {
     }
-    [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B2187-00/source/Rez.mcgen"; @line = 8; ]
+    [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B3428-00/source/Rez.mcgen"; @line = 8; ]
     module Drawables {
-        [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B2187-00/source/Rez.mcgen"; @line = 8; ]
+        [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B3428-00/source/Rez.mcgen"; @line = 8; ]
         <init> {
         }
-        [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B2187-00/source/Rez.mcgen"; @line = 9; @position = 27; initialized = true; ]
+        [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B3428-00/source/Rez.mcgen"; @line = 9; @position = 27; initialized = true; ]
         var LauncherIcon as Symbol;
     }
-    [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B2187-00/source/Rez.mcgen"; @line = 12; ]
+    [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B3428-00/source/Rez.mcgen"; @line = 12; ]
     module Fonts {
-        [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B2187-00/source/Rez.mcgen"; @line = 12; ]
+        [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B3428-00/source/Rez.mcgen"; @line = 12; ]
         <init> {
         }
     }
-    [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B2187-00/source/Rez.mcgen"; @line = 15; ]
+    [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B3428-00/source/Rez.mcgen"; @line = 15; ]
     module JsonData {
-        [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B2187-00/source/Rez.mcgen"; @line = 15; ]
+        [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B3428-00/source/Rez.mcgen"; @line = 15; ]
         <init> {
         }
     }
-    [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B2187-00/source/Rez.mcgen"; @line = 18; ]
+    [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B3428-00/source/Rez.mcgen"; @line = 18; ]
     module Layouts {
-        [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B2187-00/source/Rez.mcgen"; @line = 18; ]
+        [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B3428-00/source/Rez.mcgen"; @line = 18; ]
         <init> {
         }
-        [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B2187-00/source/Rez.mcgen"; @line = 19; ]
+        [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B3428-00/source/Rez.mcgen"; @line = 19; ]
         function WatchFace(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-_home_max_git_simplex_garmin_watchface_bin_gen_006_B2187_00_source_Rez_mcgen_19_73_start:
-[ "/home/max/git/simplex-garmin-watchface/bin/gen/006-B2187-00/source/Rez.mcgen" 20 12 ]
+_home_max_git_simplex_garmin_watchface_bin_gen_006_B3428_00_source_Rez_mcgen_19_73_start:
+[ "/home/max/git/simplex-garmin-watchface/bin/gen/006-B3428-00/source/Rez.mcgen" 20 12 ]
             %tmp.1 = newa Array<WatchUi.Drawable> 0;
             ret %tmp.1;
-_home_max_git_simplex_garmin_watchface_bin_gen_006_B2187_00_source_Rez_mcgen_19_73_stop:
+_home_max_git_simplex_garmin_watchface_bin_gen_006_B3428_00_source_Rez_mcgen_19_73_stop:
         }
     }
-    [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B2187-00/source/Rez.mcgen"; @line = 24; ]
+    [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B3428-00/source/Rez.mcgen"; @line = 24; ]
     module Menus {
-        [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B2187-00/source/Rez.mcgen"; @line = 24; ]
+        [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B3428-00/source/Rez.mcgen"; @line = 24; ]
         <init> {
         }
     }
-    [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B2187-00/source/Rez.mcgen"; @line = 27; ]
+    [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B3428-00/source/Rez.mcgen"; @line = 27; ]
     module Strings {
-        [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B2187-00/source/Rez.mcgen"; @line = 27; ]
+        [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B3428-00/source/Rez.mcgen"; @line = 27; ]
         <init> {
         }
-        [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B2187-00/source/Rez.mcgen"; @line = 28; @position = 27; initialized = true; ]
+        [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B3428-00/source/Rez.mcgen"; @line = 28; @position = 27; initialized = true; ]
         var ColorLightGray as Symbol;
-        [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B2187-00/source/Rez.mcgen"; @line = 29; @position = 27; initialized = true; ]
+        [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B3428-00/source/Rez.mcgen"; @line = 29; @position = 27; initialized = true; ]
         var ColorBlue as Symbol;
-        [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B2187-00/source/Rez.mcgen"; @line = 30; @position = 27; initialized = true; ]
+        [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B3428-00/source/Rez.mcgen"; @line = 30; @position = 27; initialized = true; ]
         var ColorDarkRed as Symbol;
-        [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B2187-00/source/Rez.mcgen"; @line = 31; @position = 27; initialized = true; ]
+        [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B3428-00/source/Rez.mcgen"; @line = 31; @position = 27; initialized = true; ]
         var ColorDarkGray as Symbol;
-        [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B2187-00/source/Rez.mcgen"; @line = 32; @position = 27; initialized = true; ]
+        [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B3428-00/source/Rez.mcgen"; @line = 32; @position = 27; initialized = true; ]
         var ColorDarkBlue as Symbol;
-        [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B2187-00/source/Rez.mcgen"; @line = 33; @position = 27; initialized = true; ]
+        [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B3428-00/source/Rez.mcgen"; @line = 33; @position = 27; initialized = true; ]
         var ColorBlack as Symbol;
-        [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B2187-00/source/Rez.mcgen"; @line = 34; @position = 27; initialized = true; ]
+        [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B3428-00/source/Rez.mcgen"; @line = 34; @position = 27; initialized = true; ]
         var ColorOrange as Symbol;
-        [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B2187-00/source/Rez.mcgen"; @line = 35; @position = 27; initialized = true; ]
+        [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B3428-00/source/Rez.mcgen"; @line = 35; @position = 27; initialized = true; ]
         var ColorYellow as Symbol;
-        [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B2187-00/source/Rez.mcgen"; @line = 36; @position = 27; initialized = true; ]
+        [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B3428-00/source/Rez.mcgen"; @line = 36; @position = 27; initialized = true; ]
         var AppName as Symbol;
-        [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B2187-00/source/Rez.mcgen"; @line = 37; @position = 27; initialized = true; ]
+        [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B3428-00/source/Rez.mcgen"; @line = 37; @position = 27; initialized = true; ]
         var ColorDarkGreen as Symbol;
-        [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B2187-00/source/Rez.mcgen"; @line = 38; @position = 27; initialized = true; ]
+        [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B3428-00/source/Rez.mcgen"; @line = 38; @position = 27; initialized = true; ]
         var ColorRed as Symbol;
-        [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B2187-00/source/Rez.mcgen"; @line = 39; @position = 27; initialized = true; ]
+        [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B3428-00/source/Rez.mcgen"; @line = 39; @position = 27; initialized = true; ]
         var ColorTurquoise as Symbol;
-        [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B2187-00/source/Rez.mcgen"; @line = 40; @position = 27; initialized = true; ]
+        [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B3428-00/source/Rez.mcgen"; @line = 40; @position = 27; initialized = true; ]
         var ColorPurple as Symbol;
-        [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B2187-00/source/Rez.mcgen"; @line = 41; @position = 27; initialized = true; ]
+        [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B3428-00/source/Rez.mcgen"; @line = 41; @position = 27; initialized = true; ]
         var ColorPink as Symbol;
-        [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B2187-00/source/Rez.mcgen"; @line = 42; @position = 27; initialized = true; ]
+        [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B3428-00/source/Rez.mcgen"; @line = 42; @position = 27; initialized = true; ]
         var ColorWhite as Symbol;
-        [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B2187-00/source/Rez.mcgen"; @line = 43; @position = 27; initialized = true; ]
+        [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B3428-00/source/Rez.mcgen"; @line = 43; @position = 27; initialized = true; ]
         var ColorOliveGreen as Symbol;
-        [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B2187-00/source/Rez.mcgen"; @line = 44; @position = 27; initialized = true; ]
+        [ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B3428-00/source/Rez.mcgen"; @line = 44; @position = 27; initialized = true; ]
         var ColorGreen as Symbol;
     }
 }
-[ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B2187-00/source/Rez.mcgen"; @line = 1; ]
+[ @file = "/home/max/git/simplex-garmin-watchface/bin/gen/006-B3428-00/source/Rez.mcgen"; @line = 1; ]
 <init> {
 }

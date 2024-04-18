@@ -345,33 +345,33 @@
         <entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" id="31" lineNum="9" parent="globals/SimplexApp" pc="268444137" symbol="initialize"/>
         <entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" id="31" lineNum="11" parent="globals/SimplexApp" pc="268444139" symbol="initialize"/>
         <entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" id="32" lineNum="21" parent="globals/SimplexApp" pc="268444158" symbol="onStop"/>
-        <entry filename="/home/max/git/simplex-garmin-watchface/bin/gen/006-B2187-00/source/Rez.mcgen" id="33" lineNum="7" parent="globals/Rez" pc="268444161" symbol="&lt;init&gt;"/>
-        <entry filename="/home/max/git/simplex-garmin-watchface/source/Utils.mc" id="34" lineNum="36" parent="globals" pc="268444185" symbol="colorIndex"/>
-        <entry filename="/home/max/git/simplex-garmin-watchface/source/Utils.mc" id="34" lineNum="38" parent="globals" pc="268444195" symbol="colorIndex"/>
-        <entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="35" lineNum="693" parent="globals/SimplexDelegate" pc="268444215" symbol="&lt;init&gt;"/>
-        <entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="36" lineNum="699" parent="globals/SimplexDelegate" pc="268444234" symbol="initialize"/>
-        <entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="36" lineNum="701" parent="globals/SimplexDelegate" pc="268444236" symbol="initialize"/>
-        <entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="36" lineNum="702" parent="globals/SimplexDelegate" pc="268444254" symbol="initialize"/>
-        <entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="37" lineNum="711" parent="globals/SimplexDelegate" pc="268444265" symbol="onPowerBudgetExceeded"/>
-        <entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="37" lineNum="713" parent="globals/SimplexDelegate" pc="268444267" symbol="onPowerBudgetExceeded"/>
-        <entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="37" lineNum="714" parent="globals/SimplexDelegate" pc="268444297" symbol="onPowerBudgetExceeded"/>
-        <entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="37" lineNum="717" parent="globals/SimplexDelegate" pc="268444327" symbol="onPowerBudgetExceeded"/>
-        <entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="37" lineNum="724" parent="globals/SimplexDelegate" pc="268444359" symbol="onPowerBudgetExceeded"/>
-        <entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" id="38" lineNum="6" parent="globals/SimplexSettingsMenu" pc="268444378" symbol="&lt;init&gt;"/>
-        <entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" id="39" lineNum="10" parent="globals/SimplexSettingsMenu" pc="268444397" symbol="initialize"/>
-        <entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" id="39" lineNum="12" parent="globals/SimplexSettingsMenu" pc="268444399" symbol="initialize"/>
-        <entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" id="40" lineNum="17" parent="globals/SimplexSettingsMenuDelegate" pc="268444437" symbol="&lt;init&gt;"/>
-        <entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" id="41" lineNum="21" parent="globals/SimplexSettingsMenuDelegate" pc="268444456" symbol="initialize"/>
-        <entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" id="41" lineNum="23" parent="globals/SimplexSettingsMenuDelegate" pc="268444458" symbol="initialize"/>
-        <entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" id="42" lineNum="28" parent="globals/SimplexSettingsMenuDelegate" pc="268444477" symbol="onSelect"/>
-        <entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" id="42" lineNum="30" parent="globals/SimplexSettingsMenuDelegate" pc="268444481" symbol="onSelect"/>
-        <entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" id="42" lineNum="32" parent="globals/SimplexSettingsMenuDelegate" pc="268444499" symbol="onSelect"/>
-        <entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" id="42" lineNum="37" parent="globals/SimplexSettingsMenuDelegate" pc="268444548" symbol="onSelect"/>
-        <entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" id="42" lineNum="39" parent="globals/SimplexSettingsMenuDelegate" pc="268444584" symbol="onSelect"/>
-        <entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" id="42" lineNum="41" parent="globals/SimplexSettingsMenuDelegate" pc="268444623" symbol="onSelect"/>
-        <entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" id="42" lineNum="43" parent="globals/SimplexSettingsMenuDelegate" pc="268444669" symbol="onSelect"/>
-        <entry filename="/home/max/git/simplex-garmin-watchface/bin/gen/006-B2187-00/source/Rez.mcgen" id="43" lineNum="19" parent="globals/Rez/Layouts" pc="268444693" symbol="WatchFace"/>
-        <entry filename="/home/max/git/simplex-garmin-watchface/bin/gen/006-B2187-00/source/Rez.mcgen" id="43" lineNum="20" parent="globals/Rez/Layouts" pc="268444703" symbol="WatchFace"/>
+        <entry filename="/home/max/git/simplex-garmin-watchface/bin/gen/006-B3428-00/source/Rez.mcgen" id="33" lineNum="7" parent="globals/Rez" pc="268444161" symbol="&lt;init&gt;"/>
+        <entry filename="/home/max/git/simplex-garmin-watchface/source/Utils.mc" id="34" lineNum="36" parent="globals" pc="268444180" symbol="colorIndex"/>
+        <entry filename="/home/max/git/simplex-garmin-watchface/source/Utils.mc" id="34" lineNum="38" parent="globals" pc="268444190" symbol="colorIndex"/>
+        <entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="35" lineNum="693" parent="globals/SimplexDelegate" pc="268444210" symbol="&lt;init&gt;"/>
+        <entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="36" lineNum="699" parent="globals/SimplexDelegate" pc="268444229" symbol="initialize"/>
+        <entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="36" lineNum="701" parent="globals/SimplexDelegate" pc="268444231" symbol="initialize"/>
+        <entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="36" lineNum="702" parent="globals/SimplexDelegate" pc="268444249" symbol="initialize"/>
+        <entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="37" lineNum="711" parent="globals/SimplexDelegate" pc="268444260" symbol="onPowerBudgetExceeded"/>
+        <entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="37" lineNum="713" parent="globals/SimplexDelegate" pc="268444262" symbol="onPowerBudgetExceeded"/>
+        <entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="37" lineNum="714" parent="globals/SimplexDelegate" pc="268444292" symbol="onPowerBudgetExceeded"/>
+        <entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="37" lineNum="717" parent="globals/SimplexDelegate" pc="268444322" symbol="onPowerBudgetExceeded"/>
+        <entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexView.mc" id="37" lineNum="724" parent="globals/SimplexDelegate" pc="268444354" symbol="onPowerBudgetExceeded"/>
+        <entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" id="38" lineNum="6" parent="globals/SimplexSettingsMenu" pc="268444373" symbol="&lt;init&gt;"/>
+        <entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" id="39" lineNum="10" parent="globals/SimplexSettingsMenu" pc="268444392" symbol="initialize"/>
+        <entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" id="39" lineNum="12" parent="globals/SimplexSettingsMenu" pc="268444394" symbol="initialize"/>
+        <entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" id="40" lineNum="17" parent="globals/SimplexSettingsMenuDelegate" pc="268444432" symbol="&lt;init&gt;"/>
+        <entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" id="41" lineNum="21" parent="globals/SimplexSettingsMenuDelegate" pc="268444451" symbol="initialize"/>
+        <entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" id="41" lineNum="23" parent="globals/SimplexSettingsMenuDelegate" pc="268444453" symbol="initialize"/>
+        <entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" id="42" lineNum="28" parent="globals/SimplexSettingsMenuDelegate" pc="268444472" symbol="onSelect"/>
+        <entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" id="42" lineNum="30" parent="globals/SimplexSettingsMenuDelegate" pc="268444476" symbol="onSelect"/>
+        <entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" id="42" lineNum="32" parent="globals/SimplexSettingsMenuDelegate" pc="268444494" symbol="onSelect"/>
+        <entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" id="42" lineNum="37" parent="globals/SimplexSettingsMenuDelegate" pc="268444543" symbol="onSelect"/>
+        <entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" id="42" lineNum="39" parent="globals/SimplexSettingsMenuDelegate" pc="268444579" symbol="onSelect"/>
+        <entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" id="42" lineNum="41" parent="globals/SimplexSettingsMenuDelegate" pc="268444618" symbol="onSelect"/>
+        <entry filename="/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" id="42" lineNum="43" parent="globals/SimplexSettingsMenuDelegate" pc="268444664" symbol="onSelect"/>
+        <entry filename="/home/max/git/simplex-garmin-watchface/bin/gen/006-B3428-00/source/Rez.mcgen" id="43" lineNum="19" parent="globals/Rez/Layouts" pc="268444688" symbol="WatchFace"/>
+        <entry filename="/home/max/git/simplex-garmin-watchface/bin/gen/006-B3428-00/source/Rez.mcgen" id="43" lineNum="20" parent="globals/Rez/Layouts" pc="268444698" symbol="WatchFace"/>
     </pcToLineNum>
     <symbolTable>
         <entry id="8388639" module="true" symbol="Graphics"/>
@@ -611,13 +611,13 @@
         <entry arg="true" endPc="268442264" name="b" stackId="2" startPc="268442237"/>
         <entry endPc="268443998" name="menu" stackId="1" startPc="268442291"/>
         <entry endPc="268443998" name="val" stackId="2" startPc="268442291"/>
-        <entry arg="true" endPc="268444214" name="code" stackId="1" startPc="268444185"/>
-        <entry arg="true" endPc="268444264" name="view" stackId="1" startPc="268444234"/>
-        <entry arg="true" endPc="268444377" name="powerInfo" stackId="1" startPc="268444265"/>
-        <entry arg="true" endPc="268444692" name="menuItem" stackId="1" startPc="268444477"/>
-        <entry endPc="268444691" name="color" stackId="2" startPc="268444548"/>
-        <entry endPc="268444691" name="new_index" stackId="3" startPc="268444548"/>
-        <entry arg="true" endPc="268444709" name="dc" stackId="1" startPc="268444693"/>
+        <entry arg="true" endPc="268444209" name="code" stackId="1" startPc="268444180"/>
+        <entry arg="true" endPc="268444259" name="view" stackId="1" startPc="268444229"/>
+        <entry arg="true" endPc="268444372" name="powerInfo" stackId="1" startPc="268444260"/>
+        <entry arg="true" endPc="268444687" name="menuItem" stackId="1" startPc="268444472"/>
+        <entry endPc="268444686" name="color" stackId="2" startPc="268444543"/>
+        <entry endPc="268444686" name="new_index" stackId="3" startPc="268444543"/>
+        <entry arg="true" endPc="268444704" name="dc" stackId="1" startPc="268444688"/>
     </localVars>
     <annotations>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorDarkGreen"/>
@@ -777,45 +777,45 @@
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268444184" name="&lt;init&gt;" parent="Rez" startPc="268444161">
+        <functionEntry accessMode="public" endPc="268444179" name="&lt;init&gt;" parent="Rez" startPc="268444161">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268444214" name="colorIndex" startPc="268444185">
+        <functionEntry accessMode="public" endPc="268444209" name="colorIndex" startPc="268444180">
             <param id="code"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268444233" name="&lt;init&gt;" parent="SimplexDelegate" startPc="268444215">
+        <functionEntry accessMode="public" endPc="268444228" name="&lt;init&gt;" parent="SimplexDelegate" startPc="268444210">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268444264" name="initialize" parent="SimplexDelegate" startPc="268444234">
+        <functionEntry accessMode="public" endPc="268444259" name="initialize" parent="SimplexDelegate" startPc="268444229">
             <param id="view"/>
             <documentation>
                 <![CDATA[<div class="description"> Constructor<br/> <div class="param"> view The analog view</div><br/></div>]]>
             </documentation>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268444377" name="onPowerBudgetExceeded" parent="SimplexDelegate" startPc="268444265">
+        <functionEntry accessMode="public" endPc="268444372" name="onPowerBudgetExceeded" parent="SimplexDelegate" startPc="268444260">
             <param id="powerInfo"/>
             <documentation>
                 <![CDATA[<div class="description"> The onPowerBudgetExceeded callback is called by the system if the<br/> onPartialUpdate method exceeds the allowed power budget. If this occurs,<br/> the system will stop invoking onPartialUpdate each second, so we notify the<br/> view here to let the rendering methods know they should not be rendering a<br/> second hand.<br/> <div class="param"> powerInfo Information about the power budget</div><br/></div>]]>
             </documentation>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268444396" name="&lt;init&gt;" parent="SimplexSettingsMenu" startPc="268444378">
+        <functionEntry accessMode="public" endPc="268444391" name="&lt;init&gt;" parent="SimplexSettingsMenu" startPc="268444373">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268444436" name="initialize" parent="SimplexSettingsMenu" startPc="268444397">
+        <functionEntry accessMode="public" endPc="268444431" name="initialize" parent="SimplexSettingsMenu" startPc="268444392">
             <documentation>
                 <![CDATA[<div class="description"> Constructor<br/></div>]]>
             </documentation>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268444455" name="&lt;init&gt;" parent="SimplexSettingsMenuDelegate" startPc="268444437">
+        <functionEntry accessMode="public" endPc="268444450" name="&lt;init&gt;" parent="SimplexSettingsMenuDelegate" startPc="268444432">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268444476" name="initialize" parent="SimplexSettingsMenuDelegate" startPc="268444456">
+        <functionEntry accessMode="public" endPc="268444471" name="initialize" parent="SimplexSettingsMenuDelegate" startPc="268444451">
             <documentation>
                 <![CDATA[<div class="description"> Constructor<br/></div>]]>
             </documentation>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268444692" name="onSelect" parent="SimplexSettingsMenuDelegate" startPc="268444477">
+        <functionEntry accessMode="public" endPc="268444687" name="onSelect" parent="SimplexSettingsMenuDelegate" startPc="268444472">
             <param id="menuItem"/>
             <documentation>
                 <![CDATA[<div class="description"> Handle a menu item being selected<br/> <div class="param"> menuItem The menu item selected</div><br/></div>]]>
@@ -839,7 +839,7 @@
         <functionEntry accessMode="public" name="&lt;init&gt;" parent="JsonData">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268444709" name="WatchFace" parent="Layouts" startPc="268444693">
+        <functionEntry accessMode="public" endPc="268444704" name="WatchFace" parent="Layouts" startPc="268444688">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
