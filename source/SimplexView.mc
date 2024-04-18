@@ -99,7 +99,7 @@ class SimplexView extends WatchUi.WatchFace
         //if the watch does not support partial updates we force the second hand mode to gesture mode
         if(! (WatchUi.WatchFace has :onPartialUpdate))
         {
-            System.println("Has no partial update");
+            //System.println("Has no partial update");
             secondshand_mode = 0;
         }
 
@@ -115,8 +115,21 @@ class SimplexView extends WatchUi.WatchFace
             };
 
         //offscreen_buffer = new Graphics.BufferedBitmap(offscreen_buffer_options);
-        offscreen_buffer = Graphics.createBufferedBitmap(offscreen_buffer_options).get();
-        
+
+        //offscreen_buffer = Graphics.createBufferedBitmap(offscreen_buffer_options).get();
+
+        if (Graphics has :createBufferedBitmap) 
+        {
+            // System.println("has createBufferedBitmap");
+            offscreen_buffer = Graphics.createBufferedBitmap(offscreen_buffer_options).get();
+        } 
+
+        else 
+        {   
+            //older devices, this is somewhat less efficient and use smore heap
+            // System.println("does not have createBufferedBitmap");
+            offscreen_buffer = new Graphics.BufferedBitmap(offscreen_buffer_options);
+        }
     }
 
     function initialize() 
