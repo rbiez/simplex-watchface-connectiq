@@ -1,47 +1,90 @@
 [ @file = "/home/max/git/simplex-garmin-watchface/source/Utils.mc"; @line = 1; @position = 4; ]
 var colors;
-[ @file = "/home/max/git/simplex-garmin-watchface/source/Utils.mc"; @line = 19; @position = 5; ]
+[ @file = "/home/max/git/simplex-garmin-watchface/source/Utils.mc"; @line = 20; @position = 5; ]
 var color_names;
-[ @file = "/home/max/git/simplex-garmin-watchface/source/Utils.mc"; @line = 36; ]
+[ @file = "/home/max/git/simplex-garmin-watchface/source/Utils.mc"; @line = 38; ]
+function colorName(code) {
+_home_max_git_simplex_garmin_watchface_source_Utils_mc_39_0_start:
+[ "/home/max/git/simplex-garmin-watchface/source/Utils.mc" 40 4 ]
+_home_max_git_simplex_garmin_watchface_source_Utils_mc_40_4_if_stmt:
+    %tmp.2 = getv ? :colors;
+    %tmp.3 = getv function %tmp.2 :indexOf;
+    %tmp.5 = lgetv %code;
+    %tmp.6 = invoke %tmp.2 %tmp.3(%tmp.5);
+    %tmp.7 = -1;
+    %tmp.8 = eq %tmp.6 %tmp.7;
+    bf %tmp.8 @_home_max_git_simplex_garmin_watchface_source_Utils_mc_40_4_if_end;
+_home_max_git_simplex_garmin_watchface_source_Utils_mc_40_4_if_true:
+_home_max_git_simplex_garmin_watchface_source_Utils_mc_41_4_start:
+[ "/home/max/git/simplex-garmin-watchface/source/Utils.mc" 42 8 ]
+    %tmp.9 = "Custom";
+    ret %tmp.9;
+_home_max_git_simplex_garmin_watchface_source_Utils_mc_41_4_stop:
+    goto @_home_max_git_simplex_garmin_watchface_source_Utils_mc_40_4_if_end;
+_home_max_git_simplex_garmin_watchface_source_Utils_mc_40_4_if_end:
+[ "/home/max/git/simplex-garmin-watchface/source/Utils.mc" 45 4 ]
+    %tmp.11 = getv ? :color_names;
+    %tmp.12 = self;
+    %tmp.13 = getv function %tmp.12 :colorIndex;
+    %tmp.15 = lgetv %code;
+    %tmp.16 = invoke %tmp.12 %tmp.13(%tmp.15);
+    %tmp.17 = agetv %tmp.11 %tmp.16;
+    ret %tmp.17;
+_home_max_git_simplex_garmin_watchface_source_Utils_mc_39_0_stop:
+}
+[ @file = "/home/max/git/simplex-garmin-watchface/source/Utils.mc"; @line = 49; ]
 function colorIndex(code) {
-_home_max_git_simplex_garmin_watchface_source_Utils_mc_37_0_start:
-[ "/home/max/git/simplex-garmin-watchface/source/Utils.mc" 38 4 ]
+_home_max_git_simplex_garmin_watchface_source_Utils_mc_50_0_start:
+[ "/home/max/git/simplex-garmin-watchface/source/Utils.mc" 52 4 ]
     %tmp.2 = getv ? :colors;
     %tmp.3 = getv function %tmp.2 :indexOf;
     %tmp.5 = lgetv %code;
     %tmp.6 = invoke %tmp.2 %tmp.3(%tmp.5);
     ret %tmp.6;
-_home_max_git_simplex_garmin_watchface_source_Utils_mc_37_0_stop:
+_home_max_git_simplex_garmin_watchface_source_Utils_mc_50_0_stop:
 }
-[ @file = "/home/max/git/simplex-garmin-watchface/source/Utils.mc"; @line = 41; ]
+[ @file = "/home/max/git/simplex-garmin-watchface/source/Utils.mc"; @line = 55; ]
+function color64Index(code) {
+_home_max_git_simplex_garmin_watchface_source_Utils_mc_56_0_start:
+[ "/home/max/git/simplex-garmin-watchface/source/Utils.mc" 57 4 ]
+    %tmp.2 = getv ? :all_colors64;
+    %tmp.3 = getv function %tmp.2 :indexOf;
+    %tmp.5 = lgetv %code;
+    %tmp.6 = invoke %tmp.2 %tmp.3(%tmp.5);
+    ret %tmp.6;
+_home_max_git_simplex_garmin_watchface_source_Utils_mc_56_0_stop:
+}
+[ @file = "/home/max/git/simplex-garmin-watchface/source/Utils.mc"; @line = 60; ]
 function max(a, b) {
-_home_max_git_simplex_garmin_watchface_source_Utils_mc_42_0_start:
-[ "/home/max/git/simplex-garmin-watchface/source/Utils.mc" 43 4 ]
-_home_max_git_simplex_garmin_watchface_source_Utils_mc_43_4_if_stmt:
+_home_max_git_simplex_garmin_watchface_source_Utils_mc_61_0_start:
+[ "/home/max/git/simplex-garmin-watchface/source/Utils.mc" 62 4 ]
+_home_max_git_simplex_garmin_watchface_source_Utils_mc_62_4_if_stmt:
     %tmp.2 = lgetv %b;
     %tmp.4 = lgetv %a;
     %tmp.5 = gt %tmp.2 %tmp.4;
-    bf %tmp.5 @_home_max_git_simplex_garmin_watchface_source_Utils_mc_43_4_if_false;
-_home_max_git_simplex_garmin_watchface_source_Utils_mc_43_4_if_true:
-_home_max_git_simplex_garmin_watchface_source_Utils_mc_44_4_start:
-[ "/home/max/git/simplex-garmin-watchface/source/Utils.mc" 45 8 ]
+    bf %tmp.5 @_home_max_git_simplex_garmin_watchface_source_Utils_mc_62_4_if_false;
+_home_max_git_simplex_garmin_watchface_source_Utils_mc_62_4_if_true:
+_home_max_git_simplex_garmin_watchface_source_Utils_mc_63_4_start:
+[ "/home/max/git/simplex-garmin-watchface/source/Utils.mc" 64 8 ]
     %tmp.7 = lgetv %b;
     ret %tmp.7;
-_home_max_git_simplex_garmin_watchface_source_Utils_mc_44_4_stop:
-    goto @_home_max_git_simplex_garmin_watchface_source_Utils_mc_43_4_if_end;
-_home_max_git_simplex_garmin_watchface_source_Utils_mc_43_4_if_false:
-_home_max_git_simplex_garmin_watchface_source_Utils_mc_49_4_start:
-[ "/home/max/git/simplex-garmin-watchface/source/Utils.mc" 50 8 ]
+_home_max_git_simplex_garmin_watchface_source_Utils_mc_63_4_stop:
+    goto @_home_max_git_simplex_garmin_watchface_source_Utils_mc_62_4_if_end;
+_home_max_git_simplex_garmin_watchface_source_Utils_mc_62_4_if_false:
+_home_max_git_simplex_garmin_watchface_source_Utils_mc_68_4_start:
+[ "/home/max/git/simplex-garmin-watchface/source/Utils.mc" 69 8 ]
     %tmp.9 = lgetv %a;
     ret %tmp.9;
-_home_max_git_simplex_garmin_watchface_source_Utils_mc_49_4_stop:
-_home_max_git_simplex_garmin_watchface_source_Utils_mc_43_4_if_end:
-_home_max_git_simplex_garmin_watchface_source_Utils_mc_42_0_stop:
+_home_max_git_simplex_garmin_watchface_source_Utils_mc_68_4_stop:
+_home_max_git_simplex_garmin_watchface_source_Utils_mc_62_4_if_end:
+_home_max_git_simplex_garmin_watchface_source_Utils_mc_61_0_stop:
 }
+[ @file = "/home/max/git/simplex-garmin-watchface/source/Utils.mc"; @line = 74; @position = 4; ]
+var all_colors64;
 [ @file = "/home/max/git/simplex-garmin-watchface/source/Utils.mc"; @line = 1; ]
 <init> {
 [ "/home/max/git/simplex-garmin-watchface/source/Utils.mc" 1 4 ]
-    %tmp.10 = newa 16;
+    %tmp.10 = newa 17;
     %tmp.11 = 0x000000;
     %tmp.12 = dup %tmp.10;
     %tmp.13 = aputv %tmp.12 0 %tmp.11;
@@ -78,68 +121,269 @@ _home_max_git_simplex_garmin_watchface_source_Utils_mc_42_0_stop:
     %tmp.44 = 0xAA00FF;
     %tmp.45 = dup %tmp.43;
     %tmp.46 = aputv %tmp.45 11 %tmp.44;
-    %tmp.47 = 0xFF00FF;
+    %tmp.47 = 0x5500AA;
     %tmp.48 = dup %tmp.46;
     %tmp.49 = aputv %tmp.48 12 %tmp.47;
-    %tmp.50 = 0xFFFF00;
+    %tmp.50 = 0xFF00FF;
     %tmp.51 = dup %tmp.49;
     %tmp.52 = aputv %tmp.51 13 %tmp.50;
-    %tmp.53 = 0x555500;
+    %tmp.53 = 0xFFFF00;
     %tmp.54 = dup %tmp.52;
     %tmp.55 = aputv %tmp.54 14 %tmp.53;
-    %tmp.56 = 0x00FFFF;
+    %tmp.56 = 0x555500;
     %tmp.57 = dup %tmp.55;
     %tmp.58 = aputv %tmp.57 15 %tmp.56;
-    putv self :colors %tmp.58;
-[ "/home/max/git/simplex-garmin-watchface/source/Utils.mc" 19 5 ]
-    %tmp.59 = newa 16;
-    %tmp.60 = "Black";
-    %tmp.61 = dup %tmp.59;
-    %tmp.62 = aputv %tmp.61 0 %tmp.60;
-    %tmp.63 = "Dark Gray";
+    %tmp.59 = 0x00FFFF;
+    %tmp.60 = dup %tmp.58;
+    %tmp.61 = aputv %tmp.60 16 %tmp.59;
+    putv self :colors %tmp.61;
+[ "/home/max/git/simplex-garmin-watchface/source/Utils.mc" 20 5 ]
+    %tmp.62 = newa 17;
+    %tmp.63 = "Black";
     %tmp.64 = dup %tmp.62;
-    %tmp.65 = aputv %tmp.64 1 %tmp.63;
-    %tmp.66 = "Light Gray";
+    %tmp.65 = aputv %tmp.64 0 %tmp.63;
+    %tmp.66 = "Dark Gray";
     %tmp.67 = dup %tmp.65;
-    %tmp.68 = aputv %tmp.67 2 %tmp.66;
-    %tmp.69 = "White";
+    %tmp.68 = aputv %tmp.67 1 %tmp.66;
+    %tmp.69 = "Light Gray";
     %tmp.70 = dup %tmp.68;
-    %tmp.71 = aputv %tmp.70 3 %tmp.69;
-    %tmp.72 = "Blue";
+    %tmp.71 = aputv %tmp.70 2 %tmp.69;
+    %tmp.72 = "White";
     %tmp.73 = dup %tmp.71;
-    %tmp.74 = aputv %tmp.73 4 %tmp.72;
-    %tmp.75 = "Red";
+    %tmp.74 = aputv %tmp.73 3 %tmp.72;
+    %tmp.75 = "Blue";
     %tmp.76 = dup %tmp.74;
-    %tmp.77 = aputv %tmp.76 5 %tmp.75;
-    %tmp.78 = "Green";
+    %tmp.77 = aputv %tmp.76 4 %tmp.75;
+    %tmp.78 = "Red";
     %tmp.79 = dup %tmp.77;
-    %tmp.80 = aputv %tmp.79 6 %tmp.78;
-    %tmp.81 = "Dark Red";
+    %tmp.80 = aputv %tmp.79 5 %tmp.78;
+    %tmp.81 = "Green";
     %tmp.82 = dup %tmp.80;
-    %tmp.83 = aputv %tmp.82 7 %tmp.81;
-    %tmp.84 = "Dark Green";
+    %tmp.83 = aputv %tmp.82 6 %tmp.81;
+    %tmp.84 = "Dark Red";
     %tmp.85 = dup %tmp.83;
-    %tmp.86 = aputv %tmp.85 8 %tmp.84;
-    %tmp.87 = "Dark Blue";
+    %tmp.86 = aputv %tmp.85 7 %tmp.84;
+    %tmp.87 = "Dark Green";
     %tmp.88 = dup %tmp.86;
-    %tmp.89 = aputv %tmp.88 9 %tmp.87;
-    %tmp.90 = "Orange";
+    %tmp.89 = aputv %tmp.88 8 %tmp.87;
+    %tmp.90 = "Dark Blue";
     %tmp.91 = dup %tmp.89;
-    %tmp.92 = aputv %tmp.91 10 %tmp.90;
-    %tmp.93 = "Purple";
+    %tmp.92 = aputv %tmp.91 9 %tmp.90;
+    %tmp.93 = "Orange";
     %tmp.94 = dup %tmp.92;
-    %tmp.95 = aputv %tmp.94 11 %tmp.93;
-    %tmp.96 = "Pink";
+    %tmp.95 = aputv %tmp.94 10 %tmp.93;
+    %tmp.96 = "Purple";
     %tmp.97 = dup %tmp.95;
-    %tmp.98 = aputv %tmp.97 12 %tmp.96;
-    %tmp.99 = "Yellow";
+    %tmp.98 = aputv %tmp.97 11 %tmp.96;
+    %tmp.99 = "Dark Purple";
     %tmp.100 = dup %tmp.98;
-    %tmp.101 = aputv %tmp.100 13 %tmp.99;
-    %tmp.102 = "OliveGreen";
+    %tmp.101 = aputv %tmp.100 12 %tmp.99;
+    %tmp.102 = "Pink";
     %tmp.103 = dup %tmp.101;
-    %tmp.104 = aputv %tmp.103 14 %tmp.102;
-    %tmp.105 = "Turquoise";
+    %tmp.104 = aputv %tmp.103 13 %tmp.102;
+    %tmp.105 = "Yellow";
     %tmp.106 = dup %tmp.104;
-    %tmp.107 = aputv %tmp.106 15 %tmp.105;
-    putv self :color_names %tmp.107;
+    %tmp.107 = aputv %tmp.106 14 %tmp.105;
+    %tmp.108 = "OliveGreen";
+    %tmp.109 = dup %tmp.107;
+    %tmp.110 = aputv %tmp.109 15 %tmp.108;
+    %tmp.111 = "Turquoise";
+    %tmp.112 = dup %tmp.110;
+    %tmp.113 = aputv %tmp.112 16 %tmp.111;
+    putv self :color_names %tmp.113;
+[ "/home/max/git/simplex-garmin-watchface/source/Utils.mc" 74 4 ]
+    %tmp.114 = newa 64;
+    %tmp.115 = 0x000000;
+    %tmp.116 = dup %tmp.114;
+    %tmp.117 = aputv %tmp.116 0 %tmp.115;
+    %tmp.118 = 0x000055;
+    %tmp.119 = dup %tmp.117;
+    %tmp.120 = aputv %tmp.119 1 %tmp.118;
+    %tmp.121 = 0x0000aa;
+    %tmp.122 = dup %tmp.120;
+    %tmp.123 = aputv %tmp.122 2 %tmp.121;
+    %tmp.124 = 0x0000ff;
+    %tmp.125 = dup %tmp.123;
+    %tmp.126 = aputv %tmp.125 3 %tmp.124;
+    %tmp.127 = 0x005500;
+    %tmp.128 = dup %tmp.126;
+    %tmp.129 = aputv %tmp.128 4 %tmp.127;
+    %tmp.130 = 0x005555;
+    %tmp.131 = dup %tmp.129;
+    %tmp.132 = aputv %tmp.131 5 %tmp.130;
+    %tmp.133 = 0x0055aa;
+    %tmp.134 = dup %tmp.132;
+    %tmp.135 = aputv %tmp.134 6 %tmp.133;
+    %tmp.136 = 0x0055ff;
+    %tmp.137 = dup %tmp.135;
+    %tmp.138 = aputv %tmp.137 7 %tmp.136;
+    %tmp.139 = 0x00aa00;
+    %tmp.140 = dup %tmp.138;
+    %tmp.141 = aputv %tmp.140 8 %tmp.139;
+    %tmp.142 = 0x00aa55;
+    %tmp.143 = dup %tmp.141;
+    %tmp.144 = aputv %tmp.143 9 %tmp.142;
+    %tmp.145 = 0x00aaaa;
+    %tmp.146 = dup %tmp.144;
+    %tmp.147 = aputv %tmp.146 10 %tmp.145;
+    %tmp.148 = 0x00aaff;
+    %tmp.149 = dup %tmp.147;
+    %tmp.150 = aputv %tmp.149 11 %tmp.148;
+    %tmp.151 = 0x00ff00;
+    %tmp.152 = dup %tmp.150;
+    %tmp.153 = aputv %tmp.152 12 %tmp.151;
+    %tmp.154 = 0x00ff55;
+    %tmp.155 = dup %tmp.153;
+    %tmp.156 = aputv %tmp.155 13 %tmp.154;
+    %tmp.157 = 0x00ffaa;
+    %tmp.158 = dup %tmp.156;
+    %tmp.159 = aputv %tmp.158 14 %tmp.157;
+    %tmp.160 = 0x00ffff;
+    %tmp.161 = dup %tmp.159;
+    %tmp.162 = aputv %tmp.161 15 %tmp.160;
+    %tmp.163 = 0x550000;
+    %tmp.164 = dup %tmp.162;
+    %tmp.165 = aputv %tmp.164 16 %tmp.163;
+    %tmp.166 = 0x550055;
+    %tmp.167 = dup %tmp.165;
+    %tmp.168 = aputv %tmp.167 17 %tmp.166;
+    %tmp.169 = 0x5500aa;
+    %tmp.170 = dup %tmp.168;
+    %tmp.171 = aputv %tmp.170 18 %tmp.169;
+    %tmp.172 = 0x5500ff;
+    %tmp.173 = dup %tmp.171;
+    %tmp.174 = aputv %tmp.173 19 %tmp.172;
+    %tmp.175 = 0x555500;
+    %tmp.176 = dup %tmp.174;
+    %tmp.177 = aputv %tmp.176 20 %tmp.175;
+    %tmp.178 = 0x555555;
+    %tmp.179 = dup %tmp.177;
+    %tmp.180 = aputv %tmp.179 21 %tmp.178;
+    %tmp.181 = 0x5555aa;
+    %tmp.182 = dup %tmp.180;
+    %tmp.183 = aputv %tmp.182 22 %tmp.181;
+    %tmp.184 = 0x5555ff;
+    %tmp.185 = dup %tmp.183;
+    %tmp.186 = aputv %tmp.185 23 %tmp.184;
+    %tmp.187 = 0x55aa00;
+    %tmp.188 = dup %tmp.186;
+    %tmp.189 = aputv %tmp.188 24 %tmp.187;
+    %tmp.190 = 0x55aa55;
+    %tmp.191 = dup %tmp.189;
+    %tmp.192 = aputv %tmp.191 25 %tmp.190;
+    %tmp.193 = 0x55aaaa;
+    %tmp.194 = dup %tmp.192;
+    %tmp.195 = aputv %tmp.194 26 %tmp.193;
+    %tmp.196 = 0x55aaff;
+    %tmp.197 = dup %tmp.195;
+    %tmp.198 = aputv %tmp.197 27 %tmp.196;
+    %tmp.199 = 0x55ff00;
+    %tmp.200 = dup %tmp.198;
+    %tmp.201 = aputv %tmp.200 28 %tmp.199;
+    %tmp.202 = 0x55ff55;
+    %tmp.203 = dup %tmp.201;
+    %tmp.204 = aputv %tmp.203 29 %tmp.202;
+    %tmp.205 = 0x55ffaa;
+    %tmp.206 = dup %tmp.204;
+    %tmp.207 = aputv %tmp.206 30 %tmp.205;
+    %tmp.208 = 0x55ffff;
+    %tmp.209 = dup %tmp.207;
+    %tmp.210 = aputv %tmp.209 31 %tmp.208;
+    %tmp.211 = 0xaa0000;
+    %tmp.212 = dup %tmp.210;
+    %tmp.213 = aputv %tmp.212 32 %tmp.211;
+    %tmp.214 = 0xaa0055;
+    %tmp.215 = dup %tmp.213;
+    %tmp.216 = aputv %tmp.215 33 %tmp.214;
+    %tmp.217 = 0xaa00aa;
+    %tmp.218 = dup %tmp.216;
+    %tmp.219 = aputv %tmp.218 34 %tmp.217;
+    %tmp.220 = 0xaa00ff;
+    %tmp.221 = dup %tmp.219;
+    %tmp.222 = aputv %tmp.221 35 %tmp.220;
+    %tmp.223 = 0xaa5500;
+    %tmp.224 = dup %tmp.222;
+    %tmp.225 = aputv %tmp.224 36 %tmp.223;
+    %tmp.226 = 0xaa5555;
+    %tmp.227 = dup %tmp.225;
+    %tmp.228 = aputv %tmp.227 37 %tmp.226;
+    %tmp.229 = 0xaa55aa;
+    %tmp.230 = dup %tmp.228;
+    %tmp.231 = aputv %tmp.230 38 %tmp.229;
+    %tmp.232 = 0xaa55ff;
+    %tmp.233 = dup %tmp.231;
+    %tmp.234 = aputv %tmp.233 39 %tmp.232;
+    %tmp.235 = 0xaaaa00;
+    %tmp.236 = dup %tmp.234;
+    %tmp.237 = aputv %tmp.236 40 %tmp.235;
+    %tmp.238 = 0xaaaa55;
+    %tmp.239 = dup %tmp.237;
+    %tmp.240 = aputv %tmp.239 41 %tmp.238;
+    %tmp.241 = 0xaaaaaa;
+    %tmp.242 = dup %tmp.240;
+    %tmp.243 = aputv %tmp.242 42 %tmp.241;
+    %tmp.244 = 0xaaaaff;
+    %tmp.245 = dup %tmp.243;
+    %tmp.246 = aputv %tmp.245 43 %tmp.244;
+    %tmp.247 = 0xaaff00;
+    %tmp.248 = dup %tmp.246;
+    %tmp.249 = aputv %tmp.248 44 %tmp.247;
+    %tmp.250 = 0xaaff55;
+    %tmp.251 = dup %tmp.249;
+    %tmp.252 = aputv %tmp.251 45 %tmp.250;
+    %tmp.253 = 0xaaffaa;
+    %tmp.254 = dup %tmp.252;
+    %tmp.255 = aputv %tmp.254 46 %tmp.253;
+    %tmp.256 = 0xaaffff;
+    %tmp.257 = dup %tmp.255;
+    %tmp.258 = aputv %tmp.257 47 %tmp.256;
+    %tmp.259 = 0xff0000;
+    %tmp.260 = dup %tmp.258;
+    %tmp.261 = aputv %tmp.260 48 %tmp.259;
+    %tmp.262 = 0xff0055;
+    %tmp.263 = dup %tmp.261;
+    %tmp.264 = aputv %tmp.263 49 %tmp.262;
+    %tmp.265 = 0xff00aa;
+    %tmp.266 = dup %tmp.264;
+    %tmp.267 = aputv %tmp.266 50 %tmp.265;
+    %tmp.268 = 0xff00ff;
+    %tmp.269 = dup %tmp.267;
+    %tmp.270 = aputv %tmp.269 51 %tmp.268;
+    %tmp.271 = 0xff5500;
+    %tmp.272 = dup %tmp.270;
+    %tmp.273 = aputv %tmp.272 52 %tmp.271;
+    %tmp.274 = 0xff5555;
+    %tmp.275 = dup %tmp.273;
+    %tmp.276 = aputv %tmp.275 53 %tmp.274;
+    %tmp.277 = 0xff55aa;
+    %tmp.278 = dup %tmp.276;
+    %tmp.279 = aputv %tmp.278 54 %tmp.277;
+    %tmp.280 = 0xff55ff;
+    %tmp.281 = dup %tmp.279;
+    %tmp.282 = aputv %tmp.281 55 %tmp.280;
+    %tmp.283 = 0xffaa00;
+    %tmp.284 = dup %tmp.282;
+    %tmp.285 = aputv %tmp.284 56 %tmp.283;
+    %tmp.286 = 0xffaa55;
+    %tmp.287 = dup %tmp.285;
+    %tmp.288 = aputv %tmp.287 57 %tmp.286;
+    %tmp.289 = 0xffaaaa;
+    %tmp.290 = dup %tmp.288;
+    %tmp.291 = aputv %tmp.290 58 %tmp.289;
+    %tmp.292 = 0xffaaff;
+    %tmp.293 = dup %tmp.291;
+    %tmp.294 = aputv %tmp.293 59 %tmp.292;
+    %tmp.295 = 0xffff00;
+    %tmp.296 = dup %tmp.294;
+    %tmp.297 = aputv %tmp.296 60 %tmp.295;
+    %tmp.298 = 0xffff55;
+    %tmp.299 = dup %tmp.297;
+    %tmp.300 = aputv %tmp.299 61 %tmp.298;
+    %tmp.301 = 0xffffaa;
+    %tmp.302 = dup %tmp.300;
+    %tmp.303 = aputv %tmp.302 62 %tmp.301;
+    %tmp.304 = 0xffffff;
+    %tmp.305 = dup %tmp.303;
+    %tmp.306 = aputv %tmp.305 63 %tmp.304;
+    putv self :all_colors64 %tmp.306;
 }

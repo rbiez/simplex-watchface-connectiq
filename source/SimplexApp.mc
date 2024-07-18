@@ -44,6 +44,10 @@ class SimplexApp extends Application.AppBase
         var menu;
         menu = new $.SimplexSettingsMenu();
 
+        // for testing
+        // menu.addItem(new WatchUi.MenuItem("TEST", null, "TEST", null));
+
+
         var val = Application.Properties.getValue("DrawDate") ? true : false;
         menu.addItem(new WatchUi.ToggleMenuItem("Draw Date", null, "DrawDate", val, null));
 
@@ -73,28 +77,28 @@ class SimplexApp extends Application.AppBase
         menu.addItem(new WatchUi.ToggleMenuItem("Theme", {:enabled=>"Theme: Dark", :disabled=>"Theme: Light"}, "Theme", val, null));
 
         val = Application.Properties.getValue("BackgroundColor") as Number;
-        menu.addItem(new WatchUi.MenuItem("Background Color", color_names[colorIndex(val)], "BackgroundColor", null));
+        menu.addItem(new WatchUi.MenuItem("Background Color", colorName(val), "BackgroundColor", null));
 
         val = Application.Properties.getValue("ForegroundColorOne") as Number;
-        menu.addItem(new WatchUi.MenuItem("Foreground Color 1", color_names[colorIndex(val)], "ForegroundColorOne", null));
+        menu.addItem(new WatchUi.MenuItem("Foreground Color 1", colorName(val), "ForegroundColorOne", null));
 
         val = Application.Properties.getValue("ForegroundColorTwo") as Number;
-        menu.addItem(new WatchUi.MenuItem("Foreground Color 2", color_names[colorIndex(val)], "ForegroundColorTwo", null));
+        menu.addItem(new WatchUi.MenuItem("Foreground Color 2", colorName(val), "ForegroundColorTwo", null));
 
         val = Application.Properties.getValue("SecondsHandColor") as Number;
-        menu.addItem(new WatchUi.MenuItem("Second Hand Color", color_names[colorIndex(val)], "SecondsHandColor", null));
+        menu.addItem(new WatchUi.MenuItem("Second Hand Color", colorName(val), "SecondsHandColor", null));
 
         val = Application.Properties.getValue("MinuteHandColorOne") as Number;
-        menu.addItem(new WatchUi.MenuItem("Minute Hand Color 1", color_names[colorIndex(val)], "MinuteHandColorOne", null));
+        menu.addItem(new WatchUi.MenuItem("Minute Hand Color 1", colorName(val), "MinuteHandColorOne", null));
 
         val = Application.Properties.getValue("MinuteHandColorTwo") as Number;
-        menu.addItem(new WatchUi.MenuItem("Minute Hand Color 2", color_names[colorIndex(val)], "MinuteHandColorTwo", null));
+        menu.addItem(new WatchUi.MenuItem("Minute Hand Color 2", colorName(val), "MinuteHandColorTwo", null));
 
         val = Application.Properties.getValue("HourHandColorOne") as Number;
-        menu.addItem(new WatchUi.MenuItem("Hour Hand Color 1", color_names[colorIndex(val)], "HourHandColorOne", null));
+        menu.addItem(new WatchUi.MenuItem("Hour Hand Color 1", colorName(val), "HourHandColorOne", null));
 
         val = Application.Properties.getValue("HourHandColorTwo") as Number;
-        menu.addItem(new WatchUi.MenuItem("Hour Hand Color 2", color_names[colorIndex(val)], "HourHandColorTwo", null));
+        menu.addItem(new WatchUi.MenuItem("Hour Hand Color 2", colorName(val), "HourHandColorTwo", null));
 
         //these two are for debugging only
         // val = Application.Properties.getValue("AllowedExTime").format( "%3f" );

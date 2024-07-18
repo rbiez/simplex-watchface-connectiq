@@ -82,57 +82,43 @@ _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_31_8_start:
 _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_31_8_stop:
         goto @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_30_8_if_end;
 _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_30_8_if_false:
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_36_8_start:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 37 12 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_36_8_start" "_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_36_8_stop" ]
-        %color.1 = local;
-        %tmp.21 = getv ? :Application;
-        %tmp.22 = getv %tmp.21 :Properties;
-        %tmp.23 = getv function %tmp.22 :getValue;
-        %tmp.24 = lgetv %menuItem;
-        %tmp.25 = as %tmp.24 { (!ToggleMenuItem) };
-        %tmp.26 = getv function %tmp.25 :getId;
-        %tmp.27 = invoke %tmp.25 %tmp.26();
-        %tmp.28 = as %tmp.27 String;
-        %tmp.29 = invoke %tmp.22 %tmp.23(%tmp.28);
-        %tmp.30 = as %tmp.29 Number;
-        lputv %color.1 %tmp.30;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 39 12 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_36_8_start" "_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_36_8_stop" ]
-        %new_index.2 = local;
-        %tmp.31 = self;
-        %tmp.32 = getv function %tmp.31 :colorIndex;
-        %tmp.34 = lgetv %color.1;
-        %tmp.35 = invoke %tmp.31 %tmp.32(%tmp.34);
-        %tmp.36 = 1;
-        %tmp.37 = add %tmp.35 %tmp.36;
-        %tmp.39 = getv ? :colors;
-        %tmp.40 = getv function %tmp.39 :size;
-        %tmp.41 = invoke %tmp.39 %tmp.40();
-        %tmp.42 = mod %tmp.37 %tmp.41;
-        lputv %new_index.2 %tmp.42;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 41 12 ]
-        %tmp.44 = getv ? :Application;
-        %tmp.45 = getv %tmp.44 :Properties;
-        %tmp.46 = getv function %tmp.45 :setValue;
-        %tmp.47 = lgetv %menuItem;
-        %tmp.48 = as %tmp.47 { (!ToggleMenuItem) };
-        %tmp.49 = getv function %tmp.48 :getId;
-        %tmp.50 = invoke %tmp.48 %tmp.49();
-        %tmp.51 = as %tmp.50 String;
-        %tmp.53 = getv ? :colors;
-        %tmp.55 = lgetv %new_index.2;
-        %tmp.56 = agetv %tmp.53 %tmp.55;
-        invoke %tmp.45 %tmp.46(%tmp.51, %tmp.56);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 43 12 ]
-        %tmp.57 = lgetv %menuItem;
-        %tmp.58 = as %tmp.57 { (!ToggleMenuItem) };
-        %tmp.59 = getv function %tmp.58 :setSubLabel;
-        %tmp.61 = getv ? :color_names;
-        %tmp.63 = lgetv %new_index.2;
-        %tmp.64 = agetv %tmp.61 %tmp.63;
-        invoke %tmp.58 %tmp.59(%tmp.64);
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_36_8_stop:
+_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_49_8_start:
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 50 12 ]
+        [ "_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_49_8_start" "_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_49_8_stop" ]
+        %color_picker.1 = local;
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 52 12 ]
+        %tmp.23 = getv ? :ColorPickerView;
+        %tmp.20 = newc %tmp.23 ();
+        lputv %color_picker.1 %tmp.20;
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 53 12 ]
+        %tmp.24 = lgetv %color_picker.1;
+        %tmp.25 = getv function %tmp.24 :setSettingsName;
+        %tmp.26 = lgetv %menuItem;
+        %tmp.27 = as %tmp.26 { (!ToggleMenuItem) };
+        %tmp.28 = getv function %tmp.27 :getId;
+        %tmp.29 = invoke %tmp.27 %tmp.28();
+        %tmp.30 = as %tmp.29 String;
+        invoke %tmp.24 %tmp.25(%tmp.30);
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 55 12 ]
+        [ "_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_49_8_start" "_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_49_8_stop" ]
+        %delegate.2 = local;
+        %tmp.34 = getv ? :ColorPickerViewDelegate;
+        %tmp.31 = newc %tmp.34 ();
+        lputv %delegate.2 %tmp.31;
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 57 12 ]
+        %tmp.35 = lgetv %delegate.2;
+        %tmp.36 = getv function %tmp.35 :setView;
+        %tmp.38 = lgetv %color_picker.1;
+        invoke %tmp.35 %tmp.36(%tmp.38);
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 59 12 ]
+        %tmp.39 = getm $.Toybox.WatchUi;
+        %tmp.40 = getv function %tmp.39 :pushView;
+        %tmp.42 = lgetv %color_picker.1;
+        %tmp.44 = lgetv %delegate.2;
+        %tmp.45 = getm $.Toybox.WatchUi;
+        %tmp.46 = getv %tmp.45 :SLIDE_LEFT;
+        invoke %tmp.39 %tmp.40(%tmp.42, %tmp.44, %tmp.46);
+_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_49_8_stop:
 _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_30_8_if_end:
 _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_29_4_stop:
     }

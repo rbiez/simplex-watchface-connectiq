@@ -32,16 +32,43 @@ class SimplexSettingsMenuDelegate extends WatchUi.Menu2InputDelegate
             Application.Properties.setValue(menuItem.getId() as String, menuItem.isEnabled() as Number);
         }
 
+        // else if((menuItem.getId() as String).equals("TEST"))
+        // {
+        //     var color_picker;
+        //     color_picker = new ColorPickerView();
+        //     color_picker.setSettingsName("ForegroundColorOne");
+
+        //     var delegate = new ColorPickerViewDelegate();
+
+        //     delegate.setView(color_picker);
+
+        //     WatchUi.pushView(color_picker, delegate, WatchUi.SLIDE_LEFT);
+        // }
+
         else
         {
-            var color = Application.Properties.getValue(menuItem.getId() as String) as Number;
+            var color_picker;
+            
+            color_picker = new ColorPickerView();
+            color_picker.setSettingsName(menuItem.getId() as String);
 
-            var new_index = (colorIndex(color) + 1) % colors.size();
+            var delegate = new ColorPickerViewDelegate();
 
-            Application.Properties.setValue(menuItem.getId() as String, colors[new_index]);
+            delegate.setView(color_picker);
 
-            menuItem.setSubLabel(color_names[new_index]);
+            WatchUi.pushView(color_picker, delegate, WatchUi.SLIDE_LEFT);            
         }
+
+        // else
+        // {
+        //     var color = Application.Properties.getValue(menuItem.getId() as String) as Number;
+
+        //     var new_index = (colorIndex(color) + 1) % colors.size();
+
+        //     Application.Properties.setValue(menuItem.getId() as String, colors[new_index]);
+
+        //     menuItem.setSubLabel(color_names[new_index]);
+        // }
 
         
     }
