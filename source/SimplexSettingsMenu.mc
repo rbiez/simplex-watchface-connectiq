@@ -50,7 +50,9 @@ class SimplexSettingsMenuDelegate extends WatchUi.Menu2InputDelegate
             var color_picker;
             
             color_picker = new ColorPickerView();
+            
             color_picker.setSettingsName(menuItem.getId() as String);
+            color_picker.setMenuItemHandle(menuItem);
 
             var delegate = new ColorPickerViewDelegate();
 

@@ -15,6 +15,15 @@
     <property id="MinuteHandColorTwo" type="number">0xFFFFFF</property>
     <property id="HourHandColorOne" type="number">0xAAAAAA</property>
     <property id="HourHandColorTwo" type="number">0xFFFFFF</property>
+
+    <property id="BackgroundColorCustom" type="number">0x000000</property>
+    <property id="ForegroundColorOneCustom" type="number">0xFFFFFF</property>
+    <property id="ForegroundColorTwoCustom" type="number">0xAAAAAA</property>
+    <property id="SecondsHandColorCustom" type="number">0xAA0000</property>
+    <property id="MinuteHandColorOneCustom" type="number">0xAAAAAA</property>
+    <property id="MinuteHandColorTwoCustom" type="number">0xFFFFFF</property>
+    <property id="HourHandColorOneCustom" type="number">0xAAAAAA</property>
+    <property id="HourHandColorTwoCustom" type="number">0xFFFFFF</property>
     
     <!-- for debugging -->
     <!-- <property id="AllowedExTime" type="float">0</property>

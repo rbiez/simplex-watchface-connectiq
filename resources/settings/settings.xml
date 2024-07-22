@@ -56,7 +56,8 @@
     </setting>
 
     <setting propertyKey="@Properties.BackgroundColor" title="Background Color">
-        <settingConfig type="list">
+        <settingConfig type="list">            
+            <listEntry value="-1">@Strings.ColorCustom</listEntry>
             <listEntry value="0x000000">@Strings.ColorBlack</listEntry>
             <listEntry value="0x555555">@Strings.ColorDarkGray</listEntry>
             <listEntry value="0xAAAAAA">@Strings.ColorLightGray</listEntry>
@@ -77,7 +78,8 @@
     </setting>  
 
     <setting propertyKey="@Properties.ForegroundColorOne" title="Foreground Color 1">
-        <settingConfig type="list">
+        <settingConfig type="list">            
+            <listEntry value="-1">@Strings.ColorCustom</listEntry>
             <listEntry value="0x000000">@Strings.ColorBlack</listEntry>
             <listEntry value="0x555555">@Strings.ColorDarkGray</listEntry>
             <listEntry value="0xAAAAAA">@Strings.ColorLightGray</listEntry>
@@ -98,7 +100,8 @@
     </setting> 
 
     <setting propertyKey="@Properties.ForegroundColorTwo" title="Foreground Color 2">
-        <settingConfig type="list">
+        <settingConfig type="list">            
+            <listEntry value="-1">@Strings.ColorCustom</listEntry>
             <listEntry value="0x000000">@Strings.ColorBlack</listEntry>
             <listEntry value="0x555555">@Strings.ColorDarkGray</listEntry>
             <listEntry value="0xAAAAAA">@Strings.ColorLightGray</listEntry>
@@ -119,7 +122,8 @@
     </setting> 
 
     <setting propertyKey="@Properties.MinuteHandColorOne" title="Minute Hand Color 1">
-        <settingConfig type="list">
+        <settingConfig type="list">            
+            <listEntry value="-1">@Strings.ColorCustom</listEntry>
             <listEntry value="0x000000">@Strings.ColorBlack</listEntry>
             <listEntry value="0x555555">@Strings.ColorDarkGray</listEntry>
             <listEntry value="0xAAAAAA">@Strings.ColorLightGray</listEntry>
@@ -140,7 +144,8 @@
     </setting>
 
     <setting propertyKey="@Properties.MinuteHandColorOne" title="Minute Hand Color 1">
-        <settingConfig type="list">
+        <settingConfig type="list">            
+            <listEntry value="-1">@Strings.ColorCustom</listEntry>
             <listEntry value="0x000000">@Strings.ColorBlack</listEntry>
             <listEntry value="0x555555">@Strings.ColorDarkGray</listEntry>
             <listEntry value="0xAAAAAA">@Strings.ColorLightGray</listEntry>
@@ -161,7 +166,8 @@
     </setting>   
 
     <setting propertyKey="@Properties.MinuteHandColorTwo" title="Minute Hand Color 2">
-        <settingConfig type="list">
+        <settingConfig type="list">            
+            <listEntry value="-1">@Strings.ColorCustom</listEntry>
             <listEntry value="0x000000">@Strings.ColorBlack</listEntry>
             <listEntry value="0x555555">@Strings.ColorDarkGray</listEntry>
             <listEntry value="0xAAAAAA">@Strings.ColorLightGray</listEntry>
@@ -182,7 +188,8 @@
     </setting>   
 
     <setting propertyKey="@Properties.HourHandColorOne" title="Hour Hand Color 1">
-        <settingConfig type="list">
+        <settingConfig type="list">            
+            <listEntry value="-1">@Strings.ColorCustom</listEntry>
             <listEntry value="0x000000">@Strings.ColorBlack</listEntry>
             <listEntry value="0x555555">@Strings.ColorDarkGray</listEntry>
             <listEntry value="0xAAAAAA">@Strings.ColorLightGray</listEntry>
@@ -203,7 +210,8 @@
     </setting>   
 
     <setting propertyKey="@Properties.HourHandColorTwo" title="Hour Hand Color 2">
-        <settingConfig type="list">
+        <settingConfig type="list">            
+            <listEntry value="-1">@Strings.ColorCustom</listEntry>
             <listEntry value="0x000000">@Strings.ColorBlack</listEntry>
             <listEntry value="0x555555">@Strings.ColorDarkGray</listEntry>
             <listEntry value="0xAAAAAA">@Strings.ColorLightGray</listEntry>
@@ -224,7 +232,8 @@
     </setting>   
 
     <setting propertyKey="@Properties.SecondsHandColor" title="Seconds Hand Color">
-        <settingConfig type="list">
+        <settingConfig type="list">            
+            <listEntry value="-1">@Strings.ColorCustom</listEntry>
             <listEntry value="0x000000">@Strings.ColorBlack</listEntry>
             <listEntry value="0x555555">@Strings.ColorDarkGray</listEntry>
             <listEntry value="0xAAAAAA">@Strings.ColorLightGray</listEntry>

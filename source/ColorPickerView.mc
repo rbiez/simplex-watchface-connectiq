@@ -7,12 +7,16 @@ class ColorPickerView extends WatchUi.View
 
     private var selection_index;
 
+    private var menu_item_handle;
+
     function initialize() 
     {
         View.initialize();
 
         selection_index = 0;
         settings_name = "null";
+
+        menu_item_handle = null;
 
     }
 
@@ -25,7 +29,7 @@ class ColorPickerView extends WatchUi.View
     // onShow() is called when this View is brought to the foreground
     function onShow() 
     {
-        setSelectionIndex(color64Index(Application.Properties.getValue(settings_name).toNumber()));
+        setSelectionIndex(color64Index(loadColorSettings(settings_name)));
     }
 
     // onUpdate() is called periodically to update the View
@@ -86,7 +90,30 @@ class ColorPickerView extends WatchUi.View
     // onHide() is called when this View is removed from the screen
     function onHide() 
     {
-        Application.Properties.setValue(settings_name, all_colors64[selection_index]);
+        //we save the section
+        //we set the custom color value to the selection
+        if(colorIndex(all_colors64[selection_index]) == -1)
+        {
+            Application.Properties.setValue(settings_name + "Custom", all_colors64[selection_index]);
+
+            //we set the list value to -1 (for 'Custom')
+            Application.Properties.setValue(settings_name, -1);
+        }
+
+        //if a color was selected that is also on the list we set the list value
+        else
+        {
+            Application.Properties.setValue(settings_name, all_colors64[selection_index]);
+        }
+
+        if(menu_item_handle != null)
+        {
+            menu_item_handle.setSubLabel(colorName(all_colors64[selection_index]));
+
+            menu_item_handle.setIcon(generateColorIcon(all_colors64[selection_index]));
+            
+            WatchUi.requestUpdate();
+        }
     }
 
     public function setSettingsName(name)
@@ -103,6 +130,15 @@ class ColorPickerView extends WatchUi.View
     {
         selection_index = index;
     }
+
+    public function getSelectionIndex()
+    {
+        return selection_index;
+    }
+    public function setMenuItemHandle(handle)
+    {
+        menu_item_handle  = handle;
+    }
 }
 
 class ColorPickerViewDelegate extends WatchUi.InputDelegate
@@ -115,18 +151,32 @@ class ColorPickerViewDelegate extends WatchUi.InputDelegate
         InputDelegate.initialize();
     }
 
-    // function onKey(keyEvent) {
-    //     // System.println(keyEvent.getKey());         // e.g. KEY_MENU = 7
-    //     if(keyEvent.getKey() == KEY_ESC)
-    //     {
-    //         WatchUi.popView(WatchUi.SLIDE_RIGHT);
+    function onKey(keyEvent) 
+    {
+        // System.println(keyEvent.getKey());         // e.g. KEY_MENU = 7
+        if(keyEvent.getKey() == KEY_ESC)
+        {
+            WatchUi.popView(WatchUi.SLIDE_RIGHT);
+            return true;
+        }
 
-    //         // System.exit();
-    //          return true;
-    //     }
+        else if (keyEvent.getKey() == KEY_UP)
+        {
+            picker_view.setSelectionIndex((picker_view.getSelectionIndex() - 1) % 64 );
+            return false;
+        }
 
-       
-    // }
+        else if (keyEvent.getKey() == KEY_DOWN)
+        {
+            picker_view.setSelectionIndex((picker_view.getSelectionIndex() + 1) % 64 );
+            return false;
+        }
+
+        return true;
+
+
+
+    }
 
     public function setView(view)
     {

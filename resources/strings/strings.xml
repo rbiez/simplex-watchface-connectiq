@@ -16,6 +16,8 @@
     <string id="ColorPink">Pink</string>
     <string id="ColorYellow">Yellow</string>                                      
     <string id="ColorOliveGreen">OliveGreen</string>    
-    <string id="ColorTurquoise">Turquoise</string>            
+    <string id="ColorTurquoise">Turquoise</string>
+
+    <string id="ColorCustom">Custom</string>                     
 
 </strings>

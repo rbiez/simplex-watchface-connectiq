@@ -72,22 +72,32 @@ class SimplexView extends WatchUi.WatchFace
         //custom mode (code 1)
         else
         {
-            background_color = Application.Properties.getValue("BackgroundColor") as Number; 
-            foreground_color = Application.Properties.getValue("ForegroundColorOne") as Number; 
-            foreground_alt_color = Application.Properties.getValue("ForegroundColorTwo") as Number; 
-            left_minute_hand_color = Application.Properties.getValue("MinuteHandColorOne") as Number; 
-            right_minute_hand_color = Application.Properties.getValue("MinuteHandColorTwo") as Number;
-            left_hour_hand_color = Application.Properties.getValue("HourHandColorOne") as Number; 
-            right_hour_hand_color = Application.Properties.getValue("HourHandColorTwo") as Number;
+            // background_color = Application.Properties.getValue("BackgroundColor") as Number; 
+            // foreground_color = Application.Properties.getValue("ForegroundColorOne") as Number; 
+            // foreground_alt_color = Application.Properties.getValue("ForegroundColorTwo") as Number; 
+            // left_minute_hand_color = Application.Properties.getValue("MinuteHandColorOne") as Number; 
+            // right_minute_hand_color = Application.Properties.getValue("MinuteHandColorTwo") as Number;
+            // left_hour_hand_color = Application.Properties.getValue("HourHandColorOne") as Number; 
+            // right_hour_hand_color = Application.Properties.getValue("HourHandColorTwo") as Number;
 
-            seconds_hand_color = Application.Properties.getValue("SecondsHandColor") as Number; 
+            // seconds_hand_color = Application.Properties.getValue("SecondsHandColor") as Number; 
+
+            background_color = loadColorSettings("BackgroundColor") as Number; 
+            foreground_color = loadColorSettings("ForegroundColorOne") as Number; 
+            foreground_alt_color = loadColorSettings("ForegroundColorTwo") as Number; 
+            left_minute_hand_color = loadColorSettings("MinuteHandColorOne") as Number; 
+            right_minute_hand_color = loadColorSettings("MinuteHandColorTwo") as Number;
+            left_hour_hand_color = loadColorSettings("HourHandColorOne") as Number; 
+            right_hour_hand_color = loadColorSettings("HourHandColorTwo") as Number;
+
+            seconds_hand_color = loadColorSettings("SecondsHandColor") as Number; 
         }
         
         // seconds_hand_color = getApp().getProperty("SecondsHandColor") as Number;
         // seconds_hand_color = Graphics.COLOR_RED;
 
         //color of seconds hand is independent of theme
-        seconds_hand_color = Application.Properties.getValue("SecondsHandColor") as Number; 
+        seconds_hand_color = loadColorSettings("SecondsHandColor") as Number; 
 
         draw_date_bool = Application.Properties.getValue("DrawDate") as Number;
         draw_secondshand_bool = Application.Properties.getValue("DrawSecondsHand") as Number;
