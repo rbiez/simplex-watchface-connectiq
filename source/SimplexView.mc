@@ -34,6 +34,9 @@ class SimplexView extends WatchUi.WatchFace
     private var clip_height_old;
     private var clip_width_old;
 
+    private var hours_hand_width;
+    private var minute_hand_width;
+
     function loadSettings()
     {
 //theme mode (code 0)
@@ -95,6 +98,9 @@ class SimplexView extends WatchUi.WatchFace
         
         // seconds_hand_color = getApp().getProperty("SecondsHandColor") as Number;
         // seconds_hand_color = Graphics.COLOR_RED;
+
+        hours_hand_width = Application.Properties.getValue("HourHandWidth") as Number;
+        minute_hand_width = Application.Properties.getValue("MinuteHandWidth") as Number;
 
         //color of seconds hand is independent of theme
         seconds_hand_color = loadColorSettings("SecondsHandColor") as Number; 
@@ -160,6 +166,9 @@ class SimplexView extends WatchUi.WatchFace
         draw_numbers_bool = true;
         draw_minuteticks_bool= true;
         draw_hourticks_bool= true;
+        
+        hours_hand_width = 8.0f;
+        minute_hand_width = 5.0f;
 
         secondshand_mode = 0;
 
@@ -225,9 +234,6 @@ class SimplexView extends WatchUi.WatchFace
         var length_long = 15*screen_ratio;
         var length_short = 8*screen_ratio;
 
-        //hands width
-        var hours_hand_width = 8.0f;
-        var minute_hand_width = 5.0f;
 
         // draw the date
         if(draw_date_bool)
@@ -334,22 +340,24 @@ class SimplexView extends WatchUi.WatchFace
 
         var tip = length/8.0;
 
-        var left_peak_x = (length - tip)*Math.cos(degree - tip_deg);
-        var left_peak_y = (length - tip)*Math.sin(degree - tip_deg);
+        //add +2 so the left and righ segments do not overlap
+        var left_peak_x = (length - tip + 2)*Math.cos(degree - tip_deg);
+        var left_peak_y = (length - tip + 2)*Math.sin(degree - tip_deg);
 
         var right_peak_x = (length - tip)*Math.cos(degree + tip_deg);
         var right_peak_y = (length - tip)*Math.sin(degree + tip_deg);
 
-        var left_width_x = (width/3.0)*Math.cos(degree - (Math.PI/2.0));
-        var left_width_y = (width/3.0)*Math.sin(degree - (Math.PI/2.0));
+        //add +2 so the left and righ segments do not overlap
+        var left_width_x = Math.round((width/2.0 + 2)*Math.cos(degree - (Math.PI/2.0)));
+        var left_width_y = Math.round((width/2.0 + 2)*Math.sin(degree - (Math.PI/2.0)));
 
-        var right_width_x = (width/3.0)*Math.cos(degree + (Math.PI/2.0));
-        var right_width_y = (width/3.0)*Math.sin(degree + (Math.PI/2.0));
+        var right_width_x = Math.round((width/2.0)*Math.cos(degree + (Math.PI/2.0)));
+        var right_width_y = Math.round((width/2.0)*Math.sin(degree + (Math.PI/2.0)));
 
         var tail_length = length/4;
 
-        var tail_left_peak_x = tail_length*Math.cos(Math.PI + degree + tail_deg);
-        var tail_left_peak_y = tail_length*Math.sin(Math.PI + degree + tail_deg);
+        var tail_left_peak_x = (tail_length + 2)*Math.cos(Math.PI + degree + tail_deg);
+        var tail_left_peak_y = (tail_length + 2)*Math.sin(Math.PI + degree + tail_deg);
 
         var tail_right_peak_x = tail_length*Math.cos(Math.PI + degree - tail_deg);
         var tail_right_peak_y = tail_length*Math.sin(Math.PI + degree - tail_deg);
@@ -357,16 +365,21 @@ class SimplexView extends WatchUi.WatchFace
         var tail_end_x = tail_length*Math.cos(Math.PI + degree);
         var tail_end_y = tail_length*Math.sin(Math.PI + degree);
 
-        dc.setColor(color_left, background_color);
-        dc.fillPolygon([[center_x,center_y], [center_x  + left_width_x,center_y + left_width_y] ,[center_x + left_peak_x, center_y + left_peak_y], [center_x + target_x, center_y + target_y]]);
+        dc.setPenWidth(1);
 
-        dc.fillPolygon([[center_x,center_y], [center_x  + left_width_x,center_y + left_width_y], [center_x + tail_left_peak_x, center_y + tail_left_peak_y], [center_x + tail_end_x, center_y + tail_end_y]]);
+
+
+        dc.setColor(color_left, background_color);
+        dc.fillPolygon([[center_x,center_y], [center_x  + left_width_x, center_y + left_width_y] ,[center_x + left_peak_x, center_y + left_peak_y], [center_x + target_x, center_y + target_y]]);
+
+        dc.fillPolygon([[center_x,center_y], [center_x  + left_width_x, center_y + left_width_y], [center_x + tail_left_peak_x, center_y + tail_left_peak_y], [center_x + tail_end_x, center_y + tail_end_y]]);
 
 
         dc.setColor(color_right, background_color);
         dc.fillPolygon([[center_x,center_y], [center_x  + right_width_x, center_y + right_width_y], [center_x + right_peak_x, center_y + right_peak_y], [center_x + target_x, center_y + target_y]]);
 
-        dc.fillPolygon([[center_x,center_y], [center_x  + right_width_x,center_y + right_width_y], [center_x + tail_right_peak_x, center_y + tail_right_peak_y], [center_x + tail_end_x, center_y + tail_end_y]]);
+        dc.fillPolygon([[center_x,center_y], [center_x  + right_width_x, center_y + right_width_y], [center_x + tail_right_peak_x, center_y + tail_right_peak_y], [center_x + tail_end_x, center_y + tail_end_y]]);
+
 
 
         // dc.fillPolygon([[center_x,center_y], [center_x + tail_left_peak_x, center_y + tail_left_peak_y], [center_x + tail_right_peak_x, center_y + tail_right_peak_y]]);

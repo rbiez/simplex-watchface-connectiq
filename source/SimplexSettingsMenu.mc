@@ -14,7 +14,7 @@ class SimplexSettingsMenu extends WatchUi.Menu2
 }
 
 //! Input handler for the app settings menu
-class SimplexSettingsMenuDelegate extends WatchUi.Menu2InputDelegate 
+class SimplexSettingsMenuDelegate extends WatchUi.Menu2InputDelegate
 {
 
     //! Constructor
@@ -45,20 +45,95 @@ class SimplexSettingsMenuDelegate extends WatchUi.Menu2InputDelegate
         //     WatchUi.pushView(color_picker, delegate, WatchUi.SLIDE_LEFT);
         // }
 
+        else if((menuItem.getId() as String).equals("Mode"))
+        {
+            var val = Application.Properties.getValue("Mode") ? true : false;
+
+            val = !val;
+            
+            // {:enabled=>"Mode: Custom", :disabled=>"Mode: Theme"}
+
+            if(val)
+            {
+                menuItem.setSubLabel("Custom Colors");
+            }
+
+            else
+            {
+                menuItem.setSubLabel("Theme Colors");
+            }
+
+            Application.Properties.setValue(menuItem.getId() as String, val);
+
+        }
+
+        else if((menuItem.getId() as String).equals("Theme"))
+        {
+            var val = Application.Properties.getValue("Theme") ? true : false;
+
+            val = !val;
+            
+            // {:enabled=>"Mode: Custom", :disabled=>"Mode: Theme"}
+
+            if(val)
+            {
+                menuItem.setSubLabel("Dark Theme");
+            }
+
+            else
+            {
+                menuItem.setSubLabel("Light Theme");
+            }
+
+            Application.Properties.setValue(menuItem.getId() as String, val);
+
+        }
+
+        else if((menuItem.getId() as String).equals("MinuteHandWidth"))
+        {
+            var value = Application.Properties.getValue("MinuteHandWidth") as Number;
+
+            var new_value = 2 + (((value-2) + 1) % 14);
+
+            Application.Properties.setValue("MinuteHandWidth", new_value);
+
+            menuItem.setSubLabel(new_value.toString());
+
+        }
+
+        else if((menuItem.getId() as String).equals("HourHandWidth"))
+        {
+            var value = Application.Properties.getValue("HourHandWidth") as Number;
+
+            var new_value = 2 + (((value-2) + 1) % 14);
+
+            Application.Properties.setValue("HourHandWidth", new_value);
+
+            menuItem.setSubLabel(new_value.toString());
+        }
+
         else
         {
-            var color_picker;
+            // var color_picker;
             
-            color_picker = new ColorPickerView();
+            // color_picker = new ColorPickerView();
             
-            color_picker.setSettingsName(menuItem.getId() as String);
-            color_picker.setMenuItemHandle(menuItem);
+            // color_picker.setSettingsName(menuItem.getId() as String);
+            // color_picker.setMenuItemHandle(menuItem);
 
-            var delegate = new ColorPickerViewDelegate();
+            // var delegate = new ColorPickerViewDelegate();
 
-            delegate.setView(color_picker);
+            // delegate.setView(color_picker);
 
-            WatchUi.pushView(color_picker, delegate, WatchUi.SLIDE_LEFT);            
+            // WatchUi.pushView(color_picker, delegate, WatchUi.SLIDE_LEFT);      
+
+            var color_menu = new ColorSettingsMenu(menuItem.getId() as String, menuItem.getId() as String);
+            var delegate = new ColorSettingsMenuDelegate();
+
+            color_menu.setMenuItemHandle(menuItem);
+            delegate.setMenu(color_menu);
+
+            WatchUi.pushView(color_menu, delegate, WatchUi.SLIDE_LEFT);          
         }
 
         // else
