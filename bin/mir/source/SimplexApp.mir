@@ -71,625 +71,717 @@ _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_36_4_stop:
 _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_43_4_start:
 [ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 44 8 ]
         [ "_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_43_4_start" "_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_43_4_stop" ]
-        %menu.1 = local;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 45 8 ]
-        %tmp.4 = getm $;
-        %tmp.5 = getv %tmp.4 :SimplexSettingsMenu;
-        %tmp.1 = newc %tmp.5 ();
-        lputv %menu.1 %tmp.1;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 51 8 ]
+        %version.1 = local;
+        %tmp.1 = getm $.Toybox.Lang;
+        %tmp.2 = getv function %tmp.1 :format;
+        %tmp.3 = "$1$$2$$3$";
+        %tmp.5 = getv ? :System;
+        %tmp.6 = getv function %tmp.5 :getDeviceSettings;
+        %tmp.7 = invoke %tmp.5 %tmp.6();
+        %tmp.8 = getv %tmp.7 :monkeyVersion;
+        %tmp.9 = invoke %tmp.1 %tmp.2(%tmp.3, %tmp.8);
+        %tmp.10 = getv function %tmp.9 :toNumber;
+        %tmp.11 = invoke %tmp.9 %tmp.10();
+        lputv %version.1 %tmp.11;
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 48 8 ]
         [ "_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_43_4_start" "_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_43_4_stop" ]
-        %myText.2 = local;
-        %tmp.8 = getm $.Toybox.WatchUi;
-        %tmp.9 = getv function ? %tmp.8 :Text;
-        %tmp.10 = newd 2;
-        %tmp.12 = const :text;
-        %tmp.13 = "I";
-        %tmp.14 = dup %tmp.10;
-        %tmp.15 = aputv %tmp.14 %tmp.12 %tmp.13;
-        %tmp.17 = const :color;
-        %tmp.19 = getv ? :Graphics;
-        %tmp.20 = getv %tmp.19 :COLOR_DK_GREEN;
-        %tmp.21 = dup %tmp.15;
-        %tmp.22 = aputv %tmp.21 %tmp.17 %tmp.20;
-        %tmp.6 = newc %tmp.9 (%tmp.22);
-        lputv %myText.2 %tmp.6;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 58 8 ]
+        %menu.2 = local;
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 49 8 ]
+        %tmp.15 = getm $;
+        %tmp.16 = getv %tmp.15 :SimplexSettingsMenu;
+        %tmp.12 = newc %tmp.16 ();
+        lputv %menu.2 %tmp.12;
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 55 8 ]
         [ "_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_43_4_start" "_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_43_4_stop" ]
         %val.3 = local;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_58_18_begin:
-        %tmp.23 = getm $.Toybox.Application;
-        %tmp.24 = getv %tmp.23 :Properties;
-        %tmp.25 = getv function %tmp.24 :getValue;
-        %tmp.26 = "DrawDate";
-        %tmp.27 = invoke %tmp.24 %tmp.25(%tmp.26);
-        bf %tmp.27 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_58_18_false;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_58_18_true:
-        %tmp.28 = true;
-        push %tmp.28;
-        goto @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_58_18_end;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_58_18_false:
-        %tmp.29 = false;
-        push %tmp.29;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_58_18_end:
-        %tmp.30 = phi [%tmp.27 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_58_18_begin] [%tmp.28 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_58_18_true] [%tmp.29 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_58_18_false] [%tmp.30 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_58_18_end];
-        lputv %val.3 %tmp.30;
+_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_55_18_begin:
+        %tmp.17 = getm $.Toybox.Application;
+        %tmp.18 = getv %tmp.17 :Properties;
+        %tmp.19 = getv function %tmp.18 :getValue;
+        %tmp.20 = "DrawDate";
+        %tmp.21 = invoke %tmp.18 %tmp.19(%tmp.20);
+        bf %tmp.21 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_55_18_false;
+_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_55_18_true:
+        %tmp.22 = true;
+        push %tmp.22;
+        goto @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_55_18_end;
+_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_55_18_false:
+        %tmp.23 = false;
+        push %tmp.23;
+_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_55_18_end:
+        %tmp.24 = phi [%tmp.21 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_55_18_begin] [%tmp.22 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_55_18_true] [%tmp.23 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_55_18_false] [%tmp.24 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_55_18_end];
+        lputv %val.3 %tmp.24;
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 56 8 ]
+        %tmp.25 = lgetv %menu.2;
+        %tmp.26 = getv function %tmp.25 :addItem;
+        %tmp.29 = getm $.Toybox.WatchUi;
+        %tmp.30 = getv function ? %tmp.29 :ToggleMenuItem;
+        %tmp.31 = "Draw Date";
+        %tmp.32 = null;
+        %tmp.33 = "DrawDate";
+        %tmp.35 = lgetv %val.3;
+        %tmp.36 = null;
+        %tmp.27 = newc %tmp.30 (%tmp.31, %tmp.32, %tmp.33, %tmp.35, %tmp.36);
+        invoke %tmp.25 %tmp.26(%tmp.27);
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 58 8 ]
+_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_58_14_begin:
+        %tmp.37 = getm $.Toybox.Application;
+        %tmp.38 = getv %tmp.37 :Properties;
+        %tmp.39 = getv function %tmp.38 :getValue;
+        %tmp.40 = "DrawNumbers";
+        %tmp.41 = invoke %tmp.38 %tmp.39(%tmp.40);
+        bf %tmp.41 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_58_14_false;
+_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_58_14_true:
+        %tmp.42 = true;
+        push %tmp.42;
+        goto @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_58_14_end;
+_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_58_14_false:
+        %tmp.43 = false;
+        push %tmp.43;
+_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_58_14_end:
+        %tmp.44 = phi [%tmp.41 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_58_14_begin] [%tmp.42 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_58_14_true] [%tmp.43 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_58_14_false] [%tmp.44 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_58_14_end];
+        lputv %val.3 %tmp.44;
 [ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 59 8 ]
-        %tmp.31 = lgetv %menu.1;
-        %tmp.32 = getv function %tmp.31 :addItem;
-        %tmp.35 = getm $.Toybox.WatchUi;
-        %tmp.36 = getv function ? %tmp.35 :ToggleMenuItem;
-        %tmp.37 = "Draw Date";
-        %tmp.38 = null;
-        %tmp.39 = "DrawDate";
-        %tmp.41 = lgetv %val.3;
-        %tmp.42 = null;
-        %tmp.33 = newc %tmp.36 (%tmp.37, %tmp.38, %tmp.39, %tmp.41, %tmp.42);
-        invoke %tmp.31 %tmp.32(%tmp.33);
+        %tmp.45 = lgetv %menu.2;
+        %tmp.46 = getv function %tmp.45 :addItem;
+        %tmp.49 = getm $.Toybox.WatchUi;
+        %tmp.50 = getv function ? %tmp.49 :ToggleMenuItem;
+        %tmp.51 = "Draw Numbers";
+        %tmp.52 = null;
+        %tmp.53 = "DrawNumbers";
+        %tmp.55 = lgetv %val.3;
+        %tmp.56 = null;
+        %tmp.47 = newc %tmp.50 (%tmp.51, %tmp.52, %tmp.53, %tmp.55, %tmp.56);
+        invoke %tmp.45 %tmp.46(%tmp.47);
 [ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 61 8 ]
 _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_61_14_begin:
-        %tmp.43 = getm $.Toybox.Application;
-        %tmp.44 = getv %tmp.43 :Properties;
-        %tmp.45 = getv function %tmp.44 :getValue;
-        %tmp.46 = "DrawNumbers";
-        %tmp.47 = invoke %tmp.44 %tmp.45(%tmp.46);
-        bf %tmp.47 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_61_14_false;
+        %tmp.57 = getm $.Toybox.Application;
+        %tmp.58 = getv %tmp.57 :Properties;
+        %tmp.59 = getv function %tmp.58 :getValue;
+        %tmp.60 = "DrawMinuteTicks";
+        %tmp.61 = invoke %tmp.58 %tmp.59(%tmp.60);
+        bf %tmp.61 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_61_14_false;
 _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_61_14_true:
-        %tmp.48 = true;
-        push %tmp.48;
+        %tmp.62 = true;
+        push %tmp.62;
         goto @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_61_14_end;
 _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_61_14_false:
-        %tmp.49 = false;
-        push %tmp.49;
+        %tmp.63 = false;
+        push %tmp.63;
 _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_61_14_end:
-        %tmp.50 = phi [%tmp.47 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_61_14_begin] [%tmp.48 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_61_14_true] [%tmp.49 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_61_14_false] [%tmp.50 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_61_14_end];
-        lputv %val.3 %tmp.50;
+        %tmp.64 = phi [%tmp.61 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_61_14_begin] [%tmp.62 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_61_14_true] [%tmp.63 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_61_14_false] [%tmp.64 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_61_14_end];
+        lputv %val.3 %tmp.64;
 [ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 62 8 ]
-        %tmp.51 = lgetv %menu.1;
-        %tmp.52 = getv function %tmp.51 :addItem;
-        %tmp.55 = getm $.Toybox.WatchUi;
-        %tmp.56 = getv function ? %tmp.55 :ToggleMenuItem;
-        %tmp.57 = "Draw Numbers";
-        %tmp.58 = null;
-        %tmp.59 = "DrawNumbers";
-        %tmp.61 = lgetv %val.3;
-        %tmp.62 = null;
-        %tmp.53 = newc %tmp.56 (%tmp.57, %tmp.58, %tmp.59, %tmp.61, %tmp.62);
-        invoke %tmp.51 %tmp.52(%tmp.53);
+        %tmp.65 = lgetv %menu.2;
+        %tmp.66 = getv function %tmp.65 :addItem;
+        %tmp.69 = getm $.Toybox.WatchUi;
+        %tmp.70 = getv function ? %tmp.69 :ToggleMenuItem;
+        %tmp.71 = "Draw Minute Ticks";
+        %tmp.72 = null;
+        %tmp.73 = "DrawMinuteTicks";
+        %tmp.75 = lgetv %val.3;
+        %tmp.76 = null;
+        %tmp.67 = newc %tmp.70 (%tmp.71, %tmp.72, %tmp.73, %tmp.75, %tmp.76);
+        invoke %tmp.65 %tmp.66(%tmp.67);
 [ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 64 8 ]
 _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_64_14_begin:
-        %tmp.63 = getm $.Toybox.Application;
-        %tmp.64 = getv %tmp.63 :Properties;
-        %tmp.65 = getv function %tmp.64 :getValue;
-        %tmp.66 = "DrawMinuteTicks";
-        %tmp.67 = invoke %tmp.64 %tmp.65(%tmp.66);
-        bf %tmp.67 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_64_14_false;
+        %tmp.77 = getm $.Toybox.Application;
+        %tmp.78 = getv %tmp.77 :Properties;
+        %tmp.79 = getv function %tmp.78 :getValue;
+        %tmp.80 = "DrawHourTicks";
+        %tmp.81 = invoke %tmp.78 %tmp.79(%tmp.80);
+        bf %tmp.81 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_64_14_false;
 _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_64_14_true:
-        %tmp.68 = true;
-        push %tmp.68;
+        %tmp.82 = true;
+        push %tmp.82;
         goto @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_64_14_end;
 _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_64_14_false:
-        %tmp.69 = false;
-        push %tmp.69;
+        %tmp.83 = false;
+        push %tmp.83;
 _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_64_14_end:
-        %tmp.70 = phi [%tmp.67 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_64_14_begin] [%tmp.68 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_64_14_true] [%tmp.69 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_64_14_false] [%tmp.70 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_64_14_end];
-        lputv %val.3 %tmp.70;
+        %tmp.84 = phi [%tmp.81 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_64_14_begin] [%tmp.82 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_64_14_true] [%tmp.83 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_64_14_false] [%tmp.84 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_64_14_end];
+        lputv %val.3 %tmp.84;
 [ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 65 8 ]
-        %tmp.71 = lgetv %menu.1;
-        %tmp.72 = getv function %tmp.71 :addItem;
-        %tmp.75 = getm $.Toybox.WatchUi;
-        %tmp.76 = getv function ? %tmp.75 :ToggleMenuItem;
-        %tmp.77 = "Draw Minute Ticks";
-        %tmp.78 = null;
-        %tmp.79 = "DrawMinuteTicks";
-        %tmp.81 = lgetv %val.3;
-        %tmp.82 = null;
-        %tmp.73 = newc %tmp.76 (%tmp.77, %tmp.78, %tmp.79, %tmp.81, %tmp.82);
-        invoke %tmp.71 %tmp.72(%tmp.73);
+        %tmp.85 = lgetv %menu.2;
+        %tmp.86 = getv function %tmp.85 :addItem;
+        %tmp.89 = getm $.Toybox.WatchUi;
+        %tmp.90 = getv function ? %tmp.89 :ToggleMenuItem;
+        %tmp.91 = "Draw Hour Ticks";
+        %tmp.92 = null;
+        %tmp.93 = "DrawHourTicks";
+        %tmp.95 = lgetv %val.3;
+        %tmp.96 = null;
+        %tmp.87 = newc %tmp.90 (%tmp.91, %tmp.92, %tmp.93, %tmp.95, %tmp.96);
+        invoke %tmp.85 %tmp.86(%tmp.87);
 [ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 67 8 ]
 _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_67_14_begin:
-        %tmp.83 = getm $.Toybox.Application;
-        %tmp.84 = getv %tmp.83 :Properties;
-        %tmp.85 = getv function %tmp.84 :getValue;
-        %tmp.86 = "DrawHourTicks";
-        %tmp.87 = invoke %tmp.84 %tmp.85(%tmp.86);
-        bf %tmp.87 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_67_14_false;
+        %tmp.97 = getm $.Toybox.Application;
+        %tmp.98 = getv %tmp.97 :Properties;
+        %tmp.99 = getv function %tmp.98 :getValue;
+        %tmp.100 = "DrawSecondsHand";
+        %tmp.101 = invoke %tmp.98 %tmp.99(%tmp.100);
+        bf %tmp.101 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_67_14_false;
 _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_67_14_true:
-        %tmp.88 = true;
-        push %tmp.88;
+        %tmp.102 = true;
+        push %tmp.102;
         goto @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_67_14_end;
 _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_67_14_false:
-        %tmp.89 = false;
-        push %tmp.89;
+        %tmp.103 = false;
+        push %tmp.103;
 _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_67_14_end:
-        %tmp.90 = phi [%tmp.87 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_67_14_begin] [%tmp.88 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_67_14_true] [%tmp.89 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_67_14_false] [%tmp.90 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_67_14_end];
-        lputv %val.3 %tmp.90;
+        %tmp.104 = phi [%tmp.101 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_67_14_begin] [%tmp.102 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_67_14_true] [%tmp.103 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_67_14_false] [%tmp.104 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_67_14_end];
+        lputv %val.3 %tmp.104;
 [ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 68 8 ]
-        %tmp.91 = lgetv %menu.1;
-        %tmp.92 = getv function %tmp.91 :addItem;
-        %tmp.95 = getm $.Toybox.WatchUi;
-        %tmp.96 = getv function ? %tmp.95 :ToggleMenuItem;
-        %tmp.97 = "Draw Hour Ticks";
-        %tmp.98 = null;
-        %tmp.99 = "DrawHourTicks";
-        %tmp.101 = lgetv %val.3;
-        %tmp.102 = null;
-        %tmp.93 = newc %tmp.96 (%tmp.97, %tmp.98, %tmp.99, %tmp.101, %tmp.102);
-        invoke %tmp.91 %tmp.92(%tmp.93);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 70 8 ]
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_70_14_begin:
-        %tmp.103 = getm $.Toybox.Application;
-        %tmp.104 = getv %tmp.103 :Properties;
-        %tmp.105 = getv function %tmp.104 :getValue;
-        %tmp.106 = "DrawSecondsHand";
-        %tmp.107 = invoke %tmp.104 %tmp.105(%tmp.106);
-        bf %tmp.107 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_70_14_false;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_70_14_true:
-        %tmp.108 = true;
-        push %tmp.108;
-        goto @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_70_14_end;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_70_14_false:
-        %tmp.109 = false;
-        push %tmp.109;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_70_14_end:
-        %tmp.110 = phi [%tmp.107 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_70_14_begin] [%tmp.108 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_70_14_true] [%tmp.109 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_70_14_false] [%tmp.110 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_70_14_end];
-        lputv %val.3 %tmp.110;
+        %tmp.105 = lgetv %menu.2;
+        %tmp.106 = getv function %tmp.105 :addItem;
+        %tmp.109 = getm $.Toybox.WatchUi;
+        %tmp.110 = getv function ? %tmp.109 :ToggleMenuItem;
+        %tmp.111 = "Draw Second Hand";
+        %tmp.112 = null;
+        %tmp.113 = "DrawSecondsHand";
+        %tmp.115 = lgetv %val.3;
+        %tmp.116 = null;
+        %tmp.107 = newc %tmp.110 (%tmp.111, %tmp.112, %tmp.113, %tmp.115, %tmp.116);
+        invoke %tmp.105 %tmp.106(%tmp.107);
 [ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 71 8 ]
-        %tmp.111 = lgetv %menu.1;
-        %tmp.112 = getv function %tmp.111 :addItem;
-        %tmp.115 = getm $.Toybox.WatchUi;
-        %tmp.116 = getv function ? %tmp.115 :ToggleMenuItem;
-        %tmp.117 = "Draw Second Hand";
-        %tmp.118 = null;
-        %tmp.119 = "DrawSecondsHand";
-        %tmp.121 = lgetv %val.3;
-        %tmp.122 = null;
-        %tmp.113 = newc %tmp.116 (%tmp.117, %tmp.118, %tmp.119, %tmp.121, %tmp.122);
-        invoke %tmp.111 %tmp.112(%tmp.113);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 74 8 ]
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_74_8_if_stmt:
-        %tmp.123 = getm $.Toybox.WatchUi;
-        %tmp.124 = getv %tmp.123 :WatchFace;
-        %tmp.126 = const :onPartialUpdate;
-        %tmp.127 = canhazplz %tmp.124 %tmp.126;
-        bf %tmp.127 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_74_8_if_end;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_74_8_if_true:
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_75_8_start:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 76 12 ]
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_76_18_begin:
-        %tmp.128 = getm $.Toybox.Application;
-        %tmp.129 = getv %tmp.128 :Properties;
-        %tmp.130 = getv function %tmp.129 :getValue;
-        %tmp.131 = "SecondsHandMode";
-        %tmp.132 = invoke %tmp.129 %tmp.130(%tmp.131);
-        bf %tmp.132 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_76_18_false;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_76_18_true:
-        %tmp.133 = true;
-        push %tmp.133;
-        goto @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_76_18_end;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_76_18_false:
-        %tmp.134 = false;
-        push %tmp.134;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_76_18_end:
-        %tmp.135 = phi [%tmp.132 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_76_18_begin] [%tmp.133 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_76_18_true] [%tmp.134 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_76_18_false] [%tmp.135 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_76_18_end];
-        lputv %val.3 %tmp.135;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 77 12 ]
-        %tmp.136 = lgetv %menu.1;
-        %tmp.137 = getv function %tmp.136 :addItem;
-        %tmp.140 = getm $.Toybox.WatchUi;
-        %tmp.141 = getv function ? %tmp.140 :ToggleMenuItem;
-        %tmp.142 = "Second Hand Mode";
-        %tmp.143 = newd 2;
-        %tmp.145 = const :enabled;
-        %tmp.146 = "Draw always";
-        %tmp.147 = dup %tmp.143;
-        %tmp.148 = aputv %tmp.147 %tmp.145 %tmp.146;
-        %tmp.150 = const :disabled;
-        %tmp.151 = "Draw after gesture";
-        %tmp.152 = dup %tmp.148;
-        %tmp.153 = aputv %tmp.152 %tmp.150 %tmp.151;
-        %tmp.154 = "SecondsHandMode";
-        %tmp.156 = lgetv %val.3;
-        %tmp.157 = null;
-        %tmp.138 = newc %tmp.141 (%tmp.142, %tmp.153, %tmp.154, %tmp.156, %tmp.157);
-        invoke %tmp.136 %tmp.137(%tmp.138);
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_75_8_stop:
-        goto @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_74_8_if_end;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_74_8_if_end:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 83 8 ]
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_83_14_begin:
-        %tmp.158 = getm $.Toybox.Application;
-        %tmp.159 = getv %tmp.158 :Properties;
-        %tmp.160 = getv function %tmp.159 :getValue;
-        %tmp.161 = "Mode";
-        %tmp.162 = invoke %tmp.159 %tmp.160(%tmp.161);
-        bf %tmp.162 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_83_14_false;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_83_14_true:
-        %tmp.163 = true;
-        push %tmp.163;
-        goto @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_83_14_end;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_83_14_false:
-        %tmp.164 = false;
-        push %tmp.164;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_83_14_end:
-        %tmp.165 = phi [%tmp.162 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_83_14_begin] [%tmp.163 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_83_14_true] [%tmp.164 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_83_14_false] [%tmp.165 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_83_14_end];
-        lputv %val.3 %tmp.165;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 84 8 ]
-        %tmp.166 = lgetv %menu.1;
-        %tmp.167 = getv function %tmp.166 :addItem;
-        %tmp.170 = getm $.Toybox.WatchUi;
-        %tmp.171 = getv function ? %tmp.170 :MenuItem;
+_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_71_8_if_stmt:
+        %tmp.117 = getm $.Toybox.WatchUi;
+        %tmp.118 = getv %tmp.117 :WatchFace;
+        %tmp.120 = const :onPartialUpdate;
+        %tmp.121 = canhazplz %tmp.118 %tmp.120;
+        bf %tmp.121 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_71_8_if_end;
+_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_71_8_if_true:
+_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_72_8_start:
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 73 12 ]
+_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_73_18_begin:
+        %tmp.122 = getm $.Toybox.Application;
+        %tmp.123 = getv %tmp.122 :Properties;
+        %tmp.124 = getv function %tmp.123 :getValue;
+        %tmp.125 = "SecondsHandMode";
+        %tmp.126 = invoke %tmp.123 %tmp.124(%tmp.125);
+        bf %tmp.126 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_73_18_false;
+_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_73_18_true:
+        %tmp.127 = true;
+        push %tmp.127;
+        goto @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_73_18_end;
+_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_73_18_false:
+        %tmp.128 = false;
+        push %tmp.128;
+_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_73_18_end:
+        %tmp.129 = phi [%tmp.126 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_73_18_begin] [%tmp.127 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_73_18_true] [%tmp.128 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_73_18_false] [%tmp.129 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_73_18_end];
+        lputv %val.3 %tmp.129;
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 74 12 ]
+        %tmp.130 = lgetv %menu.2;
+        %tmp.131 = getv function %tmp.130 :addItem;
+        %tmp.134 = getm $.Toybox.WatchUi;
+        %tmp.135 = getv function ? %tmp.134 :ToggleMenuItem;
+        %tmp.136 = "Second Hand Mode";
+        %tmp.137 = newd 2;
+        %tmp.139 = const :enabled;
+        %tmp.140 = "Draw always";
+        %tmp.141 = dup %tmp.137;
+        %tmp.142 = aputv %tmp.141 %tmp.139 %tmp.140;
+        %tmp.144 = const :disabled;
+        %tmp.145 = "Draw after gesture";
+        %tmp.146 = dup %tmp.142;
+        %tmp.147 = aputv %tmp.146 %tmp.144 %tmp.145;
+        %tmp.148 = "SecondsHandMode";
+        %tmp.150 = lgetv %val.3;
+        %tmp.151 = null;
+        %tmp.132 = newc %tmp.135 (%tmp.136, %tmp.147, %tmp.148, %tmp.150, %tmp.151);
+        invoke %tmp.130 %tmp.131(%tmp.132);
+_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_72_8_stop:
+        goto @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_71_8_if_end;
+_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_71_8_if_end:
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 80 8 ]
+_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_80_14_begin:
+        %tmp.152 = getm $.Toybox.Application;
+        %tmp.153 = getv %tmp.152 :Properties;
+        %tmp.154 = getv function %tmp.153 :getValue;
+        %tmp.155 = "Mode";
+        %tmp.156 = invoke %tmp.153 %tmp.154(%tmp.155);
+        bf %tmp.156 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_80_14_false;
+_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_80_14_true:
+        %tmp.157 = true;
+        push %tmp.157;
+        goto @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_80_14_end;
+_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_80_14_false:
+        %tmp.158 = false;
+        push %tmp.158;
+_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_80_14_end:
+        %tmp.159 = phi [%tmp.156 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_80_14_begin] [%tmp.157 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_80_14_true] [%tmp.158 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_80_14_false] [%tmp.159 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_80_14_end];
+        lputv %val.3 %tmp.159;
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 81 8 ]
+        %tmp.160 = lgetv %menu.2;
+        %tmp.161 = getv function %tmp.160 :addItem;
+        %tmp.164 = getm $.Toybox.WatchUi;
+        %tmp.165 = getv function ? %tmp.164 :MenuItem;
+        %tmp.166 = "Mode";
+_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_81_50_begin:
+        %tmp.168 = lgetv %val.3;
+        bf %tmp.168 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_81_50_false;
+_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_81_50_true:
+        %tmp.169 = "Custom Colors";
+        push %tmp.169;
+        goto @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_81_50_end;
+_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_81_50_false:
+        %tmp.170 = "Theme Colors";
+        push %tmp.170;
+_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_81_50_end:
+        %tmp.171 = phi [%tmp.168 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_81_50_begin] [%tmp.169 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_81_50_true] [%tmp.170 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_81_50_false] [%tmp.171 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_81_50_end];
         %tmp.172 = "Mode";
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_84_50_begin:
-        %tmp.174 = lgetv %val.3;
-        bf %tmp.174 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_84_50_false;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_84_50_true:
-        %tmp.175 = "Custom Colors";
-        push %tmp.175;
-        goto @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_84_50_end;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_84_50_false:
-        %tmp.176 = "Theme Colors";
-        push %tmp.176;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_84_50_end:
-        %tmp.177 = phi [%tmp.174 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_84_50_begin] [%tmp.175 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_84_50_true] [%tmp.176 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_84_50_false] [%tmp.177 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_84_50_end];
-        %tmp.178 = "Mode";
-        %tmp.179 = null;
-        %tmp.168 = newc %tmp.171 (%tmp.172, %tmp.177, %tmp.178, %tmp.179);
-        invoke %tmp.166 %tmp.167(%tmp.168);
+        %tmp.173 = null;
+        %tmp.162 = newc %tmp.165 (%tmp.166, %tmp.171, %tmp.172, %tmp.173);
+        invoke %tmp.160 %tmp.161(%tmp.162);
 [ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 89 8 ]
 _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_89_14_begin:
-        %tmp.180 = getm $.Toybox.Application;
-        %tmp.181 = getv %tmp.180 :Properties;
-        %tmp.182 = getv function %tmp.181 :getValue;
-        %tmp.183 = "Theme";
-        %tmp.184 = invoke %tmp.181 %tmp.182(%tmp.183);
-        bf %tmp.184 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_89_14_false;
+        %tmp.174 = getm $.Toybox.Application;
+        %tmp.175 = getv %tmp.174 :Properties;
+        %tmp.176 = getv function %tmp.175 :getValue;
+        %tmp.177 = "Theme";
+        %tmp.178 = invoke %tmp.175 %tmp.176(%tmp.177);
+        bf %tmp.178 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_89_14_false;
 _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_89_14_true:
-        %tmp.185 = true;
-        push %tmp.185;
+        %tmp.179 = true;
+        push %tmp.179;
         goto @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_89_14_end;
 _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_89_14_false:
-        %tmp.186 = false;
-        push %tmp.186;
+        %tmp.180 = false;
+        push %tmp.180;
 _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_89_14_end:
-        %tmp.187 = phi [%tmp.184 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_89_14_begin] [%tmp.185 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_89_14_true] [%tmp.186 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_89_14_false] [%tmp.187 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_89_14_end];
-        lputv %val.3 %tmp.187;
+        %tmp.181 = phi [%tmp.178 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_89_14_begin] [%tmp.179 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_89_14_true] [%tmp.180 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_89_14_false] [%tmp.181 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_89_14_end];
+        lputv %val.3 %tmp.181;
 [ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 90 8 ]
-        %tmp.188 = lgetv %menu.1;
-        %tmp.189 = getv function %tmp.188 :addItem;
-        %tmp.192 = getm $.Toybox.WatchUi;
-        %tmp.193 = getv function ? %tmp.192 :MenuItem;
-        %tmp.194 = "Theme";
+        %tmp.182 = lgetv %menu.2;
+        %tmp.183 = getv function %tmp.182 :addItem;
+        %tmp.186 = getm $.Toybox.WatchUi;
+        %tmp.187 = getv function ? %tmp.186 :MenuItem;
+        %tmp.188 = "Theme";
 _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_90_51_begin:
-        %tmp.196 = lgetv %val.3;
-        bf %tmp.196 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_90_51_false;
+        %tmp.190 = lgetv %val.3;
+        bf %tmp.190 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_90_51_false;
 _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_90_51_true:
-        %tmp.197 = "Dark Theme";
-        push %tmp.197;
+        %tmp.191 = "Dark Theme";
+        push %tmp.191;
         goto @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_90_51_end;
 _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_90_51_false:
-        %tmp.198 = "Light Theme";
-        push %tmp.198;
+        %tmp.192 = "Light Theme";
+        push %tmp.192;
 _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_90_51_end:
-        %tmp.199 = phi [%tmp.196 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_90_51_begin] [%tmp.197 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_90_51_true] [%tmp.198 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_90_51_false] [%tmp.199 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_90_51_end];
-        %tmp.200 = "Theme";
-        %tmp.201 = null;
-        %tmp.190 = newc %tmp.193 (%tmp.194, %tmp.199, %tmp.200, %tmp.201);
-        invoke %tmp.188 %tmp.189(%tmp.190);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 92 8 ]
-        %tmp.202 = self;
-        %tmp.203 = getv function %tmp.202 :loadColorSettings;
-        %tmp.204 = "BackgroundColor";
-        %tmp.205 = invoke %tmp.202 %tmp.203(%tmp.204);
-        %tmp.206 = as %tmp.205 Number;
-        lputv %val.3 %tmp.206;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 93 8 ]
-        %tmp.207 = lgetv %menu.1;
-        %tmp.208 = getv function %tmp.207 :addItem;
-        %tmp.211 = getm $.Toybox.WatchUi;
-        %tmp.212 = getv function ? %tmp.211 :IconMenuItem;
-        %tmp.213 = "Background Color";
-        %tmp.214 = self;
-        %tmp.215 = getv function %tmp.214 :colorName;
-        %tmp.217 = lgetv %val.3;
-        %tmp.218 = invoke %tmp.214 %tmp.215(%tmp.217);
-        %tmp.219 = "BackgroundColor";
-        %tmp.220 = self;
-        %tmp.221 = getv function %tmp.220 :generateColorIcon;
-        %tmp.223 = lgetv %val.3;
-        %tmp.224 = invoke %tmp.220 %tmp.221(%tmp.223);
-        %tmp.225 = newd 1;
-        %tmp.227 = const :alignment;
-        %tmp.228 = getm $.Toybox.WatchUi;
-        %tmp.229 = getv %tmp.228 :MenuItem;
-        %tmp.230 = getv %tmp.229 :MENU_ITEM_LABEL_ALIGN_LEFT;
-        %tmp.231 = dup %tmp.225;
-        %tmp.232 = aputv %tmp.231 %tmp.227 %tmp.230;
-        %tmp.209 = newc %tmp.212 (%tmp.213, %tmp.218, %tmp.219, %tmp.224, %tmp.232);
-        invoke %tmp.207 %tmp.208(%tmp.209);
+        %tmp.193 = phi [%tmp.190 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_90_51_begin] [%tmp.191 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_90_51_true] [%tmp.192 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_90_51_false] [%tmp.193 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_90_51_end];
+        %tmp.194 = "Theme";
+        %tmp.195 = null;
+        %tmp.184 = newc %tmp.187 (%tmp.188, %tmp.193, %tmp.194, %tmp.195);
+        invoke %tmp.182 %tmp.183(%tmp.184);
 [ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 95 8 ]
-        %tmp.233 = self;
-        %tmp.234 = getv function %tmp.233 :loadColorSettings;
-        %tmp.235 = "ForegroundColorOne";
-        %tmp.236 = invoke %tmp.233 %tmp.234(%tmp.235);
-        %tmp.237 = as %tmp.236 Number;
-        lputv %val.3 %tmp.237;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 96 8 ]
-        %tmp.238 = lgetv %menu.1;
-        %tmp.239 = getv function %tmp.238 :addItem;
-        %tmp.242 = getm $.Toybox.WatchUi;
-        %tmp.243 = getv function ? %tmp.242 :IconMenuItem;
-        %tmp.244 = "Foreground Color 1";
-        %tmp.245 = self;
-        %tmp.246 = getv function %tmp.245 :colorName;
-        %tmp.248 = lgetv %val.3;
-        %tmp.249 = invoke %tmp.245 %tmp.246(%tmp.248);
-        %tmp.250 = "ForegroundColorOne";
-        %tmp.251 = self;
-        %tmp.252 = getv function %tmp.251 :generateColorIcon;
-        %tmp.254 = lgetv %val.3;
-        %tmp.255 = invoke %tmp.251 %tmp.252(%tmp.254);
-        %tmp.256 = newd 1;
-        %tmp.258 = const :alignment;
-        %tmp.259 = getm $.Toybox.WatchUi;
-        %tmp.260 = getv %tmp.259 :MenuItem;
-        %tmp.261 = getv %tmp.260 :MENU_ITEM_LABEL_ALIGN_LEFT;
-        %tmp.262 = dup %tmp.256;
-        %tmp.263 = aputv %tmp.262 %tmp.258 %tmp.261;
-        %tmp.240 = newc %tmp.243 (%tmp.244, %tmp.249, %tmp.250, %tmp.255, %tmp.263);
-        invoke %tmp.238 %tmp.239(%tmp.240);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 98 8 ]
-        %tmp.264 = self;
-        %tmp.265 = getv function %tmp.264 :loadColorSettings;
-        %tmp.266 = "ForegroundColorTwo";
-        %tmp.267 = invoke %tmp.264 %tmp.265(%tmp.266);
-        %tmp.268 = as %tmp.267 Number;
-        lputv %val.3 %tmp.268;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 99 8 ]
-        %tmp.269 = lgetv %menu.1;
-        %tmp.270 = getv function %tmp.269 :addItem;
-        %tmp.273 = getm $.Toybox.WatchUi;
-        %tmp.274 = getv function ? %tmp.273 :IconMenuItem;
-        %tmp.275 = "Foreground Color 2";
-        %tmp.276 = self;
-        %tmp.277 = getv function %tmp.276 :colorName;
-        %tmp.279 = lgetv %val.3;
-        %tmp.280 = invoke %tmp.276 %tmp.277(%tmp.279);
-        %tmp.281 = "ForegroundColorTwo";
-        %tmp.282 = self;
-        %tmp.283 = getv function %tmp.282 :generateColorIcon;
-        %tmp.285 = lgetv %val.3;
-        %tmp.286 = invoke %tmp.282 %tmp.283(%tmp.285);
-        %tmp.287 = newd 1;
-        %tmp.289 = const :alignment;
-        %tmp.290 = getm $.Toybox.WatchUi;
-        %tmp.291 = getv %tmp.290 :MenuItem;
-        %tmp.292 = getv %tmp.291 :MENU_ITEM_LABEL_ALIGN_LEFT;
-        %tmp.293 = dup %tmp.287;
-        %tmp.294 = aputv %tmp.293 %tmp.289 %tmp.292;
-        %tmp.271 = newc %tmp.274 (%tmp.275, %tmp.280, %tmp.281, %tmp.286, %tmp.294);
-        invoke %tmp.269 %tmp.270(%tmp.271);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 101 8 ]
-        %tmp.295 = self;
-        %tmp.296 = getv function %tmp.295 :loadColorSettings;
-        %tmp.297 = "SecondsHandColor";
-        %tmp.298 = invoke %tmp.295 %tmp.296(%tmp.297);
-        %tmp.299 = as %tmp.298 Number;
-        lputv %val.3 %tmp.299;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 102 8 ]
-        %tmp.300 = lgetv %menu.1;
-        %tmp.301 = getv function %tmp.300 :addItem;
-        %tmp.304 = getm $.Toybox.WatchUi;
-        %tmp.305 = getv function ? %tmp.304 :IconMenuItem;
-        %tmp.306 = "Second Hand Color";
-        %tmp.307 = self;
-        %tmp.308 = getv function %tmp.307 :colorName;
-        %tmp.310 = lgetv %val.3;
-        %tmp.311 = invoke %tmp.307 %tmp.308(%tmp.310);
-        %tmp.312 = "SecondsHandColor";
-        %tmp.313 = self;
-        %tmp.314 = getv function %tmp.313 :generateColorIcon;
-        %tmp.316 = lgetv %val.3;
-        %tmp.317 = invoke %tmp.313 %tmp.314(%tmp.316);
-        %tmp.318 = newd 1;
-        %tmp.320 = const :alignment;
-        %tmp.321 = getm $.Toybox.WatchUi;
-        %tmp.322 = getv %tmp.321 :MenuItem;
-        %tmp.323 = getv %tmp.322 :MENU_ITEM_LABEL_ALIGN_LEFT;
-        %tmp.324 = dup %tmp.318;
-        %tmp.325 = aputv %tmp.324 %tmp.320 %tmp.323;
-        %tmp.302 = newc %tmp.305 (%tmp.306, %tmp.311, %tmp.312, %tmp.317, %tmp.325);
-        invoke %tmp.300 %tmp.301(%tmp.302);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 104 8 ]
-        %tmp.326 = self;
-        %tmp.327 = getv function %tmp.326 :loadColorSettings;
-        %tmp.328 = "MinuteHandColorOne";
-        %tmp.329 = invoke %tmp.326 %tmp.327(%tmp.328);
-        %tmp.330 = as %tmp.329 Number;
-        lputv %val.3 %tmp.330;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 105 8 ]
-        %tmp.331 = lgetv %menu.1;
-        %tmp.332 = getv function %tmp.331 :addItem;
-        %tmp.335 = getm $.Toybox.WatchUi;
-        %tmp.336 = getv function ? %tmp.335 :IconMenuItem;
-        %tmp.337 = "Minute Hand Color 1";
-        %tmp.338 = self;
-        %tmp.339 = getv function %tmp.338 :colorName;
-        %tmp.341 = lgetv %val.3;
-        %tmp.342 = invoke %tmp.338 %tmp.339(%tmp.341);
-        %tmp.343 = "MinuteHandColorOne";
-        %tmp.344 = self;
-        %tmp.345 = getv function %tmp.344 :generateColorIcon;
-        %tmp.347 = lgetv %val.3;
-        %tmp.348 = invoke %tmp.344 %tmp.345(%tmp.347);
-        %tmp.349 = newd 1;
-        %tmp.351 = const :alignment;
-        %tmp.352 = getm $.Toybox.WatchUi;
-        %tmp.353 = getv %tmp.352 :MenuItem;
-        %tmp.354 = getv %tmp.353 :MENU_ITEM_LABEL_ALIGN_LEFT;
-        %tmp.355 = dup %tmp.349;
-        %tmp.356 = aputv %tmp.355 %tmp.351 %tmp.354;
-        %tmp.333 = newc %tmp.336 (%tmp.337, %tmp.342, %tmp.343, %tmp.348, %tmp.356);
-        invoke %tmp.331 %tmp.332(%tmp.333);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 107 8 ]
-        %tmp.357 = self;
-        %tmp.358 = getv function %tmp.357 :loadColorSettings;
-        %tmp.359 = "MinuteHandColorTwo";
-        %tmp.360 = invoke %tmp.357 %tmp.358(%tmp.359);
-        %tmp.361 = as %tmp.360 Number;
-        lputv %val.3 %tmp.361;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 108 8 ]
-        %tmp.362 = lgetv %menu.1;
-        %tmp.363 = getv function %tmp.362 :addItem;
-        %tmp.366 = getm $.Toybox.WatchUi;
-        %tmp.367 = getv function ? %tmp.366 :IconMenuItem;
-        %tmp.368 = "Minute Hand Color 2";
-        %tmp.369 = self;
-        %tmp.370 = getv function %tmp.369 :colorName;
-        %tmp.372 = lgetv %val.3;
-        %tmp.373 = invoke %tmp.369 %tmp.370(%tmp.372);
-        %tmp.374 = "MinuteHandColorTwo";
-        %tmp.375 = self;
-        %tmp.376 = getv function %tmp.375 :generateColorIcon;
-        %tmp.378 = lgetv %val.3;
-        %tmp.379 = invoke %tmp.375 %tmp.376(%tmp.378);
-        %tmp.380 = newd 1;
-        %tmp.382 = const :alignment;
-        %tmp.383 = getm $.Toybox.WatchUi;
-        %tmp.384 = getv %tmp.383 :MenuItem;
-        %tmp.385 = getv %tmp.384 :MENU_ITEM_LABEL_ALIGN_LEFT;
-        %tmp.386 = dup %tmp.380;
-        %tmp.387 = aputv %tmp.386 %tmp.382 %tmp.385;
-        %tmp.364 = newc %tmp.367 (%tmp.368, %tmp.373, %tmp.374, %tmp.379, %tmp.387);
-        invoke %tmp.362 %tmp.363(%tmp.364);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 110 8 ]
-        %tmp.388 = self;
-        %tmp.389 = getv function %tmp.388 :loadColorSettings;
-        %tmp.390 = "HourHandColorOne";
-        %tmp.391 = invoke %tmp.388 %tmp.389(%tmp.390);
-        %tmp.392 = as %tmp.391 Number;
-        lputv %val.3 %tmp.392;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 111 8 ]
-        %tmp.393 = lgetv %menu.1;
-        %tmp.394 = getv function %tmp.393 :addItem;
-        %tmp.397 = getm $.Toybox.WatchUi;
-        %tmp.398 = getv function ? %tmp.397 :IconMenuItem;
-        %tmp.399 = "Hour Hand Color 1";
-        %tmp.400 = self;
-        %tmp.401 = getv function %tmp.400 :colorName;
-        %tmp.403 = lgetv %val.3;
-        %tmp.404 = invoke %tmp.400 %tmp.401(%tmp.403);
-        %tmp.405 = "HourHandColorOne";
-        %tmp.406 = self;
-        %tmp.407 = getv function %tmp.406 :generateColorIcon;
-        %tmp.409 = lgetv %val.3;
-        %tmp.410 = invoke %tmp.406 %tmp.407(%tmp.409);
-        %tmp.411 = newd 1;
-        %tmp.413 = const :alignment;
-        %tmp.414 = getm $.Toybox.WatchUi;
-        %tmp.415 = getv %tmp.414 :MenuItem;
-        %tmp.416 = getv %tmp.415 :MENU_ITEM_LABEL_ALIGN_LEFT;
-        %tmp.417 = dup %tmp.411;
-        %tmp.418 = aputv %tmp.417 %tmp.413 %tmp.416;
-        %tmp.395 = newc %tmp.398 (%tmp.399, %tmp.404, %tmp.405, %tmp.410, %tmp.418);
-        invoke %tmp.393 %tmp.394(%tmp.395);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 113 8 ]
-        %tmp.419 = self;
-        %tmp.420 = getv function %tmp.419 :loadColorSettings;
-        %tmp.421 = "HourHandColorTwo";
-        %tmp.422 = invoke %tmp.419 %tmp.420(%tmp.421);
-        %tmp.423 = as %tmp.422 Number;
-        lputv %val.3 %tmp.423;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 114 8 ]
-        %tmp.424 = lgetv %menu.1;
-        %tmp.425 = getv function %tmp.424 :addItem;
-        %tmp.428 = getm $.Toybox.WatchUi;
-        %tmp.429 = getv function ? %tmp.428 :IconMenuItem;
-        %tmp.430 = "Hour Hand Color 2";
-        %tmp.431 = self;
-        %tmp.432 = getv function %tmp.431 :colorName;
-        %tmp.434 = lgetv %val.3;
-        %tmp.435 = invoke %tmp.431 %tmp.432(%tmp.434);
-        %tmp.436 = "HourHandColorTwo";
-        %tmp.437 = self;
-        %tmp.438 = getv function %tmp.437 :generateColorIcon;
-        %tmp.440 = lgetv %val.3;
-        %tmp.441 = invoke %tmp.437 %tmp.438(%tmp.440);
-        %tmp.442 = newd 1;
-        %tmp.444 = const :alignment;
-        %tmp.445 = getm $.Toybox.WatchUi;
-        %tmp.446 = getv %tmp.445 :MenuItem;
-        %tmp.447 = getv %tmp.446 :MENU_ITEM_LABEL_ALIGN_LEFT;
-        %tmp.448 = dup %tmp.442;
-        %tmp.449 = aputv %tmp.448 %tmp.444 %tmp.447;
-        %tmp.426 = newc %tmp.429 (%tmp.430, %tmp.435, %tmp.436, %tmp.441, %tmp.449);
-        invoke %tmp.424 %tmp.425(%tmp.426);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 117 8 ]
-        %tmp.450 = getm $.Toybox.Application;
-        %tmp.451 = getv %tmp.450 :Properties;
-        %tmp.452 = getv function %tmp.451 :getValue;
-        %tmp.453 = "MinuteHandWidth";
-        %tmp.454 = invoke %tmp.451 %tmp.452(%tmp.453);
-        %tmp.455 = as %tmp.454 Number;
-        lputv %val.3 %tmp.455;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 118 8 ]
-        %tmp.456 = lgetv %menu.1;
-        %tmp.457 = getv function %tmp.456 :addItem;
-        %tmp.460 = getm $.Toybox.WatchUi;
-        %tmp.461 = getv function ? %tmp.460 :MenuItem;
-        %tmp.462 = "Minute Hand Width";
-        %tmp.463 = lgetv %val.3;
-        %tmp.464 = getv function %tmp.463 :toString;
-        %tmp.465 = invoke %tmp.463 %tmp.464();
-        %tmp.466 = "MinuteHandWidth";
-        %tmp.467 = null;
-        %tmp.458 = newc %tmp.461 (%tmp.462, %tmp.465, %tmp.466, %tmp.467);
-        invoke %tmp.456 %tmp.457(%tmp.458);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 120 8 ]
-        %tmp.468 = getm $.Toybox.Application;
-        %tmp.469 = getv %tmp.468 :Properties;
-        %tmp.470 = getv function %tmp.469 :getValue;
-        %tmp.471 = "HourHandWidth";
-        %tmp.472 = invoke %tmp.469 %tmp.470(%tmp.471);
-        %tmp.473 = as %tmp.472 Number;
-        lputv %val.3 %tmp.473;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 121 8 ]
-        %tmp.474 = lgetv %menu.1;
-        %tmp.475 = getv function %tmp.474 :addItem;
-        %tmp.478 = getm $.Toybox.WatchUi;
-        %tmp.479 = getv function ? %tmp.478 :MenuItem;
-        %tmp.480 = "Hour Hand Width";
-        %tmp.481 = lgetv %val.3;
-        %tmp.482 = getv function %tmp.481 :toString;
-        %tmp.483 = invoke %tmp.481 %tmp.482();
-        %tmp.484 = "HourHandWidth";
-        %tmp.485 = null;
-        %tmp.476 = newc %tmp.479 (%tmp.480, %tmp.483, %tmp.484, %tmp.485);
-        invoke %tmp.474 %tmp.475(%tmp.476);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 129 8 ]
-        %tmp.486 = newa Array<Views or InputDelegates> 2;
-        %tmp.488 = lgetv %menu.1;
-        %tmp.489 = dup %tmp.486;
-        %tmp.490 = aputv %tmp.489 0 %tmp.488;
-        %tmp.494 = getm $;
-        %tmp.495 = getv %tmp.494 :SimplexSettingsMenuDelegate;
-        %tmp.491 = newc %tmp.495 ();
-        %tmp.496 = dup %tmp.490;
-        %tmp.497 = aputv %tmp.496 1 %tmp.491;
-        ret %tmp.497;
+_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_95_8_if_stmt:
+        %tmp.197 = lgetv %version.1;
+        %tmp.198 = 420;
+        %tmp.199 = gt %tmp.197 %tmp.198;
+        bf %tmp.199 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_95_8_if_end;
+_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_95_8_if_true:
+_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_96_8_start:
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 97 12 ]
+        %tmp.200 = self;
+        %tmp.201 = getv function %tmp.200 :loadColorSettings;
+        %tmp.202 = "BackgroundColor";
+        %tmp.203 = invoke %tmp.200 %tmp.201(%tmp.202);
+        %tmp.204 = as %tmp.203 Number;
+        lputv %val.3 %tmp.204;
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 98 12 ]
+        %tmp.205 = lgetv %menu.2;
+        %tmp.206 = getv function %tmp.205 :addItem;
+        %tmp.209 = getm $.Toybox.WatchUi;
+        %tmp.210 = getv function ? %tmp.209 :IconMenuItem;
+        %tmp.211 = "Background Color";
+        %tmp.212 = self;
+        %tmp.213 = getv function %tmp.212 :colorName;
+        %tmp.215 = lgetv %val.3;
+        %tmp.216 = invoke %tmp.212 %tmp.213(%tmp.215);
+        %tmp.217 = "BackgroundColor";
+        %tmp.218 = self;
+        %tmp.219 = getv function %tmp.218 :generateColorIcon;
+        %tmp.221 = lgetv %val.3;
+        %tmp.222 = invoke %tmp.218 %tmp.219(%tmp.221);
+        %tmp.223 = newd 1;
+        %tmp.225 = const :alignment;
+        %tmp.226 = getm $.Toybox.WatchUi;
+        %tmp.227 = getv %tmp.226 :MenuItem;
+        %tmp.228 = getv %tmp.227 :MENU_ITEM_LABEL_ALIGN_LEFT;
+        %tmp.229 = dup %tmp.223;
+        %tmp.230 = aputv %tmp.229 %tmp.225 %tmp.228;
+        %tmp.207 = newc %tmp.210 (%tmp.211, %tmp.216, %tmp.217, %tmp.222, %tmp.230);
+        invoke %tmp.205 %tmp.206(%tmp.207);
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 100 12 ]
+        %tmp.231 = self;
+        %tmp.232 = getv function %tmp.231 :loadColorSettings;
+        %tmp.233 = "ForegroundColorOne";
+        %tmp.234 = invoke %tmp.231 %tmp.232(%tmp.233);
+        %tmp.235 = as %tmp.234 Number;
+        lputv %val.3 %tmp.235;
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 101 12 ]
+        %tmp.236 = lgetv %menu.2;
+        %tmp.237 = getv function %tmp.236 :addItem;
+        %tmp.240 = getm $.Toybox.WatchUi;
+        %tmp.241 = getv function ? %tmp.240 :IconMenuItem;
+        %tmp.242 = "Foreground Color 1";
+        %tmp.243 = self;
+        %tmp.244 = getv function %tmp.243 :colorName;
+        %tmp.246 = lgetv %val.3;
+        %tmp.247 = invoke %tmp.243 %tmp.244(%tmp.246);
+        %tmp.248 = "ForegroundColorOne";
+        %tmp.249 = self;
+        %tmp.250 = getv function %tmp.249 :generateColorIcon;
+        %tmp.252 = lgetv %val.3;
+        %tmp.253 = invoke %tmp.249 %tmp.250(%tmp.252);
+        %tmp.254 = newd 1;
+        %tmp.256 = const :alignment;
+        %tmp.257 = getm $.Toybox.WatchUi;
+        %tmp.258 = getv %tmp.257 :MenuItem;
+        %tmp.259 = getv %tmp.258 :MENU_ITEM_LABEL_ALIGN_LEFT;
+        %tmp.260 = dup %tmp.254;
+        %tmp.261 = aputv %tmp.260 %tmp.256 %tmp.259;
+        %tmp.238 = newc %tmp.241 (%tmp.242, %tmp.247, %tmp.248, %tmp.253, %tmp.261);
+        invoke %tmp.236 %tmp.237(%tmp.238);
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 103 12 ]
+        %tmp.262 = self;
+        %tmp.263 = getv function %tmp.262 :loadColorSettings;
+        %tmp.264 = "ForegroundColorTwo";
+        %tmp.265 = invoke %tmp.262 %tmp.263(%tmp.264);
+        %tmp.266 = as %tmp.265 Number;
+        lputv %val.3 %tmp.266;
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 104 12 ]
+        %tmp.267 = lgetv %menu.2;
+        %tmp.268 = getv function %tmp.267 :addItem;
+        %tmp.271 = getm $.Toybox.WatchUi;
+        %tmp.272 = getv function ? %tmp.271 :IconMenuItem;
+        %tmp.273 = "Foreground Color 2";
+        %tmp.274 = self;
+        %tmp.275 = getv function %tmp.274 :colorName;
+        %tmp.277 = lgetv %val.3;
+        %tmp.278 = invoke %tmp.274 %tmp.275(%tmp.277);
+        %tmp.279 = "ForegroundColorTwo";
+        %tmp.280 = self;
+        %tmp.281 = getv function %tmp.280 :generateColorIcon;
+        %tmp.283 = lgetv %val.3;
+        %tmp.284 = invoke %tmp.280 %tmp.281(%tmp.283);
+        %tmp.285 = newd 1;
+        %tmp.287 = const :alignment;
+        %tmp.288 = getm $.Toybox.WatchUi;
+        %tmp.289 = getv %tmp.288 :MenuItem;
+        %tmp.290 = getv %tmp.289 :MENU_ITEM_LABEL_ALIGN_LEFT;
+        %tmp.291 = dup %tmp.285;
+        %tmp.292 = aputv %tmp.291 %tmp.287 %tmp.290;
+        %tmp.269 = newc %tmp.272 (%tmp.273, %tmp.278, %tmp.279, %tmp.284, %tmp.292);
+        invoke %tmp.267 %tmp.268(%tmp.269);
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 106 12 ]
+        %tmp.293 = self;
+        %tmp.294 = getv function %tmp.293 :loadColorSettings;
+        %tmp.295 = "SecondsHandColor";
+        %tmp.296 = invoke %tmp.293 %tmp.294(%tmp.295);
+        %tmp.297 = as %tmp.296 Number;
+        lputv %val.3 %tmp.297;
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 107 12 ]
+        %tmp.298 = lgetv %menu.2;
+        %tmp.299 = getv function %tmp.298 :addItem;
+        %tmp.302 = getm $.Toybox.WatchUi;
+        %tmp.303 = getv function ? %tmp.302 :IconMenuItem;
+        %tmp.304 = "Second Hand Color";
+        %tmp.305 = self;
+        %tmp.306 = getv function %tmp.305 :colorName;
+        %tmp.308 = lgetv %val.3;
+        %tmp.309 = invoke %tmp.305 %tmp.306(%tmp.308);
+        %tmp.310 = "SecondsHandColor";
+        %tmp.311 = self;
+        %tmp.312 = getv function %tmp.311 :generateColorIcon;
+        %tmp.314 = lgetv %val.3;
+        %tmp.315 = invoke %tmp.311 %tmp.312(%tmp.314);
+        %tmp.316 = newd 1;
+        %tmp.318 = const :alignment;
+        %tmp.319 = getm $.Toybox.WatchUi;
+        %tmp.320 = getv %tmp.319 :MenuItem;
+        %tmp.321 = getv %tmp.320 :MENU_ITEM_LABEL_ALIGN_LEFT;
+        %tmp.322 = dup %tmp.316;
+        %tmp.323 = aputv %tmp.322 %tmp.318 %tmp.321;
+        %tmp.300 = newc %tmp.303 (%tmp.304, %tmp.309, %tmp.310, %tmp.315, %tmp.323);
+        invoke %tmp.298 %tmp.299(%tmp.300);
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 109 12 ]
+        %tmp.324 = self;
+        %tmp.325 = getv function %tmp.324 :loadColorSettings;
+        %tmp.326 = "MinuteHandColorOne";
+        %tmp.327 = invoke %tmp.324 %tmp.325(%tmp.326);
+        %tmp.328 = as %tmp.327 Number;
+        lputv %val.3 %tmp.328;
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 110 12 ]
+        %tmp.329 = lgetv %menu.2;
+        %tmp.330 = getv function %tmp.329 :addItem;
+        %tmp.333 = getm $.Toybox.WatchUi;
+        %tmp.334 = getv function ? %tmp.333 :IconMenuItem;
+        %tmp.335 = "Minute Hand Color 1";
+        %tmp.336 = self;
+        %tmp.337 = getv function %tmp.336 :colorName;
+        %tmp.339 = lgetv %val.3;
+        %tmp.340 = invoke %tmp.336 %tmp.337(%tmp.339);
+        %tmp.341 = "MinuteHandColorOne";
+        %tmp.342 = self;
+        %tmp.343 = getv function %tmp.342 :generateColorIcon;
+        %tmp.345 = lgetv %val.3;
+        %tmp.346 = invoke %tmp.342 %tmp.343(%tmp.345);
+        %tmp.347 = newd 1;
+        %tmp.349 = const :alignment;
+        %tmp.350 = getm $.Toybox.WatchUi;
+        %tmp.351 = getv %tmp.350 :MenuItem;
+        %tmp.352 = getv %tmp.351 :MENU_ITEM_LABEL_ALIGN_LEFT;
+        %tmp.353 = dup %tmp.347;
+        %tmp.354 = aputv %tmp.353 %tmp.349 %tmp.352;
+        %tmp.331 = newc %tmp.334 (%tmp.335, %tmp.340, %tmp.341, %tmp.346, %tmp.354);
+        invoke %tmp.329 %tmp.330(%tmp.331);
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 112 12 ]
+        %tmp.355 = self;
+        %tmp.356 = getv function %tmp.355 :loadColorSettings;
+        %tmp.357 = "MinuteHandColorTwo";
+        %tmp.358 = invoke %tmp.355 %tmp.356(%tmp.357);
+        %tmp.359 = as %tmp.358 Number;
+        lputv %val.3 %tmp.359;
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 113 12 ]
+        %tmp.360 = lgetv %menu.2;
+        %tmp.361 = getv function %tmp.360 :addItem;
+        %tmp.364 = getm $.Toybox.WatchUi;
+        %tmp.365 = getv function ? %tmp.364 :IconMenuItem;
+        %tmp.366 = "Minute Hand Color 2";
+        %tmp.367 = self;
+        %tmp.368 = getv function %tmp.367 :colorName;
+        %tmp.370 = lgetv %val.3;
+        %tmp.371 = invoke %tmp.367 %tmp.368(%tmp.370);
+        %tmp.372 = "MinuteHandColorTwo";
+        %tmp.373 = self;
+        %tmp.374 = getv function %tmp.373 :generateColorIcon;
+        %tmp.376 = lgetv %val.3;
+        %tmp.377 = invoke %tmp.373 %tmp.374(%tmp.376);
+        %tmp.378 = newd 1;
+        %tmp.380 = const :alignment;
+        %tmp.381 = getm $.Toybox.WatchUi;
+        %tmp.382 = getv %tmp.381 :MenuItem;
+        %tmp.383 = getv %tmp.382 :MENU_ITEM_LABEL_ALIGN_LEFT;
+        %tmp.384 = dup %tmp.378;
+        %tmp.385 = aputv %tmp.384 %tmp.380 %tmp.383;
+        %tmp.362 = newc %tmp.365 (%tmp.366, %tmp.371, %tmp.372, %tmp.377, %tmp.385);
+        invoke %tmp.360 %tmp.361(%tmp.362);
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 115 12 ]
+        %tmp.386 = self;
+        %tmp.387 = getv function %tmp.386 :loadColorSettings;
+        %tmp.388 = "HourHandColorOne";
+        %tmp.389 = invoke %tmp.386 %tmp.387(%tmp.388);
+        %tmp.390 = as %tmp.389 Number;
+        lputv %val.3 %tmp.390;
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 116 12 ]
+        %tmp.391 = lgetv %menu.2;
+        %tmp.392 = getv function %tmp.391 :addItem;
+        %tmp.395 = getm $.Toybox.WatchUi;
+        %tmp.396 = getv function ? %tmp.395 :IconMenuItem;
+        %tmp.397 = "Hour Hand Color 1";
+        %tmp.398 = self;
+        %tmp.399 = getv function %tmp.398 :colorName;
+        %tmp.401 = lgetv %val.3;
+        %tmp.402 = invoke %tmp.398 %tmp.399(%tmp.401);
+        %tmp.403 = "HourHandColorOne";
+        %tmp.404 = self;
+        %tmp.405 = getv function %tmp.404 :generateColorIcon;
+        %tmp.407 = lgetv %val.3;
+        %tmp.408 = invoke %tmp.404 %tmp.405(%tmp.407);
+        %tmp.409 = newd 1;
+        %tmp.411 = const :alignment;
+        %tmp.412 = getm $.Toybox.WatchUi;
+        %tmp.413 = getv %tmp.412 :MenuItem;
+        %tmp.414 = getv %tmp.413 :MENU_ITEM_LABEL_ALIGN_LEFT;
+        %tmp.415 = dup %tmp.409;
+        %tmp.416 = aputv %tmp.415 %tmp.411 %tmp.414;
+        %tmp.393 = newc %tmp.396 (%tmp.397, %tmp.402, %tmp.403, %tmp.408, %tmp.416);
+        invoke %tmp.391 %tmp.392(%tmp.393);
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 118 12 ]
+        %tmp.417 = self;
+        %tmp.418 = getv function %tmp.417 :loadColorSettings;
+        %tmp.419 = "HourHandColorTwo";
+        %tmp.420 = invoke %tmp.417 %tmp.418(%tmp.419);
+        %tmp.421 = as %tmp.420 Number;
+        lputv %val.3 %tmp.421;
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 119 12 ]
+        %tmp.422 = lgetv %menu.2;
+        %tmp.423 = getv function %tmp.422 :addItem;
+        %tmp.426 = getm $.Toybox.WatchUi;
+        %tmp.427 = getv function ? %tmp.426 :IconMenuItem;
+        %tmp.428 = "Hour Hand Color 2";
+        %tmp.429 = self;
+        %tmp.430 = getv function %tmp.429 :colorName;
+        %tmp.432 = lgetv %val.3;
+        %tmp.433 = invoke %tmp.429 %tmp.430(%tmp.432);
+        %tmp.434 = "HourHandColorTwo";
+        %tmp.435 = self;
+        %tmp.436 = getv function %tmp.435 :generateColorIcon;
+        %tmp.438 = lgetv %val.3;
+        %tmp.439 = invoke %tmp.435 %tmp.436(%tmp.438);
+        %tmp.440 = newd 1;
+        %tmp.442 = const :alignment;
+        %tmp.443 = getm $.Toybox.WatchUi;
+        %tmp.444 = getv %tmp.443 :MenuItem;
+        %tmp.445 = getv %tmp.444 :MENU_ITEM_LABEL_ALIGN_LEFT;
+        %tmp.446 = dup %tmp.440;
+        %tmp.447 = aputv %tmp.446 %tmp.442 %tmp.445;
+        %tmp.424 = newc %tmp.427 (%tmp.428, %tmp.433, %tmp.434, %tmp.439, %tmp.447);
+        invoke %tmp.422 %tmp.423(%tmp.424);
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 121 12 ]
+        %tmp.448 = getm $.Toybox.Application;
+        %tmp.449 = getv %tmp.448 :Properties;
+        %tmp.450 = getv function %tmp.449 :getValue;
+        %tmp.451 = "MinuteHandWidth";
+        %tmp.452 = invoke %tmp.449 %tmp.450(%tmp.451);
+        %tmp.453 = as %tmp.452 Number;
+        lputv %val.3 %tmp.453;
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 122 12 ]
+        %tmp.454 = lgetv %menu.2;
+        %tmp.455 = getv function %tmp.454 :addItem;
+        %tmp.458 = getm $.Toybox.WatchUi;
+        %tmp.459 = getv function ? %tmp.458 :MenuItem;
+        %tmp.460 = "Minute Hand Width";
+        %tmp.461 = lgetv %val.3;
+        %tmp.462 = getv function %tmp.461 :toString;
+        %tmp.463 = invoke %tmp.461 %tmp.462();
+        %tmp.464 = "MinuteHandWidth";
+        %tmp.465 = null;
+        %tmp.456 = newc %tmp.459 (%tmp.460, %tmp.463, %tmp.464, %tmp.465);
+        invoke %tmp.454 %tmp.455(%tmp.456);
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 124 12 ]
+        %tmp.466 = getm $.Toybox.Application;
+        %tmp.467 = getv %tmp.466 :Properties;
+        %tmp.468 = getv function %tmp.467 :getValue;
+        %tmp.469 = "HourHandWidth";
+        %tmp.470 = invoke %tmp.467 %tmp.468(%tmp.469);
+        %tmp.471 = as %tmp.470 Number;
+        lputv %val.3 %tmp.471;
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 125 12 ]
+        %tmp.472 = lgetv %menu.2;
+        %tmp.473 = getv function %tmp.472 :addItem;
+        %tmp.476 = getm $.Toybox.WatchUi;
+        %tmp.477 = getv function ? %tmp.476 :MenuItem;
+        %tmp.478 = "Hour Hand Width";
+        %tmp.479 = lgetv %val.3;
+        %tmp.480 = getv function %tmp.479 :toString;
+        %tmp.481 = invoke %tmp.479 %tmp.480();
+        %tmp.482 = "HourHandWidth";
+        %tmp.483 = null;
+        %tmp.474 = newc %tmp.477 (%tmp.478, %tmp.481, %tmp.482, %tmp.483);
+        invoke %tmp.472 %tmp.473(%tmp.474);
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 127 12 ]
+        %tmp.484 = getm $.Toybox.Application;
+        %tmp.485 = getv %tmp.484 :Properties;
+        %tmp.486 = getv function %tmp.485 :getValue;
+        %tmp.487 = "MinuteHandLength";
+        %tmp.488 = invoke %tmp.485 %tmp.486(%tmp.487);
+        %tmp.489 = as %tmp.488 Number;
+        lputv %val.3 %tmp.489;
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 128 12 ]
+        %tmp.490 = lgetv %menu.2;
+        %tmp.491 = getv function %tmp.490 :addItem;
+        %tmp.494 = getm $.Toybox.WatchUi;
+        %tmp.495 = getv function ? %tmp.494 :MenuItem;
+        %tmp.496 = "Minute Hand Length";
+        %tmp.497 = lgetv %val.3;
+        %tmp.498 = getv function %tmp.497 :toString;
+        %tmp.499 = invoke %tmp.497 %tmp.498();
+        %tmp.500 = "MinuteHandLength";
+        %tmp.501 = null;
+        %tmp.492 = newc %tmp.495 (%tmp.496, %tmp.499, %tmp.500, %tmp.501);
+        invoke %tmp.490 %tmp.491(%tmp.492);
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 130 12 ]
+        %tmp.502 = getm $.Toybox.Application;
+        %tmp.503 = getv %tmp.502 :Properties;
+        %tmp.504 = getv function %tmp.503 :getValue;
+        %tmp.505 = "HourHandLength";
+        %tmp.506 = invoke %tmp.503 %tmp.504(%tmp.505);
+        %tmp.507 = as %tmp.506 Number;
+        lputv %val.3 %tmp.507;
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 131 12 ]
+        %tmp.508 = lgetv %menu.2;
+        %tmp.509 = getv function %tmp.508 :addItem;
+        %tmp.512 = getm $.Toybox.WatchUi;
+        %tmp.513 = getv function ? %tmp.512 :MenuItem;
+        %tmp.514 = "Hour Hand Length";
+        %tmp.515 = lgetv %val.3;
+        %tmp.516 = getv function %tmp.515 :toString;
+        %tmp.517 = invoke %tmp.515 %tmp.516();
+        %tmp.518 = "HourHandLength";
+        %tmp.519 = null;
+        %tmp.510 = newc %tmp.513 (%tmp.514, %tmp.517, %tmp.518, %tmp.519);
+        invoke %tmp.508 %tmp.509(%tmp.510);
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 133 12 ]
+        %tmp.520 = getm $.Toybox.Application;
+        %tmp.521 = getv %tmp.520 :Properties;
+        %tmp.522 = getv function %tmp.521 :getValue;
+        %tmp.523 = "MinuteHandThinning";
+        %tmp.524 = invoke %tmp.521 %tmp.522(%tmp.523);
+        %tmp.525 = as %tmp.524 Number;
+        lputv %val.3 %tmp.525;
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 134 12 ]
+        %tmp.526 = lgetv %menu.2;
+        %tmp.527 = getv function %tmp.526 :addItem;
+        %tmp.530 = getm $.Toybox.WatchUi;
+        %tmp.531 = getv function ? %tmp.530 :MenuItem;
+        %tmp.532 = "Minute Hand Thinning";
+        %tmp.533 = lgetv %val.3;
+        %tmp.534 = getv function %tmp.533 :toString;
+        %tmp.535 = invoke %tmp.533 %tmp.534();
+        %tmp.536 = "MinuteHandThinning";
+        %tmp.537 = null;
+        %tmp.528 = newc %tmp.531 (%tmp.532, %tmp.535, %tmp.536, %tmp.537);
+        invoke %tmp.526 %tmp.527(%tmp.528);
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 136 12 ]
+        %tmp.538 = getm $.Toybox.Application;
+        %tmp.539 = getv %tmp.538 :Properties;
+        %tmp.540 = getv function %tmp.539 :getValue;
+        %tmp.541 = "HourHandThinning";
+        %tmp.542 = invoke %tmp.539 %tmp.540(%tmp.541);
+        %tmp.543 = as %tmp.542 Number;
+        lputv %val.3 %tmp.543;
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 137 12 ]
+        %tmp.544 = lgetv %menu.2;
+        %tmp.545 = getv function %tmp.544 :addItem;
+        %tmp.548 = getm $.Toybox.WatchUi;
+        %tmp.549 = getv function ? %tmp.548 :MenuItem;
+        %tmp.550 = "Hour Hand Thinning";
+        %tmp.551 = lgetv %val.3;
+        %tmp.552 = getv function %tmp.551 :toString;
+        %tmp.553 = invoke %tmp.551 %tmp.552();
+        %tmp.554 = "HourHandThinning";
+        %tmp.555 = null;
+        %tmp.546 = newc %tmp.549 (%tmp.550, %tmp.553, %tmp.554, %tmp.555);
+        invoke %tmp.544 %tmp.545(%tmp.546);
+_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_96_8_stop:
+        goto @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_95_8_if_end;
+_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_95_8_if_end:
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 147 8 ]
+        %tmp.556 = newa Array<Views or InputDelegates> 2;
+        %tmp.558 = lgetv %menu.2;
+        %tmp.559 = dup %tmp.556;
+        %tmp.560 = aputv %tmp.559 0 %tmp.558;
+        %tmp.564 = getm $;
+        %tmp.565 = getv %tmp.564 :SimplexSettingsMenuDelegate;
+        %tmp.561 = newc %tmp.565 ();
+        %tmp.566 = dup %tmp.560;
+        %tmp.567 = aputv %tmp.566 1 %tmp.561;
+        ret %tmp.567;
 _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_43_4_stop:
     }
 }
-[ @file = "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc"; @line = 134; ]
+[ @file = "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc"; @line = 152; ]
 function getApp() as SimplexApp {
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_135_0_start:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 136 4 ]
+_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_153_0_start:
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 154 4 ]
     %tmp.1 = getm $.Toybox.Application;
     %tmp.2 = getv function %tmp.1 :getApp;
     %tmp.3 = invoke %tmp.1 %tmp.2();
     %tmp.4 = as %tmp.3 SimplexApp;
     ret %tmp.4;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_135_0_stop:
+_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_153_0_stop:
 }
 [ @file = "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc"; @line = 1; ]
 <init> {

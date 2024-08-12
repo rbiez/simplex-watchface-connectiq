@@ -251,5 +251,101 @@
             <listEntry value="0x555500">@Strings.ColorOliveGreen</listEntry>
             <listEntry value="0x00FFFF">@Strings.ColorTurquoise</listEntry>  
         </settingConfig>
-    </setting>    
+    </setting>   
+
+    <setting propertyKey="@Properties.MinuteHandWidth" title="Minute Hand Width">
+        <settingConfig type="list">            
+            <listEntry value="2">2</listEntry>
+            <listEntry value="3">3</listEntry>
+            <listEntry value="4">4</listEntry>
+            <listEntry value="5">5</listEntry>
+            <listEntry value="6">6</listEntry>
+            <listEntry value="7">7</listEntry> 
+            <listEntry value="8">8</listEntry>
+            <listEntry value="9">9</listEntry>
+            <listEntry value="10">10</listEntry>
+            <listEntry value="11">11</listEntry>
+            <listEntry value="12">12</listEntry>
+            <listEntry value="13">13</listEntry>
+            <listEntry value="14">14</listEntry>  
+            <listEntry value="15">15</listEntry>  
+        </settingConfig>
+    </setting>   
+
+    <setting propertyKey="@Properties.HourHandWidth" title="Hour Hand Width">
+        <settingConfig type="list">            
+            <listEntry value="2">2</listEntry>
+            <listEntry value="3">3</listEntry>
+            <listEntry value="4">4</listEntry>
+            <listEntry value="5">5</listEntry>
+            <listEntry value="6">6</listEntry>
+            <listEntry value="7">7</listEntry> 
+            <listEntry value="8">8</listEntry>
+            <listEntry value="9">9</listEntry>
+            <listEntry value="10">10</listEntry>
+            <listEntry value="11">11</listEntry>
+            <listEntry value="12">12</listEntry>
+            <listEntry value="13">13</listEntry>
+            <listEntry value="14">14</listEntry>  
+            <listEntry value="15">15</listEntry>  
+        </settingConfig>
+    </setting>  
+
+    <setting propertyKey="@Properties.HourHandLength" title="Hour Hand Length">
+        <settingConfig type="list">   
+            <listEntry value="0">0</listEntry>         
+            <listEntry value="1">1</listEntry>
+            <listEntry value="2">2</listEntry>
+            <listEntry value="3">3</listEntry>
+            <listEntry value="4">4</listEntry>
+            <listEntry value="5">5</listEntry>
+            <listEntry value="6">6</listEntry>
+            <listEntry value="7">7</listEntry>
+            <listEntry value="8">8</listEntry>
+
+        </settingConfig>
+    </setting>  
+
+    <setting propertyKey="@Properties.MinuteHandLength" title="Minute Hand Length">
+        <settingConfig type="list">            
+            <listEntry value="0">0</listEntry>
+            <listEntry value="1">1</listEntry>
+            <listEntry value="2">2</listEntry>
+            <listEntry value="3">3</listEntry>
+            <listEntry value="4">4</listEntry>
+            <listEntry value="5">5</listEntry>
+            <listEntry value="6">6</listEntry>
+            <listEntry value="7">7</listEntry>
+            <listEntry value="8">8</listEntry>
+        </settingConfig>
+    </setting>  
+
+
+    <setting propertyKey="@Properties.MinuteHandThinning" title="Minute Hand Thinning">
+        <settingConfig type="list">            
+            <listEntry value="0">0</listEntry>
+            <listEntry value="1">1</listEntry>
+            <listEntry value="2">2</listEntry>
+            <listEntry value="3">3</listEntry>
+            <listEntry value="4">4</listEntry>
+            <listEntry value="5">5</listEntry>
+            <listEntry value="6">6</listEntry>
+            <listEntry value="7">7</listEntry>
+            <listEntry value="8">8</listEntry>
+        </settingConfig>
+    </setting>  
+
+    <setting propertyKey="@Properties.HourHandThinning" title="Hour Hand Thinning">
+        <settingConfig type="list">            
+            <listEntry value="0">0</listEntry>
+            <listEntry value="1">1</listEntry>
+            <listEntry value="2">2</listEntry>
+            <listEntry value="3">3</listEntry>
+            <listEntry value="4">4</listEntry>
+            <listEntry value="5">5</listEntry>
+            <listEntry value="6">6</listEntry>
+            <listEntry value="7">7</listEntry>
+            <listEntry value="8">8</listEntry>
+        </settingConfig>
+    </setting>  
 </settings>

@@ -29,7 +29,11 @@
     <property id="MinuteHandWidth" type="number">5</property>
     <property id="HourHandWidth" type="number">8</property>
 
+    <property id="MinuteHandLength" type="number">7</property>
+    <property id="HourHandLength" type="number">3</property>
 
+    <property id="MinuteHandThinning" type="number">4</property>
+    <property id="HourHandThinning" type="number">4</property>
     
     <!-- for debugging -->
     <!-- <property id="AllowedExTime" type="float">0</property>

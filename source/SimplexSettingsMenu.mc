@@ -112,6 +112,52 @@ class SimplexSettingsMenuDelegate extends WatchUi.Menu2InputDelegate
             menuItem.setSubLabel(new_value.toString());
         }
 
+        else if((menuItem.getId() as String).equals("MinuteHandLength"))
+        {
+            var value = Application.Properties.getValue("MinuteHandLength") as Number;
+
+            var new_value = (value + 1) % 10;
+
+            Application.Properties.setValue("MinuteHandLength", new_value);
+
+            menuItem.setSubLabel(new_value.toString());
+
+        }
+
+        else if((menuItem.getId() as String).equals("HourHandLength"))
+        {
+            var value = Application.Properties.getValue("HourHandLength") as Number;
+
+            var new_value = (value + 1) % 10;
+
+            Application.Properties.setValue("HourHandLength", new_value);
+
+            menuItem.setSubLabel(new_value.toString());
+        }
+
+
+        else if((menuItem.getId() as String).equals("MinuteHandThinning"))
+        {
+            var value = Application.Properties.getValue("MinuteHandThinning") as Number;
+
+            var new_value = (value + 1) % 9;
+
+            Application.Properties.setValue("MinuteHandThinning", new_value);
+
+            menuItem.setSubLabel(new_value.toString());
+        }
+
+        else if((menuItem.getId() as String).equals("HourHandThinning"))
+        {
+            var value = Application.Properties.getValue("HourHandThinning") as Number;
+
+            var new_value = (value + 1) % 9;
+
+            Application.Properties.setValue("HourHandThinning", new_value);
+
+            menuItem.setSubLabel(new_value.toString());
+        }
+
         else
         {
             // var color_picker;

@@ -27,6 +27,7 @@ module Rez {
     module Strings {
         (:initialized) var ColorLightGray as Symbol;
         (:initialized) var ColorBlue as Symbol;
+        (:initialized) var ColorCustom as Symbol;
         (:initialized) var ColorDarkRed as Symbol;
         (:initialized) var ColorDarkGray as Symbol;
         (:initialized) var ColorDarkBlue as Symbol;
@@ -668,6 +669,7 @@ module Rez {
             const screenWidth as Number = 454;
             const screenShape = Toybox.System.SCREEN_SHAPE_ROUND;
             const hasNightMode as Boolean = false;
+            const hasGpu as Boolean = true;
             const screenHeight as Number = 454;
             const hasTouchScreen as Boolean = true;
             const hasEnhancedReadabilityMode as Boolean = false;

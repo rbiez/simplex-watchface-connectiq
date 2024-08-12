@@ -41,18 +41,15 @@ class SimplexApp extends Application.AppBase
     // Return the settings view and delegate
     public function getSettingsView() as Array<Views or InputDelegates>? 
     {
+        var version = Lang.format("$1$$2$$3$",System.getDeviceSettings().monkeyVersion).toNumber();
+
+        // System.println(version);
+        
         var menu;
         menu = new $.SimplexSettingsMenu();
 
         // for testing
         // menu.addItem(new WatchUi.MenuItem("TEST", null, "TEST", null));
-
-
-        var myText = new WatchUi.Text({
-            :text=>"I",
-            :color=>Graphics.COLOR_DK_GREEN
-            });
-
 
 
         var val = Application.Properties.getValue("DrawDate") ? true : false;
@@ -86,39 +83,60 @@ class SimplexApp extends Application.AppBase
         // val = Application.Properties.getValue("Theme") ? true : false;
         // menu.addItem(new WatchUi.ToggleMenuItem("Theme", {:enabled=>"Theme: Dark", :disabled=>"Theme: Light"}, "Theme", val, null));
 
+        //display theme only if theme mode is selected
+        // if(!val)
+        // {
         val = Application.Properties.getValue("Theme") ? true : false;
         menu.addItem(new WatchUi.MenuItem("Theme", val ? "Dark Theme" : "Light Theme", "Theme", null));
-
-        val = loadColorSettings("BackgroundColor") as Number;
-        menu.addItem(new WatchUi.IconMenuItem("Background Color", colorName(val), "BackgroundColor", generateColorIcon(val), {:alignment=> WatchUi.MenuItem.MENU_ITEM_LABEL_ALIGN_LEFT}));
-
-        val = loadColorSettings("ForegroundColorOne") as Number;
-        menu.addItem(new WatchUi.IconMenuItem("Foreground Color 1", colorName(val), "ForegroundColorOne", generateColorIcon(val), {:alignment=> WatchUi.MenuItem.MENU_ITEM_LABEL_ALIGN_LEFT}));
-
-        val = loadColorSettings("ForegroundColorTwo") as Number;
-        menu.addItem(new WatchUi.IconMenuItem("Foreground Color 2", colorName(val), "ForegroundColorTwo", generateColorIcon(val), {:alignment=> WatchUi.MenuItem.MENU_ITEM_LABEL_ALIGN_LEFT}));
-
-        val = loadColorSettings("SecondsHandColor") as Number;
-        menu.addItem(new WatchUi.IconMenuItem("Second Hand Color", colorName(val), "SecondsHandColor", generateColorIcon(val), {:alignment=> WatchUi.MenuItem.MENU_ITEM_LABEL_ALIGN_LEFT}));
-
-        val = loadColorSettings("MinuteHandColorOne") as Number;
-        menu.addItem(new WatchUi.IconMenuItem("Minute Hand Color 1", colorName(val), "MinuteHandColorOne", generateColorIcon(val), {:alignment=> WatchUi.MenuItem.MENU_ITEM_LABEL_ALIGN_LEFT}));
-
-        val = loadColorSettings("MinuteHandColorTwo") as Number;
-        menu.addItem(new WatchUi.IconMenuItem("Minute Hand Color 2", colorName(val), "MinuteHandColorTwo", generateColorIcon(val), {:alignment=> WatchUi.MenuItem.MENU_ITEM_LABEL_ALIGN_LEFT}));
-
-        val = loadColorSettings("HourHandColorOne") as Number;
-        menu.addItem(new WatchUi.IconMenuItem("Hour Hand Color 1", colorName(val), "HourHandColorOne", generateColorIcon(val), {:alignment=> WatchUi.MenuItem.MENU_ITEM_LABEL_ALIGN_LEFT}));
-
-        val = loadColorSettings("HourHandColorTwo") as Number;
-        menu.addItem(new WatchUi.IconMenuItem("Hour Hand Color 2", colorName(val), "HourHandColorTwo", generateColorIcon(val), {:alignment=> WatchUi.MenuItem.MENU_ITEM_LABEL_ALIGN_LEFT}));
+        // }
 
 
-        val = Application.Properties.getValue("MinuteHandWidth") as Number;
-        menu.addItem(new WatchUi.MenuItem("Minute Hand Width", val.toString(), "MinuteHandWidth", null));
+        //wtaches at 4.2.0 and below do not have enough memory to display these settings
+        if(version > 420)
+        {
+            val = loadColorSettings("BackgroundColor") as Number;
+            menu.addItem(new WatchUi.IconMenuItem("Background Color", colorName(val), "BackgroundColor", generateColorIcon(val), {:alignment=> WatchUi.MenuItem.MENU_ITEM_LABEL_ALIGN_LEFT}));
 
-        val = Application.Properties.getValue("HourHandWidth") as Number;
-        menu.addItem(new WatchUi.MenuItem("Hour Hand Width", val.toString(), "HourHandWidth", null));
+            val = loadColorSettings("ForegroundColorOne") as Number;
+            menu.addItem(new WatchUi.IconMenuItem("Foreground Color 1", colorName(val), "ForegroundColorOne", generateColorIcon(val), {:alignment=> WatchUi.MenuItem.MENU_ITEM_LABEL_ALIGN_LEFT}));
+
+            val = loadColorSettings("ForegroundColorTwo") as Number;
+            menu.addItem(new WatchUi.IconMenuItem("Foreground Color 2", colorName(val), "ForegroundColorTwo", generateColorIcon(val), {:alignment=> WatchUi.MenuItem.MENU_ITEM_LABEL_ALIGN_LEFT}));
+
+            val = loadColorSettings("SecondsHandColor") as Number;
+            menu.addItem(new WatchUi.IconMenuItem("Second Hand Color", colorName(val), "SecondsHandColor", generateColorIcon(val), {:alignment=> WatchUi.MenuItem.MENU_ITEM_LABEL_ALIGN_LEFT}));
+
+            val = loadColorSettings("MinuteHandColorOne") as Number;
+            menu.addItem(new WatchUi.IconMenuItem("Minute Hand Color 1", colorName(val), "MinuteHandColorOne", generateColorIcon(val), {:alignment=> WatchUi.MenuItem.MENU_ITEM_LABEL_ALIGN_LEFT}));
+
+            val = loadColorSettings("MinuteHandColorTwo") as Number;
+            menu.addItem(new WatchUi.IconMenuItem("Minute Hand Color 2", colorName(val), "MinuteHandColorTwo", generateColorIcon(val), {:alignment=> WatchUi.MenuItem.MENU_ITEM_LABEL_ALIGN_LEFT}));
+
+            val = loadColorSettings("HourHandColorOne") as Number;
+            menu.addItem(new WatchUi.IconMenuItem("Hour Hand Color 1", colorName(val), "HourHandColorOne", generateColorIcon(val), {:alignment=> WatchUi.MenuItem.MENU_ITEM_LABEL_ALIGN_LEFT}));
+
+            val = loadColorSettings("HourHandColorTwo") as Number;
+            menu.addItem(new WatchUi.IconMenuItem("Hour Hand Color 2", colorName(val), "HourHandColorTwo", generateColorIcon(val), {:alignment=> WatchUi.MenuItem.MENU_ITEM_LABEL_ALIGN_LEFT}));
+
+            val = Application.Properties.getValue("MinuteHandWidth") as Number;
+            menu.addItem(new WatchUi.MenuItem("Minute Hand Width", val.toString(), "MinuteHandWidth", null));
+
+            val = Application.Properties.getValue("HourHandWidth") as Number;
+            menu.addItem(new WatchUi.MenuItem("Hour Hand Width", val.toString(), "HourHandWidth", null));
+
+            val = Application.Properties.getValue("MinuteHandLength") as Number;
+            menu.addItem(new WatchUi.MenuItem("Minute Hand Length", val.toString(), "MinuteHandLength", null));
+
+            val = Application.Properties.getValue("HourHandLength") as Number;
+            menu.addItem(new WatchUi.MenuItem("Hour Hand Length", val.toString(), "HourHandLength", null));
+
+            val = Application.Properties.getValue("MinuteHandThinning") as Number;
+            menu.addItem(new WatchUi.MenuItem("Minute Hand Thinning", val.toString(), "MinuteHandThinning", null));
+
+            val = Application.Properties.getValue("HourHandThinning") as Number;
+            menu.addItem(new WatchUi.MenuItem("Hour Hand Thinning", val.toString(), "HourHandThinning", null));
+        }
+
         //these two are for debugging only
         // val = Application.Properties.getValue("AllowedExTime").format( "%3f" );
         // menu.addItem(new WatchUi.MenuItem("Allowed Ex Time", val ,"null", null));

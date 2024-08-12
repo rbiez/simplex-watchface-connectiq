@@ -34,8 +34,14 @@ class SimplexView extends WatchUi.WatchFace
     private var clip_height_old;
     private var clip_width_old;
 
-    private var hours_hand_width;
+    private var hour_hand_width;
     private var minute_hand_width;
+
+    private var hour_hand_length_setting;
+    private var minute_hand_length_setting;
+
+    private var hour_hand_thinning;
+    private var minute_hand_thinning;
 
     function loadSettings()
     {
@@ -99,8 +105,14 @@ class SimplexView extends WatchUi.WatchFace
         // seconds_hand_color = getApp().getProperty("SecondsHandColor") as Number;
         // seconds_hand_color = Graphics.COLOR_RED;
 
-        hours_hand_width = Application.Properties.getValue("HourHandWidth") as Number;
+        hour_hand_width = Application.Properties.getValue("HourHandWidth") as Number;
         minute_hand_width = Application.Properties.getValue("MinuteHandWidth") as Number;
+
+        hour_hand_length_setting = Application.Properties.getValue("HourHandLength") as Number;
+        minute_hand_length_setting = Application.Properties.getValue("MinuteHandLength") as Number;
+
+        hour_hand_thinning = Application.Properties.getValue("HourHandThinning") as Number;
+        minute_hand_thinning = Application.Properties.getValue("MinuteHandThinning") as Number;
 
         //color of seconds hand is independent of theme
         seconds_hand_color = loadColorSettings("SecondsHandColor") as Number; 
@@ -167,8 +179,14 @@ class SimplexView extends WatchUi.WatchFace
         draw_minuteticks_bool= true;
         draw_hourticks_bool= true;
         
-        hours_hand_width = 8.0f;
+        hour_hand_width = 8.0f;
         minute_hand_width = 5.0f;
+
+        hour_hand_length_setting = 3.0f;
+        minute_hand_length_setting = 7.0f;
+
+        hour_hand_thinning = 4.0f;
+        minute_hand_thinning = 4.0f;
 
         secondshand_mode = 0;
 
@@ -212,8 +230,8 @@ class SimplexView extends WatchUi.WatchFace
 
         var screen_width = dc.getWidth();
         var screen_height = dc.getHeight();
-        var center_x = screen_width/2;
-        var center_y = screen_height/2;
+        var center_x = Math.round(screen_width/2.0).toNumber();
+        var center_y = Math.round(screen_height/2.0).toNumber();
 
         var clockTime = System.getClockTime();
 
@@ -224,8 +242,8 @@ class SimplexView extends WatchUi.WatchFace
         dc.setColor(background_color, background_color);
         dc.clear();
 
-        var min_hand_length = screen_width/2.3f;
-        var hour_hand_length = screen_width/3.3f;
+        var min_hand_length = screen_width/(3.3f + 0.25*(3.0 - minute_hand_length_setting));
+        var hour_hand_length = screen_width/(3.3f + 0.25*(3.0 - hour_hand_length_setting));
         // var sec_hand_length = screen_width/2.3f;
 
         var screen_ratio = screen_width/260.0f;
@@ -252,10 +270,10 @@ class SimplexView extends WatchUi.WatchFace
 
 
         // draw the hours hand
-        drawHand(dc, center_x,center_y, hour_hand_length,hours_hand_width,degHour, left_hour_hand_color, right_hour_hand_color);
+        drawHand(dc, center_x,center_y, hour_hand_length,hour_hand_width, hour_hand_thinning,degHour, left_hour_hand_color, right_hour_hand_color);
 
         // draw the minutes hand
-        drawHand(dc, center_x,center_y, min_hand_length,minute_hand_width, degMin, left_minute_hand_color, right_minute_hand_color);
+        drawHand(dc, center_x,center_y, min_hand_length,minute_hand_width, minute_hand_thinning ,degMin, left_minute_hand_color, right_minute_hand_color);
 
         //draw buffer containing the background and hour and minute hand  
         drawOffscreenBuffer(targetDc);
@@ -324,9 +342,10 @@ class SimplexView extends WatchUi.WatchFace
 
     }
 
-    function drawHand(dc, center_x, center_y, length, width, degree, color_left, color_right) 
+    function drawHand(dc, center_x, center_y, length, width, thinning, degree, color_left, color_right) 
     {
-
+        var screen_width = dc.getWidth();
+        
         var target_x = length*Math.cos(degree);
         var target_y = length*Math.sin(degree);
 
@@ -340,24 +359,25 @@ class SimplexView extends WatchUi.WatchFace
 
         var tip = length/8.0;
 
-        //add +2 so the left and righ segments do not overlap
-        var left_peak_x = (length - tip + 2)*Math.cos(degree - tip_deg);
-        var left_peak_y = (length - tip + 2)*Math.sin(degree - tip_deg);
+
+        thinning = (thinning/2.0f) + 1;
+
+        var left_peak_x = (length - tip )*Math.cos(degree - tip_deg);
+        var left_peak_y = (length - tip )*Math.sin(degree - tip_deg);
 
         var right_peak_x = (length - tip)*Math.cos(degree + tip_deg);
         var right_peak_y = (length - tip)*Math.sin(degree + tip_deg);
 
-        //add +2 so the left and righ segments do not overlap
-        var left_width_x = Math.round((width/2.0 + 2)*Math.cos(degree - (Math.PI/2.0)));
-        var left_width_y = Math.round((width/2.0 + 2)*Math.sin(degree - (Math.PI/2.0)));
+        var left_width_x = ((width/thinning )*Math.cos(degree - (Math.PI/2.0)));
+        var left_width_y = ((width/thinning )*Math.sin(degree - (Math.PI/2.0)));
 
-        var right_width_x = Math.round((width/2.0)*Math.cos(degree + (Math.PI/2.0)));
-        var right_width_y = Math.round((width/2.0)*Math.sin(degree + (Math.PI/2.0)));
+        var right_width_x = ((width/thinning)*Math.cos(degree + (Math.PI/2.0)));
+        var right_width_y = ((width/thinning)*Math.sin(degree + (Math.PI/2.0)));
 
         var tail_length = length/4;
 
-        var tail_left_peak_x = (tail_length + 2)*Math.cos(Math.PI + degree + tail_deg);
-        var tail_left_peak_y = (tail_length + 2)*Math.sin(Math.PI + degree + tail_deg);
+        var tail_left_peak_x = (tail_length)*Math.cos(Math.PI + degree + tail_deg);
+        var tail_left_peak_y = (tail_length)*Math.sin(Math.PI + degree + tail_deg);
 
         var tail_right_peak_x = tail_length*Math.cos(Math.PI + degree - tail_deg);
         var tail_right_peak_y = tail_length*Math.sin(Math.PI + degree - tail_deg);
@@ -367,12 +387,29 @@ class SimplexView extends WatchUi.WatchFace
 
         dc.setPenWidth(1);
 
-
-
         dc.setColor(color_left, background_color);
         dc.fillPolygon([[center_x,center_y], [center_x  + left_width_x, center_y + left_width_y] ,[center_x + left_peak_x, center_y + left_peak_y], [center_x + target_x, center_y + target_y]]);
 
         dc.fillPolygon([[center_x,center_y], [center_x  + left_width_x, center_y + left_width_y], [center_x + tail_left_peak_x, center_y + tail_left_peak_y], [center_x + tail_end_x, center_y + tail_end_y]]);
+
+
+        //shift the center to draw the other part of the hand
+        var shift_x = Math.round(Math.cos(degree + (Math.PI/2.0)));
+        var shift_y = Math.round(Math.sin(degree + (Math.PI/2.0)));
+
+        var version = Lang.format("$1$$2$$3$",System.getDeviceSettings().monkeyVersion).toNumber();
+
+        //for small screens on older versions we do not shift due to rendering bugs
+        if(screen_width <= 280 && version <= 420)
+        {
+            shift_x = 0;
+            shift_y = 0;
+            // System.println("no shift");
+        }
+
+        center_x = center_x + shift_x;
+        center_y = center_y + shift_y;
+
 
 
         dc.setColor(color_right, background_color);
