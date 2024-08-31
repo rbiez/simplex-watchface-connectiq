@@ -39,9 +39,12 @@ class SimplexView extends WatchUi.WatchFace
 
     private var hour_hand_length_setting;
     private var minute_hand_length_setting;
+    private var seconds_hand_length_setting;
 
     private var hour_hand_thinning;
     private var minute_hand_thinning;
+
+    private var version as Number;
 
     function loadSettings()
     {
@@ -110,6 +113,7 @@ class SimplexView extends WatchUi.WatchFace
 
         hour_hand_length_setting = Application.Properties.getValue("HourHandLength") as Number;
         minute_hand_length_setting = Application.Properties.getValue("MinuteHandLength") as Number;
+        seconds_hand_length_setting = Application.Properties.getValue("SecondsHandLength") as Number;
 
         hour_hand_thinning = Application.Properties.getValue("HourHandThinning") as Number;
         minute_hand_thinning = Application.Properties.getValue("MinuteHandThinning") as Number;
@@ -179,13 +183,14 @@ class SimplexView extends WatchUi.WatchFace
         draw_minuteticks_bool= true;
         draw_hourticks_bool= true;
         
-        hour_hand_width = 8.0f;
-        minute_hand_width = 5.0f;
+        hour_hand_width = 7.0f;
+        minute_hand_width = 4.0f;
 
         hour_hand_length_setting = 3.0f;
         minute_hand_length_setting = 7.0f;
+        seconds_hand_length_setting = 7.0f;
 
-        hour_hand_thinning = 4.0f;
+        hour_hand_thinning = 8.0f;
         minute_hand_thinning = 4.0f;
 
         secondshand_mode = 0;
@@ -197,7 +202,9 @@ class SimplexView extends WatchUi.WatchFace
         clip_height_old = 0;
         clip_width_old = 0;
 
-        
+        version = 0;
+
+        version = Lang.format("$1$$2$$3$",System.getDeviceSettings().monkeyVersion).toNumber();
     }
 
     // Load your resources here
@@ -281,7 +288,7 @@ class SimplexView extends WatchUi.WatchFace
         if(is_in_sleepmode ==  false && draw_secondshand_bool)
         {
             //draw without clipping
-            drawSecondsHand(targetDc, false);
+            drawSecondsHand(targetDc, false, seconds_hand_length_setting);
 
             // System.println("case 1");
         }
@@ -289,7 +296,7 @@ class SimplexView extends WatchUi.WatchFace
         else if(is_in_sleepmode ==  true && draw_secondshand_bool && secondshand_mode == 1)
         {
             //when we enter sleepmode we start clippng
-            drawSecondsHand(targetDc, true);
+            drawSecondsHand(targetDc, true, seconds_hand_length_setting);
 
             // System.println("case 2");
         }
@@ -360,7 +367,7 @@ class SimplexView extends WatchUi.WatchFace
         var tip = length/8.0;
 
 
-        thinning = (thinning/2.0f) + 1;
+        thinning = (thinning/4.0f) + 1;
 
         var left_peak_x = (length - tip )*Math.cos(degree - tip_deg);
         var left_peak_y = (length - tip )*Math.sin(degree - tip_deg);
@@ -393,14 +400,13 @@ class SimplexView extends WatchUi.WatchFace
         dc.fillPolygon([[center_x,center_y], [center_x  + left_width_x, center_y + left_width_y], [center_x + tail_left_peak_x, center_y + tail_left_peak_y], [center_x + tail_end_x, center_y + tail_end_y]]);
 
 
-        //shift the center to draw the other part of the hand
+        // //shift the center to draw the other part of the hand
         var shift_x = Math.round(Math.cos(degree + (Math.PI/2.0)));
         var shift_y = Math.round(Math.sin(degree + (Math.PI/2.0)));
-
-        var version = Lang.format("$1$$2$$3$",System.getDeviceSettings().monkeyVersion).toNumber();
-
-        //for small screens on older versions we do not shift due to rendering bugs
-        if(screen_width <= 280 && version <= 420)
+        
+        //for (small screens on) older versions we do not shift due to rendering bugs
+        //if(screen_width <= 280 && version <= 420)
+        if(version <= 420)
         {
             shift_x = 0;
             shift_y = 0;
@@ -410,14 +416,10 @@ class SimplexView extends WatchUi.WatchFace
         center_x = center_x + shift_x;
         center_y = center_y + shift_y;
 
-
-
         dc.setColor(color_right, background_color);
         dc.fillPolygon([[center_x,center_y], [center_x  + right_width_x, center_y + right_width_y], [center_x + right_peak_x, center_y + right_peak_y], [center_x + target_x, center_y + target_y]]);
 
         dc.fillPolygon([[center_x,center_y], [center_x  + right_width_x, center_y + right_width_y], [center_x + tail_right_peak_x, center_y + tail_right_peak_y], [center_x + tail_end_x, center_y + tail_end_y]]);
-
-
 
         // dc.fillPolygon([[center_x,center_y], [center_x + tail_left_peak_x, center_y + tail_left_peak_y], [center_x + tail_right_peak_x, center_y + tail_right_peak_y]]);
     
@@ -582,7 +584,7 @@ class SimplexView extends WatchUi.WatchFace
         WatchUi.requestUpdate();
     }
 
-    function drawSecondsHand(dc, do_clipping)
+    function drawSecondsHand(dc, do_clipping, length)
     {
         var screen_width = dc.getWidth();
         var screen_height = dc.getHeight();
@@ -591,7 +593,8 @@ class SimplexView extends WatchUi.WatchFace
         var center_x = screen_width/2.0f;
         var center_y = screen_height/2.0f;
         var degSec =  2*Math.PI*(clockTime.sec/60.0f) - Math.PI/2.0f;
-        var sec_hand_length = screen_width/2.3f;
+        // var sec_hand_length = screen_width/2.3f;
+        var sec_hand_length = screen_width/(3.3f + 0.25f*(3.0f - seconds_hand_length_setting));
 
         //dc.clear();
 
@@ -740,7 +743,7 @@ class SimplexView extends WatchUi.WatchFace
     {        
         if(secondshand_mode == 1 && draw_secondshand_bool)
         {
-            drawSecondsHand(dc, true);
+            drawSecondsHand(dc, true, seconds_hand_length_setting);
         }
 
         //for debugging to check execution time of whole redraw routine

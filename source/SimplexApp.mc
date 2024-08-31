@@ -91,7 +91,7 @@ class SimplexApp extends Application.AppBase
         // }
 
 
-        //wtaches at 4.2.0 and below do not have enough memory to display these settings
+        //watches at 4.2.0 and below do not have enough memory to display these settings
         if(version > 420)
         {
             val = loadColorSettings("BackgroundColor") as Number;
@@ -124,6 +124,9 @@ class SimplexApp extends Application.AppBase
             val = Application.Properties.getValue("HourHandWidth") as Number;
             menu.addItem(new WatchUi.MenuItem("Hour Hand Width", val.toString(), "HourHandWidth", null));
 
+            val = Application.Properties.getValue("SecondsHandLength") as Number;
+            menu.addItem(new WatchUi.MenuItem("Second Hand Length", val.toString(), "SecondsHandLength", null));
+
             val = Application.Properties.getValue("MinuteHandLength") as Number;
             menu.addItem(new WatchUi.MenuItem("Minute Hand Length", val.toString(), "MinuteHandLength", null));
 
@@ -136,6 +139,56 @@ class SimplexApp extends Application.AppBase
             val = Application.Properties.getValue("HourHandThinning") as Number;
             menu.addItem(new WatchUi.MenuItem("Hour Hand Thinning", val.toString(), "HourHandThinning", null));
         }
+
+        //these are the old settings for colors, they still take up too much memory
+        else 
+        {
+            val = Application.Properties.getValue("BackgroundColor") as Number;
+            menu.addItem(new WatchUi.MenuItem("Background Color", color_names[colorIndex(val)], "BackgroundColor", null));
+
+            val = Application.Properties.getValue("ForegroundColorOne") as Number;
+            menu.addItem(new WatchUi.MenuItem("Foreground Color 1", color_names[colorIndex(val)], "ForegroundColorOne", null));
+
+            val = Application.Properties.getValue("ForegroundColorTwo") as Number;
+            menu.addItem(new WatchUi.MenuItem("Foreground Color 2", color_names[colorIndex(val)], "ForegroundColorTwo", null));
+
+            val = Application.Properties.getValue("SecondsHandColor") as Number;
+            menu.addItem(new WatchUi.MenuItem("Second Hand Color", color_names[colorIndex(val)], "SecondsHandColor", null));
+
+            val = Application.Properties.getValue("MinuteHandColorOne") as Number;
+            menu.addItem(new WatchUi.MenuItem("Minute Hand Color 1", color_names[colorIndex(val)], "MinuteHandColorOne", null));
+
+            val = Application.Properties.getValue("MinuteHandColorTwo") as Number;
+            menu.addItem(new WatchUi.MenuItem("Minute Hand Color 2", color_names[colorIndex(val)], "MinuteHandColorTwo", null));
+
+            val = Application.Properties.getValue("HourHandColorOne") as Number;
+            menu.addItem(new WatchUi.MenuItem("Hour Hand Color 1", color_names[colorIndex(val)], "HourHandColorOne", null));
+
+            val = Application.Properties.getValue("HourHandColorTwo") as Number;
+            menu.addItem(new WatchUi.MenuItem("Hour Hand Color 2", color_names[colorIndex(val)], "HourHandColorTwo", null));
+            
+            // val = Application.Properties.getValue("MinuteHandWidth") as Number;
+            // menu.addItem(new WatchUi.MenuItem("Minute Hand Width", val.toString(), "MinuteHandWidth", null));
+
+            // val = Application.Properties.getValue("HourHandWidth") as Number;
+            // menu.addItem(new WatchUi.MenuItem("Hour Hand Width", val.toString(), "HourHandWidth", null));
+
+            // val = Application.Properties.getValue("SecondsHandLength") as Number;
+            // menu.addItem(new WatchUi.MenuItem("Second Hand Length", val.toString(), "SecondsHandLength", null));
+
+            // val = Application.Properties.getValue("MinuteHandLength") as Number;
+            // menu.addItem(new WatchUi.MenuItem("Minute Hand Length", val.toString(), "MinuteHandLength", null));
+
+            // val = Application.Properties.getValue("HourHandLength") as Number;
+            // menu.addItem(new WatchUi.MenuItem("Hour Hand Length", val.toString(), "HourHandLength", null));
+
+            // val = Application.Properties.getValue("MinuteHandThinning") as Number;
+            // menu.addItem(new WatchUi.MenuItem("Minute Hand Thinning", val.toString(), "MinuteHandThinning", null));
+
+            // val = Application.Properties.getValue("HourHandThinning") as Number;
+            // menu.addItem(new WatchUi.MenuItem("Hour Hand Thinning", val.toString(), "HourHandThinning", null));            
+        }
+
 
         //these two are for debugging only
         // val = Application.Properties.getValue("AllowedExTime").format( "%3f" );

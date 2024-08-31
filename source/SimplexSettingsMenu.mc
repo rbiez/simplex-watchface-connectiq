@@ -27,23 +27,12 @@ class SimplexSettingsMenuDelegate extends WatchUi.Menu2InputDelegate
     //! @param menuItem The menu item selected
     public function onSelect(menuItem as MenuItem) as Void 
     {
+        var version = Lang.format("$1$$2$$3$",System.getDeviceSettings().monkeyVersion).toNumber();
+
         if (menuItem instanceof ToggleMenuItem) 
         {
             Application.Properties.setValue(menuItem.getId() as String, menuItem.isEnabled() as Number);
         }
-
-        // else if((menuItem.getId() as String).equals("TEST"))
-        // {
-        //     var color_picker;
-        //     color_picker = new ColorPickerView();
-        //     color_picker.setSettingsName("ForegroundColorOne");
-
-        //     var delegate = new ColorPickerViewDelegate();
-
-        //     delegate.setView(color_picker);
-
-        //     WatchUi.pushView(color_picker, delegate, WatchUi.SLIDE_LEFT);
-        // }
 
         else if((menuItem.getId() as String).equals("Mode"))
         {
@@ -112,11 +101,23 @@ class SimplexSettingsMenuDelegate extends WatchUi.Menu2InputDelegate
             menuItem.setSubLabel(new_value.toString());
         }
 
+        else if((menuItem.getId() as String).equals("SecondsHandLength"))
+        {
+            var value = Application.Properties.getValue("SecondsHandLength") as Number;
+
+            var new_value = (value + 1) % 9;
+
+            Application.Properties.setValue("SecondsHandLength", new_value);
+
+            menuItem.setSubLabel(new_value.toString());
+
+        }
+
         else if((menuItem.getId() as String).equals("MinuteHandLength"))
         {
             var value = Application.Properties.getValue("MinuteHandLength") as Number;
 
-            var new_value = (value + 1) % 10;
+            var new_value = (value + 1) % 9;
 
             Application.Properties.setValue("MinuteHandLength", new_value);
 
@@ -128,7 +129,7 @@ class SimplexSettingsMenuDelegate extends WatchUi.Menu2InputDelegate
         {
             var value = Application.Properties.getValue("HourHandLength") as Number;
 
-            var new_value = (value + 1) % 10;
+            var new_value = (value + 1) % 9;
 
             Application.Properties.setValue("HourHandLength", new_value);
 
@@ -173,25 +174,29 @@ class SimplexSettingsMenuDelegate extends WatchUi.Menu2InputDelegate
 
             // WatchUi.pushView(color_picker, delegate, WatchUi.SLIDE_LEFT);      
 
-            var color_menu = new ColorSettingsMenu(menuItem.getId() as String, menuItem.getId() as String);
-            var delegate = new ColorSettingsMenuDelegate();
+            if(version > 420)
+            {
+                var color_menu = new ColorSettingsMenu(menuItem.getId() as String, menuItem.getId() as String);
+                var delegate = new ColorSettingsMenuDelegate();
 
-            color_menu.setMenuItemHandle(menuItem);
-            delegate.setMenu(color_menu);
+                color_menu.setMenuItemHandle(menuItem);
+                delegate.setMenu(color_menu);
 
-            WatchUi.pushView(color_menu, delegate, WatchUi.SLIDE_LEFT);          
+                WatchUi.pushView(color_menu, delegate, WatchUi.SLIDE_LEFT);       
+            }
+
+            //these are the old settings, they still take up too much memory
+            else 
+            {
+                var color = Application.Properties.getValue(menuItem.getId() as String) as Number;
+
+                var new_index = (colorIndex(color) + 1) % colors.size();
+
+                Application.Properties.setValue(menuItem.getId() as String, colors[new_index]);
+
+                menuItem.setSubLabel(color_names[new_index]);
+            }
         }
-
-        // else
-        // {
-        //     var color = Application.Properties.getValue(menuItem.getId() as String) as Number;
-
-        //     var new_index = (colorIndex(color) + 1) % colors.size();
-
-        //     Application.Properties.setValue(menuItem.getId() as String, colors[new_index]);
-
-        //     menuItem.setSubLabel(color_names[new_index]);
-        // }
 
         
     }
