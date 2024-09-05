@@ -167,6 +167,7 @@ class SimplexApp extends Application.AppBase
             val = Application.Properties.getValue("HourHandColorTwo") as Number;
             menu.addItem(new WatchUi.MenuItem("Hour Hand Color 2", color_names[colorIndex(val)], "HourHandColorTwo", null));
             
+            //the following will use oo much memory on older models
             // val = Application.Properties.getValue("MinuteHandWidth") as Number;
             // menu.addItem(new WatchUi.MenuItem("Minute Hand Width", val.toString(), "MinuteHandWidth", null));
 

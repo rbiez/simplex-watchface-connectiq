@@ -45,6 +45,7 @@ class SimplexView extends WatchUi.WatchFace
     private var minute_hand_thinning;
 
     private var version as Number;
+    private var is_touch as Boolean;
 
     function loadSettings()
     {
@@ -204,7 +205,13 @@ class SimplexView extends WatchUi.WatchFace
 
         version = 0;
 
+        is_touch = false;
+
         version = Lang.format("$1$$2$$3$",System.getDeviceSettings().monkeyVersion).toNumber();
+
+        is_touch = System.getDeviceSettings().isTouchScreen;
+
+        // System.println(is_touch);
     }
 
     // Load your resources here
@@ -405,12 +412,11 @@ class SimplexView extends WatchUi.WatchFace
         var shift_y = Math.round(Math.sin(degree + (Math.PI/2.0)));
         
         //for (small screens on) older versions we do not shift due to rendering bugs
-        //if(screen_width <= 280 && version <= 420)
-        if(version <= 420)
+        if((version <= 420) || (is_touch == false))
         {
             shift_x = 0;
             shift_y = 0;
-            // System.println("no shift");
+            //System.println("no shift");
         }
 
         center_x = center_x + shift_x;

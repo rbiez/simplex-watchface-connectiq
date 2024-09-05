@@ -655,6 +655,7 @@ module Rez {
             const screenWidth as Number = 416;
             const screenShape = Toybox.System.SCREEN_SHAPE_ROUND;
             const hasNightMode as Boolean = false;
+            const hasGpu as Boolean = true;
             const screenHeight as Number = 416;
             const hasTouchScreen as Boolean = true;
             const hasEnhancedReadabilityMode as Boolean = false;

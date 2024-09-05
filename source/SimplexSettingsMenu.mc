@@ -141,7 +141,7 @@ class SimplexSettingsMenuDelegate extends WatchUi.Menu2InputDelegate
         {
             var value = Application.Properties.getValue("MinuteHandThinning") as Number;
 
-            var new_value = (value + 1) % 9;
+            var new_value = (value + 1) % 11;
 
             Application.Properties.setValue("MinuteHandThinning", new_value);
 
@@ -152,7 +152,7 @@ class SimplexSettingsMenuDelegate extends WatchUi.Menu2InputDelegate
         {
             var value = Application.Properties.getValue("HourHandThinning") as Number;
 
-            var new_value = (value + 1) % 9;
+            var new_value = (value + 1) % 11;
 
             Application.Properties.setValue("HourHandThinning", new_value);
 

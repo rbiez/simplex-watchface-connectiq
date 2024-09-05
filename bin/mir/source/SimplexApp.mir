@@ -974,7 +974,7 @@ _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_145_8_start:
         invoke %tmp.741 %tmp.742(%tmp.743);
 _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_145_8_stop:
 _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_95_8_if_end:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 200 8 ]
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 201 8 ]
         %tmp.758 = newa Array<Views or InputDelegates> 2;
         %tmp.760 = lgetv %menu.2;
         %tmp.761 = dup %tmp.758;
@@ -988,16 +988,16 @@ _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_95_8_if_end:
 _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_43_4_stop:
     }
 }
-[ @file = "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc"; @line = 205; ]
+[ @file = "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc"; @line = 206; ]
 function getApp() as SimplexApp {
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_206_0_start:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 207 4 ]
+_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_207_0_start:
+[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 208 4 ]
     %tmp.1 = getm $.Toybox.Application;
     %tmp.2 = getv function %tmp.1 :getApp;
     %tmp.3 = invoke %tmp.1 %tmp.2();
     %tmp.4 = as %tmp.3 SimplexApp;
     ret %tmp.4;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_206_0_stop:
+_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_207_0_stop:
 }
 [ @file = "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc"; @line = 1; ]
 <init> {

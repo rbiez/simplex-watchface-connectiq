@@ -27,6 +27,7 @@ module Rez {
     module Strings {
         (:initialized) var ColorLightGray as Symbol;
         (:initialized) var ColorBlue as Symbol;
+        (:initialized) var ColorCustom as Symbol;
         (:initialized) var ColorDarkRed as Symbol;
         (:initialized) var ColorDarkGray as Symbol;
         (:initialized) var ColorDarkBlue as Symbol;

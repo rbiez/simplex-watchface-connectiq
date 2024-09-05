@@ -533,7 +533,7 @@ _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_141_8_start
         %tmp.307 = lgetv %value.14;
         %tmp.308 = 1;
         %tmp.309 = add %tmp.307 %tmp.308;
-        %tmp.310 = 9;
+        %tmp.310 = 11;
         %tmp.311 = mod %tmp.309 %tmp.310;
         lputv %new_value.15 %tmp.311;
 [ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 146 12 ]
@@ -583,7 +583,7 @@ _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_152_8_start
         %tmp.341 = lgetv %value.16;
         %tmp.342 = 1;
         %tmp.343 = add %tmp.341 %tmp.342;
-        %tmp.344 = 9;
+        %tmp.344 = 11;
         %tmp.345 = mod %tmp.343 %tmp.344;
         lputv %new_value.17 %tmp.345;
 [ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 157 12 ]
