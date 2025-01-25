@@ -1,0 +1,1103 @@
+{
+  "settings" : [ {
+    "key" : "DrawDate",
+    "valueType" : "number",
+    "defaultValue" : 1,
+    "configTitle" : "$literal0$",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "$literal1$",
+      "value" : 1
+    }, {
+      "display" : "$literal2$",
+      "value" : 0
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "DrawNumbers",
+    "valueType" : "number",
+    "defaultValue" : 1,
+    "configTitle" : "$literal3$",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "$literal1$",
+      "value" : 1
+    }, {
+      "display" : "$literal2$",
+      "value" : 0
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "DrawSecondsHand",
+    "valueType" : "number",
+    "defaultValue" : 1,
+    "configTitle" : "$literal4$",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "$literal1$",
+      "value" : 1
+    }, {
+      "display" : "$literal2$",
+      "value" : 0
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "SecondsHandMode",
+    "valueType" : "number",
+    "defaultValue" : 0,
+    "configTitle" : "$literal5$",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "$literal6$",
+      "value" : 1
+    }, {
+      "display" : "$literal7$",
+      "value" : 0
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "DrawMinuteTicks",
+    "valueType" : "number",
+    "defaultValue" : 1,
+    "configTitle" : "$literal8$",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "$literal1$",
+      "value" : 1
+    }, {
+      "display" : "$literal2$",
+      "value" : 0
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "DrawHourTicks",
+    "valueType" : "number",
+    "defaultValue" : 1,
+    "configTitle" : "$literal9$",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "$literal1$",
+      "value" : 1
+    }, {
+      "display" : "$literal2$",
+      "value" : 0
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "Mode",
+    "valueType" : "number",
+    "defaultValue" : 0,
+    "configTitle" : "$literal10$",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "$literal11$",
+      "value" : 0
+    }, {
+      "display" : "ColorCustom",
+      "value" : 1
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "Theme",
+    "valueType" : "number",
+    "defaultValue" : 1,
+    "configTitle" : "$literal11$",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "$literal12$",
+      "value" : 0
+    }, {
+      "display" : "$literal13$",
+      "value" : 1
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "BackgroundColor",
+    "valueType" : "number",
+    "defaultValue" : 0,
+    "configTitle" : "$literal14$",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "ColorCustom",
+      "value" : -1
+    }, {
+      "display" : "ColorBlack",
+      "value" : 0
+    }, {
+      "display" : "ColorDarkGray",
+      "value" : 5592405
+    }, {
+      "display" : "ColorLightGray",
+      "value" : 11184810
+    }, {
+      "display" : "ColorWhite",
+      "value" : 16777215
+    }, {
+      "display" : "ColorBlue",
+      "value" : 43775
+    }, {
+      "display" : "ColorRed",
+      "value" : 16711680
+    }, {
+      "display" : "ColorGreen",
+      "value" : 65280
+    }, {
+      "display" : "ColorDarkRed",
+      "value" : 11141120
+    }, {
+      "display" : "ColorDarkGreen",
+      "value" : 43520
+    }, {
+      "display" : "ColorDarkBlue",
+      "value" : 255
+    }, {
+      "display" : "ColorOrange",
+      "value" : 16733440
+    }, {
+      "display" : "ColorPurple",
+      "value" : 11141375
+    }, {
+      "display" : "ColorPink",
+      "value" : 16711935
+    }, {
+      "display" : "ColorYellow",
+      "value" : 16776960
+    }, {
+      "display" : "ColorOliveGreen",
+      "value" : 5592320
+    }, {
+      "display" : "ColorTurquoise",
+      "value" : 65535
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "ForegroundColorOne",
+    "valueType" : "number",
+    "defaultValue" : 16777215,
+    "configTitle" : "$literal15$",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "ColorCustom",
+      "value" : -1
+    }, {
+      "display" : "ColorBlack",
+      "value" : 0
+    }, {
+      "display" : "ColorDarkGray",
+      "value" : 5592405
+    }, {
+      "display" : "ColorLightGray",
+      "value" : 11184810
+    }, {
+      "display" : "ColorWhite",
+      "value" : 16777215
+    }, {
+      "display" : "ColorBlue",
+      "value" : 43775
+    }, {
+      "display" : "ColorRed",
+      "value" : 16711680
+    }, {
+      "display" : "ColorGreen",
+      "value" : 65280
+    }, {
+      "display" : "ColorDarkRed",
+      "value" : 11141120
+    }, {
+      "display" : "ColorDarkGreen",
+      "value" : 43520
+    }, {
+      "display" : "ColorDarkBlue",
+      "value" : 255
+    }, {
+      "display" : "ColorOrange",
+      "value" : 16733440
+    }, {
+      "display" : "ColorPurple",
+      "value" : 11141375
+    }, {
+      "display" : "ColorPink",
+      "value" : 16711935
+    }, {
+      "display" : "ColorYellow",
+      "value" : 16776960
+    }, {
+      "display" : "ColorOliveGreen",
+      "value" : 5592320
+    }, {
+      "display" : "ColorTurquoise",
+      "value" : 65535
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "ForegroundColorTwo",
+    "valueType" : "number",
+    "defaultValue" : 11184810,
+    "configTitle" : "$literal16$",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "ColorCustom",
+      "value" : -1
+    }, {
+      "display" : "ColorBlack",
+      "value" : 0
+    }, {
+      "display" : "ColorDarkGray",
+      "value" : 5592405
+    }, {
+      "display" : "ColorLightGray",
+      "value" : 11184810
+    }, {
+      "display" : "ColorWhite",
+      "value" : 16777215
+    }, {
+      "display" : "ColorBlue",
+      "value" : 43775
+    }, {
+      "display" : "ColorRed",
+      "value" : 16711680
+    }, {
+      "display" : "ColorGreen",
+      "value" : 65280
+    }, {
+      "display" : "ColorDarkRed",
+      "value" : 11141120
+    }, {
+      "display" : "ColorDarkGreen",
+      "value" : 43520
+    }, {
+      "display" : "ColorDarkBlue",
+      "value" : 255
+    }, {
+      "display" : "ColorOrange",
+      "value" : 16733440
+    }, {
+      "display" : "ColorPurple",
+      "value" : 11141375
+    }, {
+      "display" : "ColorPink",
+      "value" : 16711935
+    }, {
+      "display" : "ColorYellow",
+      "value" : 16776960
+    }, {
+      "display" : "ColorOliveGreen",
+      "value" : 5592320
+    }, {
+      "display" : "ColorTurquoise",
+      "value" : 65535
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "MinuteHandColorOne",
+    "valueType" : "number",
+    "defaultValue" : 11184810,
+    "configTitle" : "$literal17$",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "ColorCustom",
+      "value" : -1
+    }, {
+      "display" : "ColorBlack",
+      "value" : 0
+    }, {
+      "display" : "ColorDarkGray",
+      "value" : 5592405
+    }, {
+      "display" : "ColorLightGray",
+      "value" : 11184810
+    }, {
+      "display" : "ColorWhite",
+      "value" : 16777215
+    }, {
+      "display" : "ColorBlue",
+      "value" : 43775
+    }, {
+      "display" : "ColorRed",
+      "value" : 16711680
+    }, {
+      "display" : "ColorGreen",
+      "value" : 65280
+    }, {
+      "display" : "ColorDarkRed",
+      "value" : 11141120
+    }, {
+      "display" : "ColorDarkGreen",
+      "value" : 43520
+    }, {
+      "display" : "ColorDarkBlue",
+      "value" : 255
+    }, {
+      "display" : "ColorOrange",
+      "value" : 16733440
+    }, {
+      "display" : "ColorPurple",
+      "value" : 11141375
+    }, {
+      "display" : "ColorPink",
+      "value" : 16711935
+    }, {
+      "display" : "ColorYellow",
+      "value" : 16776960
+    }, {
+      "display" : "ColorOliveGreen",
+      "value" : 5592320
+    }, {
+      "display" : "ColorTurquoise",
+      "value" : 65535
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "MinuteHandColorTwo",
+    "valueType" : "number",
+    "defaultValue" : 16777215,
+    "configTitle" : "$literal18$",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "ColorCustom",
+      "value" : -1
+    }, {
+      "display" : "ColorBlack",
+      "value" : 0
+    }, {
+      "display" : "ColorDarkGray",
+      "value" : 5592405
+    }, {
+      "display" : "ColorLightGray",
+      "value" : 11184810
+    }, {
+      "display" : "ColorWhite",
+      "value" : 16777215
+    }, {
+      "display" : "ColorBlue",
+      "value" : 43775
+    }, {
+      "display" : "ColorRed",
+      "value" : 16711680
+    }, {
+      "display" : "ColorGreen",
+      "value" : 65280
+    }, {
+      "display" : "ColorDarkRed",
+      "value" : 11141120
+    }, {
+      "display" : "ColorDarkGreen",
+      "value" : 43520
+    }, {
+      "display" : "ColorDarkBlue",
+      "value" : 255
+    }, {
+      "display" : "ColorOrange",
+      "value" : 16733440
+    }, {
+      "display" : "ColorPurple",
+      "value" : 11141375
+    }, {
+      "display" : "ColorPink",
+      "value" : 16711935
+    }, {
+      "display" : "ColorYellow",
+      "value" : 16776960
+    }, {
+      "display" : "ColorOliveGreen",
+      "value" : 5592320
+    }, {
+      "display" : "ColorTurquoise",
+      "value" : 65535
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "HourHandColorOne",
+    "valueType" : "number",
+    "defaultValue" : 11184810,
+    "configTitle" : "$literal19$",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "ColorCustom",
+      "value" : -1
+    }, {
+      "display" : "ColorBlack",
+      "value" : 0
+    }, {
+      "display" : "ColorDarkGray",
+      "value" : 5592405
+    }, {
+      "display" : "ColorLightGray",
+      "value" : 11184810
+    }, {
+      "display" : "ColorWhite",
+      "value" : 16777215
+    }, {
+      "display" : "ColorBlue",
+      "value" : 43775
+    }, {
+      "display" : "ColorRed",
+      "value" : 16711680
+    }, {
+      "display" : "ColorGreen",
+      "value" : 65280
+    }, {
+      "display" : "ColorDarkRed",
+      "value" : 11141120
+    }, {
+      "display" : "ColorDarkGreen",
+      "value" : 43520
+    }, {
+      "display" : "ColorDarkBlue",
+      "value" : 255
+    }, {
+      "display" : "ColorOrange",
+      "value" : 16733440
+    }, {
+      "display" : "ColorPurple",
+      "value" : 11141375
+    }, {
+      "display" : "ColorPink",
+      "value" : 16711935
+    }, {
+      "display" : "ColorYellow",
+      "value" : 16776960
+    }, {
+      "display" : "ColorOliveGreen",
+      "value" : 5592320
+    }, {
+      "display" : "ColorTurquoise",
+      "value" : 65535
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "HourHandColorTwo",
+    "valueType" : "number",
+    "defaultValue" : 16777215,
+    "configTitle" : "$literal20$",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "ColorCustom",
+      "value" : -1
+    }, {
+      "display" : "ColorBlack",
+      "value" : 0
+    }, {
+      "display" : "ColorDarkGray",
+      "value" : 5592405
+    }, {
+      "display" : "ColorLightGray",
+      "value" : 11184810
+    }, {
+      "display" : "ColorWhite",
+      "value" : 16777215
+    }, {
+      "display" : "ColorBlue",
+      "value" : 43775
+    }, {
+      "display" : "ColorRed",
+      "value" : 16711680
+    }, {
+      "display" : "ColorGreen",
+      "value" : 65280
+    }, {
+      "display" : "ColorDarkRed",
+      "value" : 11141120
+    }, {
+      "display" : "ColorDarkGreen",
+      "value" : 43520
+    }, {
+      "display" : "ColorDarkBlue",
+      "value" : 255
+    }, {
+      "display" : "ColorOrange",
+      "value" : 16733440
+    }, {
+      "display" : "ColorPurple",
+      "value" : 11141375
+    }, {
+      "display" : "ColorPink",
+      "value" : 16711935
+    }, {
+      "display" : "ColorYellow",
+      "value" : 16776960
+    }, {
+      "display" : "ColorOliveGreen",
+      "value" : 5592320
+    }, {
+      "display" : "ColorTurquoise",
+      "value" : 65535
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "SecondsHandColor",
+    "valueType" : "number",
+    "defaultValue" : 11141120,
+    "configTitle" : "$literal21$",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "ColorCustom",
+      "value" : -1
+    }, {
+      "display" : "ColorBlack",
+      "value" : 0
+    }, {
+      "display" : "ColorDarkGray",
+      "value" : 5592405
+    }, {
+      "display" : "ColorLightGray",
+      "value" : 11184810
+    }, {
+      "display" : "ColorWhite",
+      "value" : 16777215
+    }, {
+      "display" : "ColorBlue",
+      "value" : 43775
+    }, {
+      "display" : "ColorRed",
+      "value" : 16711680
+    }, {
+      "display" : "ColorGreen",
+      "value" : 65280
+    }, {
+      "display" : "ColorDarkRed",
+      "value" : 11141120
+    }, {
+      "display" : "ColorDarkGreen",
+      "value" : 43520
+    }, {
+      "display" : "ColorDarkBlue",
+      "value" : 255
+    }, {
+      "display" : "ColorOrange",
+      "value" : 16733440
+    }, {
+      "display" : "ColorPurple",
+      "value" : 11141375
+    }, {
+      "display" : "ColorPink",
+      "value" : 16711935
+    }, {
+      "display" : "ColorYellow",
+      "value" : 16776960
+    }, {
+      "display" : "ColorOliveGreen",
+      "value" : 5592320
+    }, {
+      "display" : "ColorTurquoise",
+      "value" : 65535
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "MinuteHandWidth",
+    "valueType" : "number",
+    "defaultValue" : 5,
+    "configTitle" : "$literal22$",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "$literal23$",
+      "value" : 2
+    }, {
+      "display" : "$literal24$",
+      "value" : 3
+    }, {
+      "display" : "$literal25$",
+      "value" : 4
+    }, {
+      "display" : "$literal26$",
+      "value" : 5
+    }, {
+      "display" : "$literal27$",
+      "value" : 6
+    }, {
+      "display" : "$literal28$",
+      "value" : 7
+    }, {
+      "display" : "$literal29$",
+      "value" : 8
+    }, {
+      "display" : "$literal30$",
+      "value" : 9
+    }, {
+      "display" : "$literal31$",
+      "value" : 10
+    }, {
+      "display" : "$literal32$",
+      "value" : 11
+    }, {
+      "display" : "$literal33$",
+      "value" : 12
+    }, {
+      "display" : "$literal34$",
+      "value" : 13
+    }, {
+      "display" : "$literal35$",
+      "value" : 14
+    }, {
+      "display" : "$literal36$",
+      "value" : 15
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "HourHandWidth",
+    "valueType" : "number",
+    "defaultValue" : 8,
+    "configTitle" : "$literal37$",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "$literal23$",
+      "value" : 2
+    }, {
+      "display" : "$literal24$",
+      "value" : 3
+    }, {
+      "display" : "$literal25$",
+      "value" : 4
+    }, {
+      "display" : "$literal26$",
+      "value" : 5
+    }, {
+      "display" : "$literal27$",
+      "value" : 6
+    }, {
+      "display" : "$literal28$",
+      "value" : 7
+    }, {
+      "display" : "$literal29$",
+      "value" : 8
+    }, {
+      "display" : "$literal30$",
+      "value" : 9
+    }, {
+      "display" : "$literal31$",
+      "value" : 10
+    }, {
+      "display" : "$literal32$",
+      "value" : 11
+    }, {
+      "display" : "$literal33$",
+      "value" : 12
+    }, {
+      "display" : "$literal34$",
+      "value" : 13
+    }, {
+      "display" : "$literal35$",
+      "value" : 14
+    }, {
+      "display" : "$literal36$",
+      "value" : 15
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "HourHandLength",
+    "valueType" : "number",
+    "defaultValue" : 3,
+    "configTitle" : "$literal38$",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "$literal39$",
+      "value" : 0
+    }, {
+      "display" : "$literal40$",
+      "value" : 1
+    }, {
+      "display" : "$literal23$",
+      "value" : 2
+    }, {
+      "display" : "$literal24$",
+      "value" : 3
+    }, {
+      "display" : "$literal25$",
+      "value" : 4
+    }, {
+      "display" : "$literal26$",
+      "value" : 5
+    }, {
+      "display" : "$literal27$",
+      "value" : 6
+    }, {
+      "display" : "$literal28$",
+      "value" : 7
+    }, {
+      "display" : "$literal29$",
+      "value" : 8
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "MinuteHandLength",
+    "valueType" : "number",
+    "defaultValue" : 7,
+    "configTitle" : "$literal41$",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "$literal39$",
+      "value" : 0
+    }, {
+      "display" : "$literal40$",
+      "value" : 1
+    }, {
+      "display" : "$literal23$",
+      "value" : 2
+    }, {
+      "display" : "$literal24$",
+      "value" : 3
+    }, {
+      "display" : "$literal25$",
+      "value" : 4
+    }, {
+      "display" : "$literal26$",
+      "value" : 5
+    }, {
+      "display" : "$literal27$",
+      "value" : 6
+    }, {
+      "display" : "$literal28$",
+      "value" : 7
+    }, {
+      "display" : "$literal29$",
+      "value" : 8
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "SecondsHandLength",
+    "valueType" : "number",
+    "defaultValue" : 7,
+    "configTitle" : "$literal42$",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "$literal39$",
+      "value" : 0
+    }, {
+      "display" : "$literal40$",
+      "value" : 1
+    }, {
+      "display" : "$literal23$",
+      "value" : 2
+    }, {
+      "display" : "$literal24$",
+      "value" : 3
+    }, {
+      "display" : "$literal25$",
+      "value" : 4
+    }, {
+      "display" : "$literal26$",
+      "value" : 5
+    }, {
+      "display" : "$literal27$",
+      "value" : 6
+    }, {
+      "display" : "$literal28$",
+      "value" : 7
+    }, {
+      "display" : "$literal29$",
+      "value" : 8
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "MinuteHandThinning",
+    "valueType" : "number",
+    "defaultValue" : 4,
+    "configTitle" : "$literal43$",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "$literal39$",
+      "value" : 0
+    }, {
+      "display" : "$literal40$",
+      "value" : 1
+    }, {
+      "display" : "$literal23$",
+      "value" : 2
+    }, {
+      "display" : "$literal24$",
+      "value" : 3
+    }, {
+      "display" : "$literal25$",
+      "value" : 4
+    }, {
+      "display" : "$literal26$",
+      "value" : 5
+    }, {
+      "display" : "$literal27$",
+      "value" : 6
+    }, {
+      "display" : "$literal28$",
+      "value" : 7
+    }, {
+      "display" : "$literal29$",
+      "value" : 8
+    }, {
+      "display" : "$literal30$",
+      "value" : 9
+    }, {
+      "display" : "$literal31$",
+      "value" : 10
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "HourHandThinning",
+    "valueType" : "number",
+    "defaultValue" : 8,
+    "configTitle" : "$literal44$",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "$literal39$",
+      "value" : 0
+    }, {
+      "display" : "$literal40$",
+      "value" : 1
+    }, {
+      "display" : "$literal23$",
+      "value" : 2
+    }, {
+      "display" : "$literal24$",
+      "value" : 3
+    }, {
+      "display" : "$literal25$",
+      "value" : 4
+    }, {
+      "display" : "$literal26$",
+      "value" : 5
+    }, {
+      "display" : "$literal27$",
+      "value" : 6
+    }, {
+      "display" : "$literal28$",
+      "value" : 7
+    }, {
+      "display" : "$literal29$",
+      "value" : 8
+    }, {
+      "display" : "$literal30$",
+      "value" : 9
+    }, {
+      "display" : "$literal31$",
+      "value" : 10
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  } ],
+  "supportsLiveValidation" : false,
+  "languages" : {
+    "valyrian" : {
+      "ColorRed" : "Red",
+      "$literal0$" : "Draw Date",
+      "$literal16$" : "Foreground Color 2",
+      "$literal24$" : "3",
+      "$literal36$" : "15",
+      "$literal4$" : "Draw Seconds Hand",
+      "$literal28$" : "7",
+      "$literal40$" : "1",
+      "ColorTurquoise" : "Turquoise",
+      "$literal8$" : "Draw Minute Ticks",
+      "ColorWhite" : "White",
+      "$literal44$" : "Hour Hand Thinning",
+      "$literal12$" : "Light",
+      "$literal20$" : "Hour Hand Color 2",
+      "$literal32$" : "11",
+      "ColorCustom" : "Custom",
+      "ColorOrange" : "Orange",
+      "$literal15$" : "Foreground Color 1",
+      "$literal27$" : "6",
+      "$literal3$" : "Draw Numbers",
+      "$literal35$" : "14",
+      "$literal19$" : "Hour Hand Color 1",
+      "$literal7$" : "Draw after gesture",
+      "$literal39$" : "0",
+      "ColorPurple" : "Purple",
+      "ColorOliveGreen" : "OliveGreen",
+      "$literal11$" : "Theme",
+      "$literal23$" : "2",
+      "$literal31$" : "10",
+      "$literal43$" : "Minute Hand Thinning",
+      "ColorBlue" : "Blue",
+      "ColorDarkRed" : "Dark Red",
+      "ColorYellow" : "Yellow",
+      "AppName" : "Simplex",
+      "ColorDarkGreen" : "Dark Green",
+      "$literal26$" : "5",
+      "$literal38$" : "Hour Hand Length",
+      "$literal2$" : "No",
+      "$literal14$" : "Background Color",
+      "$literal6$" : "Draw always (uses more battery)",
+      "$literal18$" : "Minute Hand Color 2",
+      "$literal30$" : "9",
+      "ColorPink" : "Pink",
+      "$literal22$" : "Minute Hand Width",
+      "ColorGreen" : "Green",
+      "$literal34$" : "13",
+      "$literal42$" : "Seconds Hand Length",
+      "$literal10$" : "Mode",
+      "ColorLightGray" : "Light Gray",
+      "ColorDarkGray" : "Dark Gray",
+      "ColorDarkBlue" : "Dark Blue",
+      "ColorBlack" : "Black",
+      "$literal1$" : "Yes",
+      "$literal37$" : "Hour Hand Width",
+      "$literal13$" : "Dark",
+      "$literal25$" : "4",
+      "$literal5$" : "Seconds Hand Mode (only MIP screens)",
+      "$literal17$" : "Minute Hand Color 1",
+      "$literal29$" : "8",
+      "$literal9$" : "Draw Hour Ticks",
+      "$literal41$" : "Minute Hand Length",
+      "$literal33$" : "12",
+      "$literal21$" : "Seconds Hand Color"
+    }
+  }
+}

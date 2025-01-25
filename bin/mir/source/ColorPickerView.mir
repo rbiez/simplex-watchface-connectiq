@@ -1,53 +1,53 @@
-[ @file = "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc"; @line = 1; ]
+[ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc"; @line = 1; ]
 using Toybox.System;
-[ @file = "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc"; @line = 2; ]
+[ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc"; @line = 2; ]
 using Toybox.WatchUi;
-[ @file = "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc"; @line = 4; ]
+[ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc"; @line = 4; ]
 class ColorPickerView extends WatchUi.View{
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc"; @line = 4; ]
+    [ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc"; @line = 4; ]
     <init> {
     }
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc"; @line = 4; ]
+    [ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc"; @line = 4; ]
     static
     <init> {
     }
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc"; @line = 6; @position = 16; ]
+    [ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc"; @line = 6; @position = 16; ]
     private
     var settings_name;
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc"; @line = 8; @position = 16; ]
+    [ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc"; @line = 8; @position = 16; ]
     private
     var selection_index;
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc"; @line = 10; @position = 16; ]
+    [ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc"; @line = 10; @position = 16; ]
     private
     var menu_item_handle;
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc"; @line = 12; @position = 16; ]
+    [ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc"; @line = 12; @position = 16; ]
     private
     var color_menu_item_handle;
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc"; @line = 15; ]
+    [ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc"; @line = 15; ]
     function initialize() as Void {
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_16_4_start:
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 17 8 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_16_4_24_4_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 17 8 ]
         %tmp.2 = getv ? :View;
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 19 8 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 19 8 ]
         %tmp.4 = 0;
         putv self :selection_index %tmp.4;
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 20 8 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 20 8 ]
         %tmp.5 = "null";
         putv self :settings_name %tmp.5;
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 22 8 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 22 8 ]
         %tmp.6 = null;
         putv self :menu_item_handle %tmp.6;
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_16_4_stop:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_16_4_24_4_stop:
     }
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc"; @line = 27; ]
+    [ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc"; @line = 27; ]
     function onLayout(dc) {
     }
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc"; @line = 33; ]
+    [ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc"; @line = 33; ]
     function onShow() {
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_34_4_start:
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 35 8 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_34_4_36_4_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 35 8 ]
         %tmp.1 = self;
         %tmp.2 = getv function %tmp.1 :setSelectionIndex;
         %tmp.3 = self;
@@ -58,17 +58,17 @@ _home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_34_4_start:
         %tmp.9 = invoke %tmp.5 %tmp.6(%tmp.8);
         %tmp.10 = invoke %tmp.3 %tmp.4(%tmp.9);
         invoke %tmp.1 %tmp.2(%tmp.10);
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_34_4_stop:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_34_4_36_4_stop:
     }
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc"; @line = 39; ]
+    [ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc"; @line = 39; ]
     function onUpdate(dc) {
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_40_4_start:
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 41 8 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_40_4_96_4_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 41 8 ]
         %tmp.2 = getv ? :View;
         %tmp.3 = getv function %tmp.2 :onUpdate;
         %tmp.5 = lgetv %dc;
         invoke %tmp.2 %tmp.3(%tmp.5);
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 43 8 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 43 8 ]
         %tmp.6 = lgetv %dc;
         %tmp.7 = getv function %tmp.6 :setColor;
         %tmp.9 = getv ? :Graphics;
@@ -76,39 +76,39 @@ _home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_40_4_start:
         %tmp.12 = getv ? :Graphics;
         %tmp.13 = getv %tmp.12 :COLOR_BLACK;
         invoke %tmp.6 %tmp.7(%tmp.10, %tmp.13);
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 44 8 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 44 8 ]
         %tmp.14 = lgetv %dc;
         %tmp.15 = getv function %tmp.14 :clear;
         invoke %tmp.14 %tmp.15();
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 46 8 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_40_4_start" "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_40_4_stop" ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 46 8 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_40_4_96_4_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_40_4_96_4_stop" ]
         %screen_width.1 = local;
         %tmp.16 = lgetv %dc;
         %tmp.17 = getv function %tmp.16 :getWidth;
         %tmp.18 = invoke %tmp.16 %tmp.17();
         lputv %screen_width.1 %tmp.18;
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 47 8 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_40_4_start" "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_40_4_stop" ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 47 8 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_40_4_96_4_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_40_4_96_4_stop" ]
         %screen_height.2 = local;
         %tmp.19 = lgetv %dc;
         %tmp.20 = getv function %tmp.19 :getHeight;
         %tmp.21 = invoke %tmp.19 %tmp.20();
         lputv %screen_height.2 %tmp.21;
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 48 8 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_40_4_start" "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_40_4_stop" ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 48 8 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_40_4_96_4_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_40_4_96_4_stop" ]
         %center_x.3 = local;
         %tmp.23 = lgetv %screen_width.1;
         %tmp.24 = 2;
         %tmp.25 = div %tmp.23 %tmp.24;
         lputv %center_x.3 %tmp.25;
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 49 8 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_40_4_start" "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_40_4_stop" ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 49 8 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_40_4_96_4_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_40_4_96_4_stop" ]
         %center_y.4 = local;
         %tmp.27 = lgetv %screen_height.2;
         %tmp.28 = 2;
         %tmp.29 = div %tmp.27 %tmp.28;
         lputv %center_y.4 %tmp.29;
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 51 8 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 51 8 ]
         %tmp.30 = lgetv %dc;
         %tmp.31 = getv function %tmp.30 :setColor;
         %tmp.33 = getv ? :Graphics;
@@ -116,24 +116,24 @@ _home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_40_4_start:
         %tmp.36 = getv ? :Graphics;
         %tmp.37 = getv %tmp.36 :COLOR_BLACK;
         invoke %tmp.30 %tmp.31(%tmp.34, %tmp.37);
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 55 8 ]
-        for @_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_55_8_for_test @_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_55_8_for_incr @_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_55_8_for_end;
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_55_8_for_init:
-        [ "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_55_8_for_begin" "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_55_8_for_end" ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 55 8 ]
+        for @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_55_8_87_8_for_test @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_55_8_87_8_for_incr @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_55_8_87_8_for_end;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_55_8_87_8_for_init:
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_55_8_87_8_for_begin" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_55_8_87_8_for_end" ]
         %i.5 = local;
         %tmp.38 = 0;
         lputv %i.5 %tmp.38;
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_55_8_for_test:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_55_8_87_8_for_test:
         %tmp.40 = lgetv %i.5;
         %tmp.42 = getv ? :all_colors64;
         %tmp.43 = getv function %tmp.42 :size;
         %tmp.44 = invoke %tmp.42 %tmp.43();
         %tmp.45 = lt %tmp.40 %tmp.44;
-        bf %tmp.45 @_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_55_8_for_end;
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_55_8_for_begin:
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_56_8_start:
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 57 12 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_56_8_start" "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_56_8_stop" ]
+        bf %tmp.45 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_55_8_87_8_for_end;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_55_8_87_8_for_begin:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_56_8_87_8_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 57 12 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_56_8_87_8_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_56_8_87_8_stop" ]
         %arc_length_angle.6 = local;
         %tmp.47 = lgetv %i.5;
         %tmp.48 = 64.0;
@@ -144,8 +144,8 @@ _home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_56_8_start:
         %tmp.54 = getv %tmp.53 :PI;
         %tmp.55 = mul %tmp.51 %tmp.54;
         lputv %arc_length_angle.6 %tmp.55;
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 58 12 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_56_8_start" "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_56_8_stop" ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 58 12 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_56_8_87_8_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_56_8_87_8_stop" ]
         %arc_length_angle_next.7 = local;
         %tmp.57 = lgetv %i.5;
         %tmp.58 = 1;
@@ -158,8 +158,8 @@ _home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_56_8_start:
         %tmp.66 = getv %tmp.65 :PI;
         %tmp.67 = mul %tmp.63 %tmp.66;
         lputv %arc_length_angle_next.7 %tmp.67;
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 61 12 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_56_8_start" "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_56_8_stop" ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 61 12 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_56_8_87_8_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_56_8_87_8_stop" ]
         %radius_out.8 = local;
         %tmp.69 = lgetv %screen_width.1;
         %tmp.70 = 2;
@@ -167,36 +167,36 @@ _home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_56_8_start:
         %tmp.72 = 5;
         %tmp.73 = sub %tmp.71 %tmp.72;
         lputv %radius_out.8 %tmp.73;
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 62 12 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_56_8_start" "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_56_8_stop" ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 62 12 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_56_8_87_8_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_56_8_87_8_stop" ]
         %radius_in.9 = local;
         %tmp.75 = lgetv %screen_width.1;
         %tmp.76 = 4;
         %tmp.77 = div %tmp.75 %tmp.76;
         lputv %radius_in.9 %tmp.77;
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 64 12 ]
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_64_12_if_stmt:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 64 12 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_64_12_68_12_if_stmt:
         %tmp.79 = lgetv %i.5;
         %tmp.81 = getv ? :selection_index;
         %tmp.82 = eq %tmp.79 %tmp.81;
-        bf %tmp.82 @_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_64_12_if_end;
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_64_12_if_true:
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_65_12_start:
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 66 16 ]
+        bf %tmp.82 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_64_12_68_12_if_end;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_64_12_68_12_if_true:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_65_12_68_12_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 66 16 ]
         %tmp.83 = lgetv %radius_out.8;
         %tmp.84 = 10;
         %tmp.85 = add %tmp.83 %tmp.84;
         lputv %radius_out.8 %tmp.85;
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 67 16 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 67 16 ]
         %tmp.86 = lgetv %radius_in.9;
         %tmp.87 = 10;
         %tmp.88 = sub %tmp.86 %tmp.87;
         lputv %radius_in.9 %tmp.88;
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_65_12_stop:
-        goto @_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_64_12_if_end;
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_64_12_if_end:
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 70 12 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_56_8_start" "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_56_8_stop" ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_65_12_68_12_stop:
+        goto @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_64_12_68_12_if_end;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_64_12_68_12_if_end:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 70 12 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_56_8_87_8_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_56_8_87_8_stop" ]
         %right_out_x.10 = local;
         %tmp.90 = lgetv %radius_out.8;
         %tmp.92 = getv ? :Math;
@@ -205,8 +205,8 @@ _home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_64_12_if_end:
         %tmp.96 = invoke %tmp.92 %tmp.93(%tmp.95);
         %tmp.97 = mul %tmp.90 %tmp.96;
         lputv %right_out_x.10 %tmp.97;
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 71 12 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_56_8_start" "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_56_8_stop" ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 71 12 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_56_8_87_8_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_56_8_87_8_stop" ]
         %right_out_y.11 = local;
         %tmp.99 = lgetv %radius_out.8;
         %tmp.101 = getv ? :Math;
@@ -215,8 +215,8 @@ _home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_64_12_if_end:
         %tmp.105 = invoke %tmp.101 %tmp.102(%tmp.104);
         %tmp.106 = mul %tmp.99 %tmp.105;
         lputv %right_out_y.11 %tmp.106;
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 73 12 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_56_8_start" "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_56_8_stop" ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 73 12 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_56_8_87_8_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_56_8_87_8_stop" ]
         %left_out_x.12 = local;
         %tmp.108 = lgetv %radius_out.8;
         %tmp.110 = getv ? :Math;
@@ -225,8 +225,8 @@ _home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_64_12_if_end:
         %tmp.114 = invoke %tmp.110 %tmp.111(%tmp.113);
         %tmp.115 = mul %tmp.108 %tmp.114;
         lputv %left_out_x.12 %tmp.115;
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 74 12 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_56_8_start" "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_56_8_stop" ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 74 12 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_56_8_87_8_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_56_8_87_8_stop" ]
         %left_out_y.13 = local;
         %tmp.117 = lgetv %radius_out.8;
         %tmp.119 = getv ? :Math;
@@ -235,8 +235,8 @@ _home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_64_12_if_end:
         %tmp.123 = invoke %tmp.119 %tmp.120(%tmp.122);
         %tmp.124 = mul %tmp.117 %tmp.123;
         lputv %left_out_y.13 %tmp.124;
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 76 12 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_56_8_start" "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_56_8_stop" ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 76 12 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_56_8_87_8_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_56_8_87_8_stop" ]
         %right_in_x.14 = local;
         %tmp.126 = lgetv %radius_in.9;
         %tmp.128 = getv ? :Math;
@@ -245,8 +245,8 @@ _home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_64_12_if_end:
         %tmp.132 = invoke %tmp.128 %tmp.129(%tmp.131);
         %tmp.133 = mul %tmp.126 %tmp.132;
         lputv %right_in_x.14 %tmp.133;
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 77 12 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_56_8_start" "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_56_8_stop" ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 77 12 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_56_8_87_8_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_56_8_87_8_stop" ]
         %right_in_y.15 = local;
         %tmp.135 = lgetv %radius_in.9;
         %tmp.137 = getv ? :Math;
@@ -255,8 +255,8 @@ _home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_64_12_if_end:
         %tmp.141 = invoke %tmp.137 %tmp.138(%tmp.140);
         %tmp.142 = mul %tmp.135 %tmp.141;
         lputv %right_in_y.15 %tmp.142;
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 79 12 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_56_8_start" "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_56_8_stop" ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 79 12 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_56_8_87_8_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_56_8_87_8_stop" ]
         %left_in_x.16 = local;
         %tmp.144 = lgetv %radius_in.9;
         %tmp.146 = getv ? :Math;
@@ -265,8 +265,8 @@ _home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_64_12_if_end:
         %tmp.150 = invoke %tmp.146 %tmp.147(%tmp.149);
         %tmp.151 = mul %tmp.144 %tmp.150;
         lputv %left_in_x.16 %tmp.151;
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 80 12 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_56_8_start" "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_56_8_stop" ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 80 12 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_56_8_87_8_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_56_8_87_8_stop" ]
         %left_in_y.17 = local;
         %tmp.153 = lgetv %radius_in.9;
         %tmp.155 = getv ? :Math;
@@ -275,8 +275,8 @@ _home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_64_12_if_end:
         %tmp.159 = invoke %tmp.155 %tmp.156(%tmp.158);
         %tmp.160 = mul %tmp.153 %tmp.159;
         lputv %left_in_y.17 %tmp.160;
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 83 12 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_56_8_start" "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_56_8_stop" ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 83 12 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_56_8_87_8_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_56_8_87_8_stop" ]
         %points.18 = local;
         %tmp.161 = newa 4;
         %tmp.162 = newa 2;
@@ -332,7 +332,7 @@ _home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_64_12_if_end:
         %tmp.228 = dup %tmp.212;
         %tmp.229 = aputv %tmp.228 3 %tmp.227;
         lputv %points.18 %tmp.229;
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 85 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 85 12 ]
         %tmp.230 = lgetv %dc;
         %tmp.231 = getv function %tmp.230 :setColor;
         %tmp.233 = getv ? :all_colors64;
@@ -341,20 +341,20 @@ _home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_64_12_if_end:
         %tmp.238 = getv ? :Graphics;
         %tmp.239 = getv %tmp.238 :COLOR_BLACK;
         invoke %tmp.230 %tmp.231(%tmp.236, %tmp.239);
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 86 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 86 12 ]
         %tmp.240 = lgetv %dc;
         %tmp.241 = getv function %tmp.240 :fillPolygon;
         %tmp.243 = lgetv %points.18;
         invoke %tmp.240 %tmp.241(%tmp.243);
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_56_8_stop:
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_55_8_for_incr:
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 55 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_56_8_87_8_stop:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_55_8_87_8_for_incr:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 55 ]
         %tmp.246 = lgetv %i.5;
         %tmp.247 = add %tmp.246 1;
         lputv %i.5 %tmp.247;
-        goto @_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_55_8_for_test;
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_55_8_for_end:
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 89 8 ]
+        goto @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_55_8_87_8_for_test;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_55_8_87_8_for_end:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 89 8 ]
         %tmp.248 = lgetv %dc;
         %tmp.249 = getv function %tmp.248 :setColor;
         %tmp.251 = getv ? :all_colors64;
@@ -363,7 +363,7 @@ _home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_55_8_for_end:
         %tmp.256 = getv ? :Graphics;
         %tmp.257 = getv %tmp.256 :COLOR_BLACK;
         invoke %tmp.248 %tmp.249(%tmp.254, %tmp.257);
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 90 8 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 90 8 ]
         %tmp.258 = lgetv %dc;
         %tmp.259 = getv function %tmp.258 :fillCircle;
         %tmp.261 = lgetv %center_x.3;
@@ -372,8 +372,8 @@ _home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_55_8_for_end:
         %tmp.266 = 5;
         %tmp.267 = div %tmp.265 %tmp.266;
         invoke %tmp.258 %tmp.259(%tmp.261, %tmp.263, %tmp.267);
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 92 8 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_40_4_start" "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_40_4_stop" ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 92 8 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_40_4_96_4_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_40_4_96_4_stop" ]
         %comp_color.19 = local;
         %tmp.269 = getv ? :Graphics;
         %tmp.270 = getv %tmp.269 :COLOR_WHITE;
@@ -382,7 +382,7 @@ _home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_55_8_for_end:
         %tmp.275 = agetv %tmp.272 %tmp.274;
         %tmp.276 = sub %tmp.270 %tmp.275;
         lputv %comp_color.19 %tmp.276;
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 94 8 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 94 8 ]
         %tmp.277 = lgetv %dc;
         %tmp.278 = getv function %tmp.277 :setColor;
         %tmp.280 = lgetv %comp_color.19;
@@ -390,7 +390,7 @@ _home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_55_8_for_end:
         %tmp.284 = getv ? :selection_index;
         %tmp.285 = agetv %tmp.282 %tmp.284;
         invoke %tmp.277 %tmp.278(%tmp.280, %tmp.285);
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 95 8 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 95 8 ]
         %tmp.286 = lgetv %dc;
         %tmp.287 = getv function %tmp.286 :drawText;
         %tmp.289 = lgetv %center_x.3;
@@ -401,13 +401,13 @@ _home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_55_8_for_end:
         %tmp.297 = getv ? :Graphics;
         %tmp.298 = getv %tmp.297 :TEXT_JUSTIFY_CENTER;
         invoke %tmp.286 %tmp.287(%tmp.289, %tmp.291, %tmp.294, %tmp.295, %tmp.298);
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_40_4_stop:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_40_4_96_4_stop:
     }
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc"; @line = 99; ]
+    [ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc"; @line = 99; ]
     function onHide() {
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_100_4_start:
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 103 8 ]
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_103_8_if_stmt:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_100_4_136_4_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 103 8 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_103_8_115_8_if_stmt:
         %tmp.1 = self;
         %tmp.2 = getv function %tmp.1 :colorIndex;
         %tmp.4 = getv ? :all_colors64;
@@ -416,10 +416,10 @@ _home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_103_8_if_stmt:
         %tmp.8 = invoke %tmp.1 %tmp.2(%tmp.7);
         %tmp.9 = -1;
         %tmp.10 = eq %tmp.8 %tmp.9;
-        bf %tmp.10 @_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_103_8_if_false;
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_103_8_if_true:
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_104_8_start:
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 105 12 ]
+        bf %tmp.10 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_103_8_115_8_if_false;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_103_8_115_8_if_true:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_104_8_109_8_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 105 12 ]
         %tmp.12 = getv ? :Application;
         %tmp.13 = getv %tmp.12 :Properties;
         %tmp.14 = getv function %tmp.13 :setValue;
@@ -430,18 +430,18 @@ _home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_104_8_start:
         %tmp.22 = getv ? :selection_index;
         %tmp.23 = agetv %tmp.20 %tmp.22;
         invoke %tmp.13 %tmp.14(%tmp.18, %tmp.23);
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 108 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 108 12 ]
         %tmp.25 = getv ? :Application;
         %tmp.26 = getv %tmp.25 :Properties;
         %tmp.27 = getv function %tmp.26 :setValue;
         %tmp.29 = getv ? :settings_name;
         %tmp.30 = -1;
         invoke %tmp.26 %tmp.27(%tmp.29, %tmp.30);
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_104_8_stop:
-        goto @_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_103_8_if_end;
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_103_8_if_false:
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_113_8_start:
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 114 12 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_104_8_109_8_stop:
+        goto @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_103_8_115_8_if_end;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_103_8_115_8_if_false:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_113_8_115_8_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 114 12 ]
         %tmp.32 = getv ? :Application;
         %tmp.33 = getv %tmp.32 :Properties;
         %tmp.34 = getv function %tmp.33 :setValue;
@@ -450,17 +450,17 @@ _home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_113_8_start:
         %tmp.40 = getv ? :selection_index;
         %tmp.41 = agetv %tmp.38 %tmp.40;
         invoke %tmp.33 %tmp.34(%tmp.36, %tmp.41);
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_113_8_stop:
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_103_8_if_end:
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 118 8 ]
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_118_8_if_stmt:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_113_8_115_8_stop:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_103_8_115_8_if_end:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 118 8 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_118_8_125_8_if_stmt:
         %tmp.43 = getv ? :menu_item_handle;
         %tmp.44 = null;
         %tmp.45 = ne %tmp.43 %tmp.44;
-        bf %tmp.45 @_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_118_8_if_end;
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_118_8_if_true:
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_119_8_start:
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 120 12 ]
+        bf %tmp.45 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_118_8_125_8_if_end;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_118_8_125_8_if_true:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_119_8_125_8_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 120 12 ]
         %tmp.47 = getv ? :menu_item_handle;
         %tmp.48 = as %tmp.47 { (!Null) };
         %tmp.49 = getv function %tmp.48 :setSubLabel;
@@ -471,7 +471,7 @@ _home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_119_8_start:
         %tmp.56 = agetv %tmp.53 %tmp.55;
         %tmp.57 = invoke %tmp.50 %tmp.51(%tmp.56);
         invoke %tmp.48 %tmp.49(%tmp.57);
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 122 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 122 12 ]
         %tmp.59 = getv ? :menu_item_handle;
         %tmp.60 = getv function %tmp.59 :setIcon;
         %tmp.61 = self;
@@ -481,22 +481,22 @@ _home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_119_8_start:
         %tmp.67 = agetv %tmp.64 %tmp.66;
         %tmp.68 = invoke %tmp.61 %tmp.62(%tmp.67);
         invoke %tmp.59 %tmp.60(%tmp.68);
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 124 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 124 12 ]
         %tmp.69 = getm $.Toybox.WatchUi;
         %tmp.70 = getv function %tmp.69 :requestUpdate;
         invoke %tmp.69 %tmp.70();
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_119_8_stop:
-        goto @_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_118_8_if_end;
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_118_8_if_end:
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 128 8 ]
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_128_8_if_stmt:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_119_8_125_8_stop:
+        goto @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_118_8_125_8_if_end;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_118_8_125_8_if_end:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 128 8 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_128_8_135_8_if_stmt:
         %tmp.72 = getv ? :color_menu_item_handle;
         %tmp.73 = null;
         %tmp.74 = ne %tmp.72 %tmp.73;
-        bf %tmp.74 @_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_128_8_if_end;
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_128_8_if_true:
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_129_8_start:
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 130 12 ]
+        bf %tmp.74 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_128_8_135_8_if_end;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_128_8_135_8_if_true:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_129_8_135_8_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 130 12 ]
         %tmp.76 = getv ? :color_menu_item_handle;
         %tmp.77 = as %tmp.76 { (!Null) };
         %tmp.78 = getv function %tmp.77 :setSubLabel;
@@ -507,7 +507,7 @@ _home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_129_8_start:
         %tmp.85 = agetv %tmp.82 %tmp.84;
         %tmp.86 = invoke %tmp.79 %tmp.80(%tmp.85);
         invoke %tmp.77 %tmp.78(%tmp.86);
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 132 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 132 12 ]
         %tmp.88 = getv ? :color_menu_item_handle;
         %tmp.89 = getv function %tmp.88 :setIcon;
         %tmp.90 = self;
@@ -517,129 +517,129 @@ _home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_129_8_start:
         %tmp.96 = agetv %tmp.93 %tmp.95;
         %tmp.97 = invoke %tmp.90 %tmp.91(%tmp.96);
         invoke %tmp.88 %tmp.89(%tmp.97);
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 134 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 134 12 ]
         %tmp.98 = getm $.Toybox.WatchUi;
         %tmp.99 = getv function %tmp.98 :requestUpdate;
         invoke %tmp.98 %tmp.99();
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_129_8_stop:
-        goto @_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_128_8_if_end;
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_128_8_if_end:
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_100_4_stop:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_129_8_135_8_stop:
+        goto @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_128_8_135_8_if_end;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_128_8_135_8_if_end:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_100_4_136_4_stop:
     }
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc"; @line = 138; ]
+    [ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc"; @line = 138; ]
     public
     function setSettingsName(name) {
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_139_4_start:
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 140 8 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_139_4_141_4_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 140 8 ]
         %tmp.2 = lgetv %name;
         putv self :settings_name %tmp.2;
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_139_4_stop:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_139_4_141_4_stop:
     }
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc"; @line = 143; ]
+    [ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc"; @line = 143; ]
     public
     function getSettingsName() {
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_144_4_start:
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 145 8 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_144_4_146_4_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 145 8 ]
         %tmp.2 = getv ? :settings_name;
         ret %tmp.2;
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_144_4_stop:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_144_4_146_4_stop:
     }
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc"; @line = 148; ]
+    [ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc"; @line = 148; ]
     public
     function setSelectionIndex(index) {
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_149_4_start:
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 150 8 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_149_4_151_4_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 150 8 ]
         %tmp.2 = lgetv %index;
         putv self :selection_index %tmp.2;
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_149_4_stop:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_149_4_151_4_stop:
     }
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc"; @line = 153; ]
+    [ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc"; @line = 153; ]
     public
     function getSelectionIndex() {
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_154_4_start:
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 155 8 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_154_4_156_4_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 155 8 ]
         %tmp.2 = getv ? :selection_index;
         ret %tmp.2;
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_154_4_stop:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_154_4_156_4_stop:
     }
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc"; @line = 157; ]
+    [ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc"; @line = 157; ]
     public
     function setMenuItemHandle(handle) {
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_158_4_start:
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 159 8 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_158_4_160_4_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 159 8 ]
         %tmp.2 = lgetv %handle;
         putv self :menu_item_handle %tmp.2;
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_158_4_stop:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_158_4_160_4_stop:
     }
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc"; @line = 162; ]
+    [ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc"; @line = 162; ]
     public
     function setColorMenuItemHandle(handle) {
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_163_4_start:
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 164 8 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_163_4_165_4_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 164 8 ]
         %tmp.2 = lgetv %handle;
         putv self :color_menu_item_handle %tmp.2;
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_163_4_stop:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_163_4_165_4_stop:
     }
 }
-[ @file = "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc"; @line = 168; ]
+[ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc"; @line = 168; ]
 class ColorPickerViewDelegate extends WatchUi.InputDelegate{
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc"; @line = 168; ]
+    [ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc"; @line = 168; ]
     <init> {
     }
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc"; @line = 168; ]
+    [ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc"; @line = 168; ]
     static
     <init> {
     }
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc"; @line = 170; @position = 16; ]
+    [ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc"; @line = 170; @position = 16; ]
     private
     var picker_view;
     //! Constructor
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc"; @line = 173; ]
+    [ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc"; @line = 173; ]
     public
     function initialize() as Void {
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_174_4_start:
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 175 8 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_174_4_176_4_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 175 8 ]
         %tmp.2 = getv ? :InputDelegate;
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_174_4_stop:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_174_4_176_4_stop:
     }
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc"; @line = 178; ]
+    [ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc"; @line = 178; ]
     function onKey(keyEvent) {
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_179_4_start:
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 181 8 ]
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_181_8_if_stmt:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_179_4_205_4_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 181 8 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_181_8_199_8_if_stmt:
         %tmp.1 = lgetv %keyEvent;
         %tmp.2 = getv function %tmp.1 :getKey;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         %tmp.5 = getv ? :KEY_ESC;
         %tmp.6 = eq %tmp.3 %tmp.5;
-        bf %tmp.6 @_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_181_8_if_false;
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_181_8_if_true:
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_182_8_start:
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 183 12 ]
+        bf %tmp.6 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_181_8_199_8_if_false;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_181_8_199_8_if_true:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_182_8_185_8_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 183 12 ]
         %tmp.7 = getm $.Toybox.WatchUi;
         %tmp.8 = getv function %tmp.7 :popView;
         %tmp.9 = getm $.Toybox.WatchUi;
         %tmp.10 = getv %tmp.9 :SLIDE_RIGHT;
         invoke %tmp.7 %tmp.8(%tmp.10);
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 184 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 184 12 ]
         %tmp.11 = true;
         ret %tmp.11;
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_182_8_stop:
-        goto @_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_181_8_if_end;
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_181_8_if_false:
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 187 13 ]
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_187_13_if_stmt:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_182_8_185_8_stop:
+        goto @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_181_8_199_8_if_end;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_181_8_199_8_if_false:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 187 13 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_187_13_199_8_if_stmt:
         %tmp.12 = lgetv %keyEvent;
         %tmp.13 = getv function %tmp.12 :getKey;
         %tmp.14 = invoke %tmp.12 %tmp.13();
         %tmp.16 = getv ? :KEY_UP;
         %tmp.17 = eq %tmp.14 %tmp.16;
-        bf %tmp.17 @_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_187_13_if_false;
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_187_13_if_true:
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_188_8_start:
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 189 12 ]
+        bf %tmp.17 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_187_13_199_8_if_false;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_187_13_199_8_if_true:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_188_8_192_8_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 189 12 ]
         %tmp.19 = getv ? :picker_view;
         %tmp.20 = getv function %tmp.19 :setSelectionIndex;
         %tmp.22 = getv ? :picker_view;
@@ -650,27 +650,27 @@ _home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_188_8_start:
         %tmp.27 = 64;
         %tmp.28 = mod %tmp.26 %tmp.27;
         invoke %tmp.19 %tmp.20(%tmp.28);
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 190 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 190 12 ]
         %tmp.29 = getm $.Toybox.WatchUi;
         %tmp.30 = getv function %tmp.29 :requestUpdate;
         invoke %tmp.29 %tmp.30();
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 191 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 191 12 ]
         %tmp.31 = true;
         ret %tmp.31;
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_188_8_stop:
-        goto @_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_187_13_if_end;
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_187_13_if_false:
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 194 13 ]
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_194_13_if_stmt:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_188_8_192_8_stop:
+        goto @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_187_13_199_8_if_end;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_187_13_199_8_if_false:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 194 13 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_194_13_199_8_if_stmt:
         %tmp.32 = lgetv %keyEvent;
         %tmp.33 = getv function %tmp.32 :getKey;
         %tmp.34 = invoke %tmp.32 %tmp.33();
         %tmp.36 = getv ? :KEY_DOWN;
         %tmp.37 = eq %tmp.34 %tmp.36;
-        bf %tmp.37 @_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_194_13_if_end;
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_194_13_if_true:
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_195_8_start:
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 196 12 ]
+        bf %tmp.37 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_194_13_199_8_if_end;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_194_13_199_8_if_true:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_195_8_199_8_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 196 12 ]
         %tmp.39 = getv ? :picker_view;
         %tmp.40 = getv function %tmp.39 :setSelectionIndex;
         %tmp.42 = getv ? :picker_view;
@@ -681,67 +681,67 @@ _home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_195_8_start:
         %tmp.47 = 64;
         %tmp.48 = mod %tmp.46 %tmp.47;
         invoke %tmp.39 %tmp.40(%tmp.48);
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 197 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 197 12 ]
         %tmp.49 = getm $.Toybox.WatchUi;
         %tmp.50 = getv function %tmp.49 :requestUpdate;
         invoke %tmp.49 %tmp.50();
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 198 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 198 12 ]
         %tmp.51 = true;
         ret %tmp.51;
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_195_8_stop:
-        goto @_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_194_13_if_end;
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_194_13_if_end:
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_187_13_if_end:
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_181_8_if_end:
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 201 8 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_195_8_199_8_stop:
+        goto @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_194_13_199_8_if_end;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_194_13_199_8_if_end:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_187_13_199_8_if_end:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_181_8_199_8_if_end:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 201 8 ]
         %tmp.52 = true;
         ret %tmp.52;
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_179_4_stop:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_179_4_205_4_stop:
     }
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc"; @line = 207; ]
+    [ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc"; @line = 207; ]
     public
     function setView(view) {
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_208_4_start:
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 209 8 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_208_4_210_4_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 209 8 ]
         %tmp.2 = lgetv %view;
         putv self :picker_view %tmp.2;
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_208_4_stop:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_208_4_210_4_stop:
     }
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc"; @line = 212; ]
+    [ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc"; @line = 212; ]
     function onTap(clickEvent) {
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_213_4_start:
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 216 8 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_213_4_start" "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_213_4_stop" ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_213_4_262_4_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 216 8 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_213_4_262_4_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_213_4_262_4_stop" ]
         %screen_width.1 = local;
         %tmp.1 = getm $.Toybox.System;
         %tmp.2 = getv function %tmp.1 :getDeviceSettings;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         %tmp.4 = getv %tmp.3 :screenWidth;
         lputv %screen_width.1 %tmp.4;
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 217 8 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_213_4_start" "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_213_4_stop" ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 217 8 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_213_4_262_4_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_213_4_262_4_stop" ]
         %screen_height.2 = local;
         %tmp.5 = getm $.Toybox.System;
         %tmp.6 = getv function %tmp.5 :getDeviceSettings;
         %tmp.7 = invoke %tmp.5 %tmp.6();
         %tmp.8 = getv %tmp.7 :screenHeight;
         lputv %screen_height.2 %tmp.8;
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 218 8 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_213_4_start" "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_213_4_stop" ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 218 8 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_213_4_262_4_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_213_4_262_4_stop" ]
         %center_x.3 = local;
         %tmp.10 = lgetv %screen_width.1;
         %tmp.11 = 2;
         %tmp.12 = div %tmp.10 %tmp.11;
         lputv %center_x.3 %tmp.12;
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 219 8 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_213_4_start" "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_213_4_stop" ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 219 8 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_213_4_262_4_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_213_4_262_4_stop" ]
         %center_y.4 = local;
         %tmp.14 = lgetv %screen_height.2;
         %tmp.15 = 2;
         %tmp.16 = div %tmp.14 %tmp.15;
         lputv %center_y.4 %tmp.16;
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 221 8 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_213_4_start" "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_213_4_stop" ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 221 8 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_213_4_262_4_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_213_4_262_4_stop" ]
         %x.5 = local;
         %tmp.17 = lgetv %clickEvent;
         %tmp.18 = getv function %tmp.17 :getCoordinates;
@@ -749,8 +749,8 @@ _home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_213_4_start:
         %tmp.20 = 0;
         %tmp.21 = agetv %tmp.19 %tmp.20;
         lputv %x.5 %tmp.21;
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 222 8 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_213_4_start" "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_213_4_stop" ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 222 8 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_213_4_262_4_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_213_4_262_4_stop" ]
         %y.6 = local;
         %tmp.22 = lgetv %clickEvent;
         %tmp.23 = getv function %tmp.22 :getCoordinates;
@@ -758,8 +758,8 @@ _home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_213_4_start:
         %tmp.25 = 1;
         %tmp.26 = agetv %tmp.24 %tmp.25;
         lputv %y.6 %tmp.26;
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 224 8 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_213_4_start" "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_213_4_stop" ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 224 8 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_213_4_262_4_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_213_4_262_4_stop" ]
         %angle.7 = local;
         %tmp.28 = getv ? :Math;
         %tmp.29 = getv function %tmp.28 :atan2;
@@ -771,22 +771,22 @@ _home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_213_4_start:
         %tmp.39 = sub %tmp.36 %tmp.38;
         %tmp.40 = invoke %tmp.28 %tmp.29(%tmp.34, %tmp.39);
         lputv %angle.7 %tmp.40;
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 226 8 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_213_4_start" "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_213_4_stop" ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 226 8 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_213_4_262_4_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_213_4_262_4_stop" ]
         %radius_in.8 = local;
         %tmp.42 = lgetv %screen_width.1;
         %tmp.43 = 4;
         %tmp.44 = div %tmp.42 %tmp.43;
         lputv %radius_in.8 %tmp.44;
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 228 8 ]
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_228_8_if_stmt:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 228 8 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_228_8_231_8_if_stmt:
         %tmp.46 = lgetv %angle.7;
         %tmp.47 = 0;
         %tmp.48 = lt %tmp.46 %tmp.47;
-        bf %tmp.48 @_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_228_8_if_end;
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_228_8_if_true:
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_229_8_start:
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 230 12 ]
+        bf %tmp.48 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_228_8_231_8_if_end;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_228_8_231_8_if_true:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_229_8_231_8_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 230 12 ]
         %tmp.49 = lgetv %angle.7;
         %tmp.50 = 2;
         %tmp.52 = getv ? :Math;
@@ -794,11 +794,11 @@ _home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_229_8_start:
         %tmp.54 = mul %tmp.50 %tmp.53;
         %tmp.55 = add %tmp.49 %tmp.54;
         lputv %angle.7 %tmp.55;
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_229_8_stop:
-        goto @_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_228_8_if_end;
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_228_8_if_end:
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 235 8 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_213_4_start" "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_213_4_stop" ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_229_8_231_8_stop:
+        goto @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_228_8_231_8_if_end;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_228_8_231_8_if_end:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 235 8 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_213_4_262_4_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_213_4_262_4_stop" ]
         %index.9 = local;
         %tmp.56 = 64.0;
         %tmp.58 = lgetv %angle.7;
@@ -811,8 +811,8 @@ _home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_228_8_if_end:
         %tmp.66 = getv function %tmp.65 :toNumber;
         %tmp.67 = invoke %tmp.65 %tmp.66();
         lputv %index.9 %tmp.67;
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 239 8 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_213_4_start" "_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_213_4_stop" ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 239 8 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_213_4_262_4_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_213_4_262_4_stop" ]
         %distance.10 = local;
         %tmp.69 = getv ? :Math;
         %tmp.70 = getv function %tmp.69 :sqrt;
@@ -833,49 +833,49 @@ _home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_228_8_if_end:
         %tmp.91 = add %tmp.80 %tmp.90;
         %tmp.92 = invoke %tmp.69 %tmp.70(%tmp.91);
         lputv %distance.10 %tmp.92;
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 245 8 ]
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_245_8_if_stmt:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 245 8 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_245_8_259_8_if_stmt:
         %tmp.94 = lgetv %distance.10;
         %tmp.96 = lgetv %radius_in.8;
         %tmp.97 = gt %tmp.94 %tmp.96;
-        bf %tmp.97 @_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_245_8_if_false;
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_245_8_if_true:
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_246_8_start:
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 247 12 ]
+        bf %tmp.97 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_245_8_259_8_if_false;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_245_8_259_8_if_true:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_246_8_252_8_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 247 12 ]
         %tmp.99 = getv ? :picker_view;
         %tmp.100 = getv function %tmp.99 :setSelectionIndex;
         %tmp.102 = lgetv %index.9;
         invoke %tmp.99 %tmp.100(%tmp.102);
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 251 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 251 12 ]
         %tmp.103 = getm $.Toybox.WatchUi;
         %tmp.104 = getv function %tmp.103 :requestUpdate;
         invoke %tmp.103 %tmp.104();
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_246_8_stop:
-        goto @_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_245_8_if_end;
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_245_8_if_false:
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_256_8_start:
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 257 12 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_246_8_252_8_stop:
+        goto @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_245_8_259_8_if_end;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_245_8_259_8_if_false:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_256_8_259_8_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 257 12 ]
         %tmp.105 = getm $.Toybox.WatchUi;
         %tmp.106 = getv function %tmp.105 :popView;
         %tmp.107 = getm $.Toybox.WatchUi;
         %tmp.108 = getv %tmp.107 :SLIDE_RIGHT;
         invoke %tmp.105 %tmp.106(%tmp.108);
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_256_8_stop:
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_245_8_if_end:
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 261 8 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_256_8_259_8_stop:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_245_8_259_8_if_end:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 261 8 ]
         %tmp.109 = true;
         ret %tmp.109;
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_213_4_stop:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_213_4_262_4_stop:
     }
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc"; @line = 264; ]
+    [ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc"; @line = 264; ]
     function onSwipe(swipeEvent) {
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_265_4_start:
-[ "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc" 267 8 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_265_4_268_4_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc" 267 8 ]
         %tmp.1 = true;
         ret %tmp.1;
-_home_max_git_simplex_garmin_watchface_source_ColorPickerView_mc_265_4_stop:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_ColorPickerView_mc_265_4_268_4_stop:
     }
 }
-[ @file = "/home/max/git/simplex-garmin-watchface/source/ColorPickerView.mc"; @line = 1; ]
+[ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\ColorPickerView.mc"; @line = 1; ]
 <init> {
 }

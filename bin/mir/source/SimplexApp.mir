@@ -1,45 +1,45 @@
-[ @file = "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc"; @line = 1; ]
+[ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc"; @line = 1; ]
 import Toybox.Application;
-[ @file = "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc"; @line = 2; ]
+[ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc"; @line = 2; ]
 import Toybox.Lang;
-[ @file = "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc"; @line = 3; ]
+[ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc"; @line = 3; ]
 import Toybox.WatchUi;
-[ @file = "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc"; @line = 5; ]
+[ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc"; @line = 5; ]
 class SimplexApp extends Application.AppBase{
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc"; @line = 5; ]
+    [ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc"; @line = 5; ]
     <init> {
     }
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc"; @line = 5; ]
+    [ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc"; @line = 5; ]
     static
     <init> {
     }
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc"; @line = 7; @position = 15; ]
+    [ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc"; @line = 7; @position = 15; ]
     protected
     var app_view;
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc"; @line = 9; ]
+    [ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc"; @line = 9; ]
     function initialize() as Void {
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_10_4_start:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 11 8 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_10_4_12_4_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 11 8 ]
         %tmp.2 = getv ? :AppBase;
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_10_4_stop:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_10_4_12_4_stop:
     }
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc"; @line = 15; ]
+    [ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc"; @line = 15; ]
     function onStart(state as Dictionary or Null) as Void {
     }
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc"; @line = 21; ]
+    [ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc"; @line = 21; ]
     function onStop(state as Dictionary or Null) as Void {
     }
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc"; @line = 27; ]
-    function getInitialView() as Array<Views or InputDelegates> or Null {
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_28_4_start:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 29 8 ]
+    [ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc"; @line = 27; ]
+    function getInitialView() as [Views] or [Views, InputDelegates] {
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_28_4_32_4_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 29 8 ]
         %tmp.4 = getv ? :SimplexView;
         %tmp.1 = newc %tmp.4 ();
         putv self :app_view %tmp.1;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 31 8 ]
-        %tmp.5 = newa Array<Views or InputDelegates> 2;
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 31 8 ]
+        %tmp.5 = newa 2;
         %tmp.7 = getv ? :app_view;
         %tmp.8 = dup %tmp.5;
         %tmp.9 = aputv %tmp.8 0 %tmp.7;
@@ -50,27 +50,27 @@ _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_28_4_start:
         %tmp.17 = dup %tmp.9;
         %tmp.18 = aputv %tmp.17 1 %tmp.10;
         ret %tmp.18;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_28_4_stop:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_28_4_32_4_stop:
     }
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc"; @line = 35; ]
+    [ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc"; @line = 35; ]
     function onSettingsChanged() as Void {
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_36_4_start:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 37 8 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_36_4_39_4_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 37 8 ]
         %tmp.2 = getv ? :app_view;
         %tmp.3 = getv function %tmp.2 :loadSettings;
         invoke %tmp.2 %tmp.3();
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 38 8 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 38 8 ]
         %tmp.4 = getm $.Toybox.WatchUi;
         %tmp.5 = getv function %tmp.4 :requestUpdate;
         invoke %tmp.4 %tmp.5();
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_36_4_stop:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_36_4_39_4_stop:
     }
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc"; @line = 42; ]
+    [ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc"; @line = 42; ]
     public
-    function getSettingsView() as Array<Views or InputDelegates> or Null {
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_43_4_start:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 44 8 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_43_4_start" "_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_43_4_stop" ]
+    function getSettingsView() {
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_43_4_202_4_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 44 8 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_43_4_202_4_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_43_4_202_4_stop" ]
         %version.1 = local;
         %tmp.1 = getm $.Toybox.Lang;
         %tmp.2 = getv function %tmp.1 :format;
@@ -83,35 +83,35 @@ _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_43_4_start:
         %tmp.10 = getv function %tmp.9 :toNumber;
         %tmp.11 = invoke %tmp.9 %tmp.10();
         lputv %version.1 %tmp.11;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 48 8 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_43_4_start" "_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_43_4_stop" ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 48 8 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_43_4_202_4_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_43_4_202_4_stop" ]
         %menu.2 = local;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 49 8 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 49 8 ]
         %tmp.15 = getm $;
         %tmp.16 = getv %tmp.15 :SimplexSettingsMenu;
         %tmp.12 = newc %tmp.16 ();
         lputv %menu.2 %tmp.12;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 55 8 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_43_4_start" "_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_43_4_stop" ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 55 8 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_43_4_202_4_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_43_4_202_4_stop" ]
         %val.3 = local;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_55_18_begin:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_55_18_55_71_begin:
         %tmp.17 = getm $.Toybox.Application;
         %tmp.18 = getv %tmp.17 :Properties;
         %tmp.19 = getv function %tmp.18 :getValue;
         %tmp.20 = "DrawDate";
         %tmp.21 = invoke %tmp.18 %tmp.19(%tmp.20);
-        bf %tmp.21 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_55_18_false;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_55_18_true:
+        bf %tmp.21 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_55_18_55_71_false;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_55_18_55_71_true:
         %tmp.22 = true;
         push %tmp.22;
-        goto @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_55_18_end;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_55_18_false:
+        goto @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_55_18_55_71_end;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_55_18_55_71_false:
         %tmp.23 = false;
         push %tmp.23;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_55_18_end:
-        %tmp.24 = phi [%tmp.21 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_55_18_begin] [%tmp.22 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_55_18_true] [%tmp.23 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_55_18_false] [%tmp.24 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_55_18_end];
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_55_18_55_71_end:
+        %tmp.24 = phi [%tmp.21 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_55_18_55_71_begin] [%tmp.22 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_55_18_55_71_true] [%tmp.23 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_55_18_55_71_false] [%tmp.24 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_55_18_55_71_end];
         lputv %val.3 %tmp.24;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 56 8 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 56 8 ]
         %tmp.25 = lgetv %menu.2;
         %tmp.26 = getv function %tmp.25 :addItem;
         %tmp.29 = getm $.Toybox.WatchUi;
@@ -123,25 +123,25 @@ _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_55_18_end:
         %tmp.36 = null;
         %tmp.27 = newc %tmp.30 (%tmp.31, %tmp.32, %tmp.33, %tmp.35, %tmp.36);
         invoke %tmp.25 %tmp.26(%tmp.27);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 58 8 ]
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_58_14_begin:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 58 8 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_58_14_58_70_begin:
         %tmp.37 = getm $.Toybox.Application;
         %tmp.38 = getv %tmp.37 :Properties;
         %tmp.39 = getv function %tmp.38 :getValue;
         %tmp.40 = "DrawNumbers";
         %tmp.41 = invoke %tmp.38 %tmp.39(%tmp.40);
-        bf %tmp.41 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_58_14_false;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_58_14_true:
+        bf %tmp.41 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_58_14_58_70_false;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_58_14_58_70_true:
         %tmp.42 = true;
         push %tmp.42;
-        goto @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_58_14_end;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_58_14_false:
+        goto @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_58_14_58_70_end;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_58_14_58_70_false:
         %tmp.43 = false;
         push %tmp.43;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_58_14_end:
-        %tmp.44 = phi [%tmp.41 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_58_14_begin] [%tmp.42 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_58_14_true] [%tmp.43 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_58_14_false] [%tmp.44 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_58_14_end];
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_58_14_58_70_end:
+        %tmp.44 = phi [%tmp.41 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_58_14_58_70_begin] [%tmp.42 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_58_14_58_70_true] [%tmp.43 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_58_14_58_70_false] [%tmp.44 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_58_14_58_70_end];
         lputv %val.3 %tmp.44;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 59 8 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 59 8 ]
         %tmp.45 = lgetv %menu.2;
         %tmp.46 = getv function %tmp.45 :addItem;
         %tmp.49 = getm $.Toybox.WatchUi;
@@ -153,25 +153,25 @@ _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_58_14_end:
         %tmp.56 = null;
         %tmp.47 = newc %tmp.50 (%tmp.51, %tmp.52, %tmp.53, %tmp.55, %tmp.56);
         invoke %tmp.45 %tmp.46(%tmp.47);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 61 8 ]
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_61_14_begin:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 61 8 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_61_14_61_74_begin:
         %tmp.57 = getm $.Toybox.Application;
         %tmp.58 = getv %tmp.57 :Properties;
         %tmp.59 = getv function %tmp.58 :getValue;
         %tmp.60 = "DrawMinuteTicks";
         %tmp.61 = invoke %tmp.58 %tmp.59(%tmp.60);
-        bf %tmp.61 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_61_14_false;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_61_14_true:
+        bf %tmp.61 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_61_14_61_74_false;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_61_14_61_74_true:
         %tmp.62 = true;
         push %tmp.62;
-        goto @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_61_14_end;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_61_14_false:
+        goto @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_61_14_61_74_end;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_61_14_61_74_false:
         %tmp.63 = false;
         push %tmp.63;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_61_14_end:
-        %tmp.64 = phi [%tmp.61 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_61_14_begin] [%tmp.62 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_61_14_true] [%tmp.63 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_61_14_false] [%tmp.64 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_61_14_end];
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_61_14_61_74_end:
+        %tmp.64 = phi [%tmp.61 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_61_14_61_74_begin] [%tmp.62 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_61_14_61_74_true] [%tmp.63 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_61_14_61_74_false] [%tmp.64 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_61_14_61_74_end];
         lputv %val.3 %tmp.64;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 62 8 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 62 8 ]
         %tmp.65 = lgetv %menu.2;
         %tmp.66 = getv function %tmp.65 :addItem;
         %tmp.69 = getm $.Toybox.WatchUi;
@@ -183,25 +183,25 @@ _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_61_14_end:
         %tmp.76 = null;
         %tmp.67 = newc %tmp.70 (%tmp.71, %tmp.72, %tmp.73, %tmp.75, %tmp.76);
         invoke %tmp.65 %tmp.66(%tmp.67);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 64 8 ]
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_64_14_begin:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 64 8 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_64_14_64_72_begin:
         %tmp.77 = getm $.Toybox.Application;
         %tmp.78 = getv %tmp.77 :Properties;
         %tmp.79 = getv function %tmp.78 :getValue;
         %tmp.80 = "DrawHourTicks";
         %tmp.81 = invoke %tmp.78 %tmp.79(%tmp.80);
-        bf %tmp.81 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_64_14_false;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_64_14_true:
+        bf %tmp.81 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_64_14_64_72_false;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_64_14_64_72_true:
         %tmp.82 = true;
         push %tmp.82;
-        goto @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_64_14_end;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_64_14_false:
+        goto @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_64_14_64_72_end;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_64_14_64_72_false:
         %tmp.83 = false;
         push %tmp.83;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_64_14_end:
-        %tmp.84 = phi [%tmp.81 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_64_14_begin] [%tmp.82 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_64_14_true] [%tmp.83 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_64_14_false] [%tmp.84 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_64_14_end];
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_64_14_64_72_end:
+        %tmp.84 = phi [%tmp.81 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_64_14_64_72_begin] [%tmp.82 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_64_14_64_72_true] [%tmp.83 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_64_14_64_72_false] [%tmp.84 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_64_14_64_72_end];
         lputv %val.3 %tmp.84;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 65 8 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 65 8 ]
         %tmp.85 = lgetv %menu.2;
         %tmp.86 = getv function %tmp.85 :addItem;
         %tmp.89 = getm $.Toybox.WatchUi;
@@ -213,25 +213,25 @@ _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_64_14_end:
         %tmp.96 = null;
         %tmp.87 = newc %tmp.90 (%tmp.91, %tmp.92, %tmp.93, %tmp.95, %tmp.96);
         invoke %tmp.85 %tmp.86(%tmp.87);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 67 8 ]
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_67_14_begin:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 67 8 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_67_14_67_74_begin:
         %tmp.97 = getm $.Toybox.Application;
         %tmp.98 = getv %tmp.97 :Properties;
         %tmp.99 = getv function %tmp.98 :getValue;
         %tmp.100 = "DrawSecondsHand";
         %tmp.101 = invoke %tmp.98 %tmp.99(%tmp.100);
-        bf %tmp.101 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_67_14_false;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_67_14_true:
+        bf %tmp.101 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_67_14_67_74_false;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_67_14_67_74_true:
         %tmp.102 = true;
         push %tmp.102;
-        goto @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_67_14_end;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_67_14_false:
+        goto @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_67_14_67_74_end;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_67_14_67_74_false:
         %tmp.103 = false;
         push %tmp.103;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_67_14_end:
-        %tmp.104 = phi [%tmp.101 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_67_14_begin] [%tmp.102 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_67_14_true] [%tmp.103 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_67_14_false] [%tmp.104 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_67_14_end];
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_67_14_67_74_end:
+        %tmp.104 = phi [%tmp.101 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_67_14_67_74_begin] [%tmp.102 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_67_14_67_74_true] [%tmp.103 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_67_14_67_74_false] [%tmp.104 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_67_14_67_74_end];
         lputv %val.3 %tmp.104;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 68 8 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 68 8 ]
         %tmp.105 = lgetv %menu.2;
         %tmp.106 = getv function %tmp.105 :addItem;
         %tmp.109 = getm $.Toybox.WatchUi;
@@ -243,34 +243,34 @@ _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_67_14_end:
         %tmp.116 = null;
         %tmp.107 = newc %tmp.110 (%tmp.111, %tmp.112, %tmp.113, %tmp.115, %tmp.116);
         invoke %tmp.105 %tmp.106(%tmp.107);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 71 8 ]
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_71_8_if_stmt:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 71 8 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_71_8_75_8_if_stmt:
         %tmp.117 = getm $.Toybox.WatchUi;
         %tmp.118 = getv %tmp.117 :WatchFace;
         %tmp.120 = const :onPartialUpdate;
         %tmp.121 = canhazplz %tmp.118 %tmp.120;
-        bf %tmp.121 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_71_8_if_end;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_71_8_if_true:
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_72_8_start:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 73 12 ]
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_73_18_begin:
+        bf %tmp.121 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_71_8_75_8_if_end;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_71_8_75_8_if_true:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_72_8_75_8_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 73 12 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_73_18_73_78_begin:
         %tmp.122 = getm $.Toybox.Application;
         %tmp.123 = getv %tmp.122 :Properties;
         %tmp.124 = getv function %tmp.123 :getValue;
         %tmp.125 = "SecondsHandMode";
         %tmp.126 = invoke %tmp.123 %tmp.124(%tmp.125);
-        bf %tmp.126 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_73_18_false;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_73_18_true:
+        bf %tmp.126 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_73_18_73_78_false;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_73_18_73_78_true:
         %tmp.127 = true;
         push %tmp.127;
-        goto @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_73_18_end;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_73_18_false:
+        goto @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_73_18_73_78_end;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_73_18_73_78_false:
         %tmp.128 = false;
         push %tmp.128;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_73_18_end:
-        %tmp.129 = phi [%tmp.126 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_73_18_begin] [%tmp.127 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_73_18_true] [%tmp.128 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_73_18_false] [%tmp.129 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_73_18_end];
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_73_18_73_78_end:
+        %tmp.129 = phi [%tmp.126 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_73_18_73_78_begin] [%tmp.127 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_73_18_73_78_true] [%tmp.128 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_73_18_73_78_false] [%tmp.129 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_73_18_73_78_end];
         lputv %val.3 %tmp.129;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 74 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 74 12 ]
         %tmp.130 = lgetv %menu.2;
         %tmp.131 = getv function %tmp.130 :addItem;
         %tmp.134 = getm $.Toybox.WatchUi;
@@ -290,105 +290,105 @@ _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_73_18_end:
         %tmp.151 = null;
         %tmp.132 = newc %tmp.135 (%tmp.136, %tmp.147, %tmp.148, %tmp.150, %tmp.151);
         invoke %tmp.130 %tmp.131(%tmp.132);
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_72_8_stop:
-        goto @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_71_8_if_end;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_71_8_if_end:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 80 8 ]
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_80_14_begin:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_72_8_75_8_stop:
+        goto @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_71_8_75_8_if_end;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_71_8_75_8_if_end:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 80 8 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_80_14_80_63_begin:
         %tmp.152 = getm $.Toybox.Application;
         %tmp.153 = getv %tmp.152 :Properties;
         %tmp.154 = getv function %tmp.153 :getValue;
         %tmp.155 = "Mode";
         %tmp.156 = invoke %tmp.153 %tmp.154(%tmp.155);
-        bf %tmp.156 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_80_14_false;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_80_14_true:
+        bf %tmp.156 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_80_14_80_63_false;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_80_14_80_63_true:
         %tmp.157 = true;
         push %tmp.157;
-        goto @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_80_14_end;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_80_14_false:
+        goto @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_80_14_80_63_end;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_80_14_80_63_false:
         %tmp.158 = false;
         push %tmp.158;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_80_14_end:
-        %tmp.159 = phi [%tmp.156 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_80_14_begin] [%tmp.157 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_80_14_true] [%tmp.158 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_80_14_false] [%tmp.159 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_80_14_end];
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_80_14_80_63_end:
+        %tmp.159 = phi [%tmp.156 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_80_14_80_63_begin] [%tmp.157 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_80_14_80_63_true] [%tmp.158 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_80_14_80_63_false] [%tmp.159 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_80_14_80_63_end];
         lputv %val.3 %tmp.159;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 81 8 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 81 8 ]
         %tmp.160 = lgetv %menu.2;
         %tmp.161 = getv function %tmp.160 :addItem;
         %tmp.164 = getm $.Toybox.WatchUi;
         %tmp.165 = getv function ? %tmp.164 :MenuItem;
         %tmp.166 = "Mode";
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_81_50_begin:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_81_50_81_74_begin:
         %tmp.168 = lgetv %val.3;
-        bf %tmp.168 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_81_50_false;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_81_50_true:
+        bf %tmp.168 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_81_50_81_74_false;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_81_50_81_74_true:
         %tmp.169 = "Custom Colors";
         push %tmp.169;
-        goto @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_81_50_end;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_81_50_false:
+        goto @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_81_50_81_74_end;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_81_50_81_74_false:
         %tmp.170 = "Theme Colors";
         push %tmp.170;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_81_50_end:
-        %tmp.171 = phi [%tmp.168 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_81_50_begin] [%tmp.169 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_81_50_true] [%tmp.170 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_81_50_false] [%tmp.171 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_81_50_end];
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_81_50_81_74_end:
+        %tmp.171 = phi [%tmp.168 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_81_50_81_74_begin] [%tmp.169 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_81_50_81_74_true] [%tmp.170 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_81_50_81_74_false] [%tmp.171 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_81_50_81_74_end];
         %tmp.172 = "Mode";
         %tmp.173 = null;
         %tmp.162 = newc %tmp.165 (%tmp.166, %tmp.171, %tmp.172, %tmp.173);
         invoke %tmp.160 %tmp.161(%tmp.162);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 89 8 ]
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_89_14_begin:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 89 8 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_89_14_89_64_begin:
         %tmp.174 = getm $.Toybox.Application;
         %tmp.175 = getv %tmp.174 :Properties;
         %tmp.176 = getv function %tmp.175 :getValue;
         %tmp.177 = "Theme";
         %tmp.178 = invoke %tmp.175 %tmp.176(%tmp.177);
-        bf %tmp.178 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_89_14_false;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_89_14_true:
+        bf %tmp.178 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_89_14_89_64_false;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_89_14_89_64_true:
         %tmp.179 = true;
         push %tmp.179;
-        goto @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_89_14_end;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_89_14_false:
+        goto @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_89_14_89_64_end;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_89_14_89_64_false:
         %tmp.180 = false;
         push %tmp.180;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_89_14_end:
-        %tmp.181 = phi [%tmp.178 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_89_14_begin] [%tmp.179 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_89_14_true] [%tmp.180 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_89_14_false] [%tmp.181 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_89_14_end];
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_89_14_89_64_end:
+        %tmp.181 = phi [%tmp.178 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_89_14_89_64_begin] [%tmp.179 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_89_14_89_64_true] [%tmp.180 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_89_14_89_64_false] [%tmp.181 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_89_14_89_64_end];
         lputv %val.3 %tmp.181;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 90 8 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 90 8 ]
         %tmp.182 = lgetv %menu.2;
         %tmp.183 = getv function %tmp.182 :addItem;
         %tmp.186 = getm $.Toybox.WatchUi;
         %tmp.187 = getv function ? %tmp.186 :MenuItem;
         %tmp.188 = "Theme";
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_90_51_begin:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_90_51_90_72_begin:
         %tmp.190 = lgetv %val.3;
-        bf %tmp.190 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_90_51_false;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_90_51_true:
+        bf %tmp.190 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_90_51_90_72_false;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_90_51_90_72_true:
         %tmp.191 = "Dark Theme";
         push %tmp.191;
-        goto @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_90_51_end;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_90_51_false:
+        goto @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_90_51_90_72_end;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_90_51_90_72_false:
         %tmp.192 = "Light Theme";
         push %tmp.192;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_90_51_end:
-        %tmp.193 = phi [%tmp.190 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_90_51_begin] [%tmp.191 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_90_51_true] [%tmp.192 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_90_51_false] [%tmp.193 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_90_51_end];
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_90_51_90_72_end:
+        %tmp.193 = phi [%tmp.190 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_90_51_90_72_begin] [%tmp.191 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_90_51_90_72_true] [%tmp.192 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_90_51_90_72_false] [%tmp.193 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_90_51_90_72_end];
         %tmp.194 = "Theme";
         %tmp.195 = null;
         %tmp.184 = newc %tmp.187 (%tmp.188, %tmp.193, %tmp.194, %tmp.195);
         invoke %tmp.182 %tmp.183(%tmp.184);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 95 8 ]
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_95_8_if_stmt:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 95 8 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_95_8_191_8_if_stmt:
         %tmp.197 = lgetv %version.1;
         %tmp.198 = 420;
         %tmp.199 = gt %tmp.197 %tmp.198;
-        bf %tmp.199 @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_95_8_if_false;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_95_8_if_true:
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_96_8_start:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 97 12 ]
+        bf %tmp.199 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_95_8_191_8_if_false;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_95_8_191_8_if_true:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_96_8_141_8_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 97 12 ]
         %tmp.200 = self;
         %tmp.201 = getv function %tmp.200 :loadColorSettings;
         %tmp.202 = "BackgroundColor";
         %tmp.203 = invoke %tmp.200 %tmp.201(%tmp.202);
         %tmp.204 = as %tmp.203 Number;
         lputv %val.3 %tmp.204;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 98 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 98 12 ]
         %tmp.205 = lgetv %menu.2;
         %tmp.206 = getv function %tmp.205 :addItem;
         %tmp.209 = getm $.Toybox.WatchUi;
@@ -412,14 +412,14 @@ _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_96_8_start:
         %tmp.230 = aputv %tmp.229 %tmp.225 %tmp.228;
         %tmp.207 = newc %tmp.210 (%tmp.211, %tmp.216, %tmp.217, %tmp.222, %tmp.230);
         invoke %tmp.205 %tmp.206(%tmp.207);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 100 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 100 12 ]
         %tmp.231 = self;
         %tmp.232 = getv function %tmp.231 :loadColorSettings;
         %tmp.233 = "ForegroundColorOne";
         %tmp.234 = invoke %tmp.231 %tmp.232(%tmp.233);
         %tmp.235 = as %tmp.234 Number;
         lputv %val.3 %tmp.235;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 101 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 101 12 ]
         %tmp.236 = lgetv %menu.2;
         %tmp.237 = getv function %tmp.236 :addItem;
         %tmp.240 = getm $.Toybox.WatchUi;
@@ -443,14 +443,14 @@ _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_96_8_start:
         %tmp.261 = aputv %tmp.260 %tmp.256 %tmp.259;
         %tmp.238 = newc %tmp.241 (%tmp.242, %tmp.247, %tmp.248, %tmp.253, %tmp.261);
         invoke %tmp.236 %tmp.237(%tmp.238);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 103 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 103 12 ]
         %tmp.262 = self;
         %tmp.263 = getv function %tmp.262 :loadColorSettings;
         %tmp.264 = "ForegroundColorTwo";
         %tmp.265 = invoke %tmp.262 %tmp.263(%tmp.264);
         %tmp.266 = as %tmp.265 Number;
         lputv %val.3 %tmp.266;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 104 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 104 12 ]
         %tmp.267 = lgetv %menu.2;
         %tmp.268 = getv function %tmp.267 :addItem;
         %tmp.271 = getm $.Toybox.WatchUi;
@@ -474,14 +474,14 @@ _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_96_8_start:
         %tmp.292 = aputv %tmp.291 %tmp.287 %tmp.290;
         %tmp.269 = newc %tmp.272 (%tmp.273, %tmp.278, %tmp.279, %tmp.284, %tmp.292);
         invoke %tmp.267 %tmp.268(%tmp.269);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 106 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 106 12 ]
         %tmp.293 = self;
         %tmp.294 = getv function %tmp.293 :loadColorSettings;
         %tmp.295 = "SecondsHandColor";
         %tmp.296 = invoke %tmp.293 %tmp.294(%tmp.295);
         %tmp.297 = as %tmp.296 Number;
         lputv %val.3 %tmp.297;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 107 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 107 12 ]
         %tmp.298 = lgetv %menu.2;
         %tmp.299 = getv function %tmp.298 :addItem;
         %tmp.302 = getm $.Toybox.WatchUi;
@@ -505,14 +505,14 @@ _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_96_8_start:
         %tmp.323 = aputv %tmp.322 %tmp.318 %tmp.321;
         %tmp.300 = newc %tmp.303 (%tmp.304, %tmp.309, %tmp.310, %tmp.315, %tmp.323);
         invoke %tmp.298 %tmp.299(%tmp.300);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 109 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 109 12 ]
         %tmp.324 = self;
         %tmp.325 = getv function %tmp.324 :loadColorSettings;
         %tmp.326 = "MinuteHandColorOne";
         %tmp.327 = invoke %tmp.324 %tmp.325(%tmp.326);
         %tmp.328 = as %tmp.327 Number;
         lputv %val.3 %tmp.328;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 110 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 110 12 ]
         %tmp.329 = lgetv %menu.2;
         %tmp.330 = getv function %tmp.329 :addItem;
         %tmp.333 = getm $.Toybox.WatchUi;
@@ -536,14 +536,14 @@ _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_96_8_start:
         %tmp.354 = aputv %tmp.353 %tmp.349 %tmp.352;
         %tmp.331 = newc %tmp.334 (%tmp.335, %tmp.340, %tmp.341, %tmp.346, %tmp.354);
         invoke %tmp.329 %tmp.330(%tmp.331);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 112 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 112 12 ]
         %tmp.355 = self;
         %tmp.356 = getv function %tmp.355 :loadColorSettings;
         %tmp.357 = "MinuteHandColorTwo";
         %tmp.358 = invoke %tmp.355 %tmp.356(%tmp.357);
         %tmp.359 = as %tmp.358 Number;
         lputv %val.3 %tmp.359;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 113 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 113 12 ]
         %tmp.360 = lgetv %menu.2;
         %tmp.361 = getv function %tmp.360 :addItem;
         %tmp.364 = getm $.Toybox.WatchUi;
@@ -567,14 +567,14 @@ _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_96_8_start:
         %tmp.385 = aputv %tmp.384 %tmp.380 %tmp.383;
         %tmp.362 = newc %tmp.365 (%tmp.366, %tmp.371, %tmp.372, %tmp.377, %tmp.385);
         invoke %tmp.360 %tmp.361(%tmp.362);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 115 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 115 12 ]
         %tmp.386 = self;
         %tmp.387 = getv function %tmp.386 :loadColorSettings;
         %tmp.388 = "HourHandColorOne";
         %tmp.389 = invoke %tmp.386 %tmp.387(%tmp.388);
         %tmp.390 = as %tmp.389 Number;
         lputv %val.3 %tmp.390;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 116 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 116 12 ]
         %tmp.391 = lgetv %menu.2;
         %tmp.392 = getv function %tmp.391 :addItem;
         %tmp.395 = getm $.Toybox.WatchUi;
@@ -598,14 +598,14 @@ _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_96_8_start:
         %tmp.416 = aputv %tmp.415 %tmp.411 %tmp.414;
         %tmp.393 = newc %tmp.396 (%tmp.397, %tmp.402, %tmp.403, %tmp.408, %tmp.416);
         invoke %tmp.391 %tmp.392(%tmp.393);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 118 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 118 12 ]
         %tmp.417 = self;
         %tmp.418 = getv function %tmp.417 :loadColorSettings;
         %tmp.419 = "HourHandColorTwo";
         %tmp.420 = invoke %tmp.417 %tmp.418(%tmp.419);
         %tmp.421 = as %tmp.420 Number;
         lputv %val.3 %tmp.421;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 119 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 119 12 ]
         %tmp.422 = lgetv %menu.2;
         %tmp.423 = getv function %tmp.422 :addItem;
         %tmp.426 = getm $.Toybox.WatchUi;
@@ -629,7 +629,7 @@ _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_96_8_start:
         %tmp.447 = aputv %tmp.446 %tmp.442 %tmp.445;
         %tmp.424 = newc %tmp.427 (%tmp.428, %tmp.433, %tmp.434, %tmp.439, %tmp.447);
         invoke %tmp.422 %tmp.423(%tmp.424);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 121 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 121 12 ]
         %tmp.448 = getm $.Toybox.Application;
         %tmp.449 = getv %tmp.448 :Properties;
         %tmp.450 = getv function %tmp.449 :getValue;
@@ -637,7 +637,7 @@ _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_96_8_start:
         %tmp.452 = invoke %tmp.449 %tmp.450(%tmp.451);
         %tmp.453 = as %tmp.452 Number;
         lputv %val.3 %tmp.453;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 122 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 122 12 ]
         %tmp.454 = lgetv %menu.2;
         %tmp.455 = getv function %tmp.454 :addItem;
         %tmp.458 = getm $.Toybox.WatchUi;
@@ -650,7 +650,7 @@ _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_96_8_start:
         %tmp.465 = null;
         %tmp.456 = newc %tmp.459 (%tmp.460, %tmp.463, %tmp.464, %tmp.465);
         invoke %tmp.454 %tmp.455(%tmp.456);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 124 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 124 12 ]
         %tmp.466 = getm $.Toybox.Application;
         %tmp.467 = getv %tmp.466 :Properties;
         %tmp.468 = getv function %tmp.467 :getValue;
@@ -658,7 +658,7 @@ _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_96_8_start:
         %tmp.470 = invoke %tmp.467 %tmp.468(%tmp.469);
         %tmp.471 = as %tmp.470 Number;
         lputv %val.3 %tmp.471;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 125 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 125 12 ]
         %tmp.472 = lgetv %menu.2;
         %tmp.473 = getv function %tmp.472 :addItem;
         %tmp.476 = getm $.Toybox.WatchUi;
@@ -671,7 +671,7 @@ _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_96_8_start:
         %tmp.483 = null;
         %tmp.474 = newc %tmp.477 (%tmp.478, %tmp.481, %tmp.482, %tmp.483);
         invoke %tmp.472 %tmp.473(%tmp.474);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 127 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 127 12 ]
         %tmp.484 = getm $.Toybox.Application;
         %tmp.485 = getv %tmp.484 :Properties;
         %tmp.486 = getv function %tmp.485 :getValue;
@@ -679,7 +679,7 @@ _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_96_8_start:
         %tmp.488 = invoke %tmp.485 %tmp.486(%tmp.487);
         %tmp.489 = as %tmp.488 Number;
         lputv %val.3 %tmp.489;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 128 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 128 12 ]
         %tmp.490 = lgetv %menu.2;
         %tmp.491 = getv function %tmp.490 :addItem;
         %tmp.494 = getm $.Toybox.WatchUi;
@@ -692,7 +692,7 @@ _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_96_8_start:
         %tmp.501 = null;
         %tmp.492 = newc %tmp.495 (%tmp.496, %tmp.499, %tmp.500, %tmp.501);
         invoke %tmp.490 %tmp.491(%tmp.492);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 130 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 130 12 ]
         %tmp.502 = getm $.Toybox.Application;
         %tmp.503 = getv %tmp.502 :Properties;
         %tmp.504 = getv function %tmp.503 :getValue;
@@ -700,7 +700,7 @@ _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_96_8_start:
         %tmp.506 = invoke %tmp.503 %tmp.504(%tmp.505);
         %tmp.507 = as %tmp.506 Number;
         lputv %val.3 %tmp.507;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 131 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 131 12 ]
         %tmp.508 = lgetv %menu.2;
         %tmp.509 = getv function %tmp.508 :addItem;
         %tmp.512 = getm $.Toybox.WatchUi;
@@ -713,7 +713,7 @@ _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_96_8_start:
         %tmp.519 = null;
         %tmp.510 = newc %tmp.513 (%tmp.514, %tmp.517, %tmp.518, %tmp.519);
         invoke %tmp.508 %tmp.509(%tmp.510);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 133 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 133 12 ]
         %tmp.520 = getm $.Toybox.Application;
         %tmp.521 = getv %tmp.520 :Properties;
         %tmp.522 = getv function %tmp.521 :getValue;
@@ -721,7 +721,7 @@ _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_96_8_start:
         %tmp.524 = invoke %tmp.521 %tmp.522(%tmp.523);
         %tmp.525 = as %tmp.524 Number;
         lputv %val.3 %tmp.525;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 134 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 134 12 ]
         %tmp.526 = lgetv %menu.2;
         %tmp.527 = getv function %tmp.526 :addItem;
         %tmp.530 = getm $.Toybox.WatchUi;
@@ -734,7 +734,7 @@ _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_96_8_start:
         %tmp.537 = null;
         %tmp.528 = newc %tmp.531 (%tmp.532, %tmp.535, %tmp.536, %tmp.537);
         invoke %tmp.526 %tmp.527(%tmp.528);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 136 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 136 12 ]
         %tmp.538 = getm $.Toybox.Application;
         %tmp.539 = getv %tmp.538 :Properties;
         %tmp.540 = getv function %tmp.539 :getValue;
@@ -742,7 +742,7 @@ _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_96_8_start:
         %tmp.542 = invoke %tmp.539 %tmp.540(%tmp.541);
         %tmp.543 = as %tmp.542 Number;
         lputv %val.3 %tmp.543;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 137 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 137 12 ]
         %tmp.544 = lgetv %menu.2;
         %tmp.545 = getv function %tmp.544 :addItem;
         %tmp.548 = getm $.Toybox.WatchUi;
@@ -755,7 +755,7 @@ _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_96_8_start:
         %tmp.555 = null;
         %tmp.546 = newc %tmp.549 (%tmp.550, %tmp.553, %tmp.554, %tmp.555);
         invoke %tmp.544 %tmp.545(%tmp.546);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 139 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 139 12 ]
         %tmp.556 = getm $.Toybox.Application;
         %tmp.557 = getv %tmp.556 :Properties;
         %tmp.558 = getv function %tmp.557 :getValue;
@@ -763,7 +763,7 @@ _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_96_8_start:
         %tmp.560 = invoke %tmp.557 %tmp.558(%tmp.559);
         %tmp.561 = as %tmp.560 Number;
         lputv %val.3 %tmp.561;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 140 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 140 12 ]
         %tmp.562 = lgetv %menu.2;
         %tmp.563 = getv function %tmp.562 :addItem;
         %tmp.566 = getm $.Toybox.WatchUi;
@@ -776,11 +776,11 @@ _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_96_8_start:
         %tmp.573 = null;
         %tmp.564 = newc %tmp.567 (%tmp.568, %tmp.571, %tmp.572, %tmp.573);
         invoke %tmp.562 %tmp.563(%tmp.564);
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_96_8_stop:
-        goto @_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_95_8_if_end;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_95_8_if_false:
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_145_8_start:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 146 12 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_96_8_141_8_stop:
+        goto @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_95_8_191_8_if_end;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_95_8_191_8_if_false:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_145_8_191_8_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 146 12 ]
         %tmp.574 = getm $.Toybox.Application;
         %tmp.575 = getv %tmp.574 :Properties;
         %tmp.576 = getv function %tmp.575 :getValue;
@@ -788,7 +788,7 @@ _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_145_8_start:
         %tmp.578 = invoke %tmp.575 %tmp.576(%tmp.577);
         %tmp.579 = as %tmp.578 Number;
         lputv %val.3 %tmp.579;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 147 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 147 12 ]
         %tmp.580 = lgetv %menu.2;
         %tmp.581 = getv function %tmp.580 :addItem;
         %tmp.584 = getm $.Toybox.WatchUi;
@@ -804,7 +804,7 @@ _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_145_8_start:
         %tmp.596 = null;
         %tmp.582 = newc %tmp.585 (%tmp.586, %tmp.594, %tmp.595, %tmp.596);
         invoke %tmp.580 %tmp.581(%tmp.582);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 149 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 149 12 ]
         %tmp.597 = getm $.Toybox.Application;
         %tmp.598 = getv %tmp.597 :Properties;
         %tmp.599 = getv function %tmp.598 :getValue;
@@ -812,7 +812,7 @@ _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_145_8_start:
         %tmp.601 = invoke %tmp.598 %tmp.599(%tmp.600);
         %tmp.602 = as %tmp.601 Number;
         lputv %val.3 %tmp.602;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 150 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 150 12 ]
         %tmp.603 = lgetv %menu.2;
         %tmp.604 = getv function %tmp.603 :addItem;
         %tmp.607 = getm $.Toybox.WatchUi;
@@ -828,7 +828,7 @@ _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_145_8_start:
         %tmp.619 = null;
         %tmp.605 = newc %tmp.608 (%tmp.609, %tmp.617, %tmp.618, %tmp.619);
         invoke %tmp.603 %tmp.604(%tmp.605);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 152 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 152 12 ]
         %tmp.620 = getm $.Toybox.Application;
         %tmp.621 = getv %tmp.620 :Properties;
         %tmp.622 = getv function %tmp.621 :getValue;
@@ -836,7 +836,7 @@ _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_145_8_start:
         %tmp.624 = invoke %tmp.621 %tmp.622(%tmp.623);
         %tmp.625 = as %tmp.624 Number;
         lputv %val.3 %tmp.625;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 153 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 153 12 ]
         %tmp.626 = lgetv %menu.2;
         %tmp.627 = getv function %tmp.626 :addItem;
         %tmp.630 = getm $.Toybox.WatchUi;
@@ -852,7 +852,7 @@ _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_145_8_start:
         %tmp.642 = null;
         %tmp.628 = newc %tmp.631 (%tmp.632, %tmp.640, %tmp.641, %tmp.642);
         invoke %tmp.626 %tmp.627(%tmp.628);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 155 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 155 12 ]
         %tmp.643 = getm $.Toybox.Application;
         %tmp.644 = getv %tmp.643 :Properties;
         %tmp.645 = getv function %tmp.644 :getValue;
@@ -860,7 +860,7 @@ _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_145_8_start:
         %tmp.647 = invoke %tmp.644 %tmp.645(%tmp.646);
         %tmp.648 = as %tmp.647 Number;
         lputv %val.3 %tmp.648;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 156 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 156 12 ]
         %tmp.649 = lgetv %menu.2;
         %tmp.650 = getv function %tmp.649 :addItem;
         %tmp.653 = getm $.Toybox.WatchUi;
@@ -876,7 +876,7 @@ _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_145_8_start:
         %tmp.665 = null;
         %tmp.651 = newc %tmp.654 (%tmp.655, %tmp.663, %tmp.664, %tmp.665);
         invoke %tmp.649 %tmp.650(%tmp.651);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 158 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 158 12 ]
         %tmp.666 = getm $.Toybox.Application;
         %tmp.667 = getv %tmp.666 :Properties;
         %tmp.668 = getv function %tmp.667 :getValue;
@@ -884,7 +884,7 @@ _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_145_8_start:
         %tmp.670 = invoke %tmp.667 %tmp.668(%tmp.669);
         %tmp.671 = as %tmp.670 Number;
         lputv %val.3 %tmp.671;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 159 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 159 12 ]
         %tmp.672 = lgetv %menu.2;
         %tmp.673 = getv function %tmp.672 :addItem;
         %tmp.676 = getm $.Toybox.WatchUi;
@@ -900,7 +900,7 @@ _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_145_8_start:
         %tmp.688 = null;
         %tmp.674 = newc %tmp.677 (%tmp.678, %tmp.686, %tmp.687, %tmp.688);
         invoke %tmp.672 %tmp.673(%tmp.674);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 161 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 161 12 ]
         %tmp.689 = getm $.Toybox.Application;
         %tmp.690 = getv %tmp.689 :Properties;
         %tmp.691 = getv function %tmp.690 :getValue;
@@ -908,7 +908,7 @@ _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_145_8_start:
         %tmp.693 = invoke %tmp.690 %tmp.691(%tmp.692);
         %tmp.694 = as %tmp.693 Number;
         lputv %val.3 %tmp.694;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 162 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 162 12 ]
         %tmp.695 = lgetv %menu.2;
         %tmp.696 = getv function %tmp.695 :addItem;
         %tmp.699 = getm $.Toybox.WatchUi;
@@ -924,7 +924,7 @@ _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_145_8_start:
         %tmp.711 = null;
         %tmp.697 = newc %tmp.700 (%tmp.701, %tmp.709, %tmp.710, %tmp.711);
         invoke %tmp.695 %tmp.696(%tmp.697);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 164 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 164 12 ]
         %tmp.712 = getm $.Toybox.Application;
         %tmp.713 = getv %tmp.712 :Properties;
         %tmp.714 = getv function %tmp.713 :getValue;
@@ -932,7 +932,7 @@ _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_145_8_start:
         %tmp.716 = invoke %tmp.713 %tmp.714(%tmp.715);
         %tmp.717 = as %tmp.716 Number;
         lputv %val.3 %tmp.717;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 165 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 165 12 ]
         %tmp.718 = lgetv %menu.2;
         %tmp.719 = getv function %tmp.718 :addItem;
         %tmp.722 = getm $.Toybox.WatchUi;
@@ -948,7 +948,7 @@ _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_145_8_start:
         %tmp.734 = null;
         %tmp.720 = newc %tmp.723 (%tmp.724, %tmp.732, %tmp.733, %tmp.734);
         invoke %tmp.718 %tmp.719(%tmp.720);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 167 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 167 12 ]
         %tmp.735 = getm $.Toybox.Application;
         %tmp.736 = getv %tmp.735 :Properties;
         %tmp.737 = getv function %tmp.736 :getValue;
@@ -956,7 +956,7 @@ _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_145_8_start:
         %tmp.739 = invoke %tmp.736 %tmp.737(%tmp.738);
         %tmp.740 = as %tmp.739 Number;
         lputv %val.3 %tmp.740;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 168 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 168 12 ]
         %tmp.741 = lgetv %menu.2;
         %tmp.742 = getv function %tmp.741 :addItem;
         %tmp.745 = getm $.Toybox.WatchUi;
@@ -972,10 +972,10 @@ _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_145_8_start:
         %tmp.757 = null;
         %tmp.743 = newc %tmp.746 (%tmp.747, %tmp.755, %tmp.756, %tmp.757);
         invoke %tmp.741 %tmp.742(%tmp.743);
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_145_8_stop:
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_95_8_if_end:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 201 8 ]
-        %tmp.758 = newa Array<Views or InputDelegates> 2;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_145_8_191_8_stop:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_95_8_191_8_if_end:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 201 8 ]
+        %tmp.758 = newa 2;
         %tmp.760 = lgetv %menu.2;
         %tmp.761 = dup %tmp.758;
         %tmp.762 = aputv %tmp.761 0 %tmp.760;
@@ -985,20 +985,20 @@ _home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_95_8_if_end:
         %tmp.768 = dup %tmp.762;
         %tmp.769 = aputv %tmp.768 1 %tmp.763;
         ret %tmp.769;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_43_4_stop:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_43_4_202_4_stop:
     }
 }
-[ @file = "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc"; @line = 206; ]
+[ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc"; @line = 206; ]
 function getApp() as SimplexApp {
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_207_0_start:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc" 208 4 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_207_0_209_0_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc" 208 4 ]
     %tmp.1 = getm $.Toybox.Application;
     %tmp.2 = getv function %tmp.1 :getApp;
     %tmp.3 = invoke %tmp.1 %tmp.2();
     %tmp.4 = as %tmp.3 SimplexApp;
     ret %tmp.4;
-_home_max_git_simplex_garmin_watchface_source_SimplexApp_mc_207_0_stop:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexApp_mc_207_0_209_0_stop:
 }
-[ @file = "/home/max/git/simplex-garmin-watchface/source/SimplexApp.mc"; @line = 1; ]
+[ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexApp.mc"; @line = 1; ]
 <init> {
 }

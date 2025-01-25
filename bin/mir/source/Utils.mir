@@ -1,34 +1,34 @@
-[ @file = "/home/max/git/simplex-garmin-watchface/source/Utils.mc"; @line = 1; ]
+[ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\Utils.mc"; @line = 1; ]
 import Toybox.Lang;
-[ @file = "/home/max/git/simplex-garmin-watchface/source/Utils.mc"; @line = 2; ]
+[ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\Utils.mc"; @line = 2; ]
 import Toybox.Application;
-[ @file = "/home/max/git/simplex-garmin-watchface/source/Utils.mc"; @line = 3; ]
+[ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\Utils.mc"; @line = 3; ]
 import Toybox.WatchUi;
-[ @file = "/home/max/git/simplex-garmin-watchface/source/Utils.mc"; @line = 6; @position = 4; ]
+[ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\Utils.mc"; @line = 6; @position = 4; ]
 var colors;
-[ @file = "/home/max/git/simplex-garmin-watchface/source/Utils.mc"; @line = 25; @position = 5; ]
+[ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\Utils.mc"; @line = 25; @position = 5; ]
 var color_names;
-[ @file = "/home/max/git/simplex-garmin-watchface/source/Utils.mc"; @line = 43; ]
+[ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\Utils.mc"; @line = 43; ]
 function colorName(code) {
-_home_max_git_simplex_garmin_watchface_source_Utils_mc_44_0_start:
-[ "/home/max/git/simplex-garmin-watchface/source/Utils.mc" 45 4 ]
-_home_max_git_simplex_garmin_watchface_source_Utils_mc_45_4_if_stmt:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_Utils_mc_44_0_52_0_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\Utils.mc" 45 4 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_Utils_mc_45_4_48_4_if_stmt:
     %tmp.2 = getv ? :colors;
     %tmp.3 = getv function %tmp.2 :indexOf;
     %tmp.5 = lgetv %code;
     %tmp.6 = invoke %tmp.2 %tmp.3(%tmp.5);
     %tmp.7 = -1;
     %tmp.8 = eq %tmp.6 %tmp.7;
-    bf %tmp.8 @_home_max_git_simplex_garmin_watchface_source_Utils_mc_45_4_if_end;
-_home_max_git_simplex_garmin_watchface_source_Utils_mc_45_4_if_true:
-_home_max_git_simplex_garmin_watchface_source_Utils_mc_46_4_start:
-[ "/home/max/git/simplex-garmin-watchface/source/Utils.mc" 47 8 ]
+    bf %tmp.8 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_Utils_mc_45_4_48_4_if_end;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_Utils_mc_45_4_48_4_if_true:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_Utils_mc_46_4_48_4_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\Utils.mc" 47 8 ]
     %tmp.9 = "Custom";
     ret %tmp.9;
-_home_max_git_simplex_garmin_watchface_source_Utils_mc_46_4_stop:
-    goto @_home_max_git_simplex_garmin_watchface_source_Utils_mc_45_4_if_end;
-_home_max_git_simplex_garmin_watchface_source_Utils_mc_45_4_if_end:
-[ "/home/max/git/simplex-garmin-watchface/source/Utils.mc" 50 4 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_Utils_mc_46_4_48_4_stop:
+    goto @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_Utils_mc_45_4_48_4_if_end;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_Utils_mc_45_4_48_4_if_end:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\Utils.mc" 50 4 ]
     %tmp.11 = getv ? :color_names;
     %tmp.12 = self;
     %tmp.13 = getv function %tmp.12 :colorIndex;
@@ -36,35 +36,35 @@ _home_max_git_simplex_garmin_watchface_source_Utils_mc_45_4_if_end:
     %tmp.16 = invoke %tmp.12 %tmp.13(%tmp.15);
     %tmp.17 = agetv %tmp.11 %tmp.16;
     ret %tmp.17;
-_home_max_git_simplex_garmin_watchface_source_Utils_mc_44_0_stop:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_Utils_mc_44_0_52_0_stop:
 }
-[ @file = "/home/max/git/simplex-garmin-watchface/source/Utils.mc"; @line = 54; ]
+[ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\Utils.mc"; @line = 54; ]
 function colorIndex(code) {
-_home_max_git_simplex_garmin_watchface_source_Utils_mc_55_0_start:
-[ "/home/max/git/simplex-garmin-watchface/source/Utils.mc" 56 4 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_Utils_mc_55_0_57_0_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\Utils.mc" 56 4 ]
     %tmp.2 = getv ? :colors;
     %tmp.3 = getv function %tmp.2 :indexOf;
     %tmp.5 = lgetv %code;
     %tmp.6 = invoke %tmp.2 %tmp.3(%tmp.5);
     ret %tmp.6;
-_home_max_git_simplex_garmin_watchface_source_Utils_mc_55_0_stop:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_Utils_mc_55_0_57_0_stop:
 }
-[ @file = "/home/max/git/simplex-garmin-watchface/source/Utils.mc"; @line = 59; ]
+[ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\Utils.mc"; @line = 59; ]
 function color64Index(code) {
-_home_max_git_simplex_garmin_watchface_source_Utils_mc_60_0_start:
-[ "/home/max/git/simplex-garmin-watchface/source/Utils.mc" 61 4 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_Utils_mc_60_0_62_0_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\Utils.mc" 61 4 ]
     %tmp.2 = getv ? :all_colors64;
     %tmp.3 = getv function %tmp.2 :indexOf;
     %tmp.5 = lgetv %code;
     %tmp.6 = invoke %tmp.2 %tmp.3(%tmp.5);
     ret %tmp.6;
-_home_max_git_simplex_garmin_watchface_source_Utils_mc_60_0_stop:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_Utils_mc_60_0_62_0_stop:
 }
-[ @file = "/home/max/git/simplex-garmin-watchface/source/Utils.mc"; @line = 65; ]
+[ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\Utils.mc"; @line = 65; ]
 function loadColorSettings(name) {
-_home_max_git_simplex_garmin_watchface_source_Utils_mc_66_0_start:
-[ "/home/max/git/simplex-garmin-watchface/source/Utils.mc" 67 4 ]
-    [ "_home_max_git_simplex_garmin_watchface_source_Utils_mc_66_0_start" "_home_max_git_simplex_garmin_watchface_source_Utils_mc_66_0_stop" ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_Utils_mc_66_0_77_0_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\Utils.mc" 67 4 ]
+    [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_Utils_mc_66_0_77_0_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_Utils_mc_66_0_77_0_stop" ]
     %code.1 = local;
     %tmp.1 = getm $.Toybox.Application;
     %tmp.2 = getv %tmp.1 :Properties;
@@ -73,15 +73,15 @@ _home_max_git_simplex_garmin_watchface_source_Utils_mc_66_0_start:
     %tmp.6 = invoke %tmp.2 %tmp.3(%tmp.5);
     %tmp.7 = as %tmp.6 Number;
     lputv %code.1 %tmp.7;
-[ "/home/max/git/simplex-garmin-watchface/source/Utils.mc" 70 4 ]
-_home_max_git_simplex_garmin_watchface_source_Utils_mc_70_4_if_stmt:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\Utils.mc" 70 4 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_Utils_mc_70_4_74_4_if_stmt:
     %tmp.9 = lgetv %code.1;
     %tmp.10 = -1;
     %tmp.11 = eq %tmp.9 %tmp.10;
-    bf %tmp.11 @_home_max_git_simplex_garmin_watchface_source_Utils_mc_70_4_if_end;
-_home_max_git_simplex_garmin_watchface_source_Utils_mc_70_4_if_true:
-_home_max_git_simplex_garmin_watchface_source_Utils_mc_71_4_start:
-[ "/home/max/git/simplex-garmin-watchface/source/Utils.mc" 72 8 ]
+    bf %tmp.11 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_Utils_mc_70_4_74_4_if_end;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_Utils_mc_70_4_74_4_if_true:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_Utils_mc_71_4_74_4_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\Utils.mc" 72 8 ]
     %tmp.12 = getm $.Toybox.Application;
     %tmp.13 = getv %tmp.12 :Properties;
     %tmp.14 = getv function %tmp.13 :getValue;
@@ -91,19 +91,19 @@ _home_max_git_simplex_garmin_watchface_source_Utils_mc_71_4_start:
     %tmp.19 = invoke %tmp.13 %tmp.14(%tmp.18);
     %tmp.20 = as %tmp.19 Number;
     lputv %code.1 %tmp.20;
-_home_max_git_simplex_garmin_watchface_source_Utils_mc_71_4_stop:
-    goto @_home_max_git_simplex_garmin_watchface_source_Utils_mc_70_4_if_end;
-_home_max_git_simplex_garmin_watchface_source_Utils_mc_70_4_if_end:
-[ "/home/max/git/simplex-garmin-watchface/source/Utils.mc" 76 4 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_Utils_mc_71_4_74_4_stop:
+    goto @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_Utils_mc_70_4_74_4_if_end;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_Utils_mc_70_4_74_4_if_end:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\Utils.mc" 76 4 ]
     %tmp.22 = lgetv %code.1;
     ret %tmp.22;
-_home_max_git_simplex_garmin_watchface_source_Utils_mc_66_0_stop:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_Utils_mc_66_0_77_0_stop:
 }
-[ @file = "/home/max/git/simplex-garmin-watchface/source/Utils.mc"; @line = 79; ]
+[ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\Utils.mc"; @line = 79; ]
 function generateColorIcon(code) {
-_home_max_git_simplex_garmin_watchface_source_Utils_mc_80_0_start:
-[ "/home/max/git/simplex-garmin-watchface/source/Utils.mc" 81 4 ]
-    [ "_home_max_git_simplex_garmin_watchface_source_Utils_mc_80_0_start" "_home_max_git_simplex_garmin_watchface_source_Utils_mc_80_0_stop" ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_Utils_mc_80_0_87_0_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\Utils.mc" 81 4 ]
+    [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_Utils_mc_80_0_87_0_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_Utils_mc_80_0_87_0_stop" ]
     %text_icon.1 = local;
     %tmp.3 = getm $.Toybox.WatchUi;
     %tmp.4 = getv function ? %tmp.3 :Text;
@@ -118,41 +118,41 @@ _home_max_git_simplex_garmin_watchface_source_Utils_mc_80_0_start:
     %tmp.16 = aputv %tmp.15 %tmp.12 %tmp.14;
     %tmp.1 = newc %tmp.4 (%tmp.16);
     lputv %text_icon.1 %tmp.1;
-[ "/home/max/git/simplex-garmin-watchface/source/Utils.mc" 86 4 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\Utils.mc" 86 4 ]
     %tmp.18 = lgetv %text_icon.1;
     ret %tmp.18;
-_home_max_git_simplex_garmin_watchface_source_Utils_mc_80_0_stop:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_Utils_mc_80_0_87_0_stop:
 }
-[ @file = "/home/max/git/simplex-garmin-watchface/source/Utils.mc"; @line = 89; ]
+[ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\Utils.mc"; @line = 89; ]
 function max(a, b) {
-_home_max_git_simplex_garmin_watchface_source_Utils_mc_90_0_start:
-[ "/home/max/git/simplex-garmin-watchface/source/Utils.mc" 91 4 ]
-_home_max_git_simplex_garmin_watchface_source_Utils_mc_91_4_if_stmt:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_Utils_mc_90_0_100_0_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\Utils.mc" 91 4 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_Utils_mc_91_4_99_4_if_stmt:
     %tmp.2 = lgetv %b;
     %tmp.4 = lgetv %a;
     %tmp.5 = gt %tmp.2 %tmp.4;
-    bf %tmp.5 @_home_max_git_simplex_garmin_watchface_source_Utils_mc_91_4_if_false;
-_home_max_git_simplex_garmin_watchface_source_Utils_mc_91_4_if_true:
-_home_max_git_simplex_garmin_watchface_source_Utils_mc_92_4_start:
-[ "/home/max/git/simplex-garmin-watchface/source/Utils.mc" 93 8 ]
+    bf %tmp.5 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_Utils_mc_91_4_99_4_if_false;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_Utils_mc_91_4_99_4_if_true:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_Utils_mc_92_4_94_4_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\Utils.mc" 93 8 ]
     %tmp.7 = lgetv %b;
     ret %tmp.7;
-_home_max_git_simplex_garmin_watchface_source_Utils_mc_92_4_stop:
-    goto @_home_max_git_simplex_garmin_watchface_source_Utils_mc_91_4_if_end;
-_home_max_git_simplex_garmin_watchface_source_Utils_mc_91_4_if_false:
-_home_max_git_simplex_garmin_watchface_source_Utils_mc_97_4_start:
-[ "/home/max/git/simplex-garmin-watchface/source/Utils.mc" 98 8 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_Utils_mc_92_4_94_4_stop:
+    goto @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_Utils_mc_91_4_99_4_if_end;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_Utils_mc_91_4_99_4_if_false:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_Utils_mc_97_4_99_4_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\Utils.mc" 98 8 ]
     %tmp.9 = lgetv %a;
     ret %tmp.9;
-_home_max_git_simplex_garmin_watchface_source_Utils_mc_97_4_stop:
-_home_max_git_simplex_garmin_watchface_source_Utils_mc_91_4_if_end:
-_home_max_git_simplex_garmin_watchface_source_Utils_mc_90_0_stop:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_Utils_mc_97_4_99_4_stop:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_Utils_mc_91_4_99_4_if_end:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_Utils_mc_90_0_100_0_stop:
 }
-[ @file = "/home/max/git/simplex-garmin-watchface/source/Utils.mc"; @line = 103; @position = 4; ]
+[ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\Utils.mc"; @line = 103; @position = 4; ]
 var all_colors64;
-[ @file = "/home/max/git/simplex-garmin-watchface/source/Utils.mc"; @line = 1; ]
+[ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\Utils.mc"; @line = 1; ]
 <init> {
-[ "/home/max/git/simplex-garmin-watchface/source/Utils.mc" 6 4 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\Utils.mc" 6 4 ]
     %tmp.10 = newa 17;
     %tmp.11 = 0x000000;
     %tmp.12 = dup %tmp.10;
@@ -206,7 +206,7 @@ var all_colors64;
     %tmp.60 = dup %tmp.58;
     %tmp.61 = aputv %tmp.60 16 %tmp.59;
     putv self :colors %tmp.61;
-[ "/home/max/git/simplex-garmin-watchface/source/Utils.mc" 25 5 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\Utils.mc" 25 5 ]
     %tmp.62 = newa 17;
     %tmp.63 = "Black";
     %tmp.64 = dup %tmp.62;
@@ -260,7 +260,7 @@ var all_colors64;
     %tmp.112 = dup %tmp.110;
     %tmp.113 = aputv %tmp.112 16 %tmp.111;
     putv self :color_names %tmp.113;
-[ "/home/max/git/simplex-garmin-watchface/source/Utils.mc" 103 4 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\Utils.mc" 103 4 ]
     %tmp.114 = newa 64;
     %tmp.115 = 0xaa5555;
     %tmp.116 = dup %tmp.114;

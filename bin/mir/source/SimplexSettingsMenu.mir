@@ -1,24 +1,24 @@
-[ @file = "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc"; @line = 1; ]
+[ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc"; @line = 1; ]
 import Toybox.Application.Storage;
-[ @file = "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc"; @line = 2; ]
+[ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc"; @line = 2; ]
 import Toybox.Lang;
-[ @file = "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc"; @line = 3; ]
+[ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc"; @line = 3; ]
 import Toybox.WatchUi;
-[ @file = "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc"; @line = 6; ]
+[ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc"; @line = 6; ]
 class SimplexSettingsMenu extends WatchUi.Menu2{
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc"; @line = 6; ]
+    [ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc"; @line = 6; ]
     <init> {
     }
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc"; @line = 6; ]
+    [ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc"; @line = 6; ]
     static
     <init> {
     }
     //! Constructor
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc"; @line = 10; ]
+    [ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc"; @line = 10; ]
     public
     function initialize() as Void {
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_11_4_start:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 12 8 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_11_4_13_4_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 12 8 ]
         %tmp.2 = getv ? :Menu2;
         %tmp.3 = getv function %tmp.2 :initialize;
         %tmp.4 = newd 1;
@@ -27,37 +27,37 @@ _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_11_4_start:
         %tmp.8 = dup %tmp.4;
         %tmp.9 = aputv %tmp.8 %tmp.6 %tmp.7;
         invoke %tmp.2 %tmp.3(%tmp.9);
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_11_4_stop:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_11_4_13_4_stop:
     }
 }
-[ @file = "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc"; @line = 17; ]
+[ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc"; @line = 17; ]
 class SimplexSettingsMenuDelegate extends WatchUi.Menu2InputDelegate{
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc"; @line = 17; ]
+    [ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc"; @line = 17; ]
     <init> {
     }
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc"; @line = 17; ]
+    [ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc"; @line = 17; ]
     static
     <init> {
     }
     //! Constructor
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc"; @line = 21; ]
+    [ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc"; @line = 21; ]
     public
     function initialize() as Void {
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_22_4_start:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 23 8 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_22_4_24_4_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 23 8 ]
         %tmp.2 = getv ? :Menu2InputDelegate;
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_22_4_stop:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_22_4_24_4_stop:
     }
     //! Handle a menu item being selected
     //! @param menuItem The menu item selected
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc"; @line = 28; ]
+    [ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc"; @line = 28; ]
     public
     function onSelect(menuItem as MenuItem) as Void {
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_29_4_start:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 30 8 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_29_4_start" "_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_29_4_stop" ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_29_4_202_4_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 30 8 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_29_4_202_4_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_29_4_202_4_stop" ]
         %version.1 = local;
         %tmp.1 = getm $.Toybox.Lang;
         %tmp.2 = getv function %tmp.1 :format;
@@ -70,15 +70,15 @@ _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_29_4_start:
         %tmp.10 = getv function %tmp.9 :toNumber;
         %tmp.11 = invoke %tmp.9 %tmp.10();
         lputv %version.1 %tmp.11;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 32 8 ]
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_32_8_if_stmt:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 32 8 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_32_8_199_8_if_stmt:
         %tmp.13 = lgetv %menuItem;
         %tmp.15 = getv ? :ToggleMenuItem;
         %tmp.16 = isa %tmp.13 %tmp.15;
-        bf %tmp.16 @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_32_8_if_false;
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_32_8_if_true:
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_33_8_start:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 34 12 ]
+        bf %tmp.16 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_32_8_199_8_if_false;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_32_8_199_8_if_true:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_33_8_35_8_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 34 12 ]
         %tmp.18 = getv ? :Application;
         %tmp.19 = getv %tmp.18 :Properties;
         %tmp.20 = getv function %tmp.19 :setValue;
@@ -93,11 +93,11 @@ _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_33_8_start:
         %tmp.29 = invoke %tmp.27 %tmp.28();
         %tmp.30 = as %tmp.29 Number;
         invoke %tmp.19 %tmp.20(%tmp.25, %tmp.30);
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_33_8_stop:
-        goto @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_32_8_if_end;
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_32_8_if_false:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 37 13 ]
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_37_13_if_stmt:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_33_8_35_8_stop:
+        goto @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_32_8_199_8_if_end;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_32_8_199_8_if_false:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 37 13 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_37_13_199_8_if_stmt:
         %tmp.31 = lgetv %menuItem;
         %tmp.32 = as %tmp.31 { (!ToggleMenuItem) };
         %tmp.33 = getv function %tmp.32 :getId;
@@ -106,58 +106,58 @@ _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_37_13_if_st
         %tmp.36 = getv function %tmp.35 :equals;
         %tmp.37 = "Mode";
         %tmp.38 = invoke %tmp.35 %tmp.36(%tmp.37);
-        bf %tmp.38 @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_37_13_if_false;
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_37_13_if_true:
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_38_8_start:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 39 12 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_38_8_start" "_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_38_8_stop" ]
+        bf %tmp.38 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_37_13_199_8_if_false;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_37_13_199_8_if_true:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_38_8_57_8_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 39 12 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_38_8_57_8_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_38_8_57_8_stop" ]
         %val.2 = local;
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_39_22_begin:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_39_22_39_71_begin:
         %tmp.40 = getv ? :Application;
         %tmp.41 = getv %tmp.40 :Properties;
         %tmp.42 = getv function %tmp.41 :getValue;
         %tmp.43 = "Mode";
         %tmp.44 = invoke %tmp.41 %tmp.42(%tmp.43);
-        bf %tmp.44 @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_39_22_false;
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_39_22_true:
+        bf %tmp.44 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_39_22_39_71_false;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_39_22_39_71_true:
         %tmp.45 = true;
         push %tmp.45;
-        goto @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_39_22_end;
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_39_22_false:
+        goto @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_39_22_39_71_end;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_39_22_39_71_false:
         %tmp.46 = false;
         push %tmp.46;
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_39_22_end:
-        %tmp.47 = phi [%tmp.44 @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_39_22_begin] [%tmp.45 @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_39_22_true] [%tmp.46 @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_39_22_false] [%tmp.47 @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_39_22_end];
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_39_22_39_71_end:
+        %tmp.47 = phi [%tmp.44 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_39_22_39_71_begin] [%tmp.45 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_39_22_39_71_true] [%tmp.46 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_39_22_39_71_false] [%tmp.47 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_39_22_39_71_end];
         lputv %val.2 %tmp.47;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 41 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 41 12 ]
         %tmp.49 = lgetv %val.2;
         %tmp.50 = not %tmp.49;
         lputv %val.2 %tmp.50;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 45 12 ]
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_45_12_if_stmt:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 45 12 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_45_12_53_12_if_stmt:
         %tmp.52 = lgetv %val.2;
-        bf %tmp.52 @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_45_12_if_false;
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_45_12_if_true:
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_46_12_start:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 47 16 ]
+        bf %tmp.52 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_45_12_53_12_if_false;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_45_12_53_12_if_true:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_46_12_48_12_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 47 16 ]
         %tmp.53 = lgetv %menuItem;
         %tmp.54 = as %tmp.53 { (!ToggleMenuItem) };
         %tmp.55 = getv function %tmp.54 :setSubLabel;
         %tmp.56 = "Custom Colors";
         invoke %tmp.54 %tmp.55(%tmp.56);
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_46_12_stop:
-        goto @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_45_12_if_end;
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_45_12_if_false:
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_51_12_start:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 52 16 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_46_12_48_12_stop:
+        goto @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_45_12_53_12_if_end;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_45_12_53_12_if_false:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_51_12_53_12_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 52 16 ]
         %tmp.57 = lgetv %menuItem;
         %tmp.58 = as %tmp.57 { (!ToggleMenuItem) };
         %tmp.59 = getv function %tmp.58 :setSubLabel;
         %tmp.60 = "Theme Colors";
         invoke %tmp.58 %tmp.59(%tmp.60);
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_51_12_stop:
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_45_12_if_end:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 55 12 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_51_12_53_12_stop:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_45_12_53_12_if_end:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 55 12 ]
         %tmp.62 = getv ? :Application;
         %tmp.63 = getv %tmp.62 :Properties;
         %tmp.64 = getv function %tmp.63 :setValue;
@@ -168,11 +168,11 @@ _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_45_12_if_en
         %tmp.69 = as %tmp.68 String;
         %tmp.71 = lgetv %val.2;
         invoke %tmp.63 %tmp.64(%tmp.69, %tmp.71);
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_38_8_stop:
-        goto @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_37_13_if_end;
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_37_13_if_false:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 59 13 ]
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_59_13_if_stmt:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_38_8_57_8_stop:
+        goto @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_37_13_199_8_if_end;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_37_13_199_8_if_false:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 59 13 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_59_13_199_8_if_stmt:
         %tmp.72 = lgetv %menuItem;
         %tmp.73 = as %tmp.72 { (!ToggleMenuItem) };
         %tmp.74 = getv function %tmp.73 :getId;
@@ -181,58 +181,58 @@ _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_59_13_if_st
         %tmp.77 = getv function %tmp.76 :equals;
         %tmp.78 = "Theme";
         %tmp.79 = invoke %tmp.76 %tmp.77(%tmp.78);
-        bf %tmp.79 @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_59_13_if_false;
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_59_13_if_true:
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_60_8_start:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 61 12 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_60_8_start" "_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_60_8_stop" ]
+        bf %tmp.79 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_59_13_199_8_if_false;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_59_13_199_8_if_true:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_60_8_79_8_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 61 12 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_60_8_79_8_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_60_8_79_8_stop" ]
         %val.3 = local;
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_61_22_begin:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_61_22_61_72_begin:
         %tmp.81 = getv ? :Application;
         %tmp.82 = getv %tmp.81 :Properties;
         %tmp.83 = getv function %tmp.82 :getValue;
         %tmp.84 = "Theme";
         %tmp.85 = invoke %tmp.82 %tmp.83(%tmp.84);
-        bf %tmp.85 @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_61_22_false;
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_61_22_true:
+        bf %tmp.85 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_61_22_61_72_false;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_61_22_61_72_true:
         %tmp.86 = true;
         push %tmp.86;
-        goto @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_61_22_end;
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_61_22_false:
+        goto @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_61_22_61_72_end;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_61_22_61_72_false:
         %tmp.87 = false;
         push %tmp.87;
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_61_22_end:
-        %tmp.88 = phi [%tmp.85 @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_61_22_begin] [%tmp.86 @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_61_22_true] [%tmp.87 @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_61_22_false] [%tmp.88 @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_61_22_end];
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_61_22_61_72_end:
+        %tmp.88 = phi [%tmp.85 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_61_22_61_72_begin] [%tmp.86 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_61_22_61_72_true] [%tmp.87 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_61_22_61_72_false] [%tmp.88 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_61_22_61_72_end];
         lputv %val.3 %tmp.88;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 63 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 63 12 ]
         %tmp.90 = lgetv %val.3;
         %tmp.91 = not %tmp.90;
         lputv %val.3 %tmp.91;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 67 12 ]
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_67_12_if_stmt:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 67 12 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_67_12_75_12_if_stmt:
         %tmp.93 = lgetv %val.3;
-        bf %tmp.93 @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_67_12_if_false;
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_67_12_if_true:
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_68_12_start:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 69 16 ]
+        bf %tmp.93 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_67_12_75_12_if_false;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_67_12_75_12_if_true:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_68_12_70_12_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 69 16 ]
         %tmp.94 = lgetv %menuItem;
         %tmp.95 = as %tmp.94 { (!ToggleMenuItem) };
         %tmp.96 = getv function %tmp.95 :setSubLabel;
         %tmp.97 = "Dark Theme";
         invoke %tmp.95 %tmp.96(%tmp.97);
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_68_12_stop:
-        goto @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_67_12_if_end;
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_67_12_if_false:
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_73_12_start:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 74 16 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_68_12_70_12_stop:
+        goto @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_67_12_75_12_if_end;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_67_12_75_12_if_false:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_73_12_75_12_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 74 16 ]
         %tmp.98 = lgetv %menuItem;
         %tmp.99 = as %tmp.98 { (!ToggleMenuItem) };
         %tmp.100 = getv function %tmp.99 :setSubLabel;
         %tmp.101 = "Light Theme";
         invoke %tmp.99 %tmp.100(%tmp.101);
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_73_12_stop:
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_67_12_if_end:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 77 12 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_73_12_75_12_stop:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_67_12_75_12_if_end:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 77 12 ]
         %tmp.103 = getv ? :Application;
         %tmp.104 = getv %tmp.103 :Properties;
         %tmp.105 = getv function %tmp.104 :setValue;
@@ -243,11 +243,11 @@ _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_67_12_if_en
         %tmp.110 = as %tmp.109 String;
         %tmp.112 = lgetv %val.3;
         invoke %tmp.104 %tmp.105(%tmp.110, %tmp.112);
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_60_8_stop:
-        goto @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_59_13_if_end;
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_59_13_if_false:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 81 13 ]
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_81_13_if_stmt:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_60_8_79_8_stop:
+        goto @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_59_13_199_8_if_end;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_59_13_199_8_if_false:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 81 13 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_81_13_199_8_if_stmt:
         %tmp.113 = lgetv %menuItem;
         %tmp.114 = as %tmp.113 { (!ToggleMenuItem) };
         %tmp.115 = getv function %tmp.114 :getId;
@@ -256,11 +256,11 @@ _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_81_13_if_st
         %tmp.118 = getv function %tmp.117 :equals;
         %tmp.119 = "MinuteHandWidth";
         %tmp.120 = invoke %tmp.117 %tmp.118(%tmp.119);
-        bf %tmp.120 @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_81_13_if_false;
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_81_13_if_true:
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_82_8_start:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 83 12 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_82_8_start" "_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_82_8_stop" ]
+        bf %tmp.120 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_81_13_199_8_if_false;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_81_13_199_8_if_true:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_82_8_91_8_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 83 12 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_82_8_91_8_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_82_8_91_8_stop" ]
         %value.4 = local;
         %tmp.122 = getv ? :Application;
         %tmp.123 = getv %tmp.122 :Properties;
@@ -269,8 +269,8 @@ _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_82_8_start:
         %tmp.126 = invoke %tmp.123 %tmp.124(%tmp.125);
         %tmp.127 = as %tmp.126 Number;
         lputv %value.4 %tmp.127;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 85 12 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_82_8_start" "_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_82_8_stop" ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 85 12 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_82_8_91_8_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_82_8_91_8_stop" ]
         %new_value.5 = local;
         %tmp.128 = 2;
         %tmp.130 = lgetv %value.4;
@@ -282,14 +282,14 @@ _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_82_8_start:
         %tmp.136 = mod %tmp.134 %tmp.135;
         %tmp.137 = add %tmp.128 %tmp.136;
         lputv %new_value.5 %tmp.137;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 87 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 87 12 ]
         %tmp.139 = getv ? :Application;
         %tmp.140 = getv %tmp.139 :Properties;
         %tmp.141 = getv function %tmp.140 :setValue;
         %tmp.142 = "MinuteHandWidth";
         %tmp.144 = lgetv %new_value.5;
         invoke %tmp.140 %tmp.141(%tmp.142, %tmp.144);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 89 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 89 12 ]
         %tmp.145 = lgetv %menuItem;
         %tmp.146 = as %tmp.145 { (!ToggleMenuItem) };
         %tmp.147 = getv function %tmp.146 :setSubLabel;
@@ -297,11 +297,11 @@ _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_82_8_start:
         %tmp.149 = getv function %tmp.148 :toString;
         %tmp.150 = invoke %tmp.148 %tmp.149();
         invoke %tmp.146 %tmp.147(%tmp.150);
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_82_8_stop:
-        goto @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_81_13_if_end;
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_81_13_if_false:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 93 13 ]
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_93_13_if_stmt:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_82_8_91_8_stop:
+        goto @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_81_13_199_8_if_end;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_81_13_199_8_if_false:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 93 13 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_93_13_199_8_if_stmt:
         %tmp.151 = lgetv %menuItem;
         %tmp.152 = as %tmp.151 { (!ToggleMenuItem) };
         %tmp.153 = getv function %tmp.152 :getId;
@@ -310,11 +310,11 @@ _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_93_13_if_st
         %tmp.156 = getv function %tmp.155 :equals;
         %tmp.157 = "HourHandWidth";
         %tmp.158 = invoke %tmp.155 %tmp.156(%tmp.157);
-        bf %tmp.158 @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_93_13_if_false;
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_93_13_if_true:
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_94_8_start:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 95 12 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_94_8_start" "_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_94_8_stop" ]
+        bf %tmp.158 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_93_13_199_8_if_false;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_93_13_199_8_if_true:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_94_8_102_8_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 95 12 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_94_8_102_8_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_94_8_102_8_stop" ]
         %value.6 = local;
         %tmp.160 = getv ? :Application;
         %tmp.161 = getv %tmp.160 :Properties;
@@ -323,8 +323,8 @@ _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_94_8_start:
         %tmp.164 = invoke %tmp.161 %tmp.162(%tmp.163);
         %tmp.165 = as %tmp.164 Number;
         lputv %value.6 %tmp.165;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 97 12 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_94_8_start" "_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_94_8_stop" ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 97 12 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_94_8_102_8_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_94_8_102_8_stop" ]
         %new_value.7 = local;
         %tmp.166 = 2;
         %tmp.168 = lgetv %value.6;
@@ -336,14 +336,14 @@ _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_94_8_start:
         %tmp.174 = mod %tmp.172 %tmp.173;
         %tmp.175 = add %tmp.166 %tmp.174;
         lputv %new_value.7 %tmp.175;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 99 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 99 12 ]
         %tmp.177 = getv ? :Application;
         %tmp.178 = getv %tmp.177 :Properties;
         %tmp.179 = getv function %tmp.178 :setValue;
         %tmp.180 = "HourHandWidth";
         %tmp.182 = lgetv %new_value.7;
         invoke %tmp.178 %tmp.179(%tmp.180, %tmp.182);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 101 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 101 12 ]
         %tmp.183 = lgetv %menuItem;
         %tmp.184 = as %tmp.183 { (!ToggleMenuItem) };
         %tmp.185 = getv function %tmp.184 :setSubLabel;
@@ -351,11 +351,11 @@ _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_94_8_start:
         %tmp.187 = getv function %tmp.186 :toString;
         %tmp.188 = invoke %tmp.186 %tmp.187();
         invoke %tmp.184 %tmp.185(%tmp.188);
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_94_8_stop:
-        goto @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_93_13_if_end;
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_93_13_if_false:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 104 13 ]
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_104_13_if_stmt:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_94_8_102_8_stop:
+        goto @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_93_13_199_8_if_end;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_93_13_199_8_if_false:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 104 13 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_104_13_199_8_if_stmt:
         %tmp.189 = lgetv %menuItem;
         %tmp.190 = as %tmp.189 { (!ToggleMenuItem) };
         %tmp.191 = getv function %tmp.190 :getId;
@@ -364,11 +364,11 @@ _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_104_13_if_s
         %tmp.194 = getv function %tmp.193 :equals;
         %tmp.195 = "SecondsHandLength";
         %tmp.196 = invoke %tmp.193 %tmp.194(%tmp.195);
-        bf %tmp.196 @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_104_13_if_false;
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_104_13_if_true:
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_105_8_start:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 106 12 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_105_8_start" "_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_105_8_stop" ]
+        bf %tmp.196 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_104_13_199_8_if_false;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_104_13_199_8_if_true:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_105_8_114_8_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 106 12 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_105_8_114_8_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_105_8_114_8_stop" ]
         %value.8 = local;
         %tmp.198 = getv ? :Application;
         %tmp.199 = getv %tmp.198 :Properties;
@@ -377,8 +377,8 @@ _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_105_8_start
         %tmp.202 = invoke %tmp.199 %tmp.200(%tmp.201);
         %tmp.203 = as %tmp.202 Number;
         lputv %value.8 %tmp.203;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 108 12 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_105_8_start" "_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_105_8_stop" ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 108 12 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_105_8_114_8_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_105_8_114_8_stop" ]
         %new_value.9 = local;
         %tmp.205 = lgetv %value.8;
         %tmp.206 = 1;
@@ -386,14 +386,14 @@ _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_105_8_start
         %tmp.208 = 9;
         %tmp.209 = mod %tmp.207 %tmp.208;
         lputv %new_value.9 %tmp.209;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 110 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 110 12 ]
         %tmp.211 = getv ? :Application;
         %tmp.212 = getv %tmp.211 :Properties;
         %tmp.213 = getv function %tmp.212 :setValue;
         %tmp.214 = "SecondsHandLength";
         %tmp.216 = lgetv %new_value.9;
         invoke %tmp.212 %tmp.213(%tmp.214, %tmp.216);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 112 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 112 12 ]
         %tmp.217 = lgetv %menuItem;
         %tmp.218 = as %tmp.217 { (!ToggleMenuItem) };
         %tmp.219 = getv function %tmp.218 :setSubLabel;
@@ -401,11 +401,11 @@ _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_105_8_start
         %tmp.221 = getv function %tmp.220 :toString;
         %tmp.222 = invoke %tmp.220 %tmp.221();
         invoke %tmp.218 %tmp.219(%tmp.222);
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_105_8_stop:
-        goto @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_104_13_if_end;
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_104_13_if_false:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 116 13 ]
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_116_13_if_stmt:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_105_8_114_8_stop:
+        goto @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_104_13_199_8_if_end;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_104_13_199_8_if_false:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 116 13 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_116_13_199_8_if_stmt:
         %tmp.223 = lgetv %menuItem;
         %tmp.224 = as %tmp.223 { (!ToggleMenuItem) };
         %tmp.225 = getv function %tmp.224 :getId;
@@ -414,11 +414,11 @@ _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_116_13_if_s
         %tmp.228 = getv function %tmp.227 :equals;
         %tmp.229 = "MinuteHandLength";
         %tmp.230 = invoke %tmp.227 %tmp.228(%tmp.229);
-        bf %tmp.230 @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_116_13_if_false;
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_116_13_if_true:
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_117_8_start:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 118 12 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_117_8_start" "_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_117_8_stop" ]
+        bf %tmp.230 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_116_13_199_8_if_false;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_116_13_199_8_if_true:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_117_8_126_8_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 118 12 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_117_8_126_8_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_117_8_126_8_stop" ]
         %value.10 = local;
         %tmp.232 = getv ? :Application;
         %tmp.233 = getv %tmp.232 :Properties;
@@ -427,8 +427,8 @@ _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_117_8_start
         %tmp.236 = invoke %tmp.233 %tmp.234(%tmp.235);
         %tmp.237 = as %tmp.236 Number;
         lputv %value.10 %tmp.237;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 120 12 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_117_8_start" "_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_117_8_stop" ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 120 12 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_117_8_126_8_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_117_8_126_8_stop" ]
         %new_value.11 = local;
         %tmp.239 = lgetv %value.10;
         %tmp.240 = 1;
@@ -436,14 +436,14 @@ _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_117_8_start
         %tmp.242 = 9;
         %tmp.243 = mod %tmp.241 %tmp.242;
         lputv %new_value.11 %tmp.243;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 122 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 122 12 ]
         %tmp.245 = getv ? :Application;
         %tmp.246 = getv %tmp.245 :Properties;
         %tmp.247 = getv function %tmp.246 :setValue;
         %tmp.248 = "MinuteHandLength";
         %tmp.250 = lgetv %new_value.11;
         invoke %tmp.246 %tmp.247(%tmp.248, %tmp.250);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 124 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 124 12 ]
         %tmp.251 = lgetv %menuItem;
         %tmp.252 = as %tmp.251 { (!ToggleMenuItem) };
         %tmp.253 = getv function %tmp.252 :setSubLabel;
@@ -451,11 +451,11 @@ _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_117_8_start
         %tmp.255 = getv function %tmp.254 :toString;
         %tmp.256 = invoke %tmp.254 %tmp.255();
         invoke %tmp.252 %tmp.253(%tmp.256);
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_117_8_stop:
-        goto @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_116_13_if_end;
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_116_13_if_false:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 128 13 ]
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_128_13_if_stmt:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_117_8_126_8_stop:
+        goto @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_116_13_199_8_if_end;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_116_13_199_8_if_false:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 128 13 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_128_13_199_8_if_stmt:
         %tmp.257 = lgetv %menuItem;
         %tmp.258 = as %tmp.257 { (!ToggleMenuItem) };
         %tmp.259 = getv function %tmp.258 :getId;
@@ -464,11 +464,11 @@ _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_128_13_if_s
         %tmp.262 = getv function %tmp.261 :equals;
         %tmp.263 = "HourHandLength";
         %tmp.264 = invoke %tmp.261 %tmp.262(%tmp.263);
-        bf %tmp.264 @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_128_13_if_false;
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_128_13_if_true:
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_129_8_start:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 130 12 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_129_8_start" "_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_129_8_stop" ]
+        bf %tmp.264 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_128_13_199_8_if_false;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_128_13_199_8_if_true:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_129_8_137_8_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 130 12 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_129_8_137_8_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_129_8_137_8_stop" ]
         %value.12 = local;
         %tmp.266 = getv ? :Application;
         %tmp.267 = getv %tmp.266 :Properties;
@@ -477,8 +477,8 @@ _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_129_8_start
         %tmp.270 = invoke %tmp.267 %tmp.268(%tmp.269);
         %tmp.271 = as %tmp.270 Number;
         lputv %value.12 %tmp.271;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 132 12 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_129_8_start" "_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_129_8_stop" ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 132 12 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_129_8_137_8_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_129_8_137_8_stop" ]
         %new_value.13 = local;
         %tmp.273 = lgetv %value.12;
         %tmp.274 = 1;
@@ -486,14 +486,14 @@ _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_129_8_start
         %tmp.276 = 9;
         %tmp.277 = mod %tmp.275 %tmp.276;
         lputv %new_value.13 %tmp.277;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 134 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 134 12 ]
         %tmp.279 = getv ? :Application;
         %tmp.280 = getv %tmp.279 :Properties;
         %tmp.281 = getv function %tmp.280 :setValue;
         %tmp.282 = "HourHandLength";
         %tmp.284 = lgetv %new_value.13;
         invoke %tmp.280 %tmp.281(%tmp.282, %tmp.284);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 136 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 136 12 ]
         %tmp.285 = lgetv %menuItem;
         %tmp.286 = as %tmp.285 { (!ToggleMenuItem) };
         %tmp.287 = getv function %tmp.286 :setSubLabel;
@@ -501,11 +501,11 @@ _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_129_8_start
         %tmp.289 = getv function %tmp.288 :toString;
         %tmp.290 = invoke %tmp.288 %tmp.289();
         invoke %tmp.286 %tmp.287(%tmp.290);
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_129_8_stop:
-        goto @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_128_13_if_end;
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_128_13_if_false:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 140 13 ]
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_140_13_if_stmt:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_129_8_137_8_stop:
+        goto @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_128_13_199_8_if_end;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_128_13_199_8_if_false:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 140 13 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_140_13_199_8_if_stmt:
         %tmp.291 = lgetv %menuItem;
         %tmp.292 = as %tmp.291 { (!ToggleMenuItem) };
         %tmp.293 = getv function %tmp.292 :getId;
@@ -514,11 +514,11 @@ _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_140_13_if_s
         %tmp.296 = getv function %tmp.295 :equals;
         %tmp.297 = "MinuteHandThinning";
         %tmp.298 = invoke %tmp.295 %tmp.296(%tmp.297);
-        bf %tmp.298 @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_140_13_if_false;
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_140_13_if_true:
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_141_8_start:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 142 12 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_141_8_start" "_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_141_8_stop" ]
+        bf %tmp.298 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_140_13_199_8_if_false;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_140_13_199_8_if_true:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_141_8_149_8_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 142 12 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_141_8_149_8_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_141_8_149_8_stop" ]
         %value.14 = local;
         %tmp.300 = getv ? :Application;
         %tmp.301 = getv %tmp.300 :Properties;
@@ -527,8 +527,8 @@ _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_141_8_start
         %tmp.304 = invoke %tmp.301 %tmp.302(%tmp.303);
         %tmp.305 = as %tmp.304 Number;
         lputv %value.14 %tmp.305;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 144 12 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_141_8_start" "_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_141_8_stop" ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 144 12 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_141_8_149_8_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_141_8_149_8_stop" ]
         %new_value.15 = local;
         %tmp.307 = lgetv %value.14;
         %tmp.308 = 1;
@@ -536,14 +536,14 @@ _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_141_8_start
         %tmp.310 = 11;
         %tmp.311 = mod %tmp.309 %tmp.310;
         lputv %new_value.15 %tmp.311;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 146 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 146 12 ]
         %tmp.313 = getv ? :Application;
         %tmp.314 = getv %tmp.313 :Properties;
         %tmp.315 = getv function %tmp.314 :setValue;
         %tmp.316 = "MinuteHandThinning";
         %tmp.318 = lgetv %new_value.15;
         invoke %tmp.314 %tmp.315(%tmp.316, %tmp.318);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 148 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 148 12 ]
         %tmp.319 = lgetv %menuItem;
         %tmp.320 = as %tmp.319 { (!ToggleMenuItem) };
         %tmp.321 = getv function %tmp.320 :setSubLabel;
@@ -551,11 +551,11 @@ _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_141_8_start
         %tmp.323 = getv function %tmp.322 :toString;
         %tmp.324 = invoke %tmp.322 %tmp.323();
         invoke %tmp.320 %tmp.321(%tmp.324);
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_141_8_stop:
-        goto @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_140_13_if_end;
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_140_13_if_false:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 151 13 ]
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_151_13_if_stmt:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_141_8_149_8_stop:
+        goto @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_140_13_199_8_if_end;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_140_13_199_8_if_false:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 151 13 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_151_13_199_8_if_stmt:
         %tmp.325 = lgetv %menuItem;
         %tmp.326 = as %tmp.325 { (!ToggleMenuItem) };
         %tmp.327 = getv function %tmp.326 :getId;
@@ -564,11 +564,11 @@ _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_151_13_if_s
         %tmp.330 = getv function %tmp.329 :equals;
         %tmp.331 = "HourHandThinning";
         %tmp.332 = invoke %tmp.329 %tmp.330(%tmp.331);
-        bf %tmp.332 @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_151_13_if_false;
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_151_13_if_true:
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_152_8_start:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 153 12 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_152_8_start" "_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_152_8_stop" ]
+        bf %tmp.332 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_151_13_199_8_if_false;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_151_13_199_8_if_true:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_152_8_160_8_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 153 12 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_152_8_160_8_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_152_8_160_8_stop" ]
         %value.16 = local;
         %tmp.334 = getv ? :Application;
         %tmp.335 = getv %tmp.334 :Properties;
@@ -577,8 +577,8 @@ _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_152_8_start
         %tmp.338 = invoke %tmp.335 %tmp.336(%tmp.337);
         %tmp.339 = as %tmp.338 Number;
         lputv %value.16 %tmp.339;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 155 12 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_152_8_start" "_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_152_8_stop" ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 155 12 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_152_8_160_8_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_152_8_160_8_stop" ]
         %new_value.17 = local;
         %tmp.341 = lgetv %value.16;
         %tmp.342 = 1;
@@ -586,14 +586,14 @@ _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_152_8_start
         %tmp.344 = 11;
         %tmp.345 = mod %tmp.343 %tmp.344;
         lputv %new_value.17 %tmp.345;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 157 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 157 12 ]
         %tmp.347 = getv ? :Application;
         %tmp.348 = getv %tmp.347 :Properties;
         %tmp.349 = getv function %tmp.348 :setValue;
         %tmp.350 = "HourHandThinning";
         %tmp.352 = lgetv %new_value.17;
         invoke %tmp.348 %tmp.349(%tmp.350, %tmp.352);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 159 12 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 159 12 ]
         %tmp.353 = lgetv %menuItem;
         %tmp.354 = as %tmp.353 { (!ToggleMenuItem) };
         %tmp.355 = getv function %tmp.354 :setSubLabel;
@@ -601,20 +601,20 @@ _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_152_8_start
         %tmp.357 = getv function %tmp.356 :toString;
         %tmp.358 = invoke %tmp.356 %tmp.357();
         invoke %tmp.354 %tmp.355(%tmp.358);
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_152_8_stop:
-        goto @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_151_13_if_end;
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_151_13_if_false:
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_163_8_start:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 177 12 ]
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_177_12_if_stmt:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_152_8_160_8_stop:
+        goto @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_151_13_199_8_if_end;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_151_13_199_8_if_false:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_163_8_199_8_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 177 12 ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_177_12_198_12_if_stmt:
         %tmp.360 = lgetv %version.1;
         %tmp.361 = 420;
         %tmp.362 = gt %tmp.360 %tmp.361;
-        bf %tmp.362 @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_177_12_if_false;
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_177_12_if_true:
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_178_12_start:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 179 16 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_178_12_start" "_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_178_12_stop" ]
+        bf %tmp.362 @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_177_12_198_12_if_false;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_177_12_198_12_if_true:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_178_12_186_12_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 179 16 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_178_12_186_12_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_178_12_186_12_stop" ]
         %color_menu.18 = local;
         %tmp.366 = getv ? :ColorSettingsMenu;
         %tmp.367 = lgetv %menuItem;
@@ -629,24 +629,24 @@ _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_178_12_star
         %tmp.376 = as %tmp.375 String;
         %tmp.363 = newc %tmp.366 (%tmp.371, %tmp.376);
         lputv %color_menu.18 %tmp.363;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 180 16 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_178_12_start" "_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_178_12_stop" ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 180 16 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_178_12_186_12_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_178_12_186_12_stop" ]
         %delegate.19 = local;
         %tmp.380 = getv ? :ColorSettingsMenuDelegate;
         %tmp.377 = newc %tmp.380 ();
         lputv %delegate.19 %tmp.377;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 182 16 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 182 16 ]
         %tmp.381 = lgetv %color_menu.18;
         %tmp.382 = getv function %tmp.381 :setMenuItemHandle;
         %tmp.384 = lgetv %menuItem;
         %tmp.385 = as %tmp.384 { (!ToggleMenuItem) };
         invoke %tmp.381 %tmp.382(%tmp.385);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 183 16 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 183 16 ]
         %tmp.386 = lgetv %delegate.19;
         %tmp.387 = getv function %tmp.386 :setMenu;
         %tmp.389 = lgetv %color_menu.18;
         invoke %tmp.386 %tmp.387(%tmp.389);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 185 16 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 185 16 ]
         %tmp.390 = getm $.Toybox.WatchUi;
         %tmp.391 = getv function %tmp.390 :pushView;
         %tmp.393 = lgetv %color_menu.18;
@@ -654,12 +654,12 @@ _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_178_12_star
         %tmp.396 = getm $.Toybox.WatchUi;
         %tmp.397 = getv %tmp.396 :SLIDE_LEFT;
         invoke %tmp.390 %tmp.391(%tmp.393, %tmp.395, %tmp.397);
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_178_12_stop:
-        goto @_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_177_12_if_end;
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_177_12_if_false:
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_190_12_start:
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 191 16 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_190_12_start" "_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_190_12_stop" ]
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_178_12_186_12_stop:
+        goto @C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_177_12_198_12_if_end;
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_177_12_198_12_if_false:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_190_12_198_12_start:
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 191 16 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_190_12_198_12_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_190_12_198_12_stop" ]
         %color.20 = local;
         %tmp.399 = getv ? :Application;
         %tmp.400 = getv %tmp.399 :Properties;
@@ -672,8 +672,8 @@ _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_190_12_star
         %tmp.407 = invoke %tmp.400 %tmp.401(%tmp.406);
         %tmp.408 = as %tmp.407 Number;
         lputv %color.20 %tmp.408;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 193 16 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_190_12_start" "_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_190_12_stop" ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 193 16 ]
+        [ "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_190_12_198_12_start" "C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_190_12_198_12_stop" ]
         %new_index.21 = local;
         %tmp.409 = self;
         %tmp.410 = getv function %tmp.409 :colorIndex;
@@ -686,7 +686,7 @@ _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_190_12_star
         %tmp.419 = invoke %tmp.417 %tmp.418();
         %tmp.420 = mod %tmp.415 %tmp.419;
         lputv %new_index.21 %tmp.420;
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 195 16 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 195 16 ]
         %tmp.422 = getv ? :Application;
         %tmp.423 = getv %tmp.422 :Properties;
         %tmp.424 = getv function %tmp.423 :setValue;
@@ -699,7 +699,7 @@ _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_190_12_star
         %tmp.433 = lgetv %new_index.21;
         %tmp.434 = agetv %tmp.431 %tmp.433;
         invoke %tmp.423 %tmp.424(%tmp.429, %tmp.434);
-[ "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc" 197 16 ]
+[ "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc" 197 16 ]
         %tmp.435 = lgetv %menuItem;
         %tmp.436 = as %tmp.435 { (!ToggleMenuItem) };
         %tmp.437 = getv function %tmp.436 :setSubLabel;
@@ -707,22 +707,22 @@ _home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_190_12_star
         %tmp.441 = lgetv %new_index.21;
         %tmp.442 = agetv %tmp.439 %tmp.441;
         invoke %tmp.436 %tmp.437(%tmp.442);
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_190_12_stop:
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_177_12_if_end:
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_163_8_stop:
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_151_13_if_end:
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_140_13_if_end:
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_128_13_if_end:
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_116_13_if_end:
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_104_13_if_end:
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_93_13_if_end:
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_81_13_if_end:
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_59_13_if_end:
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_37_13_if_end:
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_32_8_if_end:
-_home_max_git_simplex_garmin_watchface_source_SimplexSettingsMenu_mc_29_4_stop:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_190_12_198_12_stop:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_177_12_198_12_if_end:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_163_8_199_8_stop:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_151_13_199_8_if_end:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_140_13_199_8_if_end:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_128_13_199_8_if_end:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_116_13_199_8_if_end:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_104_13_199_8_if_end:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_93_13_199_8_if_end:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_81_13_199_8_if_end:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_59_13_199_8_if_end:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_37_13_199_8_if_end:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_32_8_199_8_if_end:
+C_Users_jclib_OneDrive_Documents_programering_git_simplex_watchface_connectiq_source_SimplexSettingsMenu_mc_29_4_202_4_stop:
     }
 }
-[ @file = "/home/max/git/simplex-garmin-watchface/source/SimplexSettingsMenu.mc"; @line = 1; ]
+[ @file = "C:\Users\jclib\OneDrive\Documents\programering\git\simplex-watchface-connectiq\source\SimplexSettingsMenu.mc"; @line = 1; ]
 <init> {
 }
